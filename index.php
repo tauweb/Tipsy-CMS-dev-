@@ -27,4 +27,5 @@ require_once _TPATH_ROOT.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'def
 
 // Подключаю каркас системы
 require_once _TPATH_INCLUDE.DIRECTORY_SEPARATOR.'framework.php';
+
 ?>
