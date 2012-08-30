@@ -9,24 +9,24 @@ defined('_TEXEC') or die;
 class TRuntimeException extends ErrorException
 {
 
-  public static $errors = array();
+    public static $errors = array();
 
-  /**
-   * Конструктор
-   *
-   * Используется для установки всех необходимых свойств и методов объекта исключений
-   *
-   * @param  string  $message  Текст исключения
-   * @param  int    $code
-   *
-   */
-  public function __construct($message = '', $code = 0, Exception $previous = null)
-  {
-    parent::__construct($message, $code, $previous);
+    /**
+     * Конструктор
+     *
+     * Используется для установки всех необходимых свойств и методов объекта исключений
+     *
+     * @param  string  $message  Текст исключения
+     * @param  int    $code
+     *
+     */
+    public function __construct($message = '', $code = 0, Exception $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
 
-    self::$errors = $this->getMessage(); // Выводим сообщение исключения
+        self::$errors = $this->getMessage(); // Выводим сообщение исключения
 
-  }
+    }
 
 }
 
@@ -37,10 +37,10 @@ class TRuntimeException extends ErrorException
  */
 class TErrorException extends ErrorException
 {
-  public function __construct()
-  {
+    public function __construct()
+    {
 
-  }
+    }
 }
 
 ?>
