@@ -155,8 +155,9 @@ class TDocument
     $nav = [
       '<a href="http://php.net">PHP</a>',
       '<a href="http://w3.org">html5</a>',
-      3 => '<a href="' . $str = shell_exec('./make_source.sh') . '">Обновить исходники</a>',
+      '<a href="' . $str = shell_exec('./make_source.sh') . '">Обновить исходники</a>',
       '<a href="./tipsy_source.tar">Скачать Исходники</a>',
+      '<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники GitHub</a>',
     ];
 
     foreach ($nav as $val)
