@@ -43,6 +43,4 @@ class TMysqli extends mysqli
     }
 
 }
-
-
 ?>
