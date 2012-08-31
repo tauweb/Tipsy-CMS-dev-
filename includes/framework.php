@@ -36,5 +36,4 @@ TLoader::load('TApplication');
 // Создаем объект прилодения
 $app = new TApplication();
 $app->Run();
-#TApplication::run();
 ?>
