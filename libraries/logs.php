@@ -8,5 +8,5 @@
  */
 class TLogs
 {
-    public logs = array();
+    public $logs = array();
 }
