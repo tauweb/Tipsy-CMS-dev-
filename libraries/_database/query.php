@@ -8,5 +8,8 @@
  */
 class TQuery
 {
-
+    public static function __construct()
+    {
+       $this->query;
+    }
 }

@@ -22,7 +22,6 @@ $doc->addStylesheet('template.css');
 </head>
 
 <body>
-<div id="all">
     <header>
         <h1>Домашняя страница проета Tipsy cms</h1>
     </header>
@@ -62,15 +61,10 @@ $doc->addStylesheet('template.css');
 
             <p>Some text</p>
         </div>
-        <!-- aside -->
-
-        <div id="footer">
-            <p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
-        </div>
-        <!-- Footer --
      </div> <!-- Conteiner -->
-    </div>
-    <!-- All -->
+      <div id="footer">
+          <p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
+      </div>
 </body>
 
 </html>

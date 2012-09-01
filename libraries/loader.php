@@ -91,7 +91,7 @@ abstract class TLoader
      *
      * @param    string    Имя класса
      *
-     * @return  boolean
+     * @return    boolean
      */
     public static function isRegister($class)
     {

@@ -4,10 +4,10 @@ body {
 }
 
 /* Параметры основного блока страници*/
-#all {
+body{
     display: block;
     margin: auto;
-    max-width: 960px;
+    max-width: 980px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     box-shadow: 0px 0px 6px #D8D8D8;
