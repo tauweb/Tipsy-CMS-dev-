@@ -7,29 +7,32 @@
  */
 class TLogger
 {
-    public $logs = array();
     
-    public function __construct($message = '')
+    public static function WriteLogs($message)
     {
-        $this->logs = $message;
-    }
-    
-    public function WriteLogs()
-    {
-        if(empty($this->logs))
+        if(empty($message))
         {
             return false;
         }
-         
-        $logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a');
-         
-        foreach($this->logs as $logstr)
+
+        try{
+        @$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a');
+
+
+
+        if(!$logfile)
         {
-            fwrite($logfile, $logstr);
+            throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
         }
+            throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
+
+        fwrite($logfile, $message);
 
         fclose($logfile);
-        
+        }catch (TRuntimeException $e){
+
+        }
+
         return true;
     }
 }
