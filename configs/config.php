@@ -10,9 +10,9 @@ abstract class TConfig
     public static $db_type = 'mysqli';
     public static $db_host = 'localhost';
     public static $db_server_port = '';
-    public static $db_user = 'user';
-    public static $db_password = 'passblalba';
-    public static $db_dbname = 'test';
+    public static $db_user = 'whiskeyman_tipsy';
+    public static $db_password = 'password';
+    public static $db_dbname = 'articles';
     public static $db_port = 3306;
     public static $db_socket = '';
 
