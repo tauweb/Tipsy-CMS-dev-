@@ -23,7 +23,10 @@ class TLogger
             {
                 echo 'Не могу';
                 throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
+                die();
             }
+
+            $message ='/n' .date('l jS \of F Y h:i:s A') .  $message;
 
             fwrite($logfile, $message);
 

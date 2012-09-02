@@ -35,7 +35,7 @@ TDatabase::connect(TConfig::$db_host, TConfig::$db_user, TConfig::$db_password, 
 
 TLoader::load('TApplication');
 
-// Создаем объект прилодения
+// Создаем объект приложения
 $app = new TApplication();
 $app->Run();
 #TApplication::run();

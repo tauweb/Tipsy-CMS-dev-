@@ -26,7 +26,6 @@ class TRuntimeException extends ErrorException
 
         self::$errors = $this->getMessage(); // Выводим сообщение исключения
 
-        #$logs = new TLogger($this->getMessage());
         TLogger::WriteLogs($this->getMessage());
     }
 
