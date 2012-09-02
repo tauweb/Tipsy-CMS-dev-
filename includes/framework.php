@@ -8,6 +8,8 @@ require_once _TPATH_LIBRARIES . DIRECTORY_SEPARATOR . 'loader.php';
 // Сканируем директорию с библиотеками на наличие библиотек классов, рекурсивно.
 TLoader::discover('T', _TPATH_LIBRARIES, 'true');
 
+TLoader::load('TLogger');
+
 // Подключаю обработчик исключений
 TLoader::load('TException');
 

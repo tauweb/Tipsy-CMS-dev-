@@ -15,20 +15,20 @@ class TLogger
             return false;
         }
 
-        try{
-        @$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a');
-
-
-
-        if(!$logfile)
+        try
         {
-            throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
-        }
-            throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
+            @$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a');
 
-        fwrite($logfile, $message);
+            if(!$logfile)
+            {
+                echo 'Не могу';
+                throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
+            }
 
-        fclose($logfile);
+            fwrite($logfile, $message);
+
+            fclose($logfile);
+
         }catch (TRuntimeException $e){
 
         }
