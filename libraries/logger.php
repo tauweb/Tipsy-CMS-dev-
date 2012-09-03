@@ -17,13 +17,10 @@ class TLogger
 
         try
         {
-            @$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a');
+            if(@!$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a'))
 
-            if(!$logfile)
             {
-                echo 'Не могу';
-                throw new TRuntimeException('Не могу открыть или создать файл для записи логов');
-                die();
+                throw new TErrorException('Не могу открыть или создать файл для записи логов');
             }
 
             $message ='/n' .date('l jS \of F Y h:i:s A') .  $message;
@@ -32,7 +29,8 @@ class TLogger
 
             fclose($logfile);
 
-        }catch (TRuntimeException $e){
+
+        }catch (TErrorException $e){
 
         }
 

@@ -19,7 +19,6 @@ abstract class TDatabase
 
         $Database = new $driver($db_host, $db_user, $db_password, $db_dbname, $db_port, $db_socket);
     }
-
 }
 
 ?>

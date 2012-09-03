@@ -35,9 +35,6 @@ class TMysqli extends mysqli
             if ($this->connect_errno) {
                 throw new TRuntimeException("<b>Ошибка соединения с базой данных:</b> $this->connect_error");
             }
-
-            echo 'Соединение с БД удалось'; // Todo: Отладка, потом удалить строку
-
         } catch (TRuntimeException $e) {
         }
     }
