@@ -12,7 +12,7 @@ abstract class TConfig
 	public static $db_server_port = '';
 	public static $db_user = 'whiskeyman_tipsy';
 	public static $db_password = 'password';
-	public static $db_dbname = 'articles';
+	public static $db_dbname = 'whiskeyman_tipsy';
 	public static $db_port = 3306;
 	public static $db_socket = '';
 
