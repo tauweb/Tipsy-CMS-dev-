@@ -56,8 +56,6 @@ $doc->addStylesheet('template.css');
 	</div>
 
 	<div id="right">
-		<h3>Aside</h3>
-
 		<p>Some text</p>
 	</div>
 </div>
