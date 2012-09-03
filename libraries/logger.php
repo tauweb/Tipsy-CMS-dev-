@@ -20,10 +20,10 @@ class TLogger
             if(@!$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a'))
 
             {
-                throw new TErrorException('Не могу открыть или создать файл для записи логов');
+                throw new TErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов');
             }
 
-            $message ='/n' .date('l jS \of F Y h:i:s A') .  $message;
+            $message = date('l jS \of F Y h:i:s A') . $message . "\n";
 
             fwrite($logfile, $message);
 

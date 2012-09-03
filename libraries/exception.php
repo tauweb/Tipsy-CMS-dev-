@@ -24,7 +24,7 @@ class TRuntimeException extends ErrorException
     {
         parent::__construct($message, $code, $previous);
 
-        self::$errors = $this->getMessage(); // Выводим сообщение исключения
+        self::$errors[] = $this->getMessage();
 
         TLogger::WriteLogs($this->getMessage());
     }
@@ -42,7 +42,7 @@ class TErrorException extends ErrorException
     {
         parent::__construct($message, $code, $previous);
 
-        TRuntimeException::$errors = $this->getMessage(); // Выводим сообщение исключения
+        TRuntimeException::$errors[] = $this->getMessage();
     }
 }
 

@@ -94,8 +94,8 @@ class TDocument
     ];
 
     public $stylesheet = array();
+    
     public $charset = '	<meta charset="utf-8" />';
-    public $h4 = 'Tipsy использует HTML5';
 
     // Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
     public $content = '
@@ -132,8 +132,7 @@ class TDocument
         } else {
             throw new TRuntimeException('Не найден index.php выбранного шаблона');
         }
-
-        return $this;
+        #return $this;
     }
 
     /**
@@ -144,7 +143,7 @@ class TDocument
     {
         if (!empty($this->errors)) {
             foreach ((array)$this->errors as $msg) {
-                echo $msg;
+                echo $msg . "<p>";
             }
         }
     }
