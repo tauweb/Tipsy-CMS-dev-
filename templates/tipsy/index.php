@@ -35,7 +35,7 @@ $doc->addStylesheet('template.css');
 		<a href="http://php.net">PHP</a>
 		<a href="http://w3.org">html5</a>
 		<a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Обновить исходники</a>
-		<a href="./tipsy_source.tar">Скачать Исходники</a>
+		'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git"> Скачать или посмотреть исходники</a>'
 	</div>
 
 	<div id="left">
@@ -54,7 +54,6 @@ $doc->addStylesheet('template.css');
 		</div>
 		<!-- Article -->
 	</div>
-	<!-- Section -->
 
 	<div id="right">
 		<h3>Aside</h3>
@@ -62,7 +61,7 @@ $doc->addStylesheet('template.css');
 		<p>Some text</p>
 	</div>
 </div>
-<!-- Conteiner -->
+
 <div id="footer">
 	<p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
 </div>
