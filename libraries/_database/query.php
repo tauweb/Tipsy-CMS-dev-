@@ -8,8 +8,8 @@
  */
 class TQuery
 {
-    public static function __construct()
-    {
+	public static function __construct()
+	{
 
-    }
+	}
 }

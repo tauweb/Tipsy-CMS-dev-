@@ -1,112 +1,112 @@
 body {
-    background-color: #F4F6F7;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
+	background-color: #F4F6F7;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 /* Параметры основного блока страници*/
-body{
-    display: block;
-    margin: auto;
-    max-width: 980px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px #D8D8D8;
-    background-color: white;
+body {
+	display: block;
+	margin: auto;
+	max-width: 980px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #D8D8D8;
+	background-color: white;
 }
 
 #container {
-    display: block;
-    min-height: 500px;
+	display: block;
+	min-height: 500px;
 }
 
 header {
-    padding: 15px;
-    border-radius: 10px 10px 0px 0px;
-    text-align: center;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: #1A1A1A;
-    color: #FFFFFF;
+	padding: 15px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: #1A1A1A;
+	color: #FFFFFF;
 }
 
 h1 {
-    margin: 0px;
+	margin: 0px;
 }
 
 h2 {
-    margin: 0px;
-    border-radius: 0px 0px 10px 10px;
-    display: block;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
-    text-align: center;
+	margin: 0px;
+	border-radius: 0px 0px 10px 10px;
+	display: block;
+	background-color: #1A1A1A;
+	color: #FFFFFF;
+	text-align: center;
 }
 
 #errors {
-    color: red;
-    text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	color: red;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 #menu_horisontal {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	text-align: center;
 }
 
 #left {
-    display: block;
-    float: left;
-    margin: 10px 5px 10px 10px;
-    max-width: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px #D8D8D8;
-    background-color: whiteSmoke;
+	display: block;
+	float: left;
+	margin: 10px 5px 10px 10px;
+	max-width: 150px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #D8D8D8;
+	background-color: whiteSmoke;
 }
 
 #section {
-    float: left;
-    margin: 10px 5px 10px 5px;
-    max-width: 613px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px #D8D8D8;
-    background-color: whiteSmoke;
+	float: left;
+	margin: 10px 5px 10px 5px;
+	max-width: 613px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #D8D8D8;
+	background-color: whiteSmoke;
 
 }
 
 article {
-    display: block;
-    float: left;
-    margin: 10px 10px auto;
-    max-width: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px #D8D8D8;
-    background-color: grey;
+	display: block;
+	float: left;
+	margin: 10px 10px auto;
+	max-width: 150px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #D8D8D8;
+	background-color: grey;
 }
 
 #right {
-    width: 150px;
-    display: block;
-    float: right;
-    margin: 10px 10px 10px 5px;
-    max-width: 150px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px #D8D8D8;
-    background-color: whiteSmoke;
+	width: 150px;
+	display: block;
+	float: right;
+	margin: 10px 10px 10px 5px;
+	max-width: 150px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #D8D8D8;
+	background-color: whiteSmoke;
 
 }
 
 #footer {
-    border-radius: 0px 0px 10px 10px;
-    clear: both;
-    display: block;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
-    text-align: right;
-    padding: 5px;
-    position: relative;
-    bottom: 0px;
+	border-radius: 0px 0px 10px 10px;
+	clear: both;
+	display: block;
+	background-color: #1A1A1A;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 5px;
+	position: relative;
+	bottom: 0px;
 }

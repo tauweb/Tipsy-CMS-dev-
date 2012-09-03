@@ -9,25 +9,25 @@ defined('_TEXEC') or die;
 class TRuntimeException extends ErrorException
 {
 
-    public static $errors = array();
+	public static $errors = array();
 
-    /**
-     * Конструктор
-     *
-     * Используется для установки всех необходимых свойств и методов объекта исключений
-     *
-     * @param  string  $message  Текст исключения
-     * @param  int    $code
-     *
-     */
-    public function __construct($message = '', $code = 0, Exception $previous = null)
-    {
-        parent::__construct($message, $code, $previous);
+	/**
+	 * Конструктор
+	 *
+	 * Используется для установки всех необходимых свойств и методов объекта исключений
+	 *
+	 * @param  string  $message  Текст исключения
+	 * @param  int    $code
+	 *
+	 */
+	public function __construct($message = '', $code = 0, Exception $previous = null)
+	{
+		parent::__construct($message, $code, $previous);
 
-        self::$errors[] = $this->getMessage();
+		self::$errors[] = $this->getMessage();
 
-        TLogger::WriteLogs($this->getMessage());
-    }
+		TLogger::WriteLogs($this->getMessage());
+	}
 
 }
 
@@ -38,12 +38,12 @@ class TRuntimeException extends ErrorException
  */
 class TErrorException extends ErrorException
 {
-    public function __construct($message = '', $code = 0, Exception $previous = null)
-    {
-        parent::__construct($message, $code, $previous);
+	public function __construct($message = '', $code = 0, Exception $previous = null)
+	{
+		parent::__construct($message, $code, $previous);
 
-        TRuntimeException::$errors[] = $this->getMessage();
-    }
+		TRuntimeException::$errors[] = $this->getMessage();
+	}
 }
 
 ?>

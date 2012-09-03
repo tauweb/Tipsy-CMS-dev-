@@ -16,55 +16,56 @@ $doc->addStylesheet('template.css');
 <html>
 
 <head>
-    <?php echo $doc->charset;?>
-    <title><?php echo $doc->head_data["title"];?></title>
-    <?php $doc->setStylesheet('tipsy');?>
+	<?php echo $doc->charset;?>
+	<title><?php echo $doc->head_data["title"];?></title>
+	<?php $doc->setStylesheet('tipsy');?>
 </head>
 
 <body>
-    <header>
-        <h1>Домашняя страница проета Tipsy cms</h1>
-    </header>
+<header>
+	<h1>Домашняя страница проета Tipsy cms</h1>
+</header>
 
-    <div id="container">
-        <div id="errors">
-            <?php $doc->getErrors();?>
-        </div>
+<div id="container">
+	<div id="errors">
+		<?php $doc->getErrors();?>
+	</div>
 
-        <div id="menu_horisontal">
-            <a href="http://php.net">PHP</a>
-            <a href="http://w3.org">html5</a>
-            <a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Обновить исходники</a>
-            <a href="./tipsy_source.tar">Скачать Исходники</a>
-        </div>
+	<div id="menu_horisontal">
+		<a href="http://php.net">PHP</a>
+		<a href="http://w3.org">html5</a>
+		<a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Обновить исходники</a>
+		<a href="./tipsy_source.tar">Скачать Исходники</a>
+	</div>
 
-        <div id="left">
-            <?php $doc->getLeft(); ?>
-        </div>
+	<div id="left">
+		<?php $doc->getLeft(); ?>
+	</div>
 
-        <div id="section">
-            <div id="article">
-                <div id="article_name">
-                    <h1>Заголовок статьи</h1>
-                </div>
-                <?php echo $doc->content; ?>
-                <div id="article_footer">
-                    <h2>Footer статьи</h2>
-                </div>
-            </div>
-            <!-- Article -->
-        </div>
-        <!-- Section -->
+	<div id="section">
+		<div id="article">
+			<div id="article_name">
+				<h1>Заголовок статьи</h1>
+			</div>
+			<?php echo $doc->content; ?>
+			<div id="article_footer">
+				<h2>Footer статьи</h2>
+			</div>
+		</div>
+		<!-- Article -->
+	</div>
+	<!-- Section -->
 
-        <div id="right">
-            <h3>Aside</h3>
+	<div id="right">
+		<h3>Aside</h3>
 
-            <p>Some text</p>
-        </div>
-     </div> <!-- Conteiner -->
-      <div id="footer">
-          <p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
-      </div>
+		<p>Some text</p>
+	</div>
+</div>
+<!-- Conteiner -->
+<div id="footer">
+	<p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
+</div>
 </body>
 
 </html>

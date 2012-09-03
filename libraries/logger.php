@@ -7,33 +7,29 @@
  */
 class TLogger
 {
-    
-    public static function WriteLogs($message)
-    {
-        if(empty($message))
-        {
-            return false;
-        }
 
-        try
-        {
-            if(@!$logfile = fopen (_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a'))
+	public static function WriteLogs($message)
+	{
+		if (empty($message)) {
+			return false;
+		}
 
-            {
-                throw new TErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов');
-            }
+		try {
+			if (@!$logfile = fopen(_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a')) {
+				throw new TErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов');
+			}
 
-            $message = date('l jS \of F Y h:i:s A') . $message . "\n";
+			$message = date('l jS \of F Y h:i:s A') . $message . "\n";
 
-            fwrite($logfile, $message);
+			fwrite($logfile, $message);
 
-            fclose($logfile);
+			fclose($logfile);
 
 
-        }catch (TErrorException $e){
+		} catch (TErrorException $e) {
 
-        }
+		}
 
-        return true;
-    }
+		return true;
+	}
 }
