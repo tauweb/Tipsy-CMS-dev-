@@ -75,17 +75,6 @@ abstract class TLoader
         }
     }
 
-
-    /**
-     * Метод получения списка зарегистрированных классов и их путей.
-     *
-     * @return  array  Массив имен классов и путей к их файлам
-     */
-    public static function getClassList()
-    {
-        return self::$classes;
-    }
-
     /**
      * Метод проверки существавания класса в списке зарегистрированных
      *
@@ -134,7 +123,7 @@ abstract class TLoader
     public static function loadAll()
     {
         foreach (self::$classes as $class)
-            require_once $class;
+            self::load($class);
     }
 }
 
