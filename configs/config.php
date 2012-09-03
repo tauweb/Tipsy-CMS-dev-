@@ -6,7 +6,7 @@ defined('_TEXEC') or die;
 abstract class TConfig
 {
 	// Параметры подключения к базе данных
-//Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
+// Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
 	public static $db_type = 'mysqli';
 	public static $db_host = 'localhost';
 	public static $db_server_port = '';
