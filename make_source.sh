@@ -4,4 +4,3 @@
 #!/bin/bash
 date >./modern
 tar -c ./* > ./tipsy_source.tar
-
