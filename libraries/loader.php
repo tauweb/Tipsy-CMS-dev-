@@ -43,10 +43,19 @@ abstract class TLoader
 			// Только для загрузки php файлов.
 			// Note: DirectoryIterator::getExtension доступно только в PHP >= 5.3.6
 			if ($file->isFile() && $file->getExtension() == 'php') {
-				// Получаю имя класса с префиксом
-				$class = strtolower($classPrefix . $file->getBasename('.php'));
 
-				// Проверяю зарегистрирван ли класс в $classes
+				// Todo: Проверка на наличие префикса  "_" имени файла нужна только для разрабатываемых компонентов
+				// Если имя библиотеки клааса начинается с префикса "_" (находящийся в разработке).
+				if($fileName[0] == '_'){
+					$class = strtolower($file->getBasename('.php'));
+				}else{
+					// Получаю имя класса с префиксом Класса.
+					$class = strtolower($classPrefix . $file->getBasename('.php'));
+				}
+
+
+
+				// Проверяю зарегистрирван ли класс в $classes.
 				if (!in_array($class, self::$classes, true)) {
 					self::register($class, $file->getPath() . '/' . $fileName);
 				}
