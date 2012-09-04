@@ -13,10 +13,16 @@ class TSystem
 		self::getConfig();
 
 		self::setError_reporting();
+		
+		self::setTimeZone();
 
-		self::database_setup();
+		#self::database_setup();
 	}
-
+	
+	public function setTimeZone()
+	{
+		date_default_timezone_set(TConfig::$timezone);
+	}
 	/**
 	 * Метод подключения файлов конфигурации.
 	 *
