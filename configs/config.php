@@ -18,6 +18,9 @@ abstract class TConfig
 
 	// Ошибки и отладка (none, simple, maximum)
 	public static $error_reporting = 'maximum';
+	
+	// Настройки времени
+	public static $timezone = 'Europe/Moscow';
 
 	// Внешний вид
 	public static $template = 'tipsy';
