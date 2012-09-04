@@ -19,7 +19,7 @@ class TLogger
 				throw new TErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов');
 			}
 
-			$message = date('l jS \of F Y h:i:s A') . $message . "\n";
+			$message = date('l jS \of F Y h:i:s A') . "\t" . strip_tags($message) . "\n";
 
 			fwrite($logfile, $message);
 
