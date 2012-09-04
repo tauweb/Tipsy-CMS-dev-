@@ -154,7 +154,8 @@ class TDocument
 		$nav = [
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
-			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',
+			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a><p>',
+			'<a href="./logs/log.txt">Посмотреть логи</a>',
 		];
 
 		foreach ($nav as $val)
