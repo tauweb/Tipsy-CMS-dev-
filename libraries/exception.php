@@ -8,16 +8,15 @@ defined('_TEXEC') or die;
  */
 class TRuntimeException extends ErrorException
 {
-
 	public static $errors = array();
-
+	
 	/**
 	 * Конструктор
 	 *
-	 * Используется для установки всех необходимых свойств и методов объекта исключений
+	 * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
 	 *
-	 * @param  string  $message  Текст исключения
-	 * @param  int    $code
+	 * @param	string 	$message  Текст исключения
+	 * @param	int			$code
 	 *
 	 */
 	public function __construct($message = '', $code = 0, Exception $previous = null)
