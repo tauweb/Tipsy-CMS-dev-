@@ -8,17 +8,17 @@ defined('_TEXEC') or die;
 class TSystem
 {
 
+	/**
+	 * Конструктор, служит для автоматической загрузки некоторых системных настрок
+	 *
+	 */
 	public function __construct()
 	{
 		self::getConfig();
-
 		self::setError_reporting();
-		
 		self::setTimeZone();
-
-		#self::database_setup();
 	}
-	
+
 	public function setTimeZone()
 	{
 		date_default_timezone_set(TConfig::$timezone);
@@ -26,16 +26,18 @@ class TSystem
 	/**
 	 * Метод подключения файлов конфигурации.
 	 *
-	 * @return  true если конфигурация загружена, false если нет.
+	 * @return  true если конфигурация загружена и запись лога с сообщением о том что не найден файл
+	 *			конфигурации и прекращение выполнения сценария
 	 */
 	public static function getConfig()
 	{
-		// Поключаю конфигурацию системы
-		if (TLoader::load('TConfig')) {
+		// Подключаю конфигурацию системы
+		if (TLoader::load('TConfig'))
+		{
 			return true;
-		} else {
-			die('Не найден файл конфигурации');
-			return false;
+		}else{
+			TLogger::WriteLogs('Не найден файл конфигурации config.php');
+			die('Не найден файл конфигурации <b>config.php</b>');
 		}
 	}
 
@@ -44,7 +46,6 @@ class TSystem
 	 */
 	public static function setError_reporting()
 	{
-
 		// Устанавливаю уровень отчета об ошибках.
 		switch (TConfig::$error_reporting) {
 			// Не показывать ошибки
@@ -67,7 +68,5 @@ class TSystem
 				break;
 		}
 	}
-
 }
-
 ?>
