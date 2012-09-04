@@ -19,11 +19,7 @@ TLoader::discover('T', _TPATH_CONFIG);
 // Подключаю системный модуль.
 TLoader::load('TSystem');
 
-// Считывание конфигурации системы
-TSystem::getConfig();
-
-// Установки error_reporting() из файла конфигурации системы
-TSystem::setError_reporting();
+$System = new TSystem;
 
 // Загружаю класс работы с БД
 TLoader::load('TDatabase');
