@@ -8,8 +8,6 @@ $doc->getTemplate();
 
 // Добавляю таблицы стилей
 $doc->addStylesheet('template.css');
-#$doc->addStylesheet('tipsy.css');
-
 ?>
 
 <!DOCTYPE html>
@@ -18,32 +16,32 @@ $doc->addStylesheet('template.css');
 <head>
 	<?php echo $doc->charset;?>
 	<title><?php echo $doc->head_data["title"];?></title>
-	<?php $doc->setStylesheet('tipsy');?>
+	<?php $doc->setStylesheet('template.css');?>
 </head>
 
 <body>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
 </header>
+<div id="errors">
+	<p class="text-error"><?php $doc->getErrors();?></p>
+</div>
+
+<div id="menu_horisontal">
+	<a href="http://php.net">PHP</a>
+	<a href="http://w3.org">html5</a>
+	<a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Обновить исходники</a>
+	'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git"> Скачать или посмотреть исходники</a>'
+</div>
 
 <div id="container">
-	<div id="errors">
-		<?php $doc->getErrors();?>
-	</div>
 
-	<div id="menu_horisontal">
-		<a href="http://php.net">PHP</a>
-		<a href="http://w3.org">html5</a>
-		<a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Обновить исходники</a>
-		'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git"> Скачать или посмотреть исходники</a>'
-	</div>
-
-	<div id="left">
+	<nav>
 		<?php $doc->getLeft(); ?>
-	</div>
+	</nav>
 
-	<div id="section">
-		<div id="article">
+	<section>
+		<article>
 			<div id="article_name">
 				<h1>Заголовок статьи</h1>
 			</div>
@@ -51,18 +49,14 @@ $doc->addStylesheet('template.css');
 			<div id="article_footer">
 				<h2>Footer статьи</h2>
 			</div>
-		</div>
-		<!-- Article -->
-	</div>
+		</article>
+	</section>
 
-	<div id="right">
-		<p>Some text</p>
-	</div>
 </div>
 
-<div id="footer">
-	<p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman">Aleksey Tkachenko aka <b>WhiskeyMan</a></b></p>
-</div>
+<footer>
+	<p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
+</footer>
 </body>
 
 </html>
