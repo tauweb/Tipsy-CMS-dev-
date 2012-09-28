@@ -1,5 +1,5 @@
 <?php
-// Проверяю легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 /**
@@ -14,29 +14,41 @@ class TSystem
 	 */
 	public function __construct()
 	{
+		// Получает настройки конфигурации системы
 		self::getConfig();
+		// Определяет уровень отчета об ошибках.
 		self::setError_reporting();
+		// Временная зона системы.
 		self::setTimeZone();
+		// Определяет время жизни сессий.
+		self::getSession_lifetime();
 	}
-
+	
+	/**
+	 * Метод определяющий временную зону системы из файла настроек.
+	 *
+	 */
 	public function setTimeZone()
 	{
 		date_default_timezone_set(TConfig::$timezone);
 	}
+	
 	/**
 	 * Метод подключения файлов конфигурации.
 	 *
-	 * @return  true если конфигурация загружена и запись лога с сообщением о том что не найден файл
+	 * @return	boolean	true, если конфигурация загружена и запись лога с сообщением о том что не найден файл
 	 *			конфигурации и прекращение выполнения сценария
 	 */
 	public static function getConfig()
 	{
-		// Подключаю конфигурацию системы
+		// Подключает настройки системы
 		if (TLoader::load('TConfig'))
 		{
 			return true;
 		}else{
+			// Пишет сообщение в лог о ненайденном файле конфигурации.
 			TLogger::WriteLogs('Не найден файл конфигурации config.php');
+			// Завершает работу и выводитэсообщение.
 			die('Не найден файл конфигурации <b>config.php</b>');
 		}
 	}
@@ -46,7 +58,7 @@ class TSystem
 	 */
 	public static function setError_reporting()
 	{
-		// Устанавливаю уровень отчета об ошибках.
+		// Устанавливает уровень отчета об ошибках.
 		switch (TConfig::$error_reporting) {
 			// Не показывать ошибки
 			case 'none':
@@ -67,6 +79,15 @@ class TSystem
 				ini_set('display_errors', 1);
 				break;
 		}
+	}
+	
+	/**
+	 * Метод для установки времени жизни сессии из настроек.
+	 *
+	 */
+	public static function getSession_lifetime()
+	{
+		 session_set_cookie_params(TConfig::$Session_lifetime * 60);
 	}
 }
 ?>

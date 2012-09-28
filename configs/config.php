@@ -1,12 +1,12 @@
 <?php
-// Проверяю легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 // Параметры конфигурации системы
 abstract class TConfig
 {
 	// Параметры подключения к базе данных
-// Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
+	// Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
 	public static $db_type = 'mysqli';
 	public static $db_host = 'localhost';
 	public static $db_server_port = '';
@@ -24,6 +24,9 @@ abstract class TConfig
 
 	// Внешний вид
 	public static $template = 'tipsy';
+	
+	// Куки
+	public static $Session_lifetime = 15;
 }
 
 ?>

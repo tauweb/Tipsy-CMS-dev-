@@ -1,12 +1,26 @@
 <?php
+
+// Проверяет легален ли доступ к файлу.
+defined('_TEXEC') or die;
+
 /**
- * Created by JetBrains PhpStorm.
- * User: whiskeyman
- * Date: 30.08.12
- * Time: 16:08
- * To change this template use File | Settings | File Templates.
+ * 
  */
 class TSession
 {
-
+	public static function start($SessionName)
+	{
+		if (!empty($SessionName))
+		{
+			session_start();
+			
+			// Имя пользователя сесии
+			$_SESSION['name'] = $SessionName;
+			
+			// Количество посещений пользователя, общее или после чистки куки
+			empty($_SESSION['count'])
+					? $_SESSION['count'] = 1
+					: $_SESSION['count']++;
+		}
+	}
 }

@@ -1,5 +1,5 @@
 <?php
-// Проверяю легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 /**
@@ -8,6 +8,7 @@ defined('_TEXEC') or die;
  */
 class TRuntimeException extends ErrorException
 {
+	// Массив содержащий ошибки системы
 	public static $errors = array();
 	
 	/**
@@ -22,17 +23,18 @@ class TRuntimeException extends ErrorException
 	public function __construct($message = '', $code = 0, Exception $previous = null)
 	{
 		parent::__construct($message, $code, $previous);
-
+		
+		// Добовляет ошибку в список ошибок.
 		self::$errors[] = $this->getMessage();
-
+		
+		// Логирует ошибку
 		TLogger::WriteLogs($this->getMessage());
 	}
-
 }
 
 
 /**
- * Класс обработчика ошибок
+ * Класс обработчика ошибок которыенельзя логировать
  *
  */
 class TErrorException extends ErrorException

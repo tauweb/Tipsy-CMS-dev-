@@ -1,8 +1,14 @@
-article,aside,header,nav,section {display: block;}
+article,aside,header,nav,section {
+	display: block;
+}
 
-header, #errors, #menu_horisontal {
+#menu_horisontal {
 	text-align: center;
 	border-bottom: 1px solid #eeeeee;
+}
+
+header {
+	padding: 10px;
 }
 
 body {
@@ -19,6 +25,15 @@ a {
 	text-decoration: none;
 }
 
+#errors{
+	display: block;
+	border-top: 1px solid #eeeeee;
+}
+
+#menu_horisontal{
+	border-top: 1px solid #eeeeee;
+}
+
 a:hover {
 	color: #005580;
 	text-decoration: underline;
@@ -26,11 +41,12 @@ a:hover {
 
 .muted			{color: #999999;}
 .text-warning	{color: #c09853;}
-.text-error 	{color: #b94a48;}
+.text-error 	{color: #b94a48; padding: 0px; margin: 0px;}
 .text-info 		{color: #3a87ad;}
 .text-success	{color: #468847;}
 
 h1,h2,h3,h4,h5,h6 {
+	text-align: center;
 	margin: 10px 0;
 	font-family: inherit;
 	font-weight: bold;
@@ -39,15 +55,12 @@ h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizelegibility;
 }
 
-header {
-	padding-bottom: 9px;
-	margin: 20px 0 30px;
-}
-
 nav {
 	float: left;
-	width: 15%;
+	width: 10%;
 	border: 1px solid #eeeeee;
+	padding: 10px;
+	margin: 10px;
 }
 
 section{
@@ -59,4 +72,5 @@ footer{
 	border: 1px solid #eeeeee;
 	clear: both;
 	text-align: right;
+	padding-right: 10px;
 }

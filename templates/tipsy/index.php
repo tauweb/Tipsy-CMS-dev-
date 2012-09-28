@@ -1,12 +1,21 @@
 <?php
-// Проверяю легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-// Создаю объект генерирующий содержимое html
+TLoader::load('_Session');
+
+TSession::start('wm');
+
+echo $_SESSION['count'];
+
+// Создает объект генерирующий содержимое html
 $doc = new TDocument();
 $doc->getTemplate();
 
-// Добавляю таблицы стилей
+//Устанавливает кодировку страницы
+$doc->setCharset('utf-8');
+
+// Добавляет таблицы стилей
 $doc->addStylesheet('template.css');
 ?>
 

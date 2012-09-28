@@ -1,5 +1,5 @@
 <?php
-// Проверяю легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
 /**
@@ -8,17 +8,16 @@ defined('_TEXEC') or die();
  */
 class TDocument
 {
-
 	/**
-	 * Содержит сообщения об ошибках
+	 * Содержит сообщения об ошибках (из клааса обработки ошибок)
 	 */
 	public $errors = array();
 
 	/**
-	 * @var array Массив, содержит теги для html контейнера <head>
+	 * @var	array	Массив, содержит теги для html контейнера <head>
 	 *
 	 */
-	public $head_data = [ //Todo: После нормализации работы БД, переписать!
+	public $head_data = [ 												//Todo: После нормализации работы БД, переписать!
 		// Заголовок документа (html5)
 		// http://www.w3schools.com/html5/tag_title.asp
 		"title" => "Домашняя страница Tipsy CMS",
@@ -92,10 +91,12 @@ class TDocument
 
 		/* "command" => "", */
 	];
-
+	
+	// Массив, содержаший список подключаемых таблиц стилей html страницы.
 	public $stylesheet = array();
 
-	public $charset = '	<meta charset="utf-8" />';
+	// Кодеровка html страницы.
+	public $charset = '';
 
 	// Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
 	public $content = '
@@ -112,19 +113,30 @@ class TDocument
 	 */
 	public function __construct()
 	{
-		// Получаем список сообщений об ошибках и регистрируем его в объекте для последующего вывода на страницу html
+		// Получает список сообщений об ошибках и регистрирует его в объекте для последующего вывода на страницу html
 		$this->errors = TRuntimeException::$errors;
 
-		// Определяем и проверяем шаблон
+		// Определяет и проверяет шаблон
 		$this->getTemplate();
+	}
+	
+	/**
+	 * Метод устанавливающий кодировку страниц
+	 * @param	string		имя кодировки для установки
+	 */
+	public function setCharset($charset)
+	{
+		$this->charset = '<meta charset="' . $charset . '" />';
 	}
 
 	/**
-	 * Метод определяющий используемый шаблон
+	 * Метод определяющий используемый шаблон html страниц.
+	 * @return	bool	true, если удалось определить и подключить шаблоблон.
 	 *
 	 */
 	public function getTemplate()
 	{
+		// Путь к каталогу файлов шаблона.
 		$template = _TPATH_TEMPLATES . '/' . TConfig::$template;
 
 		if (file_exists($t = $template . '/' . 'index.php')) {
@@ -132,7 +144,8 @@ class TDocument
 		} else {
 			throw new TRuntimeException('Не найден index.php выбранного шаблона');
 		}
-		#return $this;
+		
+		return true;
 	}
 
 	/**
@@ -140,39 +153,51 @@ class TDocument
 	 *
 	 */
 	public function getErrors()
-	{
+	{	
+		// Проверяет наличие сообщений об ошибках.
 		if (!empty($this->errors)) {
+			// Построчно выводит все ошибки из массива на страницу html.
 			foreach ((array)$this->errors as $msg) {
 				echo $msg . "<p>";
 			}
 		}
 	}
-
-
+	
+	/**
+	 * Метод формирующий левую часть страницы (как правило меню или контейнер nav)
+	 *
+	 */
 	public function getLeft()
 	{
+		// Содержит контент блока nav		// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
-			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a><p>',
+			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',
 			'<a href="./logs/log.txt">Посмотреть логи</a>',
 		];
-
-		foreach ($nav as $val)
-			echo $val;
+		
+		// Формирует и выводит содержимое как список
+		echo '<ul>';
+		foreach ($nav as $val){
+			echo '<li>' . $val . '</li>';
+		}
+		echo '</ul>';
 	}
-
+	
+	/**
+	 * Метод регистрирующий новую таблицу стилей
+	 *
+	 * @param	string		$name	Имя подключаемой таблицы.
+	 */
 	public function addStylesheet($name)
 	{
-		$this->stylesheet[$name] = 'templates/tipsy/css/' . $name;
+		$this->stylesheet[$name] =  'templates/' . TConfig::$template . '/css/' . $name;
 	}
 
 	/**
-	 * Метод устанавливающий тег связи с внешним документом(<link>), например файлом со стилями
-	 * @param    $link
-	 * @param    $href
-	 * @param    $hreflang
-	 * @param
+	 * Метод устанавливающий тег связи с внешним документом(<link>), например файлом со стилями, и выводящий их на страницу
+	 * @param	string		$name	имя подключаем таблицы
 	 */
 	public function setStylesheet($name)
 	{
