@@ -17,6 +17,7 @@ $doc->setCharset('utf-8');
 
 // Добавляет таблицы стилей
 $doc->addStylesheet('template.css');
+TDatabase::select('article','articles');
 ?>
 
 <!DOCTYPE html>
@@ -25,10 +26,15 @@ $doc->addStylesheet('template.css');
 <head>
 	<?php echo $doc->charset;?>
 	<title><?php echo $doc->head_data["title"];?></title>
+	<link rel="icon" type="image/png" href="favicon.ico">
 	<?php $doc->setStylesheet('template.css');?>
 </head>
 
 <body>
+<div id = "debug" class = "text-success">
+	<b>DEBUG MESSAGE:</b>
+	<?php TDebug::GetMessages(); ?>
+</div>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
 </header>
