@@ -37,7 +37,7 @@ class TSystem
 	 * Метод подключения файлов конфигурации.
 	 *
 	 * @return	boolean	true, если конфигурация загружена и запись лога с сообщением о том что не найден файл
-	 *			конфигурации и прекращение выполнения сценария
+	 *							конфигурации и прекращение выполнения сценария
 	 */
 	public static function getConfig()
 	{
@@ -48,9 +48,28 @@ class TSystem
 		}else{
 			// Пишет сообщение в лог о ненайденном файле конфигурации.
 			TLogger::WriteLogs('Не найден файл конфигурации config.php');
-			// Завершает работу и выводитэсообщение.
+			// Завершает работу и выводит сообщение.
 			die('Не найден файл конфигурации <b>config.php</b>');
 		}
+	}
+	
+	/**
+	 * Метод формирования опций сервера с подключаемой БД в виде массива.
+	 *
+	 * @return	array	$DBOptions[host,username,password,dbname,port,socket]		Массив с параметрами БД
+	 */
+	public static function GetDBOptions()
+	{
+		$DBOptions = array(
+						"host" => TConfig::$db_host ,
+						"username" => TConfig::$db_user ,
+						"password" => TConfig::$db_password,
+						"dbname" =>TConfig::$db_dbname,
+						"port" => TConfig::$db_port,
+						"socket" => TConfig::$db_socket
+					);
+					
+		return $DBOptions;
 	}
 
 	/**
