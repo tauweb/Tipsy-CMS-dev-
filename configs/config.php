@@ -8,8 +8,8 @@ abstract class TConfig
 	// Параметры подключения к базе данных
 	// Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
 	public static $db_type = 'mysqli';
+	
 	public static $db_host = 'localhost';
-	public static $db_server_port = '';
 	public static $db_user = 'whiskeyman_tipsy';
 	public static $db_password = 'password';
 	public static $db_dbname = 'whiskeyman_tipsy';
