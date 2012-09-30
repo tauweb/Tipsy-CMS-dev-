@@ -21,13 +21,15 @@ TLoader::discover('T', _TPATH_CONFIG);
 TLoader::load('TSystem');
 $System = new TSystem;
 
+TLoader::load('_debug');
+
 // Загружает класс работы с БД
 TLoader::load('TDatabase');
 
-// Тестовая часть ---------------------------------------------------------------------------------------------------------
+// Устанавливает соединение с БД
+TDatabase::connect(TSystem::getDBOptions());
 
-// Тестовое соединение с БД
-TDatabase::connect(TConfig::$db_host, TConfig::$db_user, TConfig::$db_password, TConfig::$db_dbname, TConfig::$db_port, TConfig::$db_socket);
+// Тестовая часть ---------------------------------------------------------------------------------------------------------
 
 // Подключает ядро системы
 TLoader::load('TApplication');
