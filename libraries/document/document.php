@@ -203,7 +203,7 @@ class TDocument
 	{
 		if (!empty($this->stylesheet)) {
 			foreach ((array)$this->stylesheet as $stylesheet) {
-				echo '<link rel = "stylesheet" href=" ' . $stylesheet . ' ">';
+				echo '<link rel = "stylesheet" href="' . $stylesheet . ' ">';
 			}
 		}
 	}
