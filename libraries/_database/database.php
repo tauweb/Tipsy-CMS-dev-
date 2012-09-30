@@ -9,8 +9,11 @@ defined('_TEXEC') or die();
 
 abstract class TDatabase
 {
+
+	public static $driver = '';
+	
 	// Метод устанавливающий подключение к БД
-	public static function connect($db_host, $db_user, $db_password, $db_dbname, $db_port, $db_socket)
+	public static function connect($DBOptions)
 	{
 		// Определяет текущий драйвер БД из настроек
 		$driver = strtolower('T' . TConfig::$db_type);
@@ -19,17 +22,25 @@ abstract class TDatabase
 		TLoader::load($driver);
 		
 		// Создает объект БД
-		$Database = new $driver($db_host, $db_user, $db_password, $db_dbname, $db_port, $db_socket);
+		$DBDriver = new $driver($DBOptions);
+		
+		self::$driver = $DBDriver;
 	}
 	
 	/**
 	 * Метод формирмирующий строку запроса выборки (SELECT) из БД.
-	 * @param	string		$FieldName
+	 * @param	string		$select_expr
+	 * @param	string		$table_references
 	 *
 	 */
-	public static function select($TableName, $FieldName)
+	public static function select($select_expr , $table_references )
 	{
-		$queryStr = 'SELECT' . $FieldName . 'FROM' . $TableName;
+		$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
+		TDebug::$messages[] =  $QueryStr .'<p>';
+		
+		$driver = self::$driver;
+		
+		$res =	$driver->query($QueryStr)  ;
 	}
 }
 
