@@ -11,26 +11,18 @@ class TMysqli extends mysqli
 	/**
 	 * Конструктор. устанавливает соединения с БД
 	 *
-	 * @param	string		$db_type			Этот параметр задает тип базы данных (mysql, mysqli или др.)
-	 * @param	string		$db_server		Адрес сервера базы данных (localhost или другой)
-	 * @param	string		$db_user			Имя пользователя БД
-	 * @param	string		$db_password	Пароль пользователя БД
-	 * @param	string		$db_dbname	Имя БД для подклюёения
-	 * @param	integer	$db_port			Порт подключения к Дб
-	 * @param	string		$db_socket
-	 *
-	 * @return	string		$db_connect		Соединение с БД
+	 * @param	array		$DBOptions		Массив содержащий host, username, password, dbame, port, socket базы данных к которой подключается
 	 *
 	 */
-	public function __construct($db_host, $db_user, $db_password, $db_dbname, $db_port, $db_socket)
+	public function __construct($DBOptions)
 	{
 		try {
-			if (empty($db_dbname)) {
+			if (empty($DBOptions["dbname"])) {
 				throw new TRuntimeException("<b>Ошибка соединения с базой данных:</b> Не указано имя базы данных");
 			}
 
 			// Вызывает конструктор родителя (класс mysqli)
-			@$this->connection = parent::__construct($db_host, $db_user, $db_password, $db_dbname, $db_port, $db_socket);
+			@$this->connection = parent::__construct($DBOptions);
 			
 			// Бросает исключение если возникла ошибка при подключении к БД.
 			if ($this->connect_errno) {
@@ -40,6 +32,10 @@ class TMysqli extends mysqli
 		}
 	}
 
+	public function query($QueryStr)
+	{
+	
+	}
 }
 
 ?>
