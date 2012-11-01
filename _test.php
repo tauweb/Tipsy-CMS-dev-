@@ -13,6 +13,4 @@ $con = new mysqli('localhost', 'whiskeyman_tipsy', 'password', 'whiskeyman_tipsy
 		var_dump($res);
 		while($row=mysql_fetch_array($res))
 			echo $row;
-
-
 ?>

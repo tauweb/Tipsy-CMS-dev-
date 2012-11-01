@@ -8,7 +8,16 @@ defined('_TEXEC') or die;
  *
  */
 class TApplication
-{	
+{
+//Тестовая часть библиотеки
+
+public static $Errors = array();
+
+public static $DebugMessages = array();
+
+//=========
+	
+	
 	/**
 	 * Метод запускающий формирование страцы
 	 *

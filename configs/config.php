@@ -18,6 +18,8 @@ abstract class TConfig
 
 	// Ошибки и отладка (none, simple, maximum)
 	public static $error_reporting = 'maximum';
+	// Отладка системы (1 - да, 0 - нет)
+	public static $debug = 1;
 	
 	// Настройки времени
 	public static $timezone = 'Europe/Moscow';

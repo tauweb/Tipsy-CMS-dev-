@@ -25,7 +25,7 @@ abstract class TLoader
 	 * @param	boolean	$recurse			Рекурсивный поиск библиотек (для автоматической регистрации всех существующих классов).
 	 *
 	 */
-	public static function discover($classPrefix = 'T', $parentPath, $recurse = false)
+	public static function discover($classPrefix = 'T', $parentPath = _TPATH_LIBRARIES , $recurse = false)
 	{
 		if ($recurse) {
 			$iterator = new RecursiveIteratorIterator(

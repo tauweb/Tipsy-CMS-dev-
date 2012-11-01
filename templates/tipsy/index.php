@@ -2,22 +2,26 @@
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
+// Сессия (тест)
 TLoader::load('_Session');
-
 TSession::start('wm');
-
-echo $_SESSION['count'];
+TDebug::AddMessage("Количество визитов за сессию: " . $_SESSION['count']);
 
 // Создает объект генерирующий содержимое html
 $doc = new TDocument();
+
+// Задает шаблон
 $doc->getTemplate();
 
 //Устанавливает кодировку страницы
 $doc->setCharset('utf-8');
 
-// Добавляет таблицы стилей
+// Добавляет таблицы стилей.
 $doc->addStylesheet('template.css');
-TDatabase::select('article','articles');
+
+// Тестовая выборка из БД
+TLoader::load('TQuery');
+TQuery::select('all','articles');
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +32,13 @@ TDatabase::select('article','articles');
 	<title><?php echo $doc->head_data["title"];?></title>
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<?php $doc->setStylesheet('template.css');?>
+
 </head>
 
 <body>
+<?php echo $doc->ya;?>
 <div id = "debug" class = "text-success">
-	<b>DEBUG MESSAGE:</b>
+	<b>DEBUG MESSAGE: <HR></b>
 	<?php TDebug::GetMessages(); ?>
 </div>
 <header>

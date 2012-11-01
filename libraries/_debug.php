@@ -1,19 +1,32 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
- * User: whiskeyman
- * Date: 30.09.12
- * Time: 22:35
- * To change this template use File | Settings | File Templates.
+ * Класс отладки системы и вывода отладочной информации.
+ *
  */
 abstract class TDebug
 {
+	/**
+	 * @var	array	Контейнер содержащий отладочные сообщения.
+	 */
 	public static $messages = array();
-
+	
+	/**
+	 * Метод добавляющий сообщения отладки в контейнер сообщений.
+	 * @var	$message	Сообщение отладочной информации для добавления.
+	 * @var	$from		Имя метода, из которого пришло сообщение
+	 *
+	 */
+	public static function AddMessage($message, $from = '')
+	{
+		self::$messages[] = '<font color ="red">' . $from . '    </font>' . $message . '<p>';
+	}
+	
+	/**
+	 *	Метод выводящий отладочные сообщения системы на страницу html.
+	 */
 	public static function GetMessages()
 	{
 		foreach (self::$messages as $DebugMessages)
 			echo $DebugMessages;
-		var_dump(self::$messages);
 	}
 }
