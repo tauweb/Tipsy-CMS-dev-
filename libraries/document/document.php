@@ -11,11 +11,10 @@ class TDocument
 	/**
 	 * Содержит сообщения об ошибках (из клааса обработки ошибок)
 	 */
-	public $errors = array();
+	#public $errors = array();
 
 	/**
 	 * @var	array	Массив, содержит теги для html контейнера <head>
-	 *
 	 */
 	public $head_data = [ 												//Todo: После нормализации работы БД, переписать!
 		// Заголовок документа (html5)
@@ -98,31 +97,6 @@ class TDocument
 	// Кодеровка html страницы.
 	public $charset = '';
 
-	public $ya = '<!-- Yandex.Metrika counter -->
-				<script type="text/javascript">
-				(function (d, w, c) {
-					(w[c] = w[c] || []).push(function() {
-						try {
-							w.yaCounter17921878 = new Ya.Metrika({id:17921878, enableAll: true, webvisor:true});
-						} catch(e) { }
-					});
-
-					var n = d.getElementsByTagName("script")[0],
-						s = d.createElement("script"),
-						f = function () { n.parentNode.insertBefore(s, n); };
-					s.type = "text/javascript";
-					s.async = true;
-					s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-					if (w.opera == "[object Opera]") {
-						d.addEventListener("DOMContentLoaded", f);
-					} else { f(); }
-				})(document, window, "yandex_metrika_callbacks");
-				</script>
-				<noscript><div><img src="//mc.yandex.ru/watch/17921878" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-				<!-- /Yandex.Metrika counter -->';
-
-
 	// Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
 	public $content = '
         <p>Tipsy cms находится в начальной стадии разработки. Так как она пишется практически вся на коленках в метро,
@@ -139,7 +113,7 @@ class TDocument
 	public function __construct()
 	{
 		// Получает список сообщений об ошибках и регистрирует его в объекте для последующего вывода на страницу html
-		$this->errors = TRuntimeException::$errors;
+		#$this->errors = TRuntimeException::$errors;
 
 		// Определяет и проверяет шаблон
 		$this->getTemplate();
@@ -315,7 +289,6 @@ class TDocument
 		];
 
 	}
-
 }
 
 ?>

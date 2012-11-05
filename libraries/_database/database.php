@@ -23,9 +23,8 @@ abstract class TDatabase
 		TLoader::load($DBDriver);
 		
 		// Создает объект БД, исеользуя заданный драйвер.
-		$DBDriver = new $DBDriver($DBOptions);
-		
-		self::$DBDriver = $DBDriver;
+		self::$DBDriver = new $DBDriver($DBOptions);
+
 	}
 }
 

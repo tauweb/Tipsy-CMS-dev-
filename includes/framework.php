@@ -8,7 +8,7 @@ require_once _TPATH_LIBRARIES . DIRECTORY_SEPARATOR . 'loader.php';
 // Сканирует директорию с библиотеками на наличие библиотек классов, рекурсивно.
 TLoader::discover('T', _TPATH_LIBRARIES, 'true');
 
-// Еодключает компонент логирования.
+// Подключает компонент логирования.
 TLoader::load('TLogger');
 
 // Подключает обработчик исключений.
@@ -21,6 +21,7 @@ TLoader::discover('T', _TPATH_CONFIG);
 TLoader::load('TSystem');
 $System = new TSystem;
 
+// Подключает модуль отладки системы.
 TLoader::load('_debug');
 
 // Загружает класс работы с БД
@@ -37,5 +38,4 @@ TLoader::load('TApplication');
 // Создает объект приложения
 $app = new TApplication();
 $app->Run();
-#TApplication::run();
 ?>

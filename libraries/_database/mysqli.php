@@ -31,11 +31,5 @@ class TMysqli extends mysqli
 		} catch (TRuntimeException $e) {
 		}
 	}
-
-	public function query($QueryStr)
-	{
-	
-	}
 }
-
 ?>

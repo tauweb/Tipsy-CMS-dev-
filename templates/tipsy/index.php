@@ -21,7 +21,7 @@ $doc->addStylesheet('template.css');
 
 // Тестовая выборка из БД
 TLoader::load('TQuery');
-TQuery::select('all','articles');
+TQuery::select('*','articles');
 ?>
 
 <!DOCTYPE html>
@@ -32,11 +32,9 @@ TQuery::select('all','articles');
 	<title><?php echo $doc->head_data["title"];?></title>
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<?php $doc->setStylesheet('template.css');?>
-
 </head>
 
 <body>
-<?php echo $doc->ya;?>
 <div id = "debug" class = "text-success">
 	<b>DEBUG MESSAGE: <HR></b>
 	<?php TDebug::GetMessages(); ?>
