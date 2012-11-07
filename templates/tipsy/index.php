@@ -4,8 +4,7 @@ defined('_TEXEC') or die();
 
 // Сессия (тест)
 TLoader::load('_Session');
-TSession::start('wm');
-TDebug::AddMessage("Количество визитов за сессию: " . $_SESSION['count']);
+TSession::start('test_session');
 
 // Создает объект генерирующий содержимое html
 $doc = new TDocument();

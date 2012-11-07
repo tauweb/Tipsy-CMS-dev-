@@ -12,6 +12,7 @@ class TSession
 	{
 		if (!empty($SessionName))
 		{
+			// Запускает сессию
 			session_start();
 			
 			// Имя пользователя сесии
@@ -22,5 +23,7 @@ class TSession
 					? $_SESSION['count'] = 1
 					: $_SESSION['count']++;
 		}
+		// Добавляет сообщение в сообщения отладки системы
+		TDebug::AddMessage("Страница показана <b>" . $_SESSION['count'] . "</b> раз за время сессии");
 	}
 }
