@@ -56,7 +56,7 @@ class TSystem
 	/**
 	 * Метод формирования опций сервера с подключаемой БД в виде массива.
 	 *
-	 * @return	array	$DBOptions[host,username,password,dbname,port,socket]		Массив с параметрами БД
+	 * @return	array	$DBOptions[host,username,password,dbname,port,socket]	Массив с параметрами БД
 	 */
 	public static function GetDBOptions()
 	{

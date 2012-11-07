@@ -4,10 +4,6 @@
  */
 class TQuery
 {
-	public function __construct()
-	{
-		!empty(TDatabase::$DBDriver) ? TDatabase::connect(TSystem::GetDBOptions()) : ' ';
-	}
 	
 	 /**
 	 * Метод формирмирующий строку запроса выборки (SELECT) из БД.
@@ -17,18 +13,18 @@ class TQuery
 	 */
 	public static function select($select_expr, $table_references)
 	{
-		#$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
-				$QueryStr = 'SELECT * FROM articles';
-		
+		$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
+
 		// Отладка строки запроса
 		TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
-		$QueryRes = TDatabase::$DBDriver->query($QueryStr);
+
+		$QueryRes = TDatabase::$DBH->query($QueryStr);
 		
 		//Отладочная часть
 		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
 
-		#$num_result = $QueryRes->num_rows;
-		
-		#echo 'найдено строк:'. $num_result;
+		$num_result = $QueryRes->rowCount();
+
+		echo 'найдено строк:'. $num_result;
 	}
 }

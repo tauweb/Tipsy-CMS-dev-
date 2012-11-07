@@ -11,22 +11,26 @@ abstract class TDatabase
 	/**
 	 * @var	string	Имя драйвера БД заданного в настройках системы.
 	 */
-	public static $DBDriver = '';
+	public static $DBH = '';
 	
-	// Метод устанавливающий подключение к БД
+	/**
+	 * Метод устанавливающий подключение к БД.
+	 * @param	array	$DBOptions	массив содержащий параметры подключения к базе данных.
+	 */
 	public static function connect($DBOptions)
 	{
-		// Определяет текущий драйвер БД из настроек
-		$DBDriver = strtolower('T' . TConfig::$db_type);
-		
-		// Загружает библиотеку драйвера текущей БД
-		TLoader::load($DBDriver);
+		// Определяет тип БД указанной в настройках системы ( для испольования в DBO )
+		$DBDriver = strtolower(TConfig::$db_type);
 
-		self::$DBDriver = $DBDriver;
+		// Формирует строку DNS, имя источника данных или DSN, содержащее информацию, необходимую для подключения к базе данных.
+		$dns = $DBDriver . ':'. 'host=' . $DBOptions['host'].';' . 'dbname=' . $DBOptions['dbname'];
 
-		// Создает объект БД, исеользуя заданный драйвер.
-		self::$DBDriver = new $DBDriver($DBOptions);
-
+		try {
+			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage();
+		}
 	}
 }
 

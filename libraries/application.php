@@ -22,6 +22,7 @@ public static $Errors = array();
  * @var	array
  */
 public static $DebugMessages = array();
+
 	/**
 	 * Метод запускающий формирование страцы
 	 *
