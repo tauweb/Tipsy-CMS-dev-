@@ -6,10 +6,9 @@ defined('_TEXEC') or die;
 abstract class TConfig
 {
 	// Параметры подключения к базе данных
-	// Todo: Правильная база whiskeyman_tipsy, параметры базы данных изменены на неверные для проверки модулей логирования и исключения
 	public static $db_type = 'mysql';
 	
-	public static $db_host = 'localhost';
+	public static $db_host = '127.0.0.1';
 	public static $db_user = 'whiskeyman_tipsy';
 	public static $db_password = 'password';
 	public static $db_dbname = 'whiskeyman_tipsy';

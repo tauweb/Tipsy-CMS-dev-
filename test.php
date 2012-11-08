@@ -4,13 +4,20 @@
  * Date: 04.09.12
  *
  */
-$con = new mysqli('localhost', 'whiskeyman_tipsy', 'password', 'whiskeyman_tipsy');
+class TCheckSys{
 
-		$QueryStr = 'SELECT * FROM articles;' ;
+	public static $PDOSupDrv = '';
+	
+	public static $PHPVer = '';
+	
+	public static function check()
+	{
+		self::$PDOSupDrv = PDO::getSupportedDrivers();
+		self::$PHPVer = phpversion();
 		
-		$res = $con->query($QueryStr);
-
-$num_result = $res->num_rows;
-
-echo 'найдено строк:'. $num_result;
+		var_dupm(self);
+	}
+	
+	
+}
 ?>

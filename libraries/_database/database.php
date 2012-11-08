@@ -23,7 +23,7 @@ abstract class TDatabase
 		$DBDriver = strtolower(TConfig::$db_type);
 
 		// Формирует строку DNS, имя источника данных или DSN, содержащее информацию, необходимую для подключения к базе данных.
-		$dns = $DBDriver . ':'. 'host=' . $DBOptions['host'].';' . 'dbname=' . $DBOptions['dbname'];
+		$dns = $DBDriver . ':'. 'dbname=' . $DBOptions['dbname'] . ';' . 'host=' . $DBOptions['host'];
 
 		try {
 			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
