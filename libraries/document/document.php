@@ -114,7 +114,8 @@ class TDocument
 	{
 		// Получает список сообщений об ошибках и регистрирует его в объекте для последующего вывода на страницу html
 		#$this->errors = TRuntimeException::$errors;
-
+		$QuerySrt = "SELECT `fulltext`FROM `whiskeyman_tipsy`.`articles` where articleid = 1;";
+		$this->content = TDatabase::$DBH->query($QuerySrt);
 		// Определяет и проверяет шаблон
 		$this->getTemplate();
 	}

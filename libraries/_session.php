@@ -10,7 +10,7 @@ class TSession
 {
 	public static function start($SessionName)
 	{
-		if (!empty($SessionName))
+		if (!empty($SessionName) && !isset($_SESSION['$SessionName']))
 		{
 			// Запускает сессию
 			session_start();
@@ -24,6 +24,7 @@ class TSession
 					: $_SESSION['count']++;
 		}
 		// Добавляет сообщение в сообщения отладки системы
-		TDebug::AddMessage("Страница показана <b>" . $_SESSION['count'] . "</b> раз за время сессии");
+		TDebug::AddMessage("Страница показана <b>" . $_SESSION['count'] .
+			"</b> раз за время сессии" . ' (' .TConfig::$Session_lifetime . ' мин)');
 	}
 }

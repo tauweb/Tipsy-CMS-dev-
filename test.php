@@ -4,7 +4,7 @@
  * Date: 04.09.12
  *
  */
-class TCheckSys{
+class TCheckSystem{
 
 	public static $PDOSupDrv = '';
 	
@@ -14,8 +14,6 @@ class TCheckSys{
 	{
 		self::$PDOSupDrv = PDO::getSupportedDrivers();
 		self::$PHPVer = phpversion();
-		
-		var_dupm(self);
 	}
 	
 	

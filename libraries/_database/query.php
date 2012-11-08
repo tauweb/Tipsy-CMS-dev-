@@ -7,7 +7,14 @@ defined('_TEXEC') or die;
  */
 class TQuery
 {
-	
+	public static function query($QueryStr)
+	{
+
+		$QueryRes = TDatabase::$DBH->query($QueryStr);
+
+		$num_result = $QueryRes->rowCount();
+	}
+
 	 /**
 	 * Метод формирмирующий строку запроса выборки (SELECT) из БД.
 	 * @param	string	$select_expr
@@ -19,15 +26,16 @@ class TQuery
 		$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
 
 		// Отладка строки запроса
-		TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
+		#TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
 
 		$QueryRes = TDatabase::$DBH->query($QueryStr);
-		
-		//Отладочная часть
-		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
 
 		$num_result = $QueryRes->rowCount();
 
-		echo 'найдено строк:'. $num_result;
+		// Отладка. Количество найдетнных строк соответствующих запросу
+		TDebug::AddMessage('найдено строк:'. $num_result, __METHOD__);
+
+		//Отладочная часть
+		#TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
 	}
 }
