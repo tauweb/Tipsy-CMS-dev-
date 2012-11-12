@@ -7,8 +7,8 @@ abstract class TConfig
 {
 	// Параметры подключения к базе данных
 	public static $db_type = 'mysql';
-	
-	public static $db_host = 'localhost';
+
+	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
 	public static $db_user = 'whiskeyman_tipsy';
 	public static $db_password = 'password';
 	public static $db_dbname = 'whiskeyman_tipsy';
