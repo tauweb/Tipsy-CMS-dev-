@@ -3,14 +3,14 @@
 defined('_TEXEC') or die;
 
 /**
- * 
+ * Тестовая библиотека запросов к БД через PDO
  */
-class TQuery
+abstract class TQuery
 {
 	public static function query($QueryStr)
 	{
 
-		$QueryRes = TDatabase::$DBH->query($QueryStr);
+		$QueryRes = TDatabase::$DBH->prepare($QueryStr);
 
 		$num_result = $QueryRes->rowCount();
 	}

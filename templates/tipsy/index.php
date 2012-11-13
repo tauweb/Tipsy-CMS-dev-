@@ -18,9 +18,6 @@ $doc->setCharset('utf-8');
 // Добавляет таблицы стилей.
 $doc->addStylesheet('template.css');
 
-// Тестовая выборка из БД
-TLoader::load('TQuery');
-TQuery::select('*','articles');
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +33,9 @@ TQuery::select('*','articles');
 <body>
 <div id = "debug" class = "text-success">
 	<b>DEBUG MESSAGE: <HR></b>
-	<?php TDebug::GetMessages(); ?>
+	<?php #TDebug::GetMessages();
+			position 
+	?>
 </div>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
@@ -63,7 +62,7 @@ TQuery::select('*','articles');
 			<div id="article_name">
 				<h1>Заголовок статьи</h1>
 			</div>
-			<?php echo $doc->content; ?>
+				<?php echo $doc->content; ?>
 			<div id="article_footer">
 				<h2>Footer статьи</h2>
 			</div>

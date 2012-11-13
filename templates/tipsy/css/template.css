@@ -10,7 +10,10 @@ article,aside,header,nav,section {
 header {
 	padding: 10px;
 }
-
+ ul, li {
+	 padding: 0px;
+	 margin: 2px;
+ }
 body {
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -58,6 +61,7 @@ h1,h2,h3,h4,h5,h6 {
 nav {
 	float: left;
 	width: 10%;
+	min-width: 100px;
 	border: 1px solid #eeeeee;
 	padding: 1px;
 	margin: 1px;
@@ -66,6 +70,7 @@ nav {
 section{
 	float: left;
 	width: 84.6%;
+	margin: 10px;
 }
 
 footer{

@@ -95,17 +95,10 @@ class TDocument
 	public $stylesheet = array();
 
 	// Кодеровка html страницы.
-	public $charset = '';
+	public $charset = 'utf-8';
 
 	// Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
-	public $content = '
-        <p>Tipsy cms находится в начальной стадии разработки. Так как она пишется практически вся на коленках в метро,
-        параллельно изучению php, mySQL, html и css, сроки ее завершения совершенно не определены :)</p>
-        <p>
-        Сайт создан для отлаживания исходников, когда я их пишу, например, в метро, когда другой возможности протестить
-        работоспособность нет. А исходя из того, что, в основном, написание происходит в дороге с мобильного девайса,
-        сиё творение будет чаще не работать, чем работать. ;)
-        </p>Для работы Tipsy CMS требуется php версии не ниже 5.4, html5 и css3';
+	public $content = 'Если вы видите этот текст, значит статьи не гтузятся из БД';
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
@@ -113,9 +106,17 @@ class TDocument
 	public function __construct()
 	{
 		// Получает список сообщений об ошибках и регистрирует его в объекте для последующего вывода на страницу html
-		#$this->errors = TRuntimeException::$errors;
+		$this->errors = TRuntimeException::$errors;
+
+		// тестовая часть
 		$QuerySrt = "SELECT `fulltext`FROM `whiskeyman_tipsy`.`articles` where articleid = 1;";
+
 		$this->content = TDatabase::$DBH->query($QuerySrt);
+
+		foreach($this->content as $key){
+			$this->content = $key['fulltext'];
+		}
+
 		// Определяет и проверяет шаблон
 		$this->getTemplate();
 	}

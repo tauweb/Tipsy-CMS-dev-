@@ -9,7 +9,7 @@ defined('_TEXEC') or die();
 abstract class TDatabase
 {
 	/**
-	 * @var	string	Имя драйвера БД заданного в настройках системы.
+	 * @var	string	DataBaseHandler содержит в себе .
 	 */
 	public static $DBH = '';
 	

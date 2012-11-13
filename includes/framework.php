@@ -24,13 +24,10 @@ $System = new TSystem;
 // Подключает модуль отладки системы.
 TLoader::load('_debug');
 
-// Загружает класс работы с БД
-TLoader::load('TDatabase');
-
-// Устанавливает соединение с БД
-TDatabase::connect(TSystem::getDBOptions());
 
 // Тестовая часть ---------------------------------------------------------------------------------------------------------
+
+#TLoader::load('TQuery');
 
 // Подключает ядро системы
 TLoader::load('TApplication');

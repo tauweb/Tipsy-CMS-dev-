@@ -7,7 +7,6 @@ defined('_TEXEC') or die;
  */
 class TSystem
 {
-
 	/**
 	 * Конструктор, служит для автоматической загрузки некоторых системных настрок
 	 *
@@ -22,6 +21,11 @@ class TSystem
 		self::setTimeZone();
 		// Определяет время жизни сессий.
 		self::getSession_lifetime();
+
+		// Загружает класс работы с БД
+		TLoader::load('TDatabase');
+		// Устанавливает соединение с БД
+		TDatabase::connect(TSystem::getDBOptions());
 	}
 	
 	/**

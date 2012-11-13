@@ -9,8 +9,6 @@ defined('_TEXEC') or die;
  */
 class TApplication
 {
-//Тестовая часть библиотеки
-
 /**
  *Контейнер содержащий ошибки системы.
  * @var	attay
