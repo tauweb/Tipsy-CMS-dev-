@@ -24,9 +24,9 @@ abstract class TQuery
 	public static function select($select_expr, $table_references)
 	{
 		$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
-
+		
 		// Отладка строки запроса
-		#TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
+		TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
 
 		$QueryRes = TDatabase::$DBH->query($QueryStr);
 
@@ -36,6 +36,6 @@ abstract class TQuery
 		TDebug::AddMessage('найдено строк:'. $num_result, __METHOD__);
 
 		//Отладочная часть
-		#TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
+		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
 	}
 }

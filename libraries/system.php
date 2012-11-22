@@ -13,7 +13,7 @@ class TSystem
 	 */
 	public function __construct()
 	{
-		// Получает настройки конфигурации системы
+		// Получает настройки конфигурации системы.
 		self::getConfig();
 		// Определяет уровень отчета об ошибках.
 		self::setError_reporting();
@@ -21,11 +21,6 @@ class TSystem
 		self::setTimeZone();
 		// Определяет время жизни сессий.
 		self::getSession_lifetime();
-
-		// Загружает класс работы с БД
-		TLoader::load('TDatabase');
-		// Устанавливает соединение с БД
-		TDatabase::connect(TSystem::getDBOptions());
 	}
 	
 	/**

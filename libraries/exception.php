@@ -3,14 +3,30 @@
 defined('_TEXEC') or die;
 
 /**
+ * Класс работы с ошибками.
+ */
+abstract class TErrors
+{
+	/**
+	 * @var	array	Массив содержащий ошибки системы.
+	 */
+	protected static $errors = array();
+	
+	public static function getErrors()
+	{
+		foreach(self::$errors as $error){
+			echo $error;
+		}
+		
+	}
+}
+
+/**
  * Класс обработчика исключений во время работы
  *
  */
 class TRuntimeException extends ErrorException
 {
-	// Массив содержащий ошибки системы
-	public static $errors = array();
-	
 	/**
 	 * Конструктор
 	 *
@@ -25,7 +41,7 @@ class TRuntimeException extends ErrorException
 		parent::__construct($message, $code, $previous);
 		
 		// Добовляет ошибку в список ошибок.
-		self::$errors[] = $this->getMessage();
+		TErrors::$errors[] = $this->getMessage();
 		
 		// Логирует ошибку
 		TLogger::WriteLogs($this->getMessage());
@@ -34,7 +50,7 @@ class TRuntimeException extends ErrorException
 
 
 /**
- * Класс обработчика ошибок которыенельзя логировать
+ * Класс обработчика ошибок которые нельзя логировать.
  *
  */
 class TErrorException extends ErrorException

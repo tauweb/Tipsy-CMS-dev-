@@ -12,6 +12,7 @@ class TSession
 	{
 		if (!empty($SessionName) && !isset($_SESSION['$SessionName']))
 		{
+
 			// Запускает сессию
 			session_start();
 			
