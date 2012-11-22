@@ -109,10 +109,10 @@ abstract class THead{
 		foreach(get_class_vars(__CLASS__) as $tag){
 			if( is_array($tag) and !empty($tag) ){
 				foreach($tag as $subTag){
-					echo $subTag . '<p>';
+					echo $subTag . "\n";
 				}
 			}elseif(!empty($tag)){
-				echo $tag .'<p>';
+				echo $tag ."\n";
 			}
 		}
 	}

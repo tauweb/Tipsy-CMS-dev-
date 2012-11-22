@@ -12,7 +12,8 @@ class TDocument
 	public $template = '';
 
 	// Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
-	public $content = 'Если вы видите этот текст, значит статьи не гтузятся из БД';
+	public $content = 'Это контент поумолчанию. Если вы видите этот текст - это значит, что скорее всего, статьи не гтузятся из БД
+	                    или нет активных статей';
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
@@ -21,6 +22,7 @@ class TDocument
 	{
 		// Определяет и подключает шаблон
 		$this->getTemplate();
+		$this->getContent();
 	}
 	
 	/**
@@ -42,15 +44,6 @@ class TDocument
 	   THead::addStylesheet($name);
 	}
 
-	/**
-	 * Метод устанавливающий тег связи с внешним документом(<link>), например файлом со стилями, и выводящий их на страницу
-	 * @param	string		$name	имя подключаем таблицы
-	 */
-	public function setStylesheets($name = '')
-	{
-		THead::getStylesheets($name);
-	}
-	
 	public function getHead()
 	{
 		THead::getHead();
@@ -106,6 +99,13 @@ class TDocument
 	public function getDebugMsg()
 	{
 		TDebug::getDebugMsg();
+	}
+
+	public function getContent()
+	{
+		TLoader::load('TContent');
+		TContent::getContent();
+
 	}
 
 }

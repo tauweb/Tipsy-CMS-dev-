@@ -2,13 +2,13 @@
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-class TContent{
+abstract class TContent{
 
 	public $content = null;
 	
-	public function _construct()
+	public static function getContent()
 	{
-		$this->content = 
+
 	}
 
 }
