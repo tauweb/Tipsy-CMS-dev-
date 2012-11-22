@@ -29,11 +29,12 @@ abstract class TDebug
 	{
 		if(!empty(self::$messages))
 		{
-			echo '<b>DEBUG MESSAGE: <HR></b>';
+			echo '<b>DEBUG MESSAGE: </b>';
 			
 			foreach (self::$messages as $DebugMessages) {
 				echo $DebugMessages;
 			}
+			echo '<HR>';
 		}
 	}
 }
