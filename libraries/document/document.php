@@ -2,7 +2,7 @@
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-TLoader::load('_head');
+TLoader::load('THead');
 /**
  * Класс формирования данных для html страницы
  *
