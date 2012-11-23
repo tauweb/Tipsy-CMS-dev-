@@ -10,7 +10,7 @@ abstract class TErrors
 	/**
 	 * @var	array	Массив содержащий ошибки системы.
 	 */
-	protected static $errors = array();
+	public static $errors = array();
 	
 	public static function getErrors()
 	{
@@ -48,6 +48,28 @@ class TRuntimeException extends ErrorException
 	}
 }
 
+class TPDOException extends  PDOException
+{
+    /**
+     * Конструктор
+     *
+     * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
+     *
+     * @param	string 	$message  Текст исключения
+     * @param	int			$code
+     *
+     */
+    public function __construct($message = '', $code = 0, Exception $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+
+        // Добовляет ошибку в список ошибок.
+        TErrors::$errors[] = $this->getMessage();
+
+        // Логирует ошибку
+        TLogger::WriteLogs($this->getMessage());
+    }
+}
 
 /**
  * Класс обработчика ошибок которые нельзя логировать.
@@ -59,7 +81,7 @@ class TErrorException extends ErrorException
 	{
 		parent::__construct($message, $code, $previous);
 
-		TRuntimeException::$errors[] = $this->getMessage();
+		TErrors::$errors[] = $this->getMessage();
 	}
 }
 

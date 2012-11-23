@@ -29,8 +29,13 @@ abstract class TDatabase
 			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
 		}
 		catch(PDOException $e) {
-			echo $e->getMessage();
+			try{
+				if($e->getMessage()){
+					throw new TRuntimeException($e->getMessage());
+				}
+			}catch (TRuntimeException $e){}
 		}
+
 	}
 }
 
