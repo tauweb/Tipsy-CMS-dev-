@@ -15,7 +15,7 @@ abstract class TErrors
 	public static function getErrors()
 	{
 		foreach(self::$errors as $error){
-			echo $error;
+			echo $error . '<p>';
 		}
 		
 	}

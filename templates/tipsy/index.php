@@ -30,8 +30,8 @@ $this->addStylesheet('template.css');
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
 </header>
-<div id="errors">
-	<p class="text-error"><?php $this->getErrors();?></p>
+<div id="errors" class="text-error">
+	<?php $this->getErrors();?>
 </div>
 
 <div id="menu_horisontal">
