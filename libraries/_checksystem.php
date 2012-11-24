@@ -14,7 +14,7 @@ class TCheckSystem{
 
 	public static function check()
 	{
-		self::$PDOSupDrv = PDO::getSupportedDrivers();
+		self::$PDOSupDrv = PDO::getAvailableDrivers();
 		self::$PHPVer = phpversion();
 	}
 

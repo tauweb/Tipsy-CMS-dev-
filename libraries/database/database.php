@@ -27,11 +27,16 @@ abstract class TDatabase
 
 		try {
 			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
+			// Переводим в режим отображаения всех ошибок и предупреждений (Для отлаживания)
+			self::$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		}
+		// Перерехватывает исключение PDO.
 		catch(PDOException $e) {
 			try{
+				// todo: переписать Эту часть!
+				// Если перехваченное ранее исключение PDO содержит ошибку, то бросаем новое исключение для вывода сообщения об ошибке на страницу. 
 				if($e->getMessage()){
-					throw new TRuntimeException($e->getMessage());
+					throw new TRuntimeException('Ошибка базы данных: ' . $e->getMessage());
 				}
 			}catch (TRuntimeException $e){}
 		}

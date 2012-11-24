@@ -24,7 +24,7 @@ abstract class TConfig
 	public static $timezone = 'Europe/Moscow';
 
 	// Внешний вид
-	public static $template = 'tipsy';
+	public static $template = 'light';
 	
 	// Куки
 	public static $Session_lifetime = 15;

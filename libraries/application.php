@@ -26,7 +26,10 @@ class TApplication
 		TLoader::load('_Session');
 		TSession::start('test_session');
 
+		TLoader::load('TQuery');
+
 		TLoader::discover('T',_TPATH_COMPONENTS);
+		TLoader::load('TContent');
 
 		try {
 			// Подключает библиотеку формирующую страницы html

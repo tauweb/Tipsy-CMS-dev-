@@ -22,7 +22,6 @@ class TDocument
 	{
 		// Определяет и подключает шаблон
 		$this->getTemplate();
-		$this->getContent();
 	}
 	
 	/**
@@ -98,14 +97,9 @@ class TDocument
 	
 	public function getDebugMsg()
 	{
-		TDebug::getDebugMsg();
-	}
-
-	public function getContent()
-	{
-		TLoader::load('TContent');
-		TContent::getContent();
-
+		if(TConfig::$debug){
+			TDebug::getDebugMsg();
+		}
 	}
 
 }

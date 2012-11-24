@@ -16,9 +16,8 @@ $this->addStylesheet('template.css');
 <html>
 
 <head>
-<?php $this->getHead();?>
+	<?php $this->getHead();?>
 	<link rel="icon" type="image/png" href="favicon.ico">
-	<?php #$this->setStylesheets('template.css');?>
 </head>
 
 <body>
@@ -50,10 +49,11 @@ $this->addStylesheet('template.css');
 	<section>
 		<article>
 			<div id="article_name">
-				<h1>Заголовок статьи</h1>
+				<h1><?php TContent::getArticle('tittle'); ?></h1>
 			</div>
-			<?php THead::getHead(); ?>
-				<?php echo $this->content; ?>
+				<?php #echo $this->content;
+					TContent::getArticle('fulltext');
+				?>
 			<div id="article_footer">
 				<h2>Footer статьи</h2>
 			</div>
