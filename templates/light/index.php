@@ -49,10 +49,10 @@ $this->addStylesheet('template.css');
 	<section>
 		<article>
 			<div id="article_name">
-				<h1><?php TContent::getArticle('tittle'); ?></h1>
+				<h1><?php $this->getContent('tittle'); ?></h1>
 			</div>
 				<?php #echo $this->content;
-					TContent::getArticle('fulltext');
+					$this->getContent('fulltext');
 				?>
 			<div id="article_footer">
 				<h2>Footer статьи</h2>

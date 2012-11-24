@@ -3,27 +3,25 @@
 defined('_TEXEC') or die();
 
 abstract class TContent{
-
-	public $content = null;
 	
-	public static function getArticleTitle()
+	public static function getContent($param, $id)
 	{
-		$SQL = 'SELECT tittle from articles WHERE articleid = 1;';
-		$result = TDatabase::$DBH->prepare($SQL)->execute();
-
-		#$result = TQuery::query($title);
-		 echo $result;
-	}
-	
-	public static function getArticle($param)
-	{
-		$SQL = "SELECT `$param` from `articles` WHERE `articleid` = 1;";
-
-		#$result = TQuery::query($content);;
+		$queryParam = $param == '*' ? $param  : '`' . $param . '`';
+	   echo     $queryParam;
+		// Формирует строку запроса
+		$SQL = "SELECT $param from `articles` WHERE `articleid` = $id;";
+		
 		$row = TQuery::query($SQL);
-		echo $row[$param] . "\n";
+		// Эта часть будет нужа для последующего формирования таблицы вывода, когда, например будут выбираться все поля
+		if($param == 'all' or $param == '*'){
+			foreach (array_keys($row) as $colName){
+				echo $colName . '<p>';
+			}
+		}else{
+			// Это обычный вывод
+			echo  $row[$param];
+		}
 	}
-
 }
 
 ?>

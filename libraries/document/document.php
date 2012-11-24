@@ -89,17 +89,36 @@ class TDocument
 		}
 		echo '</ul>';
 	}
-
+	
+	/**
+	 * Метод получающий ошибки системы для html страницы.
+	 *
+	 */
 	public function getErrors()
 	{
 		TErrors::getErrors();
 	}
-	
+
+	/**
+	 * Метод получающий отладочную информацию системы для html страницы.
+	 *
+	 */
 	public function getDebugMsg()
 	{
 		if(TConfig::$debug){
 			TDebug::getDebugMsg();
 		}
+	}
+	
+	/**
+	 * Метод получающий содержимое страницы html (контент).
+	 * @param	string	$part	Параметр указывающий какую часть контента нужно получить.
+	 * Варианты $part пока что такие: title, fulltext
+	 */
+	public function getContent($part)
+	{
+		$id = 1;
+		TContent::getContent($part, $id);
 	}
 
 }
