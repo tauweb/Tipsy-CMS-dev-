@@ -22,9 +22,7 @@ $this->addStylesheet('template.css');
 
 <body>
 <div id = "debug" class = "text-success">
-	<?php
-		TDebug::getDebugMsg();
-	?>
+	<?php TDebug::getDebugMsg(); ?>
 </div>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
