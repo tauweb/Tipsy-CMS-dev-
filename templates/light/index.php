@@ -52,8 +52,7 @@ $this->addStylesheet('template.css');
 				<h1><?php $this->getContent('tittle'); ?></h1>
 			</div>
 				<?php #echo $this->content;
-					$this->getContent('fulltext');
-				?>
+					$this->getContent('fulltext');?>
 			<div id="article_footer">
 				<h2>Footer статьи</h2>
 			</div>
