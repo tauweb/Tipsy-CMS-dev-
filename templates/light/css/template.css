@@ -10,10 +10,24 @@ article,aside,header,nav,section {
 header {
 	padding: 10px;
 }
- ul, li {
+
+ul, li {
 	 padding: 0px;
 	 margin: 2px;
- }
+}
+
+ul.menu_horisontal {
+    margin: 0;		/* Обнуляем значение отступов */
+    padding: 4px;	/* Значение полей */
+}
+ul.menu_horisontal li {
+    display: inline;		/* Отображать как строчный элемент */
+    margin-right: 5px;		/* Отступ слева */
+    border: 1px solid #eeeeee; /* Рамка вокруг текста */
+    border-radius: 10px;
+	padding: 3px;			/* Поля вокруг текста */
+}
+
 body {
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -34,7 +48,7 @@ a {
 }
 
 #menu_horisontal{
-	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
 }
 
 a:hover {

@@ -34,10 +34,7 @@ $this->addStylesheet('template.css');
 </div>
 
 <div id="menu_horisontal">
-	<a href="http://php.net">PHP</a>
-	<a href="http://w3.org">html5</a>
-	<a href="<?php  echo shell_exec('./make_source.sh'); ?> ">Получить последние исходники</a>
-	'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git"> Посмотреть на GitHub</a>'
+	<?php $this->getMenuHorisontal(); ?>
 </div>
 
 <div id="container">
@@ -51,8 +48,7 @@ $this->addStylesheet('template.css');
 			<div id="article_name">
 				<h1><?php $this->getContent('tittle'); ?></h1>
 			</div>
-				<?php #echo $this->content;
-					$this->getContent('fulltext');?>
+				<?php $this->getContent('fulltext');?>
 			<div id="article_footer">
 				<h2>Footer статьи</h2>
 			</div>
