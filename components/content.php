@@ -3,13 +3,12 @@
 defined('_TEXEC') or die();
 
 abstract class TContent{
-	
+
 	public static function getContent($param, $id)
 	{
 		$queryParam = $param == '*' ? $param  : '`' . $param . '`';
-	   echo     $queryParam;
 		// Формирует строку запроса
-		$SQL = "SELECT $param from `articles` WHERE `articleid` = $id;";
+		$SQL = "SELECT $queryParam from `articles` WHERE `articleid` = $id;";
 		
 		$row = TQuery::query($SQL);
 		// Эта часть будет нужа для последующего формирования таблицы вывода, когда, например будут выбираться все поля
