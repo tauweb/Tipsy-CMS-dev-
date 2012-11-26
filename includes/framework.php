@@ -31,6 +31,5 @@ TLoader::load('_debug');
 TLoader::load('TApplication');
 
 // Создает объект приложения
-$app = new TApplication();
-$app->Run();
+$app = (new TApplication)->run();
 ?>

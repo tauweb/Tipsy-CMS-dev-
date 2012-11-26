@@ -10,6 +10,8 @@ $this->setCharset('utf-8');
 
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
+
+$this->getPathCom();
 ?>
 
 <!DOCTYPE html>
@@ -44,11 +46,12 @@ $this->addStylesheet('template.css');
 	<section>
 		<article>
 			<div id="article_name">
-				<h1><?php $this->getContent('tittle'); ?></h1>
+				<h1><?php $this->getContent('title'); ?></h1>
 			</div>
-				<?php $this->getContent('fulltext');?>
+				<?php $this->getContent('fulltext');
+			?>
 			<div id="article_footer">
-				<h2>Footer статьи</h2>
+				<h2>Дата создания материала: <?php $this->getContent('created');?></h2>
 			</div>
 		</article>
 	</section>
@@ -56,7 +59,7 @@ $this->addStylesheet('template.css');
 </div>
 
 <footer>
-	<p>Tipsy CMS 2012 by <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
+	<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
 </footer>
 </body>
 

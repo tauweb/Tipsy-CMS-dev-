@@ -68,6 +68,23 @@ class TDocument
 		return true;
 	}
 
+	public function getMenuHorisontal()
+	{
+		// Содержит контент блока nav		// Todo: продумать и переписать принцып и перенести в БД
+		$nav = [
+			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Мы на githab</a>',
+			'<a href="./logs/log.txt">Посмотреть логи</a>',
+
+		];
+
+		// Формирует и выводит содержимое как список.
+		echo '<ul class = "menu_horisontal">';
+		foreach ($nav as $val){
+			echo '<li>' . $val . '</li>';
+		}
+		echo '</ul>';		
+	}
+
 	/**
 	 * Метод формирующий левую часть страницы (как правило меню или контейнер nav)
 	 *
@@ -76,6 +93,7 @@ class TDocument
 	{
 		// Содержит контент блока nav		// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
+			'<a href="?user=login">Войти</a>',
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
 			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',
@@ -115,10 +133,15 @@ class TDocument
 	 * @param	string	$part	Параметр указывающий какую часть контента нужно получить.
 	 * Варианты $part пока что такие: title, fulltext
 	 */
-	public function getContent($part)
+	public function getContent($part, $id = 1)
 	{
-		$id = 1;
 		TContent::getContent($part, $id);
+	}
+	
+	public function getPathCom()
+	{
+	TLoader::load('TRouter');
+		TRouter::getPathCom();
 	}
 
 }

@@ -13,4 +13,9 @@ class TUser
 	{
 
 	}
+
+	public function login()
+	{
+
+	}
 }

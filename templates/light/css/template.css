@@ -22,8 +22,8 @@ ul.menu_horisontal {
 }
 ul.menu_horisontal li {
     display: inline;		/* Отображать как строчный элемент */
-    margin-right: 5px;		/* Отступ слева */
-    border: 1px solid #eeeeee; /* Рамка вокруг текста */
+    margin-right: 5px;		    /* Отступ слева */
+    border: 1px solid #eeeeee;  /* Рамка вокруг текста */
     border-radius: 10px;
 	padding: 3px;			/* Поля вокруг текста */
 }
