@@ -9,16 +9,16 @@ TLoader::load('THead');
  */
 class TDocument
 {
-	public $template = '';
+	private $template = '';
 
 	// Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
-	public $content = 'Это контент поумолчанию. Если вы видите этот текст - это значит, что скорее всего, статьи не гтузятся из БД
+	private $content = 'Это контент поумолчанию. Если вы видите этот текст - это значит, что скорее всего, статьи не гтузятся из БД
 	                    или нет активных статей';
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
 	 */
-	public function __construct()
+	function __construct()
 	{
 		// Определяет и подключает шаблон
 		$this->getTemplate();
@@ -28,22 +28,22 @@ class TDocument
 	 * Метод устанавливающий кодировку страниц
 	 * @param	string	имя кодировки для установки
 	 */
-	public function setCharset($charset)
+	private function setCharset($charset)
 	{
-		THead::$charset = '<meta charset="' . $charset . '" />';
+		THead::setCharset($charset);
 	}
 
 	/**
 	 * Метод регистрирующий новую таблицу стилей
 	 *
-	 * @param	string		$name	Имя подключаемой таблицы.
+	 * @param	string	$name	Имя подключаемой таблицы.
 	 */
-	public function addStylesheet($name)
+	private function addStylesheet($name)
 	{
 	   THead::addStylesheet($name);
 	}
 
-	public function getHead()
+	private function getHead()
 	{
 		THead::getHead();
 	}
@@ -53,7 +53,7 @@ class TDocument
 	 * @return	bool	true, если удалось определить и подключить шаблоблон.
 	 *
 	 */
-	public function getTemplate()
+	private function getTemplate()
 	{
 		// Путь к каталогу файлов шаблона.
 		$template = _TPATH_TEMPLATES . '/' . TConfig::$template;
@@ -68,7 +68,7 @@ class TDocument
 		return true;
 	}
 
-	public function getMenuHorisontal()
+	private function getMenuHorisontal()
 	{
 		// Содержит контент блока nav		// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
@@ -89,7 +89,7 @@ class TDocument
 	 * Метод формирующий левую часть страницы (как правило меню или контейнер nav)
 	 *
 	 */
-	public function getLeft()
+	private function getLeft()
 	{
 		// Содержит контент блока nav		// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
@@ -112,7 +112,7 @@ class TDocument
 	 * Метод получающий ошибки системы для html страницы.
 	 *
 	 */
-	public function getErrors()
+	private function getErrors()
 	{
 		TErrors::getErrors();
 	}
@@ -121,7 +121,7 @@ class TDocument
 	 * Метод получающий отладочную информацию системы для html страницы.
 	 *
 	 */
-	public function getDebugMsg()
+	private function getDebugMsg()
 	{
 		if(TConfig::$debug){
 			TDebug::getDebugMsg();
@@ -133,15 +133,15 @@ class TDocument
 	 * @param	string	$part	Параметр указывающий какую часть контента нужно получить.
 	 * Варианты $part пока что такие: title, fulltext
 	 */
-	public function getContent($part, $id = 1)
+	private function getContent($part, $id = 1)
 	{
 		TContent::getContent($part, $id);
 	}
 	
-	public function getPathCom()
+	public function getURL()
 	{
 	TLoader::load('TRouter');
-		TRouter::getPathCom();
+		TRouter::getURL();
 	}
 
 }

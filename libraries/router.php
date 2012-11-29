@@ -4,10 +4,10 @@ defined('_TEXEC') or die();
 
 abstract class TRouter
 {
-	public static function getPathCom()
+	public static function getURL()
 	{
-		foreach($_GET as $pathParam)
-			TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Component name is: $pathParam", __METHOD__);
+		foreach($_GET as $name)
+			TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Component name is: $name", __METHOD__);
 	}
 }
 

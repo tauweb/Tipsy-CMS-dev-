@@ -11,7 +11,7 @@ $this->setCharset('utf-8');
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
 
-$this->getPathCom();
+$this->getURL();
 ?>
 
 <!DOCTYPE html>

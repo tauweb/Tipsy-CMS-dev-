@@ -92,6 +92,15 @@ abstract class THead{
 	}
 
 	/**
+	 * Метод устанавливающий кодировку страниц
+	 * @param	string	имя кодировки для установки
+	 */
+	public static function setCharset($charset)
+	{
+		self::$charset = '<meta charset="' . $charset . '" />';
+	}
+
+	/**
 	 * Метод устанавливающий тег связи с внешним документом(<link>), например файлом со стилями, и выводящий их на страницу
 	 * @param	string		$name	имя подключаем таблицы
 	 */

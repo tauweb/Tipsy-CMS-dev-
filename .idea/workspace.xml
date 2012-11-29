@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tipsy_cms.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libraries/router.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tipsy_cms.zip" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/components/User.module" afterPath="$PROJECT_DIR$/components/com_users/users.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/User.module" afterPath="$PROJECT_DIR$/components/User.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/framework.php" afterPath="$PROJECT_DIR$/includes/framework.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/_session.php" afterPath="$PROJECT_DIR$/libraries/_session.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/document.php" afterPath="$PROJECT_DIR$/libraries/document/document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/css/template.css" afterPath="$PROJECT_DIR$/templates/light/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/head.php" afterPath="$PROJECT_DIR$/libraries/document/head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/router.php" afterPath="$PROJECT_DIR$/libraries/router.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/index.php" afterPath="$PROJECT_DIR$/templates/light/index.php" />
     </list>
     <ignored path="tipsy_cms.iws" />
@@ -38,19 +36,17 @@
       <file leaf-file-name="content.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="47" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+            <state line="12" column="9" selection-start="321" selection-end="321" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="document.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraries/document/document.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="99" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.39335665">
-              <folding>
-                <marker date="1353967972000" expanded="true" signature="2325:2329" placeholder="..." />
-              </folding>
+            <state line="135" column="14" selection-start="3178" selection-end="3178" vertical-scroll-proportion="-57.916668">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="template.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/light/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.4074703">
               <folding />
             </state>
           </provider>
@@ -76,14 +72,14 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/light/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="52" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+            <state line="50" column="52" selection-start="906" selection-end="906" vertical-scroll-proportion="-9.791667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.module" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/User.module">
+      <file leaf-file-name="users.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_users/users.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="8" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
@@ -140,8 +136,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="localhost" />
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1920" />
-    <option name="height" value="1056" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,6 +165,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,13 +194,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipsy_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipsy_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,6 +229,7 @@
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="76" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/com_users" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="104" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="997" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1000" />
@@ -254,6 +269,11 @@
         </serverdata>
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/com_users" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.localhost">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -345,10 +365,14 @@
       <created>1353828398410</created>
       <updated>1353828398410</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="так как я веду разработку один, комитов пока не будет">
+      <created>1353959246531</created>
+      <updated>1353959246531</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -369,21 +393,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3483871" sideWeight="0.49532712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32795697" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29126215" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22036473" sideWeight="0.6456311" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13796791" sideWeight="0.672043" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19304813" sideWeight="0.672043" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.075987846" sideWeight="0.70873785" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11474164" sideWeight="0.70873785" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41864407" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22036473" sideWeight="0.6407767" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3106796" sideWeight="0.49532712" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3483871" sideWeight="0.49532712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -500,30 +524,9 @@
         <state line="13" column="33" selection-start="366" selection-end="366" vertical-scroll-proportion="0.34513274" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/light/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/_session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/User.module">
+    <entry file="file://$PROJECT_DIR$/components/com_users/users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -535,19 +538,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/_session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="37" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/light/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="52" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+        <state line="50" column="52" selection-start="906" selection-end="906" vertical-scroll-proportion="-9.791667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libraries/document/document.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="99" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.39335665">
-          <folding>
-            <marker date="1353967972000" expanded="true" signature="2325:2329" placeholder="..." />
-          </folding>
+        <state line="135" column="14" selection-start="3178" selection-end="3178" vertical-scroll-proportion="-57.916668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="9" selection-start="321" selection-end="321" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/light/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.4074703">
+          <folding />
         </state>
       </provider>
     </entry>
