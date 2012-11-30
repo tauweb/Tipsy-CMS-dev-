@@ -11,7 +11,12 @@ abstract class TErrors
 	 * @var	array	Массив содержащий ошибки системы.
 	 */
 	public static $errors = array();
-	
+
+
+	/**
+	 * Метод построчно выводящий сообщения об ошибках на страницу.
+	 *
+	 */
 	public static function getErrors()
 	{
 		foreach(self::$errors as $error){
@@ -28,12 +33,10 @@ abstract class TErrors
 class TRuntimeException extends ErrorException
 {
 	/**
-	 * Конструктор
-	 *
 	 * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
 	 *
 	 * @param	string 	$message  Текст исключения
-	 * @param	int			$code
+	 * @param	int		$code
 	 *
 	 */
 	public function __construct($message = '', $code = 0, Exception $previous = null)
@@ -42,7 +45,7 @@ class TRuntimeException extends ErrorException
 		
 		// Добовляет ошибку в список ошибок.
 		TErrors::$errors[] = $this->getMessage();
-		
+
 		// Логирует ошибку
 		TLogger::WriteLogs($this->getMessage());
 	}
@@ -51,8 +54,6 @@ class TRuntimeException extends ErrorException
 class TPDOException extends  PDOException
 {
     /**
-     * Конструктор
-     *
      * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
      *
      * @param	string 	$message  Текст исключения
@@ -60,15 +61,15 @@ class TPDOException extends  PDOException
      *
      */
     public function __construct($message = '', $code = 0, Exception $previous = null)
-    {
-        parent::__construct($message, $code, $previous);
+	{
+		parent::__construct($message, $code, $previous);
 
-        // Добовляет ошибку в список ошибок.
-        TErrors::$errors[] = $this->getMessage();
+		// Добовляет ошибку в список ошибок.
+		TErrors::$errors[] = $this->getMessage();
 
-        // Логирует ошибку
-        TLogger::WriteLogs($this->getMessage());
-    }
+		// Логирует ошибку
+		TLogger::WriteLogs($this->getMessage());
+	}
 }
 
 /**
@@ -81,6 +82,7 @@ class TErrorException extends ErrorException
 	{
 		parent::__construct($message, $code, $previous);
 
+		// Логирует ошибку
 		TErrors::$errors[] = $this->getMessage();
 	}
 }

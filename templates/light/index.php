@@ -11,7 +11,7 @@ $this->setCharset('utf-8');
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
 
-$this->getURL();
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $this->getURL();
 
 <body>
 <div id = "debug" class = "text-success">
-	<?php TDebug::getDebugMsg(); ?>
+	<?php $this->getDebugMsg(); ?>
 </div>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>

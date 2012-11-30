@@ -7,15 +7,17 @@ defined('_TEXEC') or die();
  * Date: 08.11.12
  * Time: 17:32
  */
-class TUser
+abstract class TUsers
 {
-	public function register()
-	{
-
+	public static function login()
+	{   TLoader::load('TUserLogin');
+		TUserLogin::login();
 	}
 
-	public function login()
+	public static function check()
 	{
-
+		if(empty($_SESSION['user'])){
+			self::login();
+		}
 	}
 }

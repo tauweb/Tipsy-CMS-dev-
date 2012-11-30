@@ -21,6 +21,11 @@ abstract class TContent{
 			echo  $row[$param];
 		}
 	}
+
+	public static function putContent($content)
+	{
+		echo $content;
+	}
 }
 
 ?>

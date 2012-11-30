@@ -18,7 +18,7 @@ class TLogger
 	 * Метод записи логов в файл и формирования строки логирования
 	 *
 	 * @param	string	сообщение для записи в лог
-	 * @return	bool	true если запись удалась и false если нет сообщения для записи
+	 * @return	bool	true если запись удалась и false если нет сообщения для записи или возникла ошибки при записи в файл.
 	 */
 	public static function WriteLogs($message)
 	{
@@ -35,12 +35,12 @@ class TLogger
 			
 			// Формирует сообщение в логоподобный вид
 			$message = date('l jS \of F Y h:i:s A') . "\t" . strip_tags($message) . "\n";
-
+			// Пишет собщение в файл.
 			fwrite($logfile, $message);
-
+			// Закрывает файл
 			fclose($logfile);
-
-		} catch (TErrorException $e) {
+		// При неудачной попытке записи сообщеняия, бросает исключение и
+		}catch (TErrorException $e) {
 			return false;
 		}
 		return true;

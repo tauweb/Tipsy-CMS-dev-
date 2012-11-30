@@ -17,6 +17,7 @@ define ('_TPATH_LIBRARIES', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries');
 // Путь к шаблонам HTML страниц
 define('_TPATH_TEMPLATES', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'templates');
 
-define('_TPATH_COMPONENTS', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'components' )
+// Путь к компонентам
+define('_TPATH_COMPONENTS', _TPATH_ROOT . DIRECTORY_SEPARATOR . '_components' );
 
 ?>

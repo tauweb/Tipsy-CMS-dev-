@@ -11,7 +11,6 @@ class TApplication
 {
 	/**
 	 * Метод запускающий формирование страцы
-	 *
 	 */
 	public function run()
 	{
@@ -19,15 +18,11 @@ class TApplication
 		TLoader::load('TDatabase');
 		// Устанавливает соединение с БД
 		TDatabase::connect(TSystem::getDBOptions());
-		
+		// Подключает отладчик системы
 		TLoader::load('TDebug');
-		
-		 // Сессия (тест)
-		TLoader::load('_Session');
-		TSession::start('test_session');
-
+		// Подключает библиотеку выполняющие запросы к БД
 		TLoader::load('TQuery');
-
+		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
 		TLoader::discover('T',_TPATH_COMPONENTS);
 		TLoader::load('TContent');
 
@@ -37,37 +32,8 @@ class TApplication
 			// Создает объект формирующий страницу html
 			$TDocument = new TDocument();
 		} catch (TRuntimeException $e) {
-		}
-		
-		// Получает список сообщений отладки системы
-		$this->debugMsg = TDebug::$messages;
-		
-	}
-	
-	/**
-	 * Метод вывода системных ошибок на страницу html
-	 *
-	 */
-	public function getErrors()
-	{	
-		// Проверяет наличие сообщений об ошибках.
-		if (!empty($this->errors)) {
-			// Построчно выводит все ошибки из массива на страницу html.
-			foreach ((array)$this->errors as $msg) {
-				echo $msg . "<p>";
-			}
-		}
-	}
-	
-	public function getDebugMsg()
-	{
-		if(!empty($this->debugMsg))
-		{
-			echo '<b>DEBUG MESSAGE: <HR></b>';
-			
-			foreach ($this->debugMsg as $DebugMessages) {
-				echo $DebugMessages;
-			}
+			// Выводит ошибку на страницу.
+			TErrors::getErrors();
 		}
 	}
 }

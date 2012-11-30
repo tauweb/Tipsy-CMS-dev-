@@ -1,22 +1,22 @@
 <?php
-
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
 /**
- * 
+ * Класс управления сессиями
  */
 class TSession
 {
 	public static function start($SessionName)
 	{
+		// Если было получено имея сессии и если еще не используется, то запускает новую сессию
 		if (!empty($SessionName) && !isset($_SESSION['$SessionName']))
 		{
 			// Запускает сессию
 			session_start();
 			
 			// Имя пользователя сесии
-			$_SESSION['name'] = $SessionName;
+			$_SESSION['user'] = $SessionName;
 			
 			// Количество посещений пользователя, общее или после чистки куки
 			empty($_SESSION['count'])

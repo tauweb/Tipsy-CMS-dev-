@@ -1,10 +1,9 @@
 <?php
+// Проверяет легален ли доступ к файлу.
+defined('_TEXEC') or die;
+
 /**
- * Created by JetBrains PhpStorm.
- * User: whiskeyman
- * Date: 08.11.12
- * Time: 11:38
- * To change this template use File | Settings | File Templates.
+ * Класс для проверки сервера на совместимость с системой или для проверки отдельных параметров сервера
  */
 class TCheckSystem{
 
@@ -20,3 +19,4 @@ class TCheckSystem{
 
 
 }
+?>

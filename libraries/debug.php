@@ -22,18 +22,20 @@ abstract class TDebug
 	}
 	
 	/**
-	 * Метод получающий сообщения отладки из модуля.
+	 * Метод получающий и выводящий сообщения отладки из модуля на страницу.
 	 *
 	 */
 	 public static function getDebugMsg()
-	{
-		if(!empty(self::$messages))
+	{   // Проверяет наличие сообщений в массиве и настройки вывода сообщений в конфиге.
+		if(!empty(self::$messages) and TConfig::$debug)
 		{
+			// Формирует Заголовок раздела отладки.
 			echo '<b>DEBUG MESSAGE: </b>';
-			
+			// Перебирает сообщения и построчно выводит их на страницу.
 			foreach (self::$messages as $DebugMessages) {
 				echo $DebugMessages;
 			}
+			// Выводит разделительную черту после сообщений.
 			echo '<HR>';
 		}
 	}

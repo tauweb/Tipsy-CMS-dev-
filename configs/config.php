@@ -20,13 +20,13 @@ abstract class TConfig
 	// Отладка системы (1 - да, 0 - нет)
 	public static $debug = 1;
 	
-	// Настройки времени
+	// Настройки временной зоны
 	public static $timezone = 'Europe/Moscow';
 
-	// Внешний вид
+	// Внешний вид (шаблон)
 	public static $template = 'light';
 	
-	// Куки
+	// Время жизни куку
 	public static $Session_lifetime = 15;
 }
 

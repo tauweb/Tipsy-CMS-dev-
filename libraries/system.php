@@ -100,12 +100,11 @@ class TSystem
 	}
 	
 	/**
-	 * Метод для установки времени жизни сессии из настроек.
-	 *
+	 * Метод почучения времени жизни сессии из настроек.
 	 */
 	public static function getSession_lifetime()
 	{
-		 session_set_cookie_params(TConfig::$Session_lifetime * 60);
+		session_set_cookie_params(TConfig::$Session_lifetime * 60);
 	}
 }
 ?>
