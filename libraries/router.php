@@ -14,11 +14,12 @@ abstract class TRouter
 	 */
 	public static function getURL()
 	{
-		// Проверяет наличие переменных в строке.
+		// Проверяет наличие переменных в URL.
 		if(empty($_GET)){
 			return false;
 		}
-
+		
+		// Построчно перебирает переменные в URL.
 		foreach($_GET as $component=>$type){
 			TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Название компонента: $component, раздел: $type ", __METHOD__);
 		}

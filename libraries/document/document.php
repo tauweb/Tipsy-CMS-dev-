@@ -3,7 +3,7 @@
 defined('_TEXEC') or die();
 
 /**
- * Класс формирования данных для html страницы
+ * Класс формирования данных для html страницы. Выстцпает связным звеном между страницей и модулями
  *
  */
 class TDocument
@@ -154,6 +154,11 @@ class TDocument
 	{
 		TLoader::load('TRouter');
 		TRouter::getURL();
+	}
+	
+	protected function getPosition($pos_name)
+	{
+		TPosition::getPosition($pos_name);
 	}
 }
 

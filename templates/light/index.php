@@ -11,7 +11,6 @@ $this->setCharset('utf-8');
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
 
-
 ?>
 
 <!DOCTYPE html>
@@ -49,6 +48,7 @@ $this->addStylesheet('template.css');
 				<h1><?php $this->getContent('title'); ?></h1>
 			</div>
 				<?php $this->getContent('fulltext');
+				#$this->getPosition('center');
 			?>
 			<div id="article_footer">
 				<h2>Дата создания материала: <?php $this->getContent('created');?></h2>

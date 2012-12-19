@@ -10,7 +10,8 @@ defined('_TEXEC') or die();
 abstract class TUsers
 {
 	public static function login()
-	{   TLoader::load('TUserLogin');
+	{
+		TLoader::load('TUserLogin');
 		TUserLogin::login();
 	}
 

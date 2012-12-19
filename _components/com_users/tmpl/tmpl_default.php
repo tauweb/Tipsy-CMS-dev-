@@ -9,5 +9,5 @@
 
 ?>
 <div class="login_form">
-	<? TContent::getContent('fulltext', '1'); ?>
+	<form action="autorize"><>
 </div>
