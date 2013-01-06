@@ -25,7 +25,7 @@ class TDocument
 	 */
 	function __construct()
 	{
-		// Определяет
+		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
 		// Подключает класс формирующий <HEAD> документа.
 		TLoader::load('THead');
@@ -106,7 +106,7 @@ class TDocument
 	{
 		// Содержит контент блока nav	// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
-			'<a href="?user=login">Войти</a>',
+			'<a href="?component=users">Войти</a>',
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
 			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',
@@ -156,6 +156,10 @@ class TDocument
 		TRouter::getURL();
 	}
 	
+	
+	/**
+	 * Метод определяющий позиции на странице html.
+	 */
 	protected function getPosition($pos_name)
 	{
 		TPosition::getPosition($pos_name);

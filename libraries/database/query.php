@@ -8,7 +8,14 @@ defined('_TEXEC') or die;
 abstract class TQuery
 {
 	public static function query($QueryStr)
-	{
+	{	
+		// Проверяет установленно ли подключение к БД.
+		if(!is_object(TDatabase::$DBH)){
+			// Если нет - выводит сообщение и возвращает false.
+			echo ('<b>' . __CLASS__.'</b>' .' Не могу подключиться к БД');
+			return false;
+		}
+
 		$result = TDatabase::$DBH->query($QueryStr);
 
 		$result->setFetchMode(PDO::FETCH_ASSOC);
@@ -38,5 +45,9 @@ abstract class TQuery
 
 		//Отладочная часть
 		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
+		
+		foreach ($QueryRes as $key){
+			echo $key;
+		}
 	}
 }

@@ -14,20 +14,31 @@ abstract class TRouter
 	 */
 	public static function getURL()
 	{
-		// Проверяет наличие переменных в URL.
-		if(empty($_GET)){
+		// Проверяет наличие переменных в 
+		if(empty($_GET['component'])){
 			return false;
+		}else{
+			$com = 'T' . $_GET['component'];
+			
+			TLoader::discover('T',_TPATH_COMPONENTS, true);
+			TLoader::load($com);
+			$com == 'Tusers' ? TUsers::init() : '';
 		}
 		
 		// Построчно перебирает переменные в URL.
 		foreach($_GET as $component=>$type){
-			TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Название компонента: $component, раздел: $type ", __METHOD__);
+			TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Название компонента: $component, $type ? раздел: $type :  ", __METHOD__);
 		}
-		if($component == 'user'){
-			TLoader::discover('T',_TPATH_COMPONENTS,true);
-			TLoader::load('TUsers');
-			TUsers::check();
-		}
+		// Добавляет префикс к имени компонента (получает имя класса)
+		$component .= 'T';
+		TLoader::discover('T',_TPATH_COMPONENTS,true);
+	}
+	
+	public static function _($user, $component)
+	{
+	TLoader::load('TSession');
+		TSession::start($user);
+		echo '?component='.$component;
 	}
 }
 

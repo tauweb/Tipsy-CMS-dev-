@@ -2,15 +2,11 @@
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-// Задает шаблон
-$this->getTemplate();
-
 //Устанавливает кодировку страницы
 $this->setCharset('utf-8');
 
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
-
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +14,10 @@ $this->addStylesheet('template.css');
 
 <head>
 	<?php $this->getHead();?>
-	<link rel="icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
-<div id = "debug" class = "text-success">
+<div id="debug" class="text-success">
 	<?php $this->getDebugMsg(); ?>
 </div>
 <header>
@@ -49,7 +44,7 @@ $this->addStylesheet('template.css');
 			</div>
 				<?php $this->getContent('fulltext');
 				#$this->getPosition('center');
-			?>
+				?>
 			<div id="article_footer">
 				<h2>Дата создания материала: <?php $this->getContent('created');?></h2>
 			</div>

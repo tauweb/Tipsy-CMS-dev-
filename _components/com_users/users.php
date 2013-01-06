@@ -15,10 +15,12 @@ abstract class TUsers
 		TUserLogin::login();
 	}
 
-	public static function check()
+	public static function init()
 	{
 		if(empty($_SESSION['user'])){
 			self::login();
+		}else{
+			return true;
 		}
 	}
 }
