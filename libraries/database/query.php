@@ -45,9 +45,5 @@ abstract class TQuery
 
 		//Отладочная часть
 		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
-		
-		foreach ($QueryRes as $key){
-			echo $key;
-		}
 	}
 }

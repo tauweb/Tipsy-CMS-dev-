@@ -18,6 +18,6 @@ define ('_TPATH_LIBRARIES', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries');
 define('_TPATH_TEMPLATES', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'templates');
 
 // Путь к компонентам
-define('_TPATH_COMPONENTS', _TPATH_ROOT . DIRECTORY_SEPARATOR . '_components' );
+define('_TPATH_COMPONENTS', _TPATH_ROOT . DIRECTORY_SEPARATOR . 'components' );
 
 ?>

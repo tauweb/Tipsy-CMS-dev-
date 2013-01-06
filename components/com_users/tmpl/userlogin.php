@@ -23,12 +23,12 @@ abstract class TUserLogin
 
 	protected static function checkUser()
 	{
-		 $_SERVER['REQUEST_URL'] = '/';
-		if ($_POST) echo 'Вы вошли как: ' . $_POST['name'];
-		$query = 'SELECT `username` FROM `users` WHERE username = "whiskeyman";';
+		if(empty($_POST['name'])) return false;
+
+		$query = "SELECT `username` FROM `users` WHERE username = \"" . $_POST['name']. "\";";
 		$table = TQuery::query($query);
-		#echo $table['username'];
-		#foreach($table as $t){echo $t;}
+
+		echo 'Вы вошли как: ' . $_POST['name'];
 		return true;
 	}
 }
