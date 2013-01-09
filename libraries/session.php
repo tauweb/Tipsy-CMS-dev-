@@ -10,8 +10,11 @@ class TSession
 	public static function start($SessionName)
 	{
 		// Если было получено имея сессии и если еще не используется, то запускает новую сессию
-		if (!empty($SessionName) && !isset($_SESSION['$SessionName']))
+		if (!empty($SessionName) && !isset($_SESSION['name']))
 		{
+			if($SessionName == isset($_SESSION['name']))
+				return true;
+				
 			// Запускает сессию
 			session_start();
 			
@@ -29,3 +32,4 @@ class TSession
 		}
 	}
 }
+?>

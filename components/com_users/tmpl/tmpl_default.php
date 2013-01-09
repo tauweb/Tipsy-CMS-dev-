@@ -8,17 +8,11 @@ defined('_TEXEC') or die();
  * Date: 29.11.12
  * Time: 15:20
  */
- ?>
-
+?>
 <div form_login>
 	<form action="" method="post"  class="login_form">
 		Имя:	<input type="text" name="name" />
-		Пароль:	<input type="text" name="user[email]" />
+		Пароль:	<input type="text" name="password" />
 		<button type="submit">Войти</button>
 	</form>
 </div>
-
-<?
-// Перенаправляет введенные пользователем данные.
-self::checkUser();
-?>

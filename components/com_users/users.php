@@ -2,7 +2,6 @@
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 /**
- * Created by JetBrains PhpStorm.
  * User: whiskeyman
  * Date: 08.11.12
  * Time: 17:32
@@ -20,7 +19,7 @@ abstract class TUsers
 		if(empty($_SESSION['user'])){
 			self::login();
 		}else{
-			return true;
+			return $_SESSION['user'];
 		}
 	}
 }

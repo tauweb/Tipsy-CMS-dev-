@@ -12,7 +12,8 @@ abstract class TUserLogin
 {
 	public static function login()
 	{
-		self::getTemplate();
+		// Проверяет введенные пользователем данные и обрабатывает их.
+		self::check();
 	}
 
 	protected static function getTemplate()
@@ -21,14 +22,33 @@ abstract class TUserLogin
 
 	}
 
-	protected static function checkUser()
+	protected static function check()
 	{
-		if(empty($_POST['name'])) return false;
+		// Подключает шаблон формы авторизации пользоватея.
+		self::getTemplate();
 
-		$query = "SELECT `username` FROM `users` WHERE username = \"" . $_POST['name']. "\";";
+		if(empty($_POST['name'])){
+			echo  'Для авторизации необходимо ввести имя пользователя.';
+			return false;
+		}
+
+		#elseif(empty($_POST['password'])){
+		#	echo 'Вы забыли про пароль.';
+		#	return false;
+		#}
+		
+		//Создает которткие имена переменных формы.
+		$user =  $_POST['name'];
+		$password = $_POST['password'];
+		
+		// Строка запроса к БД, выбирающая данные о пользователе.
+		$query = "SELECT `username`, `password` FROM `users` WHERE username = \"" . $user . "\";";
+		
 		$table = TQuery::query($query);
-
-		echo 'Вы вошли как: ' . $_POST['name'];
+		TLoader::load('TSession');
+		TSession::start($table['username']);
+		header("Location: ./");
+		echo 'Вы вошли как: ' . $_SESSION['user'];
 		return true;
 	}
 }

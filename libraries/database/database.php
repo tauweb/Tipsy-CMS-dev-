@@ -29,6 +29,8 @@ abstract class TDatabase
 			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
 			// Переводим в режим отображаения всех ошибок и предупреждений (Для отлаживания)
 			self::$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			// Устанавливает кодировку данных БД.
+			self::$DBH->exec('SET NAMES utf8');
 		}
 		// Перерехватывает исключение PDO.
 		catch(PDOException $e) {
