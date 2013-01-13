@@ -24,8 +24,15 @@ class TApplication
 		TLoader::load('TQuery');
 		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
 		TLoader::discover('T',_TPATH_COMPONENTS);
-		// Загружает класс загрузчика.
+		// Загружает класс формирующий контент.
 		TLoader::load('TContent');
+		// З
+		TLoader::load('TSession');
+		// Проверяет и и запускает сессию в случае если нет активной.
+		TSession::check();
+
+		TLoader::load('TUser');
+
 
 		try {
 			// Подключает библиотеку формирующую страницы html
@@ -38,5 +45,4 @@ class TApplication
 		}
 	}
 }
-
 ?>

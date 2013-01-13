@@ -20,6 +20,10 @@ ini_set('output_buffering', 'on');
 // Отображать все ошибки и предупреждения (убрать, если задан пользовательский обработчик ошибок)
 error_reporting(E_ALL | E_STRICT);												// Todo: УБРАТЬ ПОСЛЕ ДОПИСАНИЯ КОМПОНЕНТА ОТВЕЧАЮЩЕГО ЗА ОШИБКИ!!
 
+ini_set('session.use_cookies', 'On');
+ini_set('session.use_trans_sid', 'Off');
+session_set_cookie_params(0, '/');
+
 // Определяет корневую директорию
 if (!defined('_TPATH_ROOT')) define('_TPATH_ROOT', dirname(__FILE__));
 

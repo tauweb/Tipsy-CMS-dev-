@@ -106,7 +106,7 @@ class TDocument
 	{
 		// Содержит контент блока nav	// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
-			'<a href="?component=users">Войти</a>',
+			'<a href="?component=user">Войти</a>',
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
 			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',

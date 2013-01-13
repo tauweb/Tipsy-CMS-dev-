@@ -5,19 +5,29 @@ defined('_TEXEC') or die;
 /**
  * Класс управления сессиями
  */
-class TSession
-{
+abstract class TSession
+{   /*
+    * Метод проверяющий существует ли сессия, если сессия не активна - начинает новую.
+    * @returns	true если сессия существует или запущена.
+    */
+	public static function check(){
+		if(!session_id()){
+			session_start();
+			return true;
+		}
+	}
+
 	public static function start($SessionName)
 	{
 		// Если было получено имея сессии и если еще не используется, то запускает новую сессию
-		if (!empty($SessionName) && !isset($_SESSION['name']))
+		if (!empty($SessionName) && !isset($_SESSION['user']))
 		{
-			if($SessionName == isset($_SESSION['name']))
-				return true;
-				
+			if($SessionName == isset($_SESSION['user']))
+			return true;
+
 			// Запускает сессию
 			session_start();
-			
+
 			// Имя пользователя сесии
 			$_SESSION['user'] = $SessionName;
 			

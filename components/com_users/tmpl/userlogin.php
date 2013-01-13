@@ -16,9 +16,9 @@ abstract class TUserLogin
 		self::check();
 	}
 
-	protected static function getTemplate()
+	protected static function getTemplate($tmpl = 'tmpl_default.php')
 	{
-		$tmpl = require_once __DIR__ . DIRECTORY_SEPARATOR . 'tmpl_default.php';
+		$tmpl = require_once __DIR__ . DIRECTORY_SEPARATOR . $tmpl;
 
 	}
 
@@ -26,28 +26,23 @@ abstract class TUserLogin
 	{
 		// Подключает шаблон формы авторизации пользоватея.
 		self::getTemplate();
-
 		if(empty($_POST['name'])){
 			echo  'Для авторизации необходимо ввести имя пользователя.';
 			return false;
 		}
 
-		#elseif(empty($_POST['password'])){
-		#	echo 'Вы забыли про пароль.';
-		#	return false;
-		#}
-		
 		//Создает которткие имена переменных формы.
 		$user =  $_POST['name'];
 		$password = $_POST['password'];
-		
 		// Строка запроса к БД, выбирающая данные о пользователе.
 		$query = "SELECT `username`, `password` FROM `users` WHERE username = \"" . $user . "\";";
-		
+
 		$table = TQuery::query($query);
 		TLoader::load('TSession');
 		TSession::start($table['username']);
-		header("Location: ./");
+		
+
+		#header("Location: ./");
 		echo 'Вы вошли как: ' . $_SESSION['user'];
 		return true;
 	}

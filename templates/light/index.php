@@ -7,6 +7,7 @@ $this->setCharset('utf-8');
 
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
+
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +20,10 @@ $this->addStylesheet('template.css');
 <body>
 <div id="debug" class="text-success">
 	<?php $this->getDebugMsg(); ?>
+</div>
+<div id="autorize">
+	<?php
+	TLoader::discover('T',_TPATH_COMPONENTS, true);TLoader::load('TUser');TUser::init(); ?>
 </div>
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
