@@ -26,7 +26,7 @@ abstract class TSession
 			return true;
 
 			// Запускает сессию
-			session_start();
+			#session_start();
 
 			// Имя пользователя сесии
 			$_SESSION['user'] = $SessionName;

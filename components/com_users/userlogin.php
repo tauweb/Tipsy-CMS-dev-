@@ -18,7 +18,7 @@ abstract class TUserLogin
 
 	protected static function getTemplate($tmpl = 'tmpl_default.php')
 	{
-		$tmpl = require_once __DIR__ . DIRECTORY_SEPARATOR . $tmpl;
+		$tmpl = require_once __DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . $tmpl;
 
 	}
 
@@ -38,7 +38,6 @@ abstract class TUserLogin
 		$query = "SELECT `username`, `password` FROM `users` WHERE username = \"" . $user . "\";";
 
 		$table = TQuery::query($query);
-		TLoader::load('TSession');
 		TSession::start($table['username']);
 		
 

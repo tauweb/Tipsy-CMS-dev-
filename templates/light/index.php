@@ -21,10 +21,12 @@ $this->addStylesheet('template.css');
 <div id="debug" class="text-success">
 	<?php $this->getDebugMsg(); ?>
 </div>
-<div id="autorize">
+
+<div id="autorize" class="autorize">
 	<?php
 	TLoader::discover('T',_TPATH_COMPONENTS, true);TLoader::load('TUser');TUser::init(); ?>
 </div>
+
 <header>
 	<h1>Домашняя страница проета Tipsy cms</h1>
 </header>

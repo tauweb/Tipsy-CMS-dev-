@@ -2,61 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/com_users/user.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/components/com_users/users.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/API.doc" afterPath="$PROJECT_DIR$/Docs/API.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/CSS.doc" afterPath="$PROJECT_DIR$/Docs/CSS.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/standarts.doc" afterPath="$PROJECT_DIR$/Docs/standarts.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/icons/icon_gray.png" afterPath="$PROJECT_DIR$/templates/light/icons/icon_gray.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/icons/icon_green.png" afterPath="$PROJECT_DIR$/templates/light/icons/icon_green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/whiskeyman.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/whiskeyman.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tipsy_cms.iml" afterPath="$PROJECT_DIR$/.idea/tipsy_cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/components/com_users/userlogout.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/components/com_users/tmpl/userlogin.php" afterPath="$PROJECT_DIR$/components/com_users/userlogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_users/tmpl/tmpl_default.php" afterPath="$PROJECT_DIR$/components/com_users/tmpl/tmpl_default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_users/tmpl/userlogin.php" afterPath="$PROJECT_DIR$/components/com_users/tmpl/userlogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/content.php" afterPath="$PROJECT_DIR$/components/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/config.php" afterPath="$PROJECT_DIR$/configs/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configs/php_set.php" afterPath="$PROJECT_DIR$/configs/php_set.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/defines.php" afterPath="$PROJECT_DIR$/includes/defines.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/framework.php" afterPath="$PROJECT_DIR$/includes/framework.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/_checksystem.php" afterPath="$PROJECT_DIR$/libraries/_checksystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/application.php" afterPath="$PROJECT_DIR$/libraries/application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/database/-drivers/mysqli.php" afterPath="$PROJECT_DIR$/libraries/database/-drivers/mysqli.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/database/create_test_DB.sql" afterPath="$PROJECT_DIR$/libraries/database/create_test_DB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/database/database.php" afterPath="$PROJECT_DIR$/libraries/database/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/database/query.php" afterPath="$PROJECT_DIR$/libraries/database/query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/debug.php" afterPath="$PROJECT_DIR$/libraries/debug.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/_render.php" afterPath="$PROJECT_DIR$/libraries/document/_render.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/content.php" afterPath="$PROJECT_DIR$/libraries/document/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/document.php" afterPath="$PROJECT_DIR$/libraries/document/document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/head.php" afterPath="$PROJECT_DIR$/libraries/document/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/document/positions.php" afterPath="$PROJECT_DIR$/libraries/document/positions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/exception.php" afterPath="$PROJECT_DIR$/libraries/exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/loader.php" afterPath="$PROJECT_DIR$/libraries/loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/logger.php" afterPath="$PROJECT_DIR$/libraries/logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_users/user.php" afterPath="$PROJECT_DIR$/components/com_users/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/router.php" afterPath="$PROJECT_DIR$/libraries/router.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/session.php" afterPath="$PROJECT_DIR$/libraries/session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/system.php" afterPath="$PROJECT_DIR$/libraries/system.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_source.sh" afterPath="$PROJECT_DIR$/make_source.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/often.info" afterPath="$PROJECT_DIR$/often.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/css/template.css" afterPath="$PROJECT_DIR$/templates/light/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/light/index.php" afterPath="$PROJECT_DIR$/templates/light/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +34,64 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_users/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="156" selection-end="156" vertical-scroll-proportion="0.23893805">
+            <state line="31" column="17" selection-start="692" selection-end="692" vertical-scroll-proportion="-8.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="-12.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userlogin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_users/userlogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="55" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-19.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="20" selection-start="377" selection-end="377" vertical-scroll-proportion="-5.4166665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userlogout.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_users/userlogout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="43" selection-start="260" selection-end="260" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/light/css/template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="10" selection-start="143" selection-end="143" vertical-scroll-proportion="0.22920203">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/light/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -103,22 +110,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_components/com_users/tmpl/tmpl_default.php" />
-        <option value="$PROJECT_DIR$/libraries/database/query.php" />
-        <option value="$PROJECT_DIR$/_components/com_users/tmpl/userlogin.php" />
         <option value="$PROJECT_DIR$/includes/defines.php" />
         <option value="$PROJECT_DIR$/libraries/database/database.php" />
         <option value="$PROJECT_DIR$/components/com_users/users.php" />
         <option value="$PROJECT_DIR$/components/com_users/tmpl/tmpl_default.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/components/com_users/tmpl/userlogin.php" />
         <option value="$PROJECT_DIR$/libraries/system.php" />
-        <option value="$PROJECT_DIR$/libraries/session.php" />
         <option value="$PROJECT_DIR$/libraries/document/document.php" />
-        <option value="$PROJECT_DIR$/libraries/router.php" />
-        <option value="$PROJECT_DIR$/components/com_users/user.php" />
         <option value="$PROJECT_DIR$/libraries/application.php" />
+        <option value="$PROJECT_DIR$/components/com_users/tmpl/userlogin.php" />
+        <option value="$PROJECT_DIR$/components/com_users/userlogin.php" />
+        <option value="$PROJECT_DIR$/libraries/session.php" />
+        <option value="$PROJECT_DIR$/libraries/router.php" />
+        <option value="$PROJECT_DIR$/components/com_users/userlogout.php" />
+        <option value="$PROJECT_DIR$/components/com_users/user.php" />
         <option value="$PROJECT_DIR$/templates/light/index.php" />
+        <option value="$PROJECT_DIR$/templates/light/css/template.css" />
       </list>
     </option>
   </component>
@@ -194,6 +201,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="light" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipsy_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipsy_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="light" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,6 +396,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/com_users/" />
       <recent name="$PROJECT_DIR$/components/com_users" />
     </key>
   </component>
@@ -494,7 +524,11 @@
       <created>1357739575343</created>
       <updated>1357739575344</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="так как я веду разработку один, комитов пока не будет">
+      <created>1358078716513</created>
+      <updated>1358078716513</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -521,12 +555,13 @@
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686085" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29126215" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1831307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17401215" sideWeight="0.34304208" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14361702" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27355623" sideWeight="0.95469254" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14361702" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20592706" sideWeight="0.95469254" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4158576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22036473" sideWeight="0.6407767" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3106796" sideWeight="0.49532712" order="7" side_tool="true" content_ui="tabs" />
@@ -537,7 +572,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -602,13 +636,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/components/com_users/tmpl/userlogin.php</url>
-          <line>33</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="12" />
     </breakpoint-manager>
   </component>
@@ -619,18 +646,6 @@
     </find-history>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/com_users/tmpl/userlogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="32" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configs/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="460" selection-end="460" vertical-scroll-proportion="0.37168142" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/defines.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="29" selection-start="255" selection-end="255" vertical-scroll-proportion="0.23893805" />
@@ -662,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_users/tmpl/userlogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="387" selection-end="387" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/document/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="7" selection-start="257" selection-end="257" vertical-scroll-proportion="-5.0">
@@ -683,30 +691,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="61" selection-start="439" selection-end="486" vertical-scroll-proportion="-10.416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="381" selection-end="381" vertical-scroll-proportion="0.41589648">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraries/document/document.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="35" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.14962122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/light/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="54" selection-start="547" selection-end="547" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
@@ -718,9 +705,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="-12.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_users/userlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="55" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-19.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_users/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="156" selection-end="156" vertical-scroll-proportion="0.23893805">
+        <state line="31" column="17" selection-start="692" selection-end="692" vertical-scroll-proportion="-8.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="377" selection-end="377" vertical-scroll-proportion="-5.4166665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/light/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_users/userlogout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="260" selection-end="260" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/light/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="10" selection-start="143" selection-end="143" vertical-scroll-proportion="0.22920203">
           <folding />
         </state>
       </provider>

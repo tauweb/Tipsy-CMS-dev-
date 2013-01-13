@@ -22,7 +22,8 @@ abstract class TRouter
 			
 			TLoader::discover('T',_TPATH_COMPONENTS, true);
 			TLoader::load($com);
-			$com == 'Tuser' ? TUser::init() : '';
+			#$com == 'Tuser' ? TUser::init() : '';
+			$com::init();
 		}
 		
 		// Построчно перебирает переменные в URL.

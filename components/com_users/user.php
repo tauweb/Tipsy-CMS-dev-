@@ -27,7 +27,8 @@ abstract class TUser
 		if(!isset($_SESSION['user'])){
 			self::login();
 		}else{
-			echo 'Вы уже авторизованы как' . $_SESSION['user'];
+			TLoader::load('TUserLogOut');
+			echo "Привет  ". $_SESSION['user'] . "<a href=\"?component=userlogout\">Выйти</a>";
 			return true;
 		}
 	}
