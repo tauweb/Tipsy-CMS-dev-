@@ -1,4 +1,5 @@
 <?php
+namespace Tipsy\Libraries;
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
@@ -24,9 +25,6 @@ abstract class TSession
 		{
 			if($SessionName == isset($_SESSION['user']))
 			return true;
-
-			// Запускает сессию
-			#session_start();
 
 			// Имя пользователя сесии
 			$_SESSION['user'] = $SessionName;

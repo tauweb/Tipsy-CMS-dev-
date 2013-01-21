@@ -9,7 +9,7 @@ article,aside,header,nav,section {
 
 #autorize{
     float: right;
-    margin-right: 5px;		    /* Отступ слева */
+    margin: 5px;		    /* Отступ слева */
     border: 1px solid #eeeeee;  /* Рамка вокруг текста */
     padding: 3px;			/* Поля вокруг текста */
 }

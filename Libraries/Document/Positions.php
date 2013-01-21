@@ -1,4 +1,5 @@
 <?php
+namespace Tipsy\Libraries\Document;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -12,7 +13,7 @@ abstract class TPositions
 	
 	public static function getPosition($name, $contParam, $contID)
 	{
-		self::$positions = $name
+		self::$positions = $name;
 	}
 	
 	public static function getPosContent($position)

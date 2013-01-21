@@ -1,9 +1,10 @@
 <?php
+namespace Config\Config;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 // Параметры конфигурации системы
-abstract class TConfig
+abstract class Config
 {
 	// Параметры подключения к базе данных
 	public static $db_type = 'mysql';
@@ -16,7 +17,7 @@ abstract class TConfig
 	public static $db_socket = '';
 
 	// Ошибки и отладка (none, simple, maximum)
-	public static $error_reporting = 'maximum';
+	public static $errorReporting = 'maximum';
 	// Отладка системы (1 - да, 0 - нет)
 	public static $debug = 1;
 	

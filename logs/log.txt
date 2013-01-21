@@ -44,3 +44,5 @@ Saturday 5th of January 2013 06:50:01 PM	TQuery Не могу подключит
 Saturday 5th of January 2013 06:50:01 PM	TQuery Не могу подключиться к БД
 Saturday 5th of January 2013 07:17:35 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'whiskeyman_tipsy'@'localhost' (using password: YES)
 Sunday 6th of January 2013 11:08:47 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'whiskeyman_tipsy'@'localhost' (using password: YES)
+Sunday 13th of January 2013 06:38:56 PM	Не найден файл конфигурации config.php
+Sunday 13th of January 2013 06:38:58 PM	Не найден файл конфигурации config.php

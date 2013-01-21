@@ -41,7 +41,7 @@ abstract class TUserLogin
 		TSession::start($table['username']);
 		
 
-		#header("Location: ./");
+		header("Location: ./");
 		echo 'Вы вошли как: ' . $_SESSION['user'];
 		return true;
 	}

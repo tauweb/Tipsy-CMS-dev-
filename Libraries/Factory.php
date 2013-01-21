@@ -1,11 +1,15 @@
 <?php
+namespace Tipsy\Libraries;
+
+use Tipsy\Libraries\Logger;
+use Tipsy\Config\Config;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 /**
  * Системный объект
  */
-class TSystem
+class Factory
 {
 	/**
 	 * Конструктор, служит для автоматической загрузки некоторых системных настрок
@@ -16,7 +20,7 @@ class TSystem
 		// Получает настройки конфигурации системы.
 		self::getConfig();
 		// Определяет уровень отчета об ошибках.
-		self::setError_reporting();
+		self::setErrorReporting();
 		// Временная зона системы.
 		self::setTimeZone();
 		// Определяет время жизни сессий.
@@ -29,7 +33,7 @@ class TSystem
 	 */
 	public function setTimeZone()
 	{
-		date_default_timezone_set(TConfig::$timezone);
+		date_default_timezone_set(Config::$timezone);
 	}
 	
 	/**
@@ -41,14 +45,14 @@ class TSystem
 	public static function getConfig()
 	{
 		// Подключает настройки системы
-		if (TLoader::load('TConfig'))
+		if (Loader::autoload('Tipsy\Config\TConfig'))
 		{
 			return true;
 		}else{
 			// Пишет сообщение в лог о ненайденном файле конфигурации.
-			TLogger::WriteLogs('Не найден файл конфигурации config.php');
+			Logger::WriteLogs('Не найден файл конфигурации Config.php');
 			// Завершает работу и выводит сообщение.
-			die('Не найден файл конфигурации <b>config.php</b>');
+			die('Не найден файл конфигурации <b>Config.php</b>');
 		}
 	}
 	
@@ -60,12 +64,12 @@ class TSystem
 	public static function GetDBOptions()
 	{
 		$DBOptions = array(
-						"host" => TConfig::$db_host ,
-						"username" => TConfig::$db_user ,
-						"password" => TConfig::$db_password,
-						"dbname" =>TConfig::$db_dbname,
-						"port" => TConfig::$db_port,
-						"socket" => TConfig::$db_socket
+						"host" => Config::$db_host ,
+						"username" => Config::$db_user ,
+						"password" => Config::$db_password,
+						"dbname" => Config::$db_dbname,
+						"port" => Config::$db_port,
+						"socket" => Config::$db_socket
 					);
 					
 		return $DBOptions;
@@ -74,10 +78,10 @@ class TSystem
 	/**
 	 * Метод установки уровня отчетов об ошибках из файла конфигурации системы.
 	 */
-	public static function setError_reporting()
+	public static function setErrorReporting()
 	{
 		// Устанавливает уровень отчета об ошибках.
-		switch (TConfig::$error_reporting) {
+		switch (Config::$errorReporting) {
 			// Не показывать ошибки
 			case 'none':
 				error_reporting(0);

@@ -1,4 +1,5 @@
 <?php
+namespace Tipsy\Libraries\Document;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -86,7 +87,7 @@ class TDocument
 	{
 		// Содержит контент горизонтального меню	// Todo: продумать и переписать принцып и перенести в БД
 		$nav = [
-			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Мы на githab</a>',
+			'<a href="https://github.com/WhiskeyMan-Tau/Tipsy.git">Мы на githab</a>',
 			'<a href="./logs/log.txt">Посмотреть логи</a>',
 
 		];
@@ -109,7 +110,7 @@ class TDocument
 			'<a href="?component=user">Войти</a>',
 			'<a href="http://php.net">PHP</a>',
 			'<a href="http://w3.org">html5</a>',
-			'<a href="https://github.com/WhiskeyMan-Tau/tipsy_cms.git">Исходники</a>',
+			'<a href="https://github.com/WhiskeyMan-Tau/Tipsy.git">Исходники</a>',
 			'<a href="./logs/log.txt">Посмотреть логи</a>',
 		];
 

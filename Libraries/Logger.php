@@ -1,10 +1,11 @@
 <?php
+namespace Tipsy\Libraries;
 /**
  * User: whiskeyman
  * Date: 31.08.12
  * Time: 21:40
  */
- 
+
  // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -12,7 +13,7 @@ defined('_TEXEC') or die;
   * Класс библиотеки логирования системных ошибок
   *
   */
-class TLogger
+class Logger
 {
 	/**
 	 * Метод записи логов в файл и формирования строки логирования

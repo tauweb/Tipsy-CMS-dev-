@@ -1,11 +1,12 @@
 <?php
+namespace Tipsy\Libraries;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 /**
  * Класс работы с ошибками.
  */
-abstract class TErrors
+abstract class Errors
 {
 	/**
 	 * @var	array	Массив содержащий ошибки системы.
@@ -30,7 +31,7 @@ abstract class TErrors
  * Класс обработчика исключений во время работы
  *
  */
-class TRuntimeException extends ErrorException
+class RuntimeException extends \ErrorException
 {
 	/**
 	 * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
@@ -51,7 +52,7 @@ class TRuntimeException extends ErrorException
 	}
 }
 
-class TPDOException extends  PDOException
+class PdoException extends  \PDOException
 {
     /**
      * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
@@ -76,7 +77,7 @@ class TPDOException extends  PDOException
  * Класс обработчика ошибок которые нельзя логировать.
  *
  */
-class TErrorException extends ErrorException
+class FatalErrorException extends \ErrorException
 {
 	public function __construct($message = '', $code = 0, Exception $previous = null)
 	{

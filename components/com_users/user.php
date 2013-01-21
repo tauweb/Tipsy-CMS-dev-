@@ -25,11 +25,13 @@ abstract class TUser
 	{
 		// Проверяет нет ли авторизованных пользователей
 		if(!isset($_SESSION['user'])){
+			echo "<a href=\"?component=userlogin\">Вход </a>";
+			echo "<a href=\"?component=userreg\"> Регистрация</a>";
 			self::login();
 		}else{
 			TLoader::load('TUserLogOut');
 			echo "Привет  ". $_SESSION['user'] . "<a href=\"?component=userlogout\">Выйти</a>";
-			return true;
+			#return true;
 		}
 	}
 }

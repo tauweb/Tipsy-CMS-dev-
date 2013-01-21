@@ -1,4 +1,6 @@
 <?php
+namespace Tipsy\Libraries\Document;
+
 abstract class THead{
 
 	// Заголовок документа (html5)
@@ -36,7 +38,7 @@ abstract class THead{
 	protected static $link = [
 		// Путь к связываемому файлу.
 		"href" => "", // [URL]
-		// Specifies the language of the text in the linked document
+		// Specifies the language of the text in the linked Document
 		"hreflang" => "", // [language_code]
 		// Определяет устройство, для которого следует применять стилевое оформление.
 		"media" => "", // [media_query]

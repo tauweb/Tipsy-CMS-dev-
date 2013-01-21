@@ -1,4 +1,5 @@
 <?php
+namespace Tipsy\Libraries;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -23,7 +24,12 @@ abstract class TRouter
 			TLoader::discover('T',_TPATH_COMPONENTS, true);
 			TLoader::load($com);
 			#$com == 'Tuser' ? TUser::init() : '';
-			$com::init();
+			if( method_exists($com,'init')){
+				$com::init();
+			}else{
+				TDebug::AddMessage("Страница $com не найдена", __CLASS__);
+			}
+
 		}
 		
 		// Построчно перебирает переменные в URL.

@@ -1,4 +1,5 @@
 <?php
+namespace Tipsy\Libraries\Document;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
