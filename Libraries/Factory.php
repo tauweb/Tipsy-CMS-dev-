@@ -3,6 +3,7 @@ namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Logger;
 use Tipsy\Config\Config;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -45,7 +46,7 @@ class Factory
 	public static function getConfig()
 	{
 		// Подключает настройки системы
-		if (Loader::autoload('Tipsy\Config\TConfig'))
+		if (Loader::autoload('Config\Config'))
 		{
 			return true;
 		}else{
@@ -61,7 +62,7 @@ class Factory
 	 *
 	 * @return	array	$DBOptions[host,username,password,dbname,port,socket]	Массив с параметрами БД
 	 */
-	public static function GetDBOptions()
+	public static function getDbOptions()
 	{
 		$DBOptions = array(
 						"host" => Config::$db_host ,
@@ -108,7 +109,6 @@ class Factory
 	 */
 	public static function getSession_lifetime()
 	{
-		session_set_cookie_params(TConfig::$Session_lifetime * 60);
+		session_set_cookie_params(Config::$sessionLifetime * 60);
 	}
 }
-?>

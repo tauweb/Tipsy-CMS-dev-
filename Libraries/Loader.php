@@ -27,8 +27,10 @@ class Loader
 
 		if(file_exists($fileName)){
 			require_once $fileName;
+			return true;
 		}else{
-			print("Меня зовут загрузчик и я не могу найти файл: <b>$fileName</b>");
+			print("Меня зовут загрузчик и я не могу найти файл: <b>$fileName</b><p>");
+			return false;
 		}
 	}
 }

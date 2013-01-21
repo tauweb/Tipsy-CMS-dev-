@@ -84,7 +84,7 @@ class FatalErrorException extends \ErrorException
 		parent::__construct($message, $code, $previous);
 
 		// Логирует ошибку
-		TErrors::$errors[] = $this->getMessage();
+		Errors::$errors[] = $this->getMessage();
 	}
 }
 

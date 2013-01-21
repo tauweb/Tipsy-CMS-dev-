@@ -31,7 +31,7 @@ class Logger
 		try {
 			// Проверяет и пытается открыть файл для записи логов, если не получается - бросает исключение с сообщением об ошибке.
 			if (@!$logfile = fopen(_TPATH_ROOT . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a')) {
-				throw new TErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов. Проверте права доступа на запись');
+				throw new FatalErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов. Проверте права доступа на запись');
 			}
 			
 			// Формирует сообщение в логоподобный вид
@@ -41,7 +41,7 @@ class Logger
 			// Закрывает файл
 			fclose($logfile);
 		// При неудачной попытке записи сообщеняия, бросает исключение и
-		}catch (TErrorException $e) {
+		}catch (FatalErrorException $e) {
 			return false;
 		}
 		return true;

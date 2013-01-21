@@ -1,5 +1,5 @@
 <?php
-namespace Config\Config;
+namespace Tipsy\Config;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -28,7 +28,7 @@ abstract class Config
 	public static $template = 'light';
 	
 	// Время жизни куку
-	public static $Session_lifetime = 15;
+	public static $sessionLifetime = 15;
 }
 
 ?>
