@@ -8,7 +8,7 @@ defined('_TEXEC') or die;
  * Класс отладки системы и вывода отладочной информации.
  *
  */
-abstract class TDebug
+abstract class Debug
 {
 	/**
 	 * @var	array	Контейнер содержащий отладочные сообщения.
@@ -45,4 +45,3 @@ abstract class TDebug
 		}
 	}
 }
-?>

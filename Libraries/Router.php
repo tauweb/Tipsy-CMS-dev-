@@ -1,12 +1,13 @@
 <?php
 namespace Tipsy\Libraries;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
 /**
  * Класс путями в адресной строке.
  */
-abstract class TRouter
+abstract class Router
 {
 	/**
 	 * Метод определяющий и перенаправляющий управление компоненту системы. todo: Переделать!
@@ -19,15 +20,14 @@ abstract class TRouter
 		if(empty($_GET['component'])){
 			return false;
 		}else{
-			$com = 'T' . $_GET['component'];
+			$com = $_GET['component'];
 			
-			TLoader::discover('T',_TPATH_COMPONENTS, true);
-			TLoader::load($com);
+			Loader::load($com);
 			#$com == 'Tuser' ? TUser::init() : '';
 			if( method_exists($com,'init')){
 				$com::init();
 			}else{
-				TDebug::AddMessage("Страница $com не найдена", __CLASS__);
+				Debug::AddMessage("Страница $com не найдена", __CLASS__);
 			}
 
 		}

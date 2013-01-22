@@ -1,5 +1,8 @@
 <?php
 namespace Tipsy\Libraries;
+
+use Tipsy\Libraries\Logger;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -45,10 +48,10 @@ class RuntimeException extends \ErrorException
 		parent::__construct($message, $code, $previous);
 		
 		// Добовляет ошибку в список ошибок.
-		TErrors::$errors[] = $this->getMessage();
+		Errors::$errors[] = $this->getMessage();
 
 		// Логирует ошибку
-		TLogger::WriteLogs($this->getMessage());
+		Logger::WriteLogs($this->getMessage());
 	}
 }
 
@@ -66,10 +69,10 @@ class PdoException extends  \PDOException
 		parent::__construct($message, $code, $previous);
 
 		// Добовляет ошибку в список ошибок.
-		TErrors::$errors[] = $this->getMessage();
+		Errors::$errors[] = $this->getMessage();
 
 		// Логирует ошибку
-		TLogger::WriteLogs($this->getMessage());
+		Logger::WriteLogs($this->getMessage());
 	}
 }
 

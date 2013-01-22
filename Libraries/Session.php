@@ -1,12 +1,13 @@
 <?php
 namespace Tipsy\Libraries;
+
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
 /**
  * Класс управления сессиями
  */
-abstract class TSession
+abstract class Session
 {   /*
     * Метод проверяющий существует ли сессия, если сессия не активна - начинает новую.
     * @returns	true если сессия существует или запущена.
@@ -18,16 +19,16 @@ abstract class TSession
 		}
 	}
 
-	public static function start($SessionName)
+	public static function start($sessionName)
 	{
 		// Если было получено имея сессии и если еще не используется, то запускает новую сессию
-		if (!empty($SessionName) && !isset($_SESSION['user']))
+		if (!empty($sessionName) && !isset($_SESSION['user']))
 		{
-			if($SessionName == isset($_SESSION['user']))
+			if($sessionName == isset($_SESSION['user']))
 			return true;
 
 			// Имя пользователя сесии
-			$_SESSION['user'] = $SessionName;
+			$_SESSION['user'] = $sessionName;
 			
 			// Количество посещений пользователя, общее или после чистки куки
 			empty($_SESSION['count'])
@@ -36,7 +37,7 @@ abstract class TSession
 							
 		// Добавляет сообщение в сообщения отладки системы
 		TDebug::AddMessage("Страница показана <b>" . $_SESSION['count'] .
-			"</b> раз за время сессии" . ' (' .TConfig::$Session_lifetime . ' мин)');
+			"</b> раз за время сессии" . ' (' . Config::$sessionLifetime . ' мин)');
 		}
 	}
 }

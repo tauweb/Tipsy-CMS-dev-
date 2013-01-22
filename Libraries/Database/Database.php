@@ -1,5 +1,9 @@
 <?php
 namespace Tipsy\Libraries\Database;
+
+use Tipsy\Config\Config;
+use Tipsy\Libraries\RuntimeException;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -7,44 +11,42 @@ defined('_TEXEC') or die();
  * Подключение к базе данных
  * @package Tipsy_smc.DataBase
  */
-abstract class TDatabase
+abstract class Database
 {
 	/**
 	 * @var	string	DataBaseHandler содержит в себе .
 	 */
-	public static $DBH = '';
+	public static $dbh = '';
 	
 	/**
 	 * Метод устанавливающий подключение к БД.
 	 * @param	array	$DBOptions	массив содержащий параметры подключения к базе данных.
 	 */
-	public static function connect($DBOptions)
+	public static function connect($dbOptions)
 	{
 		// Определяет тип БД указанной в настройках системы ( для испольования в DBO )
-		$DBDriver = strtolower(TConfig::$db_type);
+		$dbDriver = strtolower(Config::$dbType);
 
 		// Формирует строку DNS, имя источника данных или DSN, содержащее информацию, необходимую для подключения к базе данных.
-		$dns = $DBDriver . ':'. 'dbname=' . $DBOptions['dbname'] . ';' . 'host=' . $DBOptions['host'];
+		$dns = $dbDriver . ':'. 'dbname=' . $dbOptions['dbname'] . ';' . 'host=' . $dbOptions['host'];
 
 		try {
-			self::$DBH = new PDO($dns, $DBOptions['username'], $DBOptions['password']);
+			self::$dbh = new \PDO($dns, $dbOptions['username'], $dbOptions['password']);
 			// Переводим в режим отображаения всех ошибок и предупреждений (Для отлаживания)
-			self::$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+			self::$dbh->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION );
 			// Устанавливает кодировку данных БД.
-			self::$DBH->exec('SET NAMES utf8');
+			self::$dbh->exec('SET NAMES utf8');
 		}
 		// Перерехватывает исключение PDO.
-		catch(PDOException $e) {
+		catch(\PDOException $e) {
 			try{
 				// todo: переписать Эту часть!
 				// Если перехваченное ранее исключение PDO содержит ошибку, то бросаем новое исключение для вывода сообщения об ошибке на страницу. 
 				if($e->getMessage()){
-					throw new TRuntimeException('Ошибка базы данных: ' . $e->getMessage());
+					throw new RuntimeException('Ошибка базы данных: ' . $e->getMessage());
 				}
-			}catch (TRuntimeException $e){}
+			}catch (RuntimeException $e){}
 		}
 
 	}
 }
-
-?>

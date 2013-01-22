@@ -1,5 +1,15 @@
 <?php
 namespace Tipsy\Libraries\Document;
+
+use Tipsy\Config\Config;
+use Tipsy\Libraries\Loader;
+use Tipsy\Libraries\Router;
+use Tipsy\Libraries\RuntimeException;
+use Tipsy\Libraries\Errors;
+use Tipsy\Libraries\Document\Head;
+use Tipsy\Libraries\Debug;
+use Tipsy\Libraries\Document\Content;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -7,7 +17,7 @@ defined('_TEXEC') or die();
  * Класс формирования данных для html страницы. Выстцпает связным звеном между страницей и модулями
  *
  */
-class TDocument
+class Document
 {
 	/**
 	 * @var	string	Текущий шаблон
@@ -29,7 +39,10 @@ class TDocument
 		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
 		// Подключает класс формирующий <HEAD> документа.
-		TLoader::load('THead');
+		Loader::autoload('\Libraries\Document\Head');
+
+		Loader::autoload('\Libraries\Debug');
+
 		// Определяет и подключает шаблон
 		$this->getTemplate();
 
@@ -41,7 +54,7 @@ class TDocument
 	 */
 	private function setCharset($charset)
 	{
-		THead::setCharset($charset);
+		Head::setCharset($charset);
 	}
 
 	/**
@@ -51,7 +64,7 @@ class TDocument
 	 */
 	private function addStylesheet($name)
 	{
-	   THead::addStylesheet($name);
+	   Head::addStylesheet($name);
 	}
 
 	/**
@@ -59,7 +72,7 @@ class TDocument
 	 */
 	private function getHead()
 	{
-		THead::getHead();
+		Head::getHead();
 	}
 
 	/**
@@ -68,12 +81,13 @@ class TDocument
 	private function getTemplate()
 	{
 		// Путь к каталогу файлов шаблона.
-		$template = _TPATH_TEMPLATES . '/' . TConfig::$template;
+		$template = 'Templates/' . Config::$template;
+
 		// Проверяет наличие index файла шаблона и подключает его, если не находит - бросает исключение.
 		if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
 			$this->template = $tmpl_index;
 		} else {
-			throw new TRuntimeException('Не найден <b>index.php</b> выбранного шаблона');
+			throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
 		}
 		// Подключает шаблон.
 		require_once $this->template;
@@ -127,7 +141,7 @@ class TDocument
 	 */
 	private function getErrors()
 	{
-		TErrors::getErrors();
+		Errors::getErrors();
 	}
 
 	/**
@@ -135,7 +149,7 @@ class TDocument
 	 */
 	private function getDebugMsg()
 	{
-		TDebug::getDebugMsg();
+		Debug::getDebugMsg();
 	}
 
 	/**
@@ -145,7 +159,7 @@ class TDocument
 	 */
 	private function getContent($part, $id = 1)
 	{
-		TContent::getContent($part, $id);
+		Content::getContent($part, $id);
 	}
 
 	/**
@@ -153,8 +167,8 @@ class TDocument
 	 */
 	public function getURL()
 	{
-		TLoader::load('TRouter');
-		TRouter::getURL();
+		Loader::autoload('\Libraries\Router');
+		Router::getURL();
 	}
 	
 	
@@ -163,8 +177,6 @@ class TDocument
 	 */
 	protected function getPosition($pos_name)
 	{
-		TPosition::getPosition($pos_name);
+		Position::getPosition($pos_name);
 	}
 }
-
-?>

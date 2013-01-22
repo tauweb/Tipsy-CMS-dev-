@@ -7,7 +7,7 @@ defined('_TEXEC') or die;
 abstract class Config
 {
 	// Параметры подключения к базе данных
-	public static $db_type = 'mysql';
+	public static $dbType = 'mysql';
 
 	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
 	public static $db_user = 'whiskeyman_tipsy';
@@ -25,7 +25,7 @@ abstract class Config
 	public static $timezone = 'Europe/Moscow';
 
 	// Внешний вид (шаблон)
-	public static $template = 'light';
+	public static $template = 'Light';
 	
 	// Время жизни куку
 	public static $sessionLifetime = 15;

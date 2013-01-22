@@ -1,7 +1,9 @@
 <?php
 namespace Tipsy\Libraries\Document;
 
-abstract class THead{
+use Tipsy\Config\Config;
+
+abstract class Head{
 
 	// Заголовок документа (html5)
 	// http://www.w3schools.com/html5/tag_title.asp
@@ -90,7 +92,7 @@ abstract class THead{
 	public static function addStylesheet($name)
 	{
 		#self::$stylesheets[$name] =  'templates/' . TConfig::$template . '/css/' . $name;
-		self::$stylesheets[$name] = '<link rel = "stylesheet" href="' .  'templates/' . TConfig::$template . '/css/' . $name . ' ">';
+		self::$stylesheets[$name] = '<link rel = "stylesheet" href="' .  'templates/' . Config::$template . '/css/' . $name . ' ">';
 	}
 
 	/**
@@ -128,5 +130,3 @@ abstract class THead{
 		}
 	}
 }
-
-?>

@@ -15,6 +15,6 @@ define('_TEXEC', 1);
 phpversion() < 5.4 ? die('<b>ВНИМАНИЕ!</b> Данная версия php не поддерживается.
 					Для работы системы нужна версия >= 5.4') : '';		// Todo: Позже вынести в отдельный модуль!!!
 
-require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'iniset.php';
+#require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'iniset.php';
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'Framework.php';

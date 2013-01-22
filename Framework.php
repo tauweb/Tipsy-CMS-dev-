@@ -1,5 +1,6 @@
 <?php
 namespace Tipsy;
+
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
@@ -25,4 +26,4 @@ Loader::autoload('\Libraries\Debug');
 Loader::autoload('\Libraries\Application');
 
 // Создает объект приложения
-$app = (new \Application)->run();
+$app = (new Libraries\Application)->run();

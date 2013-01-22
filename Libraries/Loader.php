@@ -1,12 +1,6 @@
 <?php
 namespace Tipsy\Libraries;
-/**
- * Created by JetBrains PhpStorm.
- * User: whiskeyman
- * Date: 20.01.13
- * Time: 19:02
- * To change this template use File | Settings | File Templates.
- */
+
 class Loader
 {
 	static function autoload($className)

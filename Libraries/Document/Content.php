@@ -1,23 +1,23 @@
 <?php
 namespace Tipsy\Libraries\Document;
+
+use Tipsy\Libraries\Database\Database;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-abstract class TContent
+abstract class Content
 {
-	protected $content = '';
+	protected static $content = '';
 	
-	public function getContent($QueryStr = '')
+	public static function getContent($QueryStr = '')
 	{
 	 	// тестовая часть
 		$QuerySrt = "SELECT `fulltext`FROM `whiskeyman_tipsy`.`articles` where articleid = 1;";
 
-		self::$content = TDatabase::$DBH->query($QuerySrt);
+		self::$content = Database::$dbh->query($QuerySrt);
 
-		foreach($this->content as $key){
+		foreach(self::$content as $key){
 			self::$content = $key['fulltext'];
 		}
 	}
 }
-
-?>

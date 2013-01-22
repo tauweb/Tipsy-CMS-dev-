@@ -1,5 +1,11 @@
 <?php
 namespace Tipsy\Libraries;
+
+use Tipsy\Libraries\Loader;
+use Tipsy\Libraries\Document\Document;
+use Tipsy\Libraries\Database\Database;
+use Tipsy\Libraries\Session;
+
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
@@ -8,7 +14,7 @@ defined('_TEXEC') or die;
  * По возможности здесь будет реализовываться API
  *
  */
-class TApplication
+class Application
 {
 	/**
 	 * Метод запускающий формирование страцы
@@ -16,33 +22,31 @@ class TApplication
 	public function run()
 	{
 		// Загружает класс работы с БД
-		TLoader::load('TDatabase');
+		Loader::autoload('\Libraries\Database\Database');
 		// Устанавливает соединение с БД
-		TDatabase::connect(TSystem::getDBOptions());
+		Database::connect(Factory::getDbOptions());
 		// Подключает отладчик системы
-		TLoader::load('TDebug');
+		Loader::autoload('\Libraries\Debug');
 		// Подключает библиотеку выполняющие запросы к БД
-		TLoader::load('TQuery');
+		Loader::autoload('\Libraries\Database\Query');
 		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
-		TLoader::discover('T',_TPATH_COMPONENTS);
-		// Загружает класс формирующий контент.
-		TLoader::load('TContent');
+		Loader::autoload('\Libraries\Document\Content');
 		// З
-		TLoader::load('TSession');
+		Loader::autoload('\Libraries\Session');
 		// Проверяет и и запускает сессию в случае если нет активной.
-		TSession::check();
+		Session::check();
 
-		TLoader::load('TUser');
+		Loader::autoload('\Components\User\User');
 
 
 		try {
 			// Подключает библиотеку формирующую страницы html
-			TLoader::load('TDocument');
+			Loader::autoload('\Libraries\Document\Document');
 			// Создает объект формирующий страницу html
-			$TDocument = new TDocument();
-		} catch (TRuntimeException $e) {
+			$doc = new Document();
+		} catch (RuntimeException $e) {
 			// Выводит ошибку на страницу.
-			TErrors::getErrors();
+			Errors::getErrors();
 		}
 	}
 }
