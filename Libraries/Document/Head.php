@@ -92,7 +92,8 @@ abstract class Head{
 	public static function addStylesheet($name)
 	{
 		#self::$stylesheets[$name] =  'templates/' . TConfig::$template . '/css/' . $name;
-		self::$stylesheets[$name] = '<link rel = "stylesheet" href="' .  'templates/' . Config::$template . '/css/' . $name . ' ">';
+		self::$stylesheets[$name] = '<link rel = "stylesheet" href="'
+			. 'Templates/' . Config::$template . '/css/' . $name . ' ">';
 	}
 
 	/**

@@ -6,20 +6,20 @@ defined('_TEXEC') or die;
 /**
  * Библиотека выполняющая запросы к БД.
  */
-abstract class TQuery
+abstract class Query
 {
-	public static function query($QueryStr)
+	public static function query($queryStr)
 	{	
 		// Проверяет установленно ли подключение к БД.
-		if(!is_object(TDatabase::$DBH)){
+		if(!is_object(Database::$dbh)){
 			// Если нет - выводит сообщение и возвращает false.
 			echo ('<b>' . __CLASS__.'</b>' .' Не могу подключиться к БД');
 			return false;
 		}
 
-		$result = TDatabase::$DBH->query($QueryStr);
+		$result = Database::$dbh->query($queryStr);
 
-		$result->setFetchMode(PDO::FETCH_ASSOC);
+		$result->setFetchMode(\PDO::FETCH_ASSOC);
 		return $result->fetch();
 
 	}
@@ -32,19 +32,19 @@ abstract class TQuery
 	 */
 	public static function select($select_expr, $table_references)
 	{
-		$QueryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
+		$queryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
 		
 		// Отладка строки запроса
-		TDebug::AddMessage('Строка запроса: ' . $QueryStr, __METHOD__);
+		TDebug::AddMessage('Строка запроса: ' . $queryStr, __METHOD__);
 
-		$QueryRes = TDatabase::$DBH->query($QueryStr);
+		$queryRes = Database::$dbh->query($queryStr);
 
-		$num_result = $QueryRes->rowCount();
+		$num_result = $queryRes->rowCount();
 
 		// Отладка. Количество найдетнных строк соответствующих запросу
-		TDebug::AddMessage('найдено строк:'. $num_result, __METHOD__);
+		Debug::AddMessage('найдено строк:'. $num_result, __METHOD__);
 
 		//Отладочная часть
-		TDebug::AddMessage('Результат запроса: ' . var_dump($QueryRes), __METHOD__);
+		Debug::AddMessage('Результат запроса: ' . var_dump($queryRes), __METHOD__);
 	}
 }

@@ -1,6 +1,7 @@
 <?php
 namespace Tipsy\Libraries\Document;
 
+
 use Tipsy\Config\Config;
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Router;
@@ -8,7 +9,9 @@ use Tipsy\Libraries\RuntimeException;
 use Tipsy\Libraries\Errors;
 use Tipsy\Libraries\Document\Head;
 use Tipsy\Libraries\Debug;
-use Tipsy\Libraries\Document\Content;
+#use Tipsy\Libraries\Document\Content;
+use Tipsy\Components\Content;
+use Tipsy\Components\User\User;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -42,6 +45,8 @@ class Document
 		Loader::autoload('\Libraries\Document\Head');
 
 		Loader::autoload('\Libraries\Debug');
+
+		Loader::autoload('\Components\Content');
 
 		// Определяет и подключает шаблон
 		$this->getTemplate();
@@ -92,7 +97,6 @@ class Document
 		// Подключает шаблон.
 		require_once $this->template;
 	}
-
 
 	/**
 	 * Метод формирующий горизонтальное меню.
@@ -170,8 +174,11 @@ class Document
 		Loader::autoload('\Libraries\Router');
 		Router::getURL();
 	}
-	
-	
+
+	public function User(){
+		Loader::autoload('\Components\User\User');
+		User::init();
+	}
 	/**
 	 * Метод определяющий позиции на странице html.
 	 */

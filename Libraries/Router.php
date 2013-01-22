@@ -22,8 +22,7 @@ abstract class Router
 		}else{
 			$com = $_GET['component'];
 			
-			Loader::load($com);
-			#$com == 'Tuser' ? TUser::init() : '';
+			Loader::autoload($com);
 			if( method_exists($com,'init')){
 				$com::init();
 			}else{
@@ -41,5 +40,3 @@ abstract class Router
 		#TLoader::discover('T',_TPATH_COMPONENTS,true);
 	}
 }
-
-?>

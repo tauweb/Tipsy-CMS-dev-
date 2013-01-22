@@ -1,6 +1,8 @@
 <?php
 namespace Tipsy\Libraries;
 
+use Tipsy\Libraries\Debug;
+
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
 
@@ -36,7 +38,7 @@ abstract class Session
 					: $_SESSION['count']++;
 							
 		// Добавляет сообщение в сообщения отладки системы
-		TDebug::AddMessage("Страница показана <b>" . $_SESSION['count'] .
+		Debug::AddMessage("Страница показана <b>" . $_SESSION['count'] .
 			"</b> раз за время сессии" . ' (' . Config::$sessionLifetime . ' мин)');
 		}
 	}

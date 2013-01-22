@@ -17,7 +17,7 @@ Loader::autoload('\Libraries\Exception');
 
 // Подключает системный модуль.
 Loader::autoload('\Libraries\Factory');
-$system = new Libraries\Factory();
+$factory = new Libraries\Factory();
 
 // Подключает модуль отладки системы.
 Loader::autoload('\Libraries\Debug');

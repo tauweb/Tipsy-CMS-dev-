@@ -1,6 +1,8 @@
 <?php
 namespace Tipsy\Libraries;
 
+Use Tipsy\Config\Config;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -32,7 +34,7 @@ abstract class Debug
 	 */
 	 public static function getDebugMsg()
 	{   // Проверяет наличие сообщений в массиве и настройки вывода сообщений в конфиге.
-		if(!empty(self::$messages) and TConfig::$debug)
+		if(!empty(self::$messages) and Config::$debug)
 		{
 			// Формирует Заголовок раздела отладки.
 			echo '<b>DEBUG MESSAGE: </b>';
