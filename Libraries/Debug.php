@@ -1,7 +1,7 @@
 <?php
 namespace Tipsy\Libraries;
 
-Use Tipsy\Config\Config;
+use Tipsy\Config\Config;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;

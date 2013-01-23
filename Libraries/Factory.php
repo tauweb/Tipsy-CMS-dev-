@@ -13,11 +13,12 @@ defined('_TEXEC') or die;
 class Factory
 {
 	/**
-	 * Конструктор, служит для автоматической загрузки некоторых системных настрок
+	 * Конструктор, служит для автоматической загрузки некоторых системных компонентов и настроек
 	 *
 	 */
 	public function __construct()
 	{
+		self::loadCoreLibraries();
 		// Получает настройки конфигурации системы.
 		self::getConfig();
 		// Определяет уровень отчета об ошибках.
@@ -26,6 +27,38 @@ class Factory
 		self::setTimeZone();
 		// Определяет время жизни сессий.
 		self::getSession_lifetime();
+	}
+
+	/**
+	 * Метод загружающий системныемы библиотеки.
+	 *
+	 */
+	protected function loadCoreLibraries()
+	{
+		// Подключает компонент логирования.
+		Loader::autoload('\Libraries\Logger');
+
+		// Подключает обработчик исключений.
+		Loader::autoload('\Libraries\Exception');
+
+		// Подключает модуль отладки системы.
+		Loader::autoload('\Libraries\Debug');
+
+		// Загружает класс работы с БД
+		Loader::autoload('\Libraries\Database\Database');
+		// Устанавливает соединение с БД
+		// Подключает отладчик системы
+		Loader::autoload('\Libraries\Debug');
+		// Подключает библиотеку выполняющие запросы к БД
+		Loader::autoload('\Libraries\Database\Query');
+		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
+		Loader::autoload('\Libraries\Document\Content');
+		//
+		Loader::autoload('\Libraries\Session');
+
+		Loader::autoload('\Components\User\User');
+
+
 	}
 	
 	/**

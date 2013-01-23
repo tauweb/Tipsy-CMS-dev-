@@ -2,6 +2,7 @@
 namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Debug;
+use Tipsy\Config\Config;
 
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;

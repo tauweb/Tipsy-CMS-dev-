@@ -1,7 +1,6 @@
 <?php
 namespace Tipsy\Libraries\Document;
 
-
 use Tipsy\Config\Config;
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Router;
@@ -11,6 +10,7 @@ use Tipsy\Libraries\Document\Head;
 use Tipsy\Libraries\Debug;
 use Tipsy\Libraries\Document\Content;
 use Tipsy\Components\User\User;
+use Tipsy\Libraries\Session;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -38,18 +38,16 @@ class Document
 	 */
 	function __construct()
 	{
-		///Передает управлениемаршрутизатору адресной строки
-		$this->getURL();
+
 		// Подключает класс формирующий <HEAD> документа.
 		Loader::autoload('\Libraries\Document\Head');
 
-		#Loader::autoload('\Libraries\Debug');
+		Loader::autoload('\Libraries\Router');
 
-		#Loader::autoload('\Libraries\Document\Content');
-
+		///Передает управлениемаршрутизатору адресной строки
+		$this->getURL();
 		// Определяет и подключает шаблон
 		$this->getTemplate();
-
 	}
 
 	/**
@@ -170,7 +168,7 @@ class Document
 	 */
 	public function getURL()
 	{
-		Loader::autoload('\Libraries\Router');
+		#
 		Router::getURL();
 	}
 

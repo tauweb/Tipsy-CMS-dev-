@@ -26,7 +26,6 @@ abstract class Errors
 		foreach(self::$errors as $error){
 			echo $error . '<p>';
 		}
-		
 	}
 }
 
@@ -86,9 +85,6 @@ class FatalErrorException extends \ErrorException
 	{
 		parent::__construct($message, $code, $previous);
 
-		// Логирует ошибку
 		Errors::$errors[] = $this->getMessage();
 	}
 }
-
-?>
