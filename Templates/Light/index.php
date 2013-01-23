@@ -8,7 +8,7 @@ $this->setCharset('utf-8');
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
 
-#$this->positions('Footer,');
+$this->getPositions('Footer,header,left');
 ?>
 
 <!DOCTYPE html>

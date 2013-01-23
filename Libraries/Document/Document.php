@@ -25,6 +25,8 @@ class Document
 	 */
 	private $template = '';
 
+	private $templatePositions = array();
+
 	/**
 	 * @var	string	Контент, который будет выведен на страницу.
 	 * Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
@@ -178,8 +180,9 @@ class Document
 	/**
 	 * Метод определяющий позиции на странице html.
 	 */
-	protected function getPosition($pos_name)
+	protected function getPositions($posName)
 	{
-		Position::getPosition($pos_name);
+		$modules = explode(',',$posName);
+		#Position::getPositions($pos_name);
 	}
 }
