@@ -10,7 +10,6 @@ use Tipsy\Libraries\Document\Head;
 use Tipsy\Libraries\Debug;
 use Tipsy\Libraries\Document\Content;
 use Tipsy\Components\User\User;
-use Tipsy\Libraries\Session;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
