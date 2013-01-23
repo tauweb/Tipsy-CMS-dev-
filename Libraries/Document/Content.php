@@ -1,29 +1,33 @@
 <?php
 namespace Tipsy\Libraries\Document;
 
-use Tipsy\Libraries\Database\Database;
-use Tipsy\Libraries\Debug;
+use Tipsy\Libraries\Database\Query;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-abstract class Content
-{
-	protected static $content = '';
-	
-	public static function getContent($QueryStr = '')
+abstract class Content{
+
+	public static function getContent($param, $id)
 	{
-		if(!is_object(Database::$dbh)){
-			echo 'YTN' ;
-			return false;
+		$queryParam = $param == '*' ? $param  : '`' . $param . '`';
+		// Формирует строку запроса
+		$sql = "SELECT $queryParam from `articles` WHERE `articleid` = $id;";
+		
+		$row = Query::query($sql);
+		// Эта часть будет нужа для последующего формирования таблицы вывода, когда, например будут выбираться все поля
+		if($param == 'all' or $param == '*'){
+			foreach (array_keys($row) as $colName){
+				echo $colName . '<p>';
+			}
+		}else{
+			// Это обычный вывод
+			echo  $row[$param];
 		}
-	 	// тестовая часть
-		$querySrt = "SELECT `fulltext`FROM `whiskeyman_tipsy`.`articles` where articleid = 1;";
+	}
 
-		self::$content = Database::$dbh->query($querySrt);
-
-		foreach(self::$content as $key){
-			self::$content = $key['fulltext'];
-		}
+	public static function putContent($content)
+	{
+		echo $content;
 	}
 }

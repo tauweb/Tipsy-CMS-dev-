@@ -9,8 +9,7 @@ use Tipsy\Libraries\RuntimeException;
 use Tipsy\Libraries\Errors;
 use Tipsy\Libraries\Document\Head;
 use Tipsy\Libraries\Debug;
-#use Tipsy\Libraries\Document\Content;
-use Tipsy\Components\Content;
+use Tipsy\Libraries\Document\Content;
 use Tipsy\Components\User\User;
 
 // Проверяет легален ли доступ к файлу
@@ -44,9 +43,9 @@ class Document
 		// Подключает класс формирующий <HEAD> документа.
 		Loader::autoload('\Libraries\Document\Head');
 
-		Loader::autoload('\Libraries\Debug');
+		#Loader::autoload('\Libraries\Debug');
 
-		Loader::autoload('\Components\Content');
+		#Loader::autoload('\Libraries\Document\Content');
 
 		// Определяет и подключает шаблон
 		$this->getTemplate();
