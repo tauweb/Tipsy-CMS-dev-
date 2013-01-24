@@ -15,7 +15,7 @@ abstract class Position
 	public static function getPositionData($positionName)
 	{
 		// Для отладки
-		echo '<b>Pos: </b>' . $positionName;
+		echo '<b>Pos_Name: </b>' . $positionName;
 		
 	}
 	
