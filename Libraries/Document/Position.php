@@ -1,9 +1,10 @@
 <?php
 namespace Tipsy\Libraries\Document;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
-abstract class TPositions
+abstract class Position
 {
 	/**
 	 * @var	array	Позиции текущего шаблона.
@@ -11,14 +12,16 @@ abstract class TPositions
 	 */
 	public static $positions = array();
 	
-	public static function getPosition($name, $contParam, $contID)
+	public static function getPositionData($positionName)
 	{
-		self::$positions = $name;
+		// Для отладки
+		echo '<b>Pos: </b>' . $positionName;
+		
 	}
 	
 	public static function getPosContent($position)
 	{
-		TContent::getContent();
+		Content::getContent();
 	}
 	
 	public static function setPosContent($position, $content)

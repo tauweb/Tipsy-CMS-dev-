@@ -10,6 +10,7 @@ use Tipsy\Libraries\Document\Head;
 use Tipsy\Libraries\Debug;
 use Tipsy\Libraries\Document\Content;
 use Tipsy\Components\User\User;
+use Tipsy\Libraries\Document\Position;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -173,16 +174,23 @@ class Document
 		Router::getURL();
 	}
 
-	public function User(){
-		Loader::autoload('\Components\User\User');
-		User::init();
-	}
+	#public function User(){
+	#	Loader::autoload('\Components\User\User');
+	#	User::init();
+	#}
+	
 	/**
 	 * Метод определяющий позиции на странице html.
 	 */
-	protected function getPositions($posName)
+	protected function getPositions($positionName)
 	{
-		$modules = explode(',',$posName);
-		#Position::getPositions($pos_name);
+		$templatePositions = explode(',', $positionName);
+	}
+	
+	protected function putPosition($positionName)
+	{
+		Loader::autoload('\Libraries\Document\Position');
+		Position::getPositionData($positionName);
+		
 	}
 }
