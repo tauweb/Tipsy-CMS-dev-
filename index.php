@@ -3,7 +3,7 @@ namespace Tipsy;
 /**
  * @package		Tipsy CMS
  * @version		0.0.1
- * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @copyright		Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  * @author		Tkachenko Aleksey, e-mail: whiskeyman.tau@gmail.com
  */
