@@ -32,7 +32,7 @@ ul.menu_horisontal li {
     margin-right: 5px;		    /* Отступ слева */
     border: 1px solid #eeeeee;  /* Рамка вокруг текста */
     border-radius: 10px;
-	padding: 3px;			/* Поля вокруг текста */
+		padding: 3px;			/* Поля вокруг текста */
 }
 
 body {

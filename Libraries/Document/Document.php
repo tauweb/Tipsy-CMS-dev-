@@ -97,47 +97,7 @@ class Document
 		require_once $this->template;
 	}
 
-	/**
-	 * Метод формирующий горизонтальное меню.
-	 */
-	private function getMenuHorisontal()
-	{
-		// Содержит контент горизонтального меню	// Todo: продумать и переписать принцып и перенести в БД
-		$nav = [
-			'<a href="https://github.com/WhiskeyMan-Tau/Tipsy.git">Мы на githab</a>',
-			'<a href="./logs/log.txt">Посмотреть логи</a>',
 
-		];
-
-		// Формирует и выводит содержимое как список <li>.
-		echo '<ul class = "menu_horisontal">';
-		foreach ($nav as $val){
-			echo '<li>' . $val . '</li>';
-		}
-		echo '</ul>';
-	}
-
-	/**
-	 * Метод формирующий левую часть страницы (как правило меню или контейнер nav)
-	 */
-	private function getLeft()
-	{
-		// Содержит контент блока nav	// Todo: продумать и переписать принцып и перенести в БД
-		$nav = [
-			'<a href="?component=user">Войти</a>',
-			'<a href="http://php.net">PHP</a>',
-			'<a href="http://w3.org">html5</a>',
-			'<a href="https://github.com/WhiskeyMan-Tau/Tipsy.git">Исходники</a>',
-			'<a href="./logs/log.txt">Посмотреть логи</a>',
-		];
-
-		// Формирует и выводит содержимое как список.
-		echo '<ul>';
-		foreach ($nav as $val){
-			echo '<li>' . $val . '</li>';
-		}
-		echo '</ul>';
-	}
 	
 	/**
 	 * Метод получающий ошибки системы для html страницы.
@@ -170,7 +130,6 @@ class Document
 	 */
 	public function getURL()
 	{
-		#
 		Router::getURL();
 	}
 
@@ -179,15 +138,7 @@ class Document
 	#	User::init();
 	#}
 	
-	/**
-	 * Метод определяющий позиции на странице html.
-	 */
-	protected function getPositions($positionName)
-	{
-		$templatePositions = explode(',', $positionName);
-	}
-	
-	protected function putPosition($positionName)
+	protected function position($positionName)
 	{
 		Loader::autoload('\Libraries\Document\Position');
 		Position::getPositionData($positionName);
