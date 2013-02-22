@@ -19,9 +19,8 @@ abstract class Query
 
 		$result = Database::$dbh->query($queryStr);
 
-		$result->setFetchMode(\PDO::FETCH_ASSOC);
+		#$result->setFetchMode(\PDO::FETCH_ASSOC);
 		return $result->fetch();
-
 	}
 
 	 /**

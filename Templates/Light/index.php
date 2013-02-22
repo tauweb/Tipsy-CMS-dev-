@@ -13,66 +13,76 @@ $this->addStylesheet('template.css');
 <html>
 
 <head>
-	<?php $this->getHead();?>
+	<?php
+		// Получает содержимое контейнера <head>.
+		$this->getHead();
+	?>
 </head>
 
 <body>
-<div id="debug" class="text-success">
-	<?php $this->getDebugMsg(); ?>
-</div>
-
-<div id="autorize" class="autorize">
-	<?php
-		$this->position('Autorize');
-	?>
-</div>
-
-<header>
-	<h1>Домашняя страница проета Tipsy cms</h1>
-</header>
-<div id="errors" class="text-error">
-	<?php
-		$this->position('Errors');
-		$this->getErrors();
-	?>
-</div>
-
-<div id="menu_horisontal">
-	<?php
-		$this->position('menu_horisontal');
-		#$this->getMenuHorisontal();
-	?>
-</div>
-
-<div id="container">
-<?php $this->position('Conteiner'); ?>
-	<nav>
+	<div id="debug" class="text-success">
 		<?php
-			$this->Position('nav');
-			#$this->getLeft();
+			// Выводтт сообщения об отладке сисьемы.
+			$this->getDebugMsg();
 		?>
-	</nav>
+	</div>
 
-	<section>
-		<article>
-			<div id="article_name">
-				<h1><?php $this->getContent('title'); ?></h1>
-			</div>
-				<?php $this->getContent('fulltext');
-				#$this->getPosition('center');
-				?>
-			<div id="article_footer">
-				<h2>Дата создания материала: <?php $this->getContent('created');?></h2>
-			</div>
-		</article>
-	</section>
+	<div id="autorize" class="autorize">
+		<?php
+			// Задает имя и получает содержимое позиции.
+			$this->position('Autorize');
+		?>
+	</div>
 
-</div>
+	<header>
+		<h1 class="site_name">Домашняя страница проета Tipsy cms</h1>
+	</header>
+	<div id="errors" class="text-error">
+		<?php
+			// Задает имя и получает содержимое позиции.
+			$this->position('Errors');
+			// Выводит сообщения об ошибках.
+			$this->getErrors();
+		?>
+	</div>
 
-<footer>
-	<?php $this->position('footer'); ?>
-	<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
-</footer>
+	<div id="menu_horisontal">
+		<?php
+			// Задает имя и получает содержимое позиции.
+			$this->position('menu_horisontal');
+		?>
+	</div>
+
+	<div id="container">
+	<?php
+		// Задает имя и получает содержимое позиции.
+		$this->position('Conteiner');
+	?>
+		<nav>
+			<?php
+				// Задает имя и получает содержимое позиции.
+				$this->Position('nav');
+			?>
+		</nav>
+
+		<section>
+			<article>
+				<div id="article_name">
+					<h1><?php $this->getContent('title'); ?></h1>
+				</div>
+					<?php $this->getContent('fulltext');?>
+			</article>
+		</section>
+
+	</div>
+
+	<footer>
+		<?php
+			// Задает имя и получает содержимое позиции.
+			$this->position('footer');
+		?>
+		<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
+	</footer>
 </body>
 
 </html>

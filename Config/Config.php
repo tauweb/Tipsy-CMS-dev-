@@ -10,8 +10,8 @@ abstract class Config
 	public static $dbType = 'mysql';
 
 	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
-	public static $db_user = 'whiskeyman_tipsy';
-	public static $db_password = 'password';
+	public static $db_user = 'root';
+	public static $db_password = '';
 	public static $db_dbname = 'whiskeyman_tipsy';
 	public static $db_port = '';
 	public static $db_socket = '';

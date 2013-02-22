@@ -2,6 +2,7 @@
 namespace Tipsy\Libraries\Document;
 
 use Tipsy\Libraries\Document\Content;
+use Tipsy\Libraries\Database\Query;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -16,18 +17,19 @@ abstract class Position
 	
 	public static function getPositionData($positionName)
 	{
-		// Для отладки......................
-		echo '<b>Pos: </b>' . $positionName;
-		
-		// Регистрирует позицию в список позиций.
-		self::$positions[] = $positionName;
+		if(!in_array($positionName, self::$positions)){
+			// Регистрирует позицию в список позиций.
+			self::$positions[] = $positionName;
+			Query::query('insert into positions (name) values ("'.$positionName.'");');
+		}
 		
 		self::getPosContent($positionName);
 	}
 	
 	public static function getPosContent($position)
 	{
-		#Content::getContent($position);
-		Content::getPosContent($position);
+		$queryStr = 'SELECT `*` FROM `positions` WHERE `name` = \''.$position.'\';';
+		#Query::query($queryStr);
+		#Content::getPosContent($position);
 	}
 }
