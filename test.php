@@ -13,7 +13,7 @@ if ($_POST) {
     <select multiple name="beer[]">
         <option value="warthog">Warthog</option>
         <option value="guinness">Guinness</option>
-        <option value="stuttgarter">Stuttgarter Schwabenbräu</option>
+        <option value="stuttgarter">Stuttgarter</option>
     </select><br />
     <input type="submit" value="Отправь меня!" />
 </form>
