@@ -81,7 +81,7 @@ $this->addStylesheet('template.css');
 			// Задает имя и получает содержимое позиции.
 			$this->position('footer');
 		?>
-		<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</a></b></p>
+		<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</b></a></p>
 	</footer>
 </body>
 

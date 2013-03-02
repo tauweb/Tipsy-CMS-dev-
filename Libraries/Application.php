@@ -16,10 +16,6 @@ defined('_TEXEC') or die;
  */
 class Application
 {
-	#public $errors = array();
-
-	#public $debugMesages = array();
-
 	/**
 	 * Метод запускающий формирование страцы
 	 */
@@ -28,7 +24,7 @@ class Application
 	// Устанавливает подключение к БД
 		Database::connect(Factory::getDbOptions());
 
-		// Проверяет и и запускает сессию в случае если нет активной.
+		// Проверяет и запускает сессию в случае, если нет активной.
 		Session::check();
 
 		try {

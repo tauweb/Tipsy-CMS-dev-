@@ -15,7 +15,7 @@ abstract class Debug
 	/**
 	 * @var	array	Контейнер содержащий отладочные сообщения.
 	 */
-	public static $messages = array();
+	protected static $messages = array();
 	
 	/**
 	 * Метод добавляющий сообщения отладки в контейнер сообщений.
@@ -32,7 +32,7 @@ abstract class Debug
 	 * Метод получающий и выводящий сообщения отладки из модуля на страницу.
 	 *
 	 */
-	 public static function getDebugMsg()
+	public static function getDebugMsg()
 	{   // Проверяет наличие сообщений в массиве и настройки вывода сообщений в конфиге.
 		if(!empty(self::$messages) and Config::$debug)
 		{

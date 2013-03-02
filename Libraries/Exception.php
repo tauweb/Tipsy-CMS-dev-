@@ -16,7 +16,6 @@ abstract class Errors
 	 */
 	public static $errors = array();
 
-
 	/**
 	 * Метод построчно выводящий сообщения об ошибках на страницу.
 	 *
@@ -56,14 +55,14 @@ class RuntimeException extends \ErrorException
 
 class PdoException extends  \PDOException
 {
-    /**
-     * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
-     *
-     * @param	string 	$message  Текст исключения
-     * @param	int			$code
-     *
-     */
-    public function __construct($message = '', $code = 0, Exception $previous = null)
+   /**
+    * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений
+    *
+    * @param	string 	$message  Текст исключения
+    * @param	int			$code
+    *
+    */
+	public function __construct($message = '', $code = 0, Exception $previous = null)
 	{
 		parent::__construct($message, $code, $previous);
 

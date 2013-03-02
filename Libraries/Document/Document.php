@@ -24,28 +24,26 @@ class Document
 	/**
 	 * @var	string	Текущий шаблон
 	 */
-	private $template = '';
+	protected $template = '';
 
-	private $templatePositions = array();
+	protected $templatePositions = array();
 
 	/**
 	 * @var	string	Контент, который будет выведен на страницу.
 	 * Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
 	 */
-	private $content = 'Это контент поумолчанию. Если вы видите этот текст - это значит, что скорее всего, статьи не гтузятся из БД
+	protected $content = 'Это контент поумолчанию. Если вы видите этот текст - это значит, что скорее всего, статьи не гтузятся из БД
 	                    или нет активных статей';
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
 	 */
-	function __construct()
+	public function __construct()
 	{
-
 		// Подключает класс формирующий <HEAD> документа.
 		Loader::autoload('\Libraries\Document\Head');
-
+		//Подключает библиотеку маршрутизатора
 		Loader::autoload('\Libraries\Router');
-
 		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
 		// Определяет и подключает шаблон
@@ -56,7 +54,7 @@ class Document
 	 * Метод устанавливающий кодировку страниц
 	 * @param	string	имя кодировки для установки
 	 */
-	private function setCharset($charset)
+	protected function setCharset($charset)
 	{
 		Head::setCharset($charset);
 	}
@@ -66,7 +64,7 @@ class Document
 	 *
 	 * @param	string	$name	Имя подключаемой таблицы.
 	 */
-	private function addStylesheet($name)
+	protected function addStylesheet($name)
 	{
 	   Head::addStylesheet($name);
 	}
@@ -74,7 +72,7 @@ class Document
 	/**
 	 * Метод формирующий содержимое тега <HEAD> и выводящий его на страницу. Формирование происходит в классе THead
 	 */
-	private function getHead()
+	protected function getHead()
 	{
 		Head::getHead();
 	}
@@ -82,7 +80,7 @@ class Document
 	/**
 	 * Метод определяющий используемый шаблон html страниц.
 	 */
-	private function getTemplate()
+	protected function getTemplate()
 	{
 		// Путь к каталогу файлов шаблона.
 		$template = 'Templates/' . Config::$template;
@@ -102,7 +100,7 @@ class Document
 	/**
 	 * Метод получающий ошибки системы для html страницы.
 	 */
-	private function getErrors()
+	protected function getErrors()
 	{
 		Errors::getErrors();
 	}
@@ -110,7 +108,7 @@ class Document
 	/**
 	 * Метод получающий отладочную информацию системы для html страницы.
 	 */
-	private function getDebugMsg()
+	protected function getDebugMsg()
 	{
 		Debug::getDebugMsg();
 	}
@@ -120,7 +118,7 @@ class Document
 	 * @param	string	$part	Параметр указывающий какую часть контента нужно получить.
 	 * Варианты $part пока что такие: title, fulltext
 	 */
-	private function getContent($part, $id = 1)
+	protected function getContent($part, $id = 1)
 	{
 		Content::getContent($part, $id);
 	}
@@ -128,7 +126,7 @@ class Document
 	/**
 	 * Метод получающий переменные из адресной строки.
 	 */
-	public function getURL()
+	protected function getURL()
 	{
 		Router::getURL();
 	}

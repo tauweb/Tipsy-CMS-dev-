@@ -7,13 +7,13 @@ abstract class Head{
 
 	// Заголовок документа (html5)
 	// http://www.w3schools.com/html5/tag_title.asp
-	public static $title = "<title>Домашняя страница Tipsy CMS</title>";
+	protected static $title = "<title>Домашняя страница Tipsy CMS</title>";
 
 	// Массив, содержаший список подключаемых таблиц стилей html страницы.
-	public static $stylesheets = array();
+	protected static $stylesheets = array();
 
 	// Кодеровка html страницы.
-	public static $charset = '';
+	protected static $charset = '';
 
 	// Применяется для определения стилей элементов веб-страницы
 	// http://www.w3schools.com/html5/tag_style.asp
@@ -108,7 +108,7 @@ abstract class Head{
 	 * Метод устанавливающий тег связи с внешним документом(<link>), например файлом со стилями, и выводящий их на страницу
 	 * @param	string		$name	имя подключаем таблицы
 	 */
-	public static function getStylesheets($name = '')
+	protected static function getStylesheets($name = '')
 	{
 		if (!empty(self::$stylesheets)) {
 			foreach ((array)self::$stylesheets as $stylesheet) {
@@ -122,7 +122,7 @@ abstract class Head{
 		foreach(get_class_vars(__CLASS__) as $tag){
 			if( is_array($tag) and !empty($tag) ){
 				foreach($tag as $subTag){
-					echo $subTag . "\n";
+					if(!empty($subTag)) echo $subTag . "\n";
 				}
 			}elseif(!empty($tag)){
 				echo $tag ."\n";

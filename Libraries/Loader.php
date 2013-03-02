@@ -1,9 +1,11 @@
 <?php
 namespace Tipsy\Libraries;
+// Проверяет легален ли доступ к файлу
+defined('_TEXEC') or die;
 
-class Loader
+abstract class Loader
 {
-	static function autoload($className)
+	public static function autoload($className)
 	{
 		if(class_exists($className)){
 			return true;
@@ -23,7 +25,7 @@ class Loader
 			require_once $fileName;
 			return true;
 		}else{
-			print("Меня зовут загрузчик и я не могу найти файл: <b>$fileName</b><p>");
+			print("Загрузчик: не могу найти файл: <b>$fileName</b><p>");
 			return false;
 		}
 	}

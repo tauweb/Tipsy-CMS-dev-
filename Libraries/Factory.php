@@ -18,6 +18,7 @@ class Factory
 	 */
 	public function __construct()
 	{
+		// Загружает базовые библиотеки ядра.
 		self::loadCoreLibraries();
 		// Получает настройки конфигурации системы.
 		self::getConfig();
@@ -37,35 +38,30 @@ class Factory
 	{
 		// Подключает компонент логирования.
 		Loader::autoload('\Libraries\Logger');
-
 		// Подключает обработчик исключений.
 		Loader::autoload('\Libraries\Exception');
-
 		// Подключает модуль отладки системы.
 		Loader::autoload('\Libraries\Debug');
-
 		// Загружает класс работы с БД
 		Loader::autoload('\Libraries\Database\Database');
 		// Устанавливает соединение с БД
 		// Подключает отладчик системы
 		Loader::autoload('\Libraries\Debug');
-		// Подключает библиотеку выполняющие запросы к БД
+		// Подключает библиотеку выполняющие запросы к БД.
 		Loader::autoload('\Libraries\Database\Query');
 		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
 		Loader::autoload('\Libraries\Document\Content');
-		//
+		// Подключает обработчик сессий.
 		Loader::autoload('\Libraries\Session');
-
+		// Подключает компонент пользователей системы.
 		Loader::autoload('\Components\User\User');
-
-
 	}
 	
 	/**
 	 * Метод определяющий временную зону системы из файла настроек.
 	 *
 	 */
-	public function setTimeZone()
+	protected function setTimeZone()
 	{
 		date_default_timezone_set(Config::$timezone);
 	}
@@ -76,7 +72,7 @@ class Factory
 	 * @return	boolean	true, если конфигурация загружена и запись лога с сообщением о том что не найден файл
 	 *							конфигурации и прекращение выполнения сценария
 	 */
-	public static function getConfig()
+	protected static function getConfig()
 	{
 		// Подключает настройки системы
 		if (Loader::autoload('Config\Config'))
@@ -112,7 +108,7 @@ class Factory
 	/**
 	 * Метод установки уровня отчетов об ошибках из файла конфигурации системы.
 	 */
-	public static function setErrorReporting()
+	protected static function setErrorReporting()
 	{
 		// Устанавливает уровень отчета об ошибках.
 		switch (Config::$errorReporting) {
@@ -140,7 +136,7 @@ class Factory
 	/**
 	 * Метод почучения времени жизни сессии из настроек.
 	 */
-	public static function getSession_lifetime()
+	protected static function getSession_lifetime()
 	{
 		session_set_cookie_params(Config::$sessionLifetime * 60);
 	}

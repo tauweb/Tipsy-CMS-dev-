@@ -20,7 +20,7 @@ abstract class Position
 		if(!in_array($positionName, self::$positions)){
 			// Регистрирует позицию в список позиций.
 			self::$positions[] = $positionName;
-			Query::query('insert into positions (name) values ("'.$positionName.'");');
+			#Query::query('insert into positions (name) values ("'.$positionName.'");');
 		}
 		
 		self::getPosContent($positionName);

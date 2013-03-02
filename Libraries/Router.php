@@ -30,13 +30,5 @@ abstract class Router
 			}
 
 		}
-		
-		// Построчно перебирает переменные в URL.
-		#foreach($_GET as $component=>$type){
-		#	TDebug::AddMessage("<B>В данный момент компонет находится в разработке. </B>Название компонента: $component, $type ? раздел: $type :  ", __METHOD__);
-		#}
-		// Добавляет префикс к имени компонента (получает имя класса)
-		#$component .= 'T';
-		#TLoader::discover('T',_TPATH_COMPONENTS,true);
 	}
 }
