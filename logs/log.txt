@@ -46,3 +46,227 @@ Saturday 5th of January 2013 07:17:35 PM	Ошибка базы данных: SQL
 Sunday 6th of January 2013 11:08:47 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'whiskeyman_tipsy'@'localhost' (using password: YES)
 Sunday 13th of January 2013 06:38:56 PM	Не найден файл конфигурации config.php
 Sunday 13th of January 2013 06:38:58 PM	Не найден файл конфигурации config.php
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:47:32 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:51:46 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:53:04 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:00 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:26 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:56:42 PM	1Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:58:36 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Monday 4th of March 2013 09:59:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:43:14 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 08:47:20 PM	Ошибка Транзакции
+Wednesday 6th of March 2013 09:21:50 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:23:08 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:23:08 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:23:08 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:23:08 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:23:08 PM	Ошибка Транзакции при занросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:24:22 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:24:22 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:24:22 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:24:22 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:24:22 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:25:06 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'footer';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:25:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'footer';
+Wednesday 6th of March 2013 09:26:09 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:26:09 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:26:09 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:26:09 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:26:09 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:26:10 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:26:10 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:26:10 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'footer';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Autorize");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Autorize';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Errors");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Errors';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("menu_horisontal");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'menu_horisontal';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Conteiner");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'Conteiner';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("nav");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'nav';
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("footer");
+Wednesday 6th of March 2013 09:34:45 PM	Ошибка Транзакции при запросе: SELECT * FROM `positions` WHERE `name` = 'footer';
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Autorize");
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Errors");
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("menu_horisontal");
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("Conteiner");
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("nav");
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:36:32 PM	Ошибка Транзакции при запросе: insert into positions (name) values ("footer");
+Wednesday 6th of March 2013 09:36:51 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:36:51 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:37:51 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:37:51 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:39:11 PM	Ошибка Транзакции при запросе: SELECT `title` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:39:11 PM	Ошибка Транзакции при запросе: SELECT `fulltext` from `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:44:36 PM	Ошибка Транзакции при запросе: SELECT * FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:44:36 PM	Ошибка Транзакции при запросе: SELECT * FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:45:44 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:45:44 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:04 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:04 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:06 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:06 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:07 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:07 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:43 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:47:43 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:15 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:15 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:16 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:16 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:34 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:34 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:49 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:49 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:51 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:48:51 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:49:37 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:49:37 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:17 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:17 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:18 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:18 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:18 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 09:51:18 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 10:04:44 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 10:04:44 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 10:09:31 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
+Wednesday 6th of March 2013 10:09:31 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;

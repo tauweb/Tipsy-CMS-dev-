@@ -4,6 +4,8 @@ namespace Tipsy\Libraries\Database;
 use Tipsy\Config\Config;
 use Tipsy\Libraries\RuntimeException;
 
+use Tipsy\Libraries\PdoException;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
@@ -20,7 +22,7 @@ abstract class Database
 	
 	/**
 	 * Метод устанавливающий подключение к БД.
-	 * @param	array	$DBOptions	массив содержащий параметры подключения к базе данных.
+	 * @param		array	$DBOptions	массив содержащий параметры подключения к базе данных.
 	 */
 	public static function connect($dbOptions)
 	{
@@ -33,12 +35,14 @@ abstract class Database
 		try {
 			self::$dbh = new \PDO($dns, $dbOptions['username'], $dbOptions['password']);
 			// Переводим в режим отображаения всех ошибок и предупреждений (Для отлаживания)
-			self::$dbh->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION );
+			self::$dbh->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			// Устанавливает кодировку данных БД.
 			self::$dbh->exec('SET NAMES utf8');
 		}
 		// Перерехватывает исключение PDO.
-		catch(\PDOException $e) {
+		catch(PDOException $e) {
+		self::$dbh->rollBack();
+			print "Error!: " . $e->getMessage() . "<br/>";
 			try{
 				// todo: переписать Эту часть!
 				// Если перехваченное ранее исключение PDO содержит ошибку, то бросаем новое исключение для вывода сообщения об ошибке на страницу. 

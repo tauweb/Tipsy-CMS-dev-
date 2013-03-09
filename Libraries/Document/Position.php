@@ -18,9 +18,9 @@ abstract class Position
 	public static function getPositionData($positionName)
 	{
 		if(!in_array($positionName, self::$positions)){
-			// Регистрирует позицию в список позиций.
+			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
-			#Query::query('insert into positions (name) values ("'.$positionName.'");');
+			Query::insert('insert into positions (name) values ("'.$positionName.'");');
 		}
 		
 		self::getPosContent($positionName);
@@ -28,8 +28,11 @@ abstract class Position
 	
 	public static function getPosContent($position)
 	{
-		$queryStr = 'SELECT `*` FROM `positions` WHERE `name` = \''.$position.'\';';
-		#Query::query($queryStr);
-		#Content::getPosContent($position);
+		$queryStr = 'SELECT * FROM `positions` WHERE `name` = \''.$position.'\';';
+		$posContent = Query::select($queryStr);
+		if($posContent) {
+			echo $posContent['name'];
+		}
+		#var_dump($posContent);
 	}
 }

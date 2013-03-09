@@ -1,4 +1,6 @@
 <?php
+// В дальнейшем библиотека и все исключения будут переписаны.
+// Сейчас создана лишь для общего представления автором что и как будет работать.
 namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Logger;
@@ -53,7 +55,7 @@ class RuntimeException extends \ErrorException
 	}
 }
 
-class PdoException extends  \PDOException
+class PdoException extends \PDOException
 {
    /**
     * Конструктор, используется для установки всех необходимых свойств и методов объекта исключений

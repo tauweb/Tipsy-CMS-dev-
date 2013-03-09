@@ -3,8 +3,9 @@ namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Document\Document;
-use Tipsy\Libraries\Database\Database;
 use Tipsy\Libraries\Session;
+use Tipsy\Libraries\Factory;
+use Tipsy\Libraries\Database\Database;
 
 // Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die;
@@ -19,22 +20,26 @@ class Application
 	/**
 	 * Метод запускающий формирование страцы
 	 */
-	public function run()
-	{
-	// Устанавливает подключение к БД
-		Database::connect(Factory::getDbOptions());
+	public function __construct()
+	{	
+		// Подключает системный модуль.
+		Loader::autoload('\Libraries\Factory');
+
+		// Создает объект ядра приложения
+		$factory = new Factory();
 
 		// Проверяет и запускает сессию в случае, если нет активной.
 		Session::check();
 
-		try {
-			// Подключает библиотеку формирующую страницы html
-			Loader::autoload('\Libraries\Document\Document');
-			// Создает объект формирующий страницу html
-			$document = new Document();
-		} catch (RuntimeException $e) {
-			// Выводит ошибку на страницу.
-			Errors::getErrors();
-		}
+		// Подключает библиотеку формирующую страницы html
+		Loader::autoload('\Libraries\Document\Document');
+		
+		// Создает объект формирующий страницу html
+		$document = new Document();	
+	}
+	
+	public function __destruct()
+	{
+		Database::$dbh = null;
 	}
 }

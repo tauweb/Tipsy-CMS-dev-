@@ -10,7 +10,7 @@ $this->addStylesheet('template.css');
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
 	<?php

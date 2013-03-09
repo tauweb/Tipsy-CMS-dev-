@@ -84,15 +84,21 @@ class Document
 	{
 		// Путь к каталогу файлов шаблона.
 		$template = 'Templates/' . Config::$template;
-
-		// Проверяет наличие index файла шаблона и подключает его, если не находит - бросает исключение.
-		if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
-			$this->template = $tmpl_index;
-		} else {
-			throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
+		
+		try{
+			// Проверяет наличие index файла шаблона и подключает его, если не находит - бросает исключение.
+			if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
+				$this->template = $tmpl_index;
+			} else {
+				throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
+			}
+			// Подключает шаблон.
+			require_once $this->template;
+		
+		} catch (RuntimeException $e) {
+			// Выводит ошибку на страницу.
+			Errors::getErrors();
 		}
-		// Подключает шаблон.
-		require_once $this->template;
 	}
 
 

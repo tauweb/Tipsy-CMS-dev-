@@ -3,12 +3,13 @@ namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Logger;
 use Tipsy\Config\Config;
+use Tipsy\Libraries\Database\Database;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
 /**
- * Системный объект
+ * Системный класс. Инициализирует состояние и настройки системы, а так же выполняет все настройки и прооверки.
  */
 class Factory
 {
@@ -20,8 +21,11 @@ class Factory
 	{
 		// Загружает базовые библиотеки ядра.
 		self::loadCoreLibraries();
+
 		// Получает настройки конфигурации системы.
 		self::getConfig();
+		
+		self::init();
 		// Определяет уровень отчета об ошибках.
 		self::setErrorReporting();
 		// Временная зона системы.
@@ -43,8 +47,7 @@ class Factory
 		// Подключает модуль отладки системы.
 		Loader::autoload('\Libraries\Debug');
 		// Загружает класс работы с БД
-		Loader::autoload('\Libraries\Database\Database');
-		// Устанавливает соединение с БД
+		Loader::autoload('\Libraries\Database\Database');	
 		// Подключает отладчик системы
 		Loader::autoload('\Libraries\Debug');
 		// Подключает библиотеку выполняющие запросы к БД.
@@ -55,6 +58,14 @@ class Factory
 		Loader::autoload('\Libraries\Session');
 		// Подключает компонент пользователей системы.
 		Loader::autoload('\Components\User\User');
+	}
+	
+	
+	protected function init()
+	{
+		#перенести cюда database и прочее.
+		// Устанавливает подключение к БД
+		Database::connect(self::getDbOptions());
 	}
 	
 	/**
@@ -70,12 +81,12 @@ class Factory
 	 * Метод подключения файлов конфигурации.
 	 *
 	 * @return	boolean	true, если конфигурация загружена и запись лога с сообщением о том что не найден файл
-	 *							конфигурации и прекращение выполнения сценария
+	 *												конфигурации и прекращение выполнения сценария
 	 */
 	protected static function getConfig()
 	{
 		// Подключает настройки системы
-		if (Loader::autoload('Config\Config'))
+		if (Loader::autoload('\Config\Config'))
 		{
 			return true;
 		}else{
@@ -91,7 +102,7 @@ class Factory
 	 *
 	 * @return	array	$DBOptions[host,username,password,dbname,port,socket]	Массив с параметрами БД
 	 */
-	public static function getDbOptions()
+	protected static function getDbOptions()
 	{
 		$DBOptions = array(
 						"host" => Config::$db_host ,

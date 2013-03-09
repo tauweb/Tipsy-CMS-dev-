@@ -1,49 +1,65 @@
 <?php
 namespace Tipsy\Libraries\Database;
-// Проверяет легален ли доступ к файлу.
-defined('_TEXEC') or die;
 
-/**
- * Библиотека выполняющая запросы к БД.
- */
+use Tipsy\Libraries\Database\Database;
+use Tipsy\Libraries\PdoException;
+
+// Проверяет легален ли доступ к файлу
+defined('_TEXEC') or die();
+
 abstract class Query
 {
-	public static function query($queryStr)
-	{	
+	
+	public static function select($queryStr)
+	{
 		// Проверяет установленно ли подключение к БД.
 		if(!is_object(Database::$dbh)){
 			// Если нет - выводит сообщение и возвращает false.
-			echo ('<b>' . __CLASS__.'</b>' .' Не могу подключиться к БД');
+			echo ('<b>' . __CLASS__.'</b>' .' Нет подключения к БД');
+			return false;
+		}
+			
+		try {
+			Database::$dbh->beginTransaction();
+			
+			$result = Database::$dbh->query($queryStr);
+
+			$result->setFetchMode(\PDO::FETCH_ASSOC);
+// пересмотреть использование исключений
+#throw new PdoException("Ошибка Транзакции при запросе: <b>$queryStr</b>");
+	
+			Database::$dbh->commit();
+
+			return $result->fetch();
+			
+		} catch(PdoException $e) {
+			Database::$dbh->rollBack();
+		}
+	}
+	
+	public static function insert($queryStr)
+	{
+		// Проверяет установленно ли подключение к БД.
+		if(!is_object(Database::$dbh)){
+			// Если нет - выводит сообщение и возвращает false.
+			echo ('<b>' . __CLASS__.'</b>' .' Нет подключения к БД');
 			return false;
 		}
 
-		$result = Database::$dbh->query($queryStr);
-
-		$result->setFetchMode(\PDO::FETCH_ASSOC);
-		return $result->fetch();
-	}
-
-	 /**
-	 * Метод формирмирующий строку запроса выборки (SELECT) из БД.
-	 * @param	string	$select_expr
-	 * @param	string	$table_references
-	 *
-	 */
-	public static function select($select_expr, $table_references)
-	{
-		$queryStr = 'SELECT ' . $select_expr . ' FROM ' . $table_references;
+		try {
+			Database::$dbh->beginTransaction();
+			
+			$result = Database::$dbh->query($queryStr);
+// пересмотреть использование исключений.
+#throw new PdoException("Ошибка Транзакции при запросе: <b>$queryStr</b>");
+			$result->setFetchMode(\PDO::FETCH_ASSOC);
+			
+			Database::$dbh->commit();
 		
-		// Отладка строки запроса
-		TDebug::AddMessage('Строка запроса: ' . $queryStr, __METHOD__);
+			#return $result->fetch();
+			
+		} catch(PdoException $e) {
 
-		$queryRes = Database::$dbh->query($queryStr);
-
-		$num_result = $queryRes->rowCount();
-
-		// Отладка. Количество найдетнных строк соответствующих запросу
-		Debug::AddMessage('найдено строк:'. $num_result, __METHOD__);
-
-		//Отладочная часть
-		Debug::AddMessage('Результат запроса: ' . var_dump($queryRes), __METHOD__);
+		}
 	}
 }
