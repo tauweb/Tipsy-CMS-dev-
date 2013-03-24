@@ -13,6 +13,14 @@ h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizelegibility;
 }
 
+#control_panel{
+	width: 100%;
+	background-color: black;
+	color: #26c2ff;
+	padding: 3px;
+	border-bottom: 1px solid #eeeeee;
+}
+
 nav {
 	float: left;
 	width: 10%;

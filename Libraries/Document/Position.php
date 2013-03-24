@@ -33,6 +33,5 @@ abstract class Position
 		if($posContent) {
 			echo $posContent['name'];
 		}
-		#var_dump($posContent);
 	}
 }

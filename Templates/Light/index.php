@@ -20,6 +20,10 @@ $this->addStylesheet('template.css');
 </head>
 
 <body>
+	<div id='control_panel'>
+	test
+	</div>
+
 	<div id="debug" class="text-success">
 		<?php
 			// Выводтт сообщения об отладке сисьемы.
