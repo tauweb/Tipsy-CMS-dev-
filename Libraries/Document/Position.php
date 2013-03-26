@@ -20,7 +20,9 @@ abstract class Position
 		if(!in_array($positionName, self::$positions)){
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
-			Query::insert('insert into positions (name) values ("'.$positionName.'");');
+			if(Query::select("select `name` FROM `positions` where `name` = $positionName;")){
+				Query::insert('insert into positions (name) values ("'.$positionName.'");');
+			}
 		}
 		
 		self::getPosContent($positionName);

@@ -4,7 +4,7 @@ namespace Tipsy\Libraries\Database;
 use Tipsy\Config\Config;
 use Tipsy\Libraries\RuntimeException;
 
-use Tipsy\Libraries\PdoException;
+#use Tipsy\Libraries\PdoException;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -40,8 +40,11 @@ abstract class Database
 			self::$dbh->exec('SET NAMES utf8');
 		}
 		// Перерехватывает исключение PDO.
-		catch(PDOException $e) {
-		self::$dbh->rollBack();
+		catch(\PDOException $e) {
+			if(is_object(self::$dbh)) {
+				self::$dbh->rollBack();
+			}
+
 			print "Error!: " . $e->getMessage() . "<br/>";
 			try{
 				// todo: переписать Эту часть!

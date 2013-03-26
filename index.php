@@ -1,5 +1,9 @@
 <?php
 namespace Tipsy;
+
+// Устанавливает что это главный файл.
+use Tipsy\Config\Config;
+
 /**
  * @package		Tipsy CMS
  * @version		0.0.1
@@ -7,8 +11,6 @@ namespace Tipsy;
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  * @author		Tkachenko Aleksey, e-mail: whiskeyman.tau@gmail.com
  */
-
-// Устанавливает что это главный файл.
 define('_TEXEC', 1);
 
 // Установки php.ini
@@ -31,6 +33,9 @@ error_reporting(E_ALL);
 // Проверяет версию php. Для работы системы нужна >= 5.4.
 phpversion() < 5.4 ? die('<b>ВНИМАНИЕ!</b> Данная версия php не поддерживается.
 					Для работы системы нужна версия >= 5.4') : '';		// Todo: Позже вынести в отдельный модуль!!!
+
+// Подключаем настройки php
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'Config' .  DIRECTORY_SEPARATOR . 'php_set.php';
 
 // Подключает каркас системы
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'Framework.php';

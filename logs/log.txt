@@ -270,3 +270,9 @@ Wednesday 6th of March 2013 10:04:44 PM	Ошибка Транзакции при
 Wednesday 6th of March 2013 10:04:44 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
 Wednesday 6th of March 2013 10:09:31 PM	Ошибка Транзакции при запросе: SELECT `title` FROM `articles` WHERE `articleid` = 1;
 Wednesday 6th of March 2013 10:09:31 PM	Ошибка Транзакции при запросе: SELECT `fulltext` FROM `articles` WHERE `articleid` = 1;
+Tuesday 26th of March 2013 02:04:51 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Tuesday 26th of March 2013 02:06:07 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Tuesday 26th of March 2013 02:06:15 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Tuesday 26th of March 2013 04:08:00 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Tuesday 26th of March 2013 05:15:41 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Tuesday 26th of March 2013 05:17:44 AM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
