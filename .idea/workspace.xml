@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365081928321" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365081984576" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248315734" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365079540950" ignored="false" />
@@ -74,19 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="47" selection-start="1634" selection-end="1634" vertical-scroll-proportion="-17.708334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.49565217">
+            <state line="86" column="47" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.73913044">
               <folding />
             </state>
           </provider>
@@ -422,7 +414,11 @@
       <created>1365081939308</created>
       <updated>1365081939308</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Все только начинается...">
+      <created>1365081992162</created>
+      <updated>1365081992162</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -656,14 +652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="47" selection-start="1634" selection-end="1634" vertical-scroll-proportion="-17.708334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.49565217">
+        <state line="86" column="47" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.73913044">
           <folding />
         </state>
       </provider>
