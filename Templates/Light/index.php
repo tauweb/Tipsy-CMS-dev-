@@ -62,14 +62,13 @@ $this->addStylesheet('template.css');
 		// Задает имя и получает содержимое позиции.
 		$this->position('Conteiner');
 	?>
-		<nav>
-			<?php
+		<section>
+			<nav>
+				<?php
 				// Задает имя и получает содержимое позиции.
 				$this->Position('nav');
-			?>
-		</nav>
-
-		<section>
+				?>
+			</nav>
 			<article>
 				<div id="article_name">
 					<h1><?php $this->getContent('title'); ?></h1>
