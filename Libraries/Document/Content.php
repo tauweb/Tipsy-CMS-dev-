@@ -8,6 +8,7 @@ defined('_TEXEC') or die();
 
 abstract class Content{
 
+/*
 protected static $positionsContent = [
 										"autorize" => 'авторизация',
 										"nav" => [ 
@@ -56,13 +57,9 @@ protected static $positionsContent = [
 			echo self::$positionsContent[$position];
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
+*/
+
+
 	public static function getContent($param, $id)
 	{
 		$queryParam = $param == '*' ? $param  : '`' . $param . '`';
