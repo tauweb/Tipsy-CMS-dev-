@@ -19,10 +19,11 @@ abstract class Position
 	
 	
 	/**
-	 * Метод пределяющий тип контента позиции
+	 * Метод пределяющий компонент, привязанный к позиции (тип выводимого контента)
 	 */
 	public static function getPositionData($positionName)
 	{
+		$positionName = strtolower($positionName);
 		// Если позиция не зарегистрирована в списке, тогда:
 		if(!in_array($positionName, self::$positions)){
 			// Заполняет массив-список позиций шаблона.

@@ -70,10 +70,7 @@ $this->addStylesheet('template.css');
 				?>
 			</nav>
 			<article>
-				<div id="article_name">
-					<h1><?php $this->getContent('title'); ?></h1>
-				</div>
-					<?php $this->getContent('fulltext');?>
+				<? $this->Position('Article');?>
 			</article>
 		</section>
 

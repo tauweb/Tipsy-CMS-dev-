@@ -13,10 +13,10 @@ use Tipsy\Libraries\Database\Query;
 abstract class Articles {
 
 	public static function init(){
-		echo 'test';
+
 	}
 
-	public static function getArticle($param, $id)
+	public static function get($param, $id)
 	{
 		$queryParam = $param == '*' ? $param  : '`' . $param . '`';
 		// Формирует строку запроса
