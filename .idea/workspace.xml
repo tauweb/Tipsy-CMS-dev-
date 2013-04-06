@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Article/Article.php" afterPath="$PROJECT_DIR$/Components/Article/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" afterPath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365260017791" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365261293130" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365153361351" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365250147234" ignored="false" />
@@ -85,13 +85,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Article.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Article/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="33" selection-start="332" selection-end="332" vertical-scroll-proportion="0.4695652">
+            <state line="12" column="24" selection-start="224" selection-end="224" vertical-scroll-proportion="-5.625">
               <folding>
                 <element signature="e#6#124#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_DB.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DeveloperFiles/create_DB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="0" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.22654867">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,7 +170,6 @@
         <option value="$PROJECT_DIR$/Libraries/_loader.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Libraries/Database/Database.php" />
-        <option value="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
         <option value="$PROJECT_DIR$/Libraries/Document/Content.php" />
         <option value="$PROJECT_DIR$/Framework.php" />
         <option value="$PROJECT_DIR$/Templates/Light/index.php" />
@@ -173,6 +181,7 @@
         <option value="$PROJECT_DIR$/Libraries/Document/Position.php" />
         <option value="$PROJECT_DIR$/Config/Config.php" />
         <option value="$PROJECT_DIR$/Components/Article/Article.php" />
+        <option value="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
       </list>
     </option>
   </component>
@@ -275,6 +284,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tipsy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tipsy-CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeveloperFiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,7 +617,11 @@
       <created>1365260029013</created>
       <updated>1365260029014</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Все только начинается...">
+      <created>1365261307728</created>
+      <updated>1365261307728</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -735,11 +762,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Framework.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="416" selection-end="416" vertical-scroll-proportion="0.39130434" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -851,10 +873,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/Article/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="33" selection-start="332" selection-end="332" vertical-scroll-proportion="0.4695652">
+        <state line="12" column="24" selection-start="224" selection-end="224" vertical-scroll-proportion="-5.625">
           <folding>
             <element signature="e#6#124#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeveloperFiles/create_DB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3429" selection-end="3429" vertical-scroll-proportion="0.22654867">
+          <folding />
         </state>
       </provider>
     </entry>
