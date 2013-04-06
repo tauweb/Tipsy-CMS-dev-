@@ -11,17 +11,20 @@ abstract class Config
 
 	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
 	public static $db_user = 'root';
-	public static $db_password = '_modaS';
+	public static $db_password = '';
 	public static $db_dbname = 'whiskeyman_tipsy';
 	public static $db_port = '';
 	public static $db_socket = '';
 
 	// Ошибки и отладка (none, simple, maximum)
 	public static $errorReporting = 'maximum';
+
 	// Отладка системы (1 - да, 0 - нет)
 	public static $debug = 1;
+
 	// Отображение отладочной информации о шаблоне (пока реализовано только 6азвание пощиций).
 	// 1 - да, 0 - нет.
+	// Смотреть \Tispy\Libraries\Position::getPosContent()
 	public static $tmplDebug = 1;
 	
 	// Настройки временной зоны

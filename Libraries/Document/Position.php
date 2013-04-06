@@ -5,6 +5,7 @@ use Tipsy\Libraries\Document\Content;
 use Tipsy\Libraries\Database\Database;
 use Tipsy\Libraries\Database\Query;
 use Tipsy\Config\Config;
+use Tipsy\Libraries\Loader;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -29,22 +30,31 @@ abstract class Position
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
 			// Проверяет наличие данных о позиции в базе данных...
-			if(!Query::select("select `name` FROM `positions` where `name` = \"$positionName\";")){
+			if(!Query::select("SELECT name FROM positions WHERE name = \"$positionName\";")){
 				// В случае отсутствия информации - регистрирует позицию в БД.
-				Query::insert('insert into positions (name) values ("'.$positionName.'");');
+				Query::insert("INSERT INTO positions (name) VALUES (\"$positionName\");");
 			}
 		}
 		// Получает контент позиции.
 		self::getPosContent($positionName);
 	}
 	
-	public static function getPosContent($position)
+	protected static function getPosContent($position)
 	{
-		$queryStr = 'SELECT * FROM `positions` WHERE `name` = \''.$position.'\';';
-		$posContent = Query::select($queryStr);
+		$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
 
-		if($posContent and  Config::$tmplDebug) {
-			echo $posContent['name'];
+		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
+		if($posContentType and  Config::$tmplDebug) {
+			echo $posContentType['name'];
 		}
+
+		$com =  ucfirst($posContentType['name']);
+
+		$com = "\\Tipsy\\Components\\$com\\$com";
+
+		if(class_exists($com)){
+			$com::init();
+		}
+
 	}
 }

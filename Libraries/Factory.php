@@ -56,6 +56,9 @@ class Factory
 		Loader::autoload('\Libraries\Document\Content');
 		// Подключает обработчик сессий.
 		Loader::autoload('\Libraries\Session');
+
+		Loader::autoload('\Libraries\Dispatcher');
+
 		// Подключает компонент пользователей системы.
 		Loader::autoload('\Components\User\User');
 	}
@@ -66,6 +69,8 @@ class Factory
 		#перенести cюда database и прочее.
 		// Устанавливает подключение к БД
 		Database::connect(self::getDbOptions());
+
+		Dispatcher::init();
 	}
 	
 	/**

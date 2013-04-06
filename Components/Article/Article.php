@@ -6,14 +6,23 @@
  * Time: 12:38
  */
 
-namespace Tipsy\Components\Articles;
+namespace Tipsy\Components\Article;
 
 use Tipsy\Libraries\Database\Query;
 
-abstract class Articles {
+abstract class Article {
 
-	public static function init(){
+	public static function init()
+	{
+		self::getPosData();
+	}
 
+	public static function getPosData()
+	{
+		$res = Query::select("SELECT articles.* FROM articles
+ 					LEFT JOIN positions ON articles.id=positions.com_id
+					WHERE positions.com = 'Article';");
+		echo $res['fulltext'];
 	}
 
 	public static function get($param, $id)
@@ -33,6 +42,5 @@ abstract class Articles {
 			// Это обычный вывод
 			echo  $row[$param];
 		}
-
 	}
 }
