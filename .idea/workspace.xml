@@ -2,54 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Components/Article/Article.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Components/Articles/Articles.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/API.doc" afterPath="$PROJECT_DIR$/Docs/API.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/CSS.doc" afterPath="$PROJECT_DIR$/Docs/CSS.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/standarts.doc" afterPath="$PROJECT_DIR$/Docs/standarts.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Content.php" afterPath="$PROJECT_DIR$/Libraries/Document/Content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Database.php" afterPath="$PROJECT_DIR$/Libraries/Database/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Debug.php" afterPath="$PROJECT_DIR$/Libraries/Debug.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Document.php" afterPath="$PROJECT_DIR$/Libraries/Document/Document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Exception.php" afterPath="$PROJECT_DIR$/Libraries/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework.php" afterPath="$PROJECT_DIR$/Framework.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Head.php" afterPath="$PROJECT_DIR$/Libraries/Document/Head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Loader.php" afterPath="$PROJECT_DIR$/Libraries/Loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Logger.php" afterPath="$PROJECT_DIR$/Libraries/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Position.php" afterPath="$PROJECT_DIR$/Libraries/Document/Position.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Router.php" afterPath="$PROJECT_DIR$/Libraries/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Session.php" afterPath="$PROJECT_DIR$/Libraries/Session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/User.php" afterPath="$PROJECT_DIR$/Components/User/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogin.php" afterPath="$PROJECT_DIR$/Components/User/UserLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogout.php" afterPath="$PROJECT_DIR$/Components/User/UserLogout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_Checksystem.php" afterPath="$PROJECT_DIR$/Libraries/_Checksystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/_defines.php" afterPath="$PROJECT_DIR$/Includes/_defines.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_loader.php" afterPath="$PROJECT_DIR$/Libraries/_loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" afterPath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linux_get_source.sh" afterPath="$PROJECT_DIR$/linux_get_source.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/often.info" afterPath="$PROJECT_DIR$/often.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/old_Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/php_set.php" afterPath="$PROJECT_DIR$/Config/php_set.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/template.css" afterPath="$PROJECT_DIR$/Templates/Light/css/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" afterPath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277052317" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277352314" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365153361351" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365275499871" ignored="false" />
@@ -64,6 +22,15 @@
     <file path="/a.coffee" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083986888" ignored="false" />
     <file path="/Framework.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151276160" ignored="false" />
     <file path="/Articles.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151734483" ignored="false" />
+    <file path="$PROJECT_DIR$/Libraries/Document/Head.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Libraries/Document/Document.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Config/php_set.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Config/Config.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Libraries/Database/Query.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Libraries/Database/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
+    <file path="$PROJECT_DIR$/Libraries/Database/old_Query.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365277295663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +58,7 @@
       <file leaf-file-name="Position.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Document/Position.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="5" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-16.416666">
+            <state line="50" column="5" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-16.416666">
               <folding />
             </state>
           </provider>
@@ -100,7 +67,16 @@
       <file leaf-file-name="Article.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Components/Article/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="43" selection-start="550" selection-end="550" vertical-scroll-proportion="0.40397352">
+            <state line="29" column="25" selection-start="573" selection-end="573" vertical-scroll-proportion="0.4536424">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dispatcher.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Libraries/Dispatcher.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -272,6 +248,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tipsy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tipsy-CMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +559,15 @@
       <created>1365152787516</created>
       <updated>1365152787516</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Все только начинается...">
+      <created>1365277292145</created>
+      <updated>1365277292145</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Все только начинается...">
+      <created>1365277356374</created>
+      <updated>1365277356374</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -594,14 +592,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="367" y="188" width="1368" height="773" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29126215" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10486322" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27203646" sideWeight="0.4433657" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14220877" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17246597" sideWeight="0.58715594" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17246597" sideWeight="0.58715594" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41284403" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27203646" sideWeight="0.4368932" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.49625668" order="7" side_tool="true" content_ui="tabs" />
@@ -612,7 +611,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -717,11 +715,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Libraries/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="2" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.84070796" />
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/3945c77e-d35e-459f-9941-e2dcbd731811">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -810,14 +803,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Document/Position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-16.416666">
+        <state line="50" column="5" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-16.416666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/Article/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="43" selection-start="550" selection-end="550" vertical-scroll-proportion="0.40397352">
+        <state line="29" column="25" selection-start="573" selection-end="573" vertical-scroll-proportion="0.4536424">
           <folding />
         </state>
       </provider>
