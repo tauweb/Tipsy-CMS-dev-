@@ -6,14 +6,15 @@
  * Time: 12:38
  */
 
-namespace Tipsy\Components\Articles;
+namespace Tipsy\Components\Article;
 
 use Tipsy\Libraries\Database\Query;
 
-abstract class Articles {
+abstract class Article {
 
-	public static function init(){
-
+	public static function init()
+	{
+		echo 'Я - компонент Article';
 	}
 
 	public static function get($param, $id)
@@ -33,6 +34,5 @@ abstract class Articles {
 			// Это обычный вывод
 			echo  $row[$param];
 		}
-
 	}
 }

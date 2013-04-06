@@ -50,6 +50,7 @@ abstract class Query
 			Database::$dbh->beginTransaction();
 			
 			$result = Database::$dbh->query($queryStr);
+
 // пересмотреть использование исключений.
 #throw new PdoException("Ошибка Транзакции при запросе: <b>$queryStr</b>");
 			$result->setFetchMode(\PDO::FETCH_ASSOC);
@@ -59,7 +60,7 @@ abstract class Query
 			#return $result->fetch();
 			
 		} catch(PdoException $e) {
-
+			Database::$dbh->rollBack();
 		}
 	}
 }
