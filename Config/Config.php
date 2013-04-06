@@ -18,10 +18,13 @@ abstract class Config
 
 	// Ошибки и отладка (none, simple, maximum)
 	public static $errorReporting = 'maximum';
+
 	// Отладка системы (1 - да, 0 - нет)
 	public static $debug = 1;
+
 	// Отображение отладочной информации о шаблоне (пока реализовано только 6азвание пощиций).
 	// 1 - да, 0 - нет.
+	// Смотреть \Tispy\Libraries\Position::getPosContent()
 	public static $tmplDebug = 1;
 	
 	// Настройки временной зоны

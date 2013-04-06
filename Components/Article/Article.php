@@ -14,7 +14,12 @@ abstract class Article {
 
 	public static function init()
 	{
-		echo 'Я - компонент Article';
+
+	}
+
+	public static function getPosData()
+	{
+		Query::select("SELECT ");
 	}
 
 	public static function get($param, $id)
