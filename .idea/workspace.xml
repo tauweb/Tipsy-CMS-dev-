@@ -2,55 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Templates/Positions/control_panel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/API.doc" afterPath="$PROJECT_DIR$/Docs/API.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/CSS.doc" afterPath="$PROJECT_DIR$/Docs/CSS.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/standarts.doc" afterPath="$PROJECT_DIR$/Docs/standarts.doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Content.php" afterPath="$PROJECT_DIR$/Libraries/Document/Content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Database.php" afterPath="$PROJECT_DIR$/Libraries/Database/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Debug.php" afterPath="$PROJECT_DIR$/Libraries/Debug.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Dispatcher.php" afterPath="$PROJECT_DIR$/Libraries/Dispatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Document.php" afterPath="$PROJECT_DIR$/Libraries/Document/Document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Exception.php" afterPath="$PROJECT_DIR$/Libraries/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework.php" afterPath="$PROJECT_DIR$/Framework.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Head.php" afterPath="$PROJECT_DIR$/Libraries/Document/Head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Loader.php" afterPath="$PROJECT_DIR$/Libraries/Loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Logger.php" afterPath="$PROJECT_DIR$/Libraries/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Position.php" afterPath="$PROJECT_DIR$/Libraries/Document/Position.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Router.php" afterPath="$PROJECT_DIR$/Libraries/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Session.php" afterPath="$PROJECT_DIR$/Libraries/Session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/User.php" afterPath="$PROJECT_DIR$/Components/User/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogin.php" afterPath="$PROJECT_DIR$/Components/User/UserLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogout.php" afterPath="$PROJECT_DIR$/Components/User/UserLogout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_Checksystem.php" afterPath="$PROJECT_DIR$/Libraries/_Checksystem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/_defines.php" afterPath="$PROJECT_DIR$/Includes/_defines.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_loader.php" afterPath="$PROJECT_DIR$/Libraries/_loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" afterPath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linux_get_source.sh" afterPath="$PROJECT_DIR$/linux_get_source.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/often.info" afterPath="$PROJECT_DIR$/often.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/old_Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/php_set.php" afterPath="$PROJECT_DIR$/Config/php_set.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/template.css" afterPath="$PROJECT_DIR$/Templates/Light/css/template.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" afterPath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Templates/Positions/control_panel.php" afterPath="$PROJECT_DIR$/Templates/Light/Positions/control_panel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365687534235" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365691547882" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365689222143" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365275499871" ignored="false" />
@@ -141,7 +99,7 @@
         </entry>
       </file>
       <file leaf-file-name="control_panel.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Templates/Positions/control_panel.php">
+        <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/control_panel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.28695652">
               <folding>
@@ -281,24 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Positions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Light" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -367,7 +307,7 @@
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Templates/Light" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1004" />
@@ -400,11 +340,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Templates/Light" />
       <recent name="$PROJECT_DIR$/_dev" />
       <recent name="$PROJECT_DIR$/Libraries/Document" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/components/com_users/" />
-      <recent name="$PROJECT_DIR$/components/com_users" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.localhost">
@@ -627,7 +567,11 @@
       <created>1365687547604</created>
       <updated>1365687547604</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Все только начинается...">
+      <created>1365691566170</created>
+      <updated>1365691566170</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -872,7 +816,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Positions/control_panel.php">
+    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/control_panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="6" selection-start="211" selection-end="211" vertical-scroll-proportion="0.28695652">
           <folding>
