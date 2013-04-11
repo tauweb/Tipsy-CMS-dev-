@@ -17,10 +17,10 @@ abstract class Position
 	 *
 	 */
 	protected static $positions = array();
-	
-	
+
+
 	/**
-	 * Метод пределяющий компонент, привязанный к позиции (тип выводимого контента)
+	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента)
 	 */
 	public static function getPositionData($positionName)
 	{
@@ -38,23 +38,26 @@ abstract class Position
 		// Получает контент позиции.
 		self::getPosContent($positionName);
 	}
-	
+
+	/**
+	 * Метод получающий данные для компонента привязанного к позиции.
+	 */
 	protected static function getPosContent($position)
 	{
+		// Определяет тип контента текущей позиции, заданный пользователем.
 		$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
 
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
 			echo $posContentType['name'];
 		}
-
+		// Формирует название компонента, который привязан к позиции шаблона.
 		$com =  ucfirst($posContentType['name']);
-
+		// Формирует имя пространста имен компонента.
 		$com = "\\Tipsy\\Components\\$com\\$com";
-
+		// Выполняет инициализацию компонента, если существует его класс.
 		if(class_exists($com)){
 			$com::init();
 		}
-
 	}
 }

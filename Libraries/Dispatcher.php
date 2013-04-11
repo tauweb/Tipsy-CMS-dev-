@@ -1,9 +1,9 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
- * User: whiskeyman
+ * Библеотека диспетчерра компонентов системы.
+ * CalledFrom: Tipsy\Libraries\Factory.
+ * User: whiskeyman.
  * Date: 06.04.13
- * Time: 14:52
  */
 
 namespace Tipsy\Libraries;
@@ -21,7 +21,6 @@ abstract class Dispatcher {
 	{
 		self::autoComInit();
 		self::comRegister();
-
 	}
 
 
@@ -31,16 +30,19 @@ abstract class Dispatcher {
 	protected static $components = array();
 
 	/**
-	 * Метод отвечающий за инициализацию компонентов в системе.
+	 * Метод отвечающий за автоматическую инициализацию компонентов в системе.
 	 */
-	protected  static function autoComInit()
+	protected static function autoComInit()
 	{
+		// Список исключенний из списка компонентов.
 		$exclude_list = array(".", "..");
-
+		// Создает список компонентов системы, лежащих в директории компонентов.
 		$com_dir = array_diff(scandir('Components'), $exclude_list);
 
 		foreach($com_dir as $com){
+			// Загружает класс компонента.
 			Loader::autoload('\Components\\'.$com.'\\'.$com);
+			// Регистрирует компонент в списке известных.
 			self::$components[] = $com;
 		}
 	}

@@ -24,14 +24,15 @@ class Factory
 
 		// Получает настройки конфигурации системы.
 		self::getConfig();
-		
-		self::init();
+
+		#self::init();
 		// Определяет уровень отчета об ошибках.
 		self::setErrorReporting();
 		// Временная зона системы.
 		self::setTimeZone();
 		// Определяет время жизни сессий.
 		self::getSession_lifetime();
+		self::init();
 	}
 
 	/**
@@ -47,23 +48,19 @@ class Factory
 		// Подключает модуль отладки системы.
 		Loader::autoload('\Libraries\Debug');
 		// Загружает класс работы с БД
-		Loader::autoload('\Libraries\Database\Database');	
+		Loader::autoload('\Libraries\Database\Database');
 		// Подключает отладчик системы
 		Loader::autoload('\Libraries\Debug');
 		// Подключает библиотеку выполняющие запросы к БД.
 		Loader::autoload('\Libraries\Database\Query');
-		// Подключает компонент отвечающий за формирование и вывод контента на страницу.
+		// Подключает класс компонента отвечающего за формирование и вывод контента на страницу.
 		Loader::autoload('\Libraries\Document\Content');
-		// Подключает обработчик сессий.
+		// Подключает класс обработчика сессий.
 		Loader::autoload('\Libraries\Session');
-
+		// Подключает класс диспетчера компонетов.
 		Loader::autoload('\Libraries\Dispatcher');
-
-		// Подключает компонент пользователей системы.
-		Loader::autoload('\Components\User\User');
 	}
-	
-	
+
 	protected function init()
 	{
 		#перенести cюда database и прочее.
@@ -72,7 +69,7 @@ class Factory
 
 		Dispatcher::init();
 	}
-	
+
 	/**
 	 * Метод определяющий временную зону системы из файла настроек.
 	 *
@@ -81,7 +78,7 @@ class Factory
 	{
 		date_default_timezone_set(Config::$timezone);
 	}
-	
+
 	/**
 	 * Метод подключения файлов конфигурации.
 	 *
@@ -90,9 +87,8 @@ class Factory
 	 */
 	protected static function getConfig()
 	{
-		// Подключает настройки системы
-		if (Loader::autoload('\Config\Config'))
-		{
+		// Подключает класс настроек системы.
+		if(Loader::autoload('\Config\Config')) {
 			return true;
 		}else{
 			// Пишет сообщение в лог о ненайденном файле конфигурации.
@@ -101,7 +97,7 @@ class Factory
 			die('Не найден файл конфигурации <b>Config.php</b>');
 		}
 	}
-	
+
 	/**
 	 * Метод формирования опций сервера с подключаемой БД в виде массива.
 	 *
@@ -110,14 +106,14 @@ class Factory
 	protected static function getDbOptions()
 	{
 		$DBOptions = array(
-						"host" => Config::$db_host ,
-						"username" => Config::$db_user ,
-						"password" => Config::$db_password,
-						"dbname" => Config::$db_dbname,
-						"port" => Config::$db_port,
-						"socket" => Config::$db_socket
-					);
-					
+			"host" => Config::$db_host ,
+			"username" => Config::$db_user ,
+			"password" => Config::$db_password,
+			"dbname" => Config::$db_dbname,
+			"port" => Config::$db_port,
+			"socket" => Config::$db_socket
+		);
+
 		return $DBOptions;
 	}
 
@@ -148,7 +144,7 @@ class Factory
 				break;
 		}
 	}
-	
+
 	/**
 	 * Метод почучения времени жизни сессии из настроек.
 	 */
