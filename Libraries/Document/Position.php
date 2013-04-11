@@ -10,11 +10,14 @@ use Tipsy\Libraries\Loader;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
 
+/**
+ * Class Position - Класс отвечающий за позиции (блоки для разного типа контента) в шаблоне html.
+ * @package Tipsy\Libraries\Document
+ */
 abstract class Position
 {
 	/**
 	 * @var	array	Позиции текущего шаблона.
-	 *
 	 */
 	protected static $positions = array();
 

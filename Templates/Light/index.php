@@ -21,7 +21,7 @@ $this->addStylesheet('template.css');
 
 <body>
 	<div id='control_panel'>
-	test
+	Войти
 	</div>
 
 	<div id="debug" class="text-success">
