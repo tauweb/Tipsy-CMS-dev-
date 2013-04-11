@@ -52,7 +52,7 @@ abstract class Position
 
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
-			echo $posContentType['name'];
+			echo '<fieldset><legend>'.$posContentType['name'].'</legend></fieldset>';
 		}
 		// Формирует название компонента, который привязан к позиции шаблона.
 		$com =  ucfirst($posContentType['name']);

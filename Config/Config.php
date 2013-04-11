@@ -25,7 +25,7 @@ abstract class Config
 	// Отображение отладочной информации о шаблоне (пока реализовано только 6азвание пощиций).
 	// 1 - да, 0 - нет.
 	// Смотреть \Tispy\Libraries\Position::getPosContent()
-	public static $tmplDebug = 1;
+	public static $tmplDebug = 0;
 	
 	// Настройки временной зоны
 	public static $timezone = 'Europe/Moscow';
