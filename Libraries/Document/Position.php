@@ -66,7 +66,7 @@ abstract class Position extends Document
 			#$com_ns::init();
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
-		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.html');
+		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
 
 		echo $final = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
 		}
