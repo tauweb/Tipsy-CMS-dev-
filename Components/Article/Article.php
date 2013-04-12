@@ -17,7 +17,7 @@ abstract class Article {
 
 	public static function init()
 	{
-		self::getDefaultData();
+		return self::getDefaultData();
 	}
 
 	/**
@@ -28,7 +28,8 @@ abstract class Article {
 		$res = Query::select("SELECT articles.* FROM articles
  					LEFT JOIN positions ON articles.id=positions.com_id
 					WHERE positions.com = 'Article';");
-		echo $res['fulltext'];
+		#echo $res['fulltext'];
+		return $res['fulltext'];
 	}
 
 	public static function get($param, $id)

@@ -14,21 +14,22 @@ defined('_TEXEC') or die();
  * Class Position - Класс отвечающий за позиции (блоки для разного типа контента) в шаблоне html.
  * @package Tipsy\Libraries\Document
  */
-abstract class Position
+abstract class Position extends Document
 {
 	/**
 	 * @var	array	Позиции текущего шаблона.
 	 */
 	protected static $positions = array();
 
+	protected static $ns_com ='';
 
 	/**
-	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента)
+	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента).
 	 */
-	public static function getPositionData($positionName)
+	public static function get($positionName)
 	{
 		$positionName = strtolower($positionName);
-		// Если позиция не зарегистрирована в списке, тогда:
+		// Если позиция не зарегистрирована (например новая) в списке, тогда:
 		if(!in_array($positionName, self::$positions)){
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
@@ -50,17 +51,25 @@ abstract class Position
 		// Определяет тип контента текущей позиции, заданный пользователем.
 		$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
 
+		// Формирует название компонента, который привязан к позиции шаблона.
+		$com =  ucfirst($posContentType['name']);
+		// Формирует имя пространста имен компонента.
+		$com_ns = "\\Tipsy\\Components\\$com\\$com";
+
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
 			echo '<fieldset><legend>'.$posContentType['name'].'</legend></fieldset>';
 		}
-		// Формирует название компонента, который привязан к позиции шаблона.
-		$com =  ucfirst($posContentType['name']);
-		// Формирует имя пространста имен компонента.
-		$com = "\\Tipsy\\Components\\$com\\$com";
+
 		// Выполняет инициализацию компонента, если существует его класс.
-		if(class_exists($com)){
-			$com::init();
+		if(class_exists($com_ns)){
+			#$com_ns::init();
+
+		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
+		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.html');
+
+		echo $final = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
 		}
+
 	}
 }
