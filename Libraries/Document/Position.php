@@ -45,7 +45,7 @@ abstract class Position extends Document
 			}
 		}
 		// Получает контент позиции.
-		self::getPosContent($positionName);
+		self::parse($positionName);
 	}
 
 
@@ -64,7 +64,7 @@ abstract class Position extends Document
 	/**
 	 * Метод получающий данные для компонента привязанного к позиции.
 	 */
-	protected static function getPosContent($position)
+	protected static function parse($position)
 	{
 		// Определяет тип контента текущей позиции, заданный пользователем.
 		$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
