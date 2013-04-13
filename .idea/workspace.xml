@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Document.php" afterPath="$PROJECT_DIR$/Libraries/Document/Document.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Position.php" afterPath="$PROJECT_DIR$/Libraries/Document/Position.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365855622568" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365876704022" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365856338071" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365275499871" ignored="false" />
     <file path="/a.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083907094" ignored="false" />
     <file path="/create_DB.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364260520620" ignored="false" />
-    <file path="/Position.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365866882669" ignored="false" />
+    <file path="/Position.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365881943419" ignored="false" />
     <file path="/a.html" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083999763" ignored="false" />
     <file path="/a.less" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083890915" ignored="false" />
     <file path="/a.js" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365084003209" ignored="false" />
@@ -38,7 +36,7 @@
     <file path="/Control_panel.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365770579604" ignored="false" />
     <file path="/Conteiner.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365770998129" ignored="false" />
     <file path="/Footer.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365856468049" ignored="false" />
-    <file path="/Article.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365867093363" ignored="false" />
+    <file path="/Article.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365882007897" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +63,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Position.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Position.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Libraries/Document/Position.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="2465" selection-end="2465" vertical-scroll-proportion="-9.583333">
-              <folding>
-                <element signature="e#43#80#0" expanded="true" />
-              </folding>
+            <state line="71" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.64487034">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="27" selection-start="972" selection-end="972" vertical-scroll-proportion="-20.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,10 +84,8 @@
       <file leaf-file-name="Document.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Document/Document.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="8" selection-start="2961" selection-end="2961" vertical-scroll-proportion="-12.083333">
-              <folding>
-                <element signature="e#43#67#0" expanded="true" />
-              </folding>
+            <state line="120" column="8" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,25 +93,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="19" selection-start="680" selection-end="680" vertical-scroll-proportion="-12.5">
+            <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Footer.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Article.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="108" selection-end="108" vertical-scroll-proportion="0.104347825">
+            <state line="5" column="10" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -133,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Config/Config.php" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/control_panel.php" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.php" />
         <option value="$PROJECT_DIR$/Components/Article/Article.php" />
@@ -147,8 +140,9 @@
         <option value="$PROJECT_DIR$/Libraries/Document/Document.php" />
         <option value="$PROJECT_DIR$/Templates/Light/index.php" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" />
-        <option value="$PROJECT_DIR$/Libraries/Document/Position.php" />
+        <option value="$PROJECT_DIR$/Config/Config.php" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" />
+        <option value="$PROJECT_DIR$/Libraries/Document/Position.php" />
       </list>
     </option>
   </component>
@@ -160,8 +154,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="localhost" />
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -189,6 +183,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,7 +326,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,14 +333,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="99" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Templates/Light" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1004" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1004" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="106" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="98" />
@@ -364,12 +358,12 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PublishConfig" serverName="Tipsy" serverId="1d76ec3a-38ec-46fd-8e67-9520ce12da25">
     <servers>
-      <server id="53312c9c-7781-4b2c-89f7-5dde22668d59">
+      <server id="1d76ec3a-38ec-46fd-8e67-9520ce12da25">
         <serverdata />
       </server>
     </servers>
@@ -391,16 +385,13 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="localhost">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="localhost">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="22364e78-a86e-4dd5-96fc-c6dca87e0bd9" server_name="tipsy">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -408,6 +399,9 @@
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="22364e78-a86e-4dd5-96fc-c6dca87e0bd9" server_name="tipsy">
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -647,7 +641,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -655,9 +649,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10486322" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27203646" sideWeight="0.4433657" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14166667" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16742425" sideWeight="0.5888" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11953042" sideWeight="0.88260406" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16515152" sideWeight="0.3152" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11953042" sideWeight="0.10885806" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.49625668" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
@@ -742,13 +736,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/Libraries/Document/Position.php</url>
-          <line>74</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="32" />
     </breakpoint-manager>
   </component>
@@ -771,21 +758,9 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="468" selection-end="468" vertical-scroll-proportion="0.026086956" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/User/UserLogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="59" selection-start="673" selection-end="673" vertical-scroll-proportion="0.3321739" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="129" selection-end="129" vertical-scroll-proportion="0.008695652">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Errors.tpl">
@@ -805,74 +780,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Database/Query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="45" selection-end="45" vertical-scroll-proportion="0.052173913">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="45" selection-end="45" vertical-scroll-proportion="0.052173913" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Conteiner.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="50" selection-end="50" vertical-scroll-proportion="0.050083473">
-          <folding />
-        </state>
+        <state line="2" column="16" selection-start="50" selection-end="50" vertical-scroll-proportion="0.050083473" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Nav.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="17" selection-end="17" vertical-scroll-proportion="0.026086956">
-          <folding />
-        </state>
+        <state line="1" column="16" selection-start="17" selection-end="17" vertical-scroll-proportion="0.026086956" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Document/Document.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="8" selection-start="2961" selection-end="2961" vertical-scroll-proportion="-12.083333">
-          <folding>
-            <element signature="e#43#67#0" expanded="true" />
-          </folding>
+        <state line="120" column="8" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="19" selection-start="680" selection-end="680" vertical-scroll-proportion="-12.5">
+        <state line="32" column="27" selection-start="972" selection-end="972" vertical-scroll-proportion="-20.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.625">
+        <state line="3" column="9" selection-start="135" selection-end="135" vertical-scroll-proportion="0.050732806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="101" selection-end="101" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Document/Position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2465" selection-end="2465" vertical-scroll-proportion="-9.583333">
-          <folding>
-            <element signature="e#43#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="108" selection-end="108" vertical-scroll-proportion="0.104347825">
+        <state line="71" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.64487034">
           <folding />
         </state>
       </provider>

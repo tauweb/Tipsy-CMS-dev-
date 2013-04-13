@@ -58,14 +58,17 @@ abstract class Position extends Document
 
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
-			echo '<fieldset><legend>'.$posContentType['name'].'</legend></fieldset>';
+			echo '<fieldset><legend>'.$posContentType['name'].'</legend>';
 		}
 
 		// Выполняет инициализацию компонента, если существует его класс.
-		if(class_exists($com_ns)){
-
+		#if(class_exists($com_ns)){
 			// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
 			$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
+
+        if(class_exists($com_ns) and !stripos($pos_tmpl,'{nodata}')){
+
+
 
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
 
@@ -73,16 +76,18 @@ abstract class Position extends Document
 				$start_php = stripos($content,'{php}');
 				$end_php = stripos($content,'{/php}');
 				$lenght = $end_php-$start_php+6;
-				$php_code = eval(substr($content,$start_php+5,$lenght-11));
-
+                $php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
 				$content = substr_replace($content,$php_code,$start_php,$lenght);
-
 			}
-			echo $content;
-			#echo $code = substr_replace($content,$php_code,$start_php,$lenght);
-
-
+			echo eval('?>'.$content);
 		}
+
+
+
+        // Здесь завершается вывод отладки шаблона.
+        if($posContentType and  Config::$tmplDebug) {
+           echo '</fieldset>';
+        }
 
 	}
 }
