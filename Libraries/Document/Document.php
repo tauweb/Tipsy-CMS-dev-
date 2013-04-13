@@ -16,7 +16,7 @@ use Tipsy\Libraries\Document\Position;
 defined('_TEXEC') or die();
 
 /**
- * Класс формирования данных для html страницы. Выстцпает связным звеном между страницей и модулями
+ * Класс формирования данных для html страницы. Выступает связным звеном между страницей и модулями.
  *
  */
 class Document
@@ -24,15 +24,9 @@ class Document
 	/**
 	 * @var	string	Текущий шаблон
 	 */
-	protected $template = '';
+	public static $template = '';
 
-	protected $templatePositions = array();
-
-	/**
-	 * @var	string	Контент, который будет выведен на страницу.
-	 * Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
-	 */
-
+	public static $templatePositions = array();
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
@@ -65,7 +59,7 @@ class Document
 	 */
 	protected function addStylesheet($name)
 	{
-	   Head::addStylesheet($name);
+		Head::addStylesheet($name);
 	}
 
 	/**
@@ -83,25 +77,24 @@ class Document
 	{
 		// Путь к каталогу файлов шаблона.
 		$template = 'Templates/' . Config::$template;
-		
+
 		try{
-			// Проверяет наличие index файла шаблона и подключает его, если не находит - бросает исключение.
+			// Проверяет наличие index файла шаблона и формирует путь к index файлу, если не находит - бросает исключение.
 			if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
-				$this->template = $tmpl_index;
+				// Путь к папке текущего шаблона (длЯ использования в других классах, наеример в наследуемом Positions).
+				self::$template = $template;
 			} else {
 				throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
 			}
 			// Подключает шаблон.
-			require_once $this->template;
-		
+			require_once $tmpl_index;
+
 		} catch (RuntimeException $e) {
 			// Выводит ошибку на страницу.
 			Errors::getErrors();
 		}
 	}
 
-
-	
 	/**
 	 * Метод получающий ошибки системы для html страницы.
 	 */
@@ -136,15 +129,10 @@ class Document
 		Router::getURL();
 	}
 
-	#public function User(){
-	#	Loader::autoload('\Components\User\User');
-	#	User::init();
-	#}
-	
 	protected function position($positionName)
 	{
 		Loader::autoload('\Libraries\Document\Position');
-		Position::getPositionData($positionName);
-		
+		Position::get($positionName);
+
 	}
 }
