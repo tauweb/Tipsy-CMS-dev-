@@ -1,2 +1,0 @@
-{nodata}
-MENU

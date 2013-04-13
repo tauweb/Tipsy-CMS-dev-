@@ -17,11 +17,16 @@ defined('_TEXEC') or die();
 abstract class Position extends Document
 {
 	/**
-	 * @var	array	Позиции текущего шаблона.
+	 * @var	array Позиции текущего шаблона.
 	 */
 	protected static $positions = array();
 
-	protected static $ns_com ='';
+	#protected static $ns_com ='';
+
+    /**
+     * @var array Теги применяемые в шаблоне.
+     */
+    protected static $tags = array('{content}','{always}');
 
 	/**
 	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента).
@@ -77,15 +82,15 @@ abstract class Position extends Document
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
 		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
-        $tags = array('{content}','{always}');
+
         // Выполняет инициализацию компонента, если существует его класс.
         if(class_exists($com_ns)){
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
-            $content = str_replace($tags,'', $content);
+            $content = str_replace(self::$tags,'', $content);
             self::run_php($content);
 
         }elseif(substr($pos_tmpl,0,8)=='{always}'){
-            $pos_tmpl = str_replace($tags,'', $pos_tmpl);
+            $pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
             self::run_php($pos_tmpl);
         }
 
