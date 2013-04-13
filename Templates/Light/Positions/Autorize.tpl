@@ -1,3 +1,5 @@
-    <div id="autorize" class="autorize">
+{always}
+   <div id="autorize" class="autorize">
         {content}
+       bllsfgsdfgsdfgsdfgsd
     </div>

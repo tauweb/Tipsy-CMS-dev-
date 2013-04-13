@@ -43,6 +43,19 @@ abstract class Position extends Document
 		self::getPosContent($positionName);
 	}
 
+
+    protected static function run_php($content)
+    {
+        while (stripos($content,'{php}')){
+            $start_php = stripos($content,'{php}');
+            $end_php = stripos($content,'{/php}');
+            $lenght = $end_php-$start_php+6;
+            $php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
+            $content = substr_replace($content,$php_code,$start_php,$lenght);
+        }
+         eval('?>'.$content);
+    }
+
 	/**
 	 * Метод получающий данные для компонента привязанного к позиции.
 	 */
@@ -61,27 +74,20 @@ abstract class Position extends Document
 			echo '<fieldset><legend>'.$posContentType['name'].'</legend>';
 		}
 
-		// Выполняет инициализацию компонента, если существует его класс.
-		#if(class_exists($com_ns)){
-			// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
-			$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
 
-        if(class_exists($com_ns) and !stripos($pos_tmpl,'{nodata}')){
-
-
-
+		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
+		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
+        $tags = array('{content}','{always}');
+        // Выполняет инициализацию компонента, если существует его класс.
+        if(class_exists($com_ns)){
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+            $content = str_replace($tags,'', $content);
+            self::run_php($content);
 
-			while (stripos($content,'{php}')){
-				$start_php = stripos($content,'{php}');
-				$end_php = stripos($content,'{/php}');
-				$lenght = $end_php-$start_php+6;
-                $php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
-				$content = substr_replace($content,$php_code,$start_php,$lenght);
-			}
-			echo eval('?>'.$content);
-		}
-
+        }elseif(substr($pos_tmpl,0,8)=='{always}'){
+            $pos_tmpl = str_replace($tags,'', $pos_tmpl);
+            self::run_php($pos_tmpl);
+        }
 
 
         // Здесь завершается вывод отладки шаблона.

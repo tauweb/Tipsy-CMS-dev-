@@ -1,4 +1,4 @@
-{nodata}
+{always}
 <article>
 {php} print ('TESTER');{/php}
 {content}
