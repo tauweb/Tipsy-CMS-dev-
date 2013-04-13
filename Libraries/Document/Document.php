@@ -16,7 +16,7 @@ use Tipsy\Libraries\Document\Position;
 defined('_TEXEC') or die();
 
 /**
- * Класс формирования данных для html страницы. Выстцпает связным звеном между страницей и модулями
+ * Класс формирования данных для html страницы. Выступает связным звеном между страницей и модулями.
  *
  */
 class Document
@@ -26,13 +26,7 @@ class Document
 	 */
 	public static $template = '';
 
-	protected $templatePositions = array();
-
-	/**
-	 * @var	string	Контент, который будет выведен на страницу.
-	 * Todo: Псосле того как контент будет загружаться из БД, удалять это свойство.
-	 */
-
+	public static $templatePositions = array();
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
@@ -88,7 +82,6 @@ class Document
 			// Проверяет наличие index файла шаблона и формирует путь к index файлу, если не находит - бросает исключение.
 			if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
 				// Путь к папке текущего шаблона (длЯ использования в других классах, наеример в наследуемом Positions).
-
 				self::$template = $template;
 			} else {
 				throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');

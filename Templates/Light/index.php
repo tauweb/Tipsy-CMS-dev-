@@ -20,20 +20,16 @@ $this->addStylesheet('template.css');
 </head>
 
 <body>
-<!--<div id="control_panel"> -->
-	<? $this->position('Control_panel'); ?>
-<!--</div> -->
+<?$this->position('Control_panel');?>
 
 <div id="debug" class="text-success">
 	<?php
-	// Выводит сообщения об отладке сисьемы.
+	// Выводит сообщения об отладке системы.
 	$this->getDebugMsg();
 	?>
 </div>
 
-	<?php
-	// Задает имя и получает содержимое позиции.
-	$this->position('Autorize');?>
+<?php	$this->position('Autorize');?>
 
 <header>
 	<h1 class="site_name">Домашняя страница проета Tipsy cms</h1>
@@ -47,12 +43,7 @@ $this->addStylesheet('template.css');
 	?>
 </div>
 
-<div id="menu_horisontal">
-	<?php
-	// Задает имя и получает содержимое позиции.
-	$this->position('menu_horisontal');
-	?>
-</div>
+	<?php $this->position('menu_horisontal');?>
 
 <div id="container">
 	<?php
@@ -60,20 +51,14 @@ $this->addStylesheet('template.css');
 	$this->position('Conteiner');
 	?>
 	<section>
-			<?php
-			// Задает имя и получает содержимое позиции.
-			$this->Position('nav');
-			?>
-			<? $this->Position('Article');?>
+		<?php $this->Position('nav');?>
+		<? $this->Position('Article');?>
 	</section>
 
 </div>
 
 <footer>
-	<?php
-	// Задает имя и получает содержимое позиции.
-	$this->position('footer');
-	?>
+	<?php $this->position('footer');?>
 	<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</b></a></p>
 </footer>
 </body>

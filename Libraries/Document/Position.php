@@ -63,12 +63,25 @@ abstract class Position extends Document
 
 		// Выполняет инициализацию компонента, если существует его класс.
 		if(class_exists($com_ns)){
-			#$com_ns::init();
 
-		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
-		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
+			// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
+			$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
 
-		echo $final = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+
+			while (stripos($content,'{php}')){
+				$start_php = stripos($content,'{php}');
+				$end_php = stripos($content,'{/php}');
+				$lenght = $end_php-$start_php+6;
+				$php_code = eval(substr($content,$start_php+5,$lenght-11));
+
+				$content = substr_replace($content,$php_code,$start_php,$lenght);
+
+			}
+			echo $content;
+			#echo $code = substr_replace($content,$php_code,$start_php,$lenght);
+
+
 		}
 
 	}
