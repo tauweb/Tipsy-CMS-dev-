@@ -60,6 +60,5 @@ abstract class Database
 				}
 			}catch (RuntimeException $e){}
 		}
-
 	}
 }
