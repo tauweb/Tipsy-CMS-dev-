@@ -1,4 +1,12 @@
-article,aside,header,nav,section,#autorize {
+section{
+    display: block;
+}
+
+conteiner{
+    border: 3px solid black;
+}
+
+article,aside,header,nav,#autorize {
 	display: block;
 }
 
