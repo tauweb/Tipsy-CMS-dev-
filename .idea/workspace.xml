@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Logs/Logs.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Database.php" afterPath="$PROJECT_DIR$/Libraries/Database/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/Footer.css" afterPath="$PROJECT_DIR$/Templates/Light/css/Footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Logger.php" afterPath="$PROJECT_DIR$/Libraries/Logger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Position.php" afterPath="$PROJECT_DIR$/Libraries/Html/Position.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365950675664" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365953589057" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365944558963" ignored="false" />
-    <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365953409223" ignored="false" />
+    <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365953825311" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365275499871" ignored="false" />
     <file path="/a.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083907094" ignored="false" />
     <file path="/create_DB.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364260520620" ignored="false" />
@@ -135,19 +130,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Libraries/Database/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="67" selection-start="1460" selection-end="1467" vertical-scroll-proportion="-8.166667">
+            <state line="51" column="0" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.805915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/Config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.10830325">
+            <state line="15" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="-5.5833335">
               <folding />
             </state>
           </provider>
@@ -157,15 +152,6 @@
         <entry file="file://$PROJECT_DIR$/Libraries/Database/Query.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="44" column="69" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-12.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -216,8 +202,8 @@
         <option value="$PROJECT_DIR$/Libraries/Logger.php" />
         <option value="$PROJECT_DIR$/Logs/Logs.txt" />
         <option value="$PROJECT_DIR$/Libraries/Database/Query.php" />
-        <option value="$PROJECT_DIR$/Libraries/Database/Database.php" />
         <option value="$PROJECT_DIR$/Config/Config.php" />
+        <option value="$PROJECT_DIR$/Libraries/Database/Database.php" />
       </list>
     </option>
   </component>
@@ -673,7 +659,11 @@
       <created>1365950683638</created>
       <updated>1365950683639</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Все только начинается...">
+      <created>1365953596105</created>
+      <updated>1365953596105</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -921,16 +911,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Database/Database.php">
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="67" selection-start="1460" selection-end="1467" vertical-scroll-proportion="-8.166667">
+        <state line="15" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="-5.5833335">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Config/Config.php">
+    <entry file="file://$PROJECT_DIR$/Libraries/Database/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.10830325">
+        <state line="51" column="0" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.805915">
           <folding />
         </state>
       </provider>

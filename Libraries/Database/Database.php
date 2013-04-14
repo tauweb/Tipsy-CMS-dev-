@@ -45,10 +45,12 @@ abstract class Database
 				self::$dbh->rollBack();
 			}
 
-			if($e->getCode()==1045)
+			// Если не смог подключиться к базе данных - пишет сообщение и помирает.
+			if($e->getCode()==1045){
 				die('<b>Опаньки, не смог подключиться к БД. Причина:</b> '.$e->getMessage());
+			}
 
-			print "Ошибка базы данных!: " . $e->getMessage() . "<br/>";
+			echo "Ошибка базы данных!: " . $e->getMessage() . "<br/>";
 
 			try{
 				// todo: переписать Эту часть!
