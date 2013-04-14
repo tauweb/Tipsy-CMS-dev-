@@ -29,11 +29,9 @@ $this->addStylesheet('template.css');
 	?>
 </div>
 
-<?php	$this->position('Autorize');?>
+<?php $this->position('Autorize');?>
+<?php $this->position('Header'); ?>
 
-<header>
-	<h1 class="site_name">Домашняя страница проета Tipsy cms</h1>
-</header>
 <div id="errors" class="text-error">
 	<?php
 	// Задает имя и получает содержимое позиции.
@@ -46,21 +44,12 @@ $this->addStylesheet('template.css');
 	<?php $this->position('menu_horisontal');?>
 
 <div id="container">
-	<?php
-	// Задает имя и получает содержимое позиции.
-	$this->position('Conteiner');
-	?>
 	<section>
 		<?php $this->Position('nav');?>
-		<? $this->Position('Article');?>
+		<?php $this->Position('Article');?>
 	</section>
-
 </div>
-
-<footer>
 	<?php $this->position('footer');?>
-	<p>Сайт работает на Tipsy CMS. Автор: <a href="http://vk.com/whiskeyman"><b>WhiskeyMan</b></a></p>
-</footer>
 </body>
 
 </html>

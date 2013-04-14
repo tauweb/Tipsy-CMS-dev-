@@ -1,3 +1,0 @@
-    <conteiner>
-        {content}
-    </conteiner>

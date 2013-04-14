@@ -79,7 +79,6 @@ abstract class Position extends Document
 			echo '<fieldset><legend>'.$posContentType['name'].'</legend>';
 		}
 
-
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
 		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
 
@@ -94,11 +93,9 @@ abstract class Position extends Document
             self::run_php($pos_tmpl);
         }
 
-
         // Здесь завершается вывод отладки шаблона.
         if($posContentType and  Config::$tmplDebug) {
            echo '</fieldset>';
         }
-
 	}
 }
