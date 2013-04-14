@@ -71,7 +71,8 @@ abstract class Position extends Html
 	protected static function parse($position)
 	{
 		// Определяет тип контента текущей позиции, заданный пользователем.
-		$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
+		if(!$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";"))
+			return;
 
 		// Формирует название компонента, который привязан к позиции шаблона.
 		$com =  ucfirst($posContentType['name']);

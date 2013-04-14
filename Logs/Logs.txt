@@ -1,0 +1,7 @@
+Sunday 14th of April 2013 07:16:36 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:17:36 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:18:27 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:23:42 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:23:55 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:29:06 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Sunday 14th of April 2013 07:29:38 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)

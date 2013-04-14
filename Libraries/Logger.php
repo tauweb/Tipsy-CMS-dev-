@@ -30,7 +30,7 @@ class Logger
 
 		try {
 			// Проверяет и пытается открыть файл для записи логов, если не получается - бросает исключение с сообщением об ошибке.
-			if (@!$logfile = fopen('logs' . DIRECTORY_SEPARATOR . 'log.txt', 'a')) {
+			if (@!$logfile = fopen('Logs' . DIRECTORY_SEPARATOR . 'Logs.txt', 'a')) {
 				throw new FatalErrorException('<b>Ошибка логирования: </b>Не могу открыть или создать файл для записи логов. Проверте права доступа на запись');
 			}
 			

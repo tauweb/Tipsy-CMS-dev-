@@ -45,12 +45,16 @@ abstract class Database
 				self::$dbh->rollBack();
 			}
 
-			print "Error!: " . $e->getMessage() . "<br/>";
+			if($e->getCode()==1045)
+				die('<b>Опаньки, не смог подключиться к БД. Причина:</b> '.$e->getMessage());
+
+			print "Ошибка базы данных!: " . $e->getMessage() . "<br/>";
+
 			try{
 				// todo: переписать Эту часть!
 				// Если перехваченное ранее исключение PDO содержит ошибку, то бросаем новое исключение для вывода сообщения об ошибке на страницу. 
 				if($e->getMessage()){
-					throw new RuntimeException('Ошибка базы данных: ' . $e->getMessage());
+					throw new RuntimeException('Ошибка БД: ' . $e->getMessage());
 				}
 			}catch (RuntimeException $e){}
 		}
