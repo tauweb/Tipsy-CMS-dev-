@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Templates/Light/css/Footer.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Libraries/Document/Content.php" afterPath="$PROJECT_DIR$/Libraries/Html/Content.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Libraries/Document/Document.php" afterPath="$PROJECT_DIR$/Libraries/Html/Html.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Libraries/Document/Head.php" afterPath="$PROJECT_DIR$/Libraries/Html/Head.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Libraries/Document/Position.php" afterPath="$PROJECT_DIR$/Libraries/Html/Position.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/old_Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/template.css" afterPath="$PROJECT_DIR$/Templates/Light/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365940442760" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946494119" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365944558963" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364248679530" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365275499871" ignored="false" />
@@ -32,7 +24,7 @@
     <file path="/a.coffee" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083986888" ignored="false" />
     <file path="/Framework.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151276160" ignored="false" />
     <file path="/Articles.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151734483" ignored="false" />
-    <file path="/template.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365940898612" ignored="false" />
+    <file path="/template.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946675717" ignored="false" />
     <file path="/control_panel.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365691524959" ignored="false" />
     <file path="/Document.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365763173780" ignored="false" />
     <file path="/Article.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365766769314" ignored="false" />
@@ -56,6 +48,7 @@
     <file path="/Head.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365944045010" ignored="false" />
     <file path="/Footer.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365941815419" ignored="false" />
     <file path="/old_Query.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946322981" ignored="false" />
+    <file path="/Autorize.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946976670" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,14 +87,14 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="675" selection-end="675" vertical-scroll-proportion="-9.583333">
+            <state line="38" column="48" selection-start="735" selection-end="735" vertical-scroll-proportion="-10.833333">
               <folding>
-                <marker date="1365944985805" expanded="true" signature="312:428" placeholder="..." />
-                <marker date="1365944985805" expanded="true" signature="409:428" placeholder="..." />
-                <marker date="1365944985805" expanded="true" signature="486:569" placeholder="..." />
-                <marker date="1365944985805" expanded="true" signature="681:752" placeholder="..." />
-                <marker date="1365944985805" expanded="true" signature="896:932" placeholder="..." />
-                <marker date="1365944985805" expanded="true" signature="907:932" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="312:428" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="409:428" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="486:569" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="681:752" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="897:932" placeholder="..." />
+                <marker date="1365946625905" expanded="true" signature="907:932" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -116,6 +109,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Config/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="-10.583333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Html.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Html.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Position.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Position.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="5" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.8173913">
+            <state line="48" column="5" selection-start="1449" selection-end="1450" vertical-scroll-proportion="-14.583333">
               <folding>
                 <element signature="e#39#72#0" expanded="true" />
               </folding>
@@ -148,7 +150,16 @@
       <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Light/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="-12.0">
+            <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.2">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autorize.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="10" selection-start="110" selection-end="110" vertical-scroll-proportion="0.10830325">
               <folding />
             </state>
           </provider>
@@ -185,8 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Templates/Light/Positions/Nav.tpl" />
-        <option value="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl" />
         <option value="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" />
         <option value="$PROJECT_DIR$/Libraries/Application.php" />
@@ -195,12 +204,14 @@
         <option value="$PROJECT_DIR$/Libraries/Document/Html.php" />
         <option value="$PROJECT_DIR$/Libraries/Document/Position.php" />
         <option value="$PROJECT_DIR$/Libraries/Factory.php" />
-        <option value="$PROJECT_DIR$/Templates/Light/css/template.css" />
         <option value="$PROJECT_DIR$/Templates/Light/css/Footer.css" />
         <option value="$PROJECT_DIR$/Libraries/Html/Head.php" />
-        <option value="$PROJECT_DIR$/Templates/Light/index.php" />
         <option value="$PROJECT_DIR$/Libraries/Html/Position.php" />
         <option value="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
+        <option value="$PROJECT_DIR$/Templates/Light/index.php" />
+        <option value="$PROJECT_DIR$/Config/Config.php" />
+        <option value="$PROJECT_DIR$/Templates/Light/css/template.css" />
+        <option value="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" />
       </list>
     </option>
   </component>
@@ -692,7 +703,11 @@
       <created>1365940447849</created>
       <updated>1365940447849</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Все только начинается...">
+      <created>1365946501533</created>
+      <updated>1365946501533</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -725,7 +740,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14166667" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.49625668" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16515152" sideWeight="0.3152" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17121212" sideWeight="0.3152" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2768" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -833,20 +848,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.13537906">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="65" selection-start="83" selection-end="83" vertical-scroll-proportion="0.052173913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="9" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0">
@@ -871,13 +872,6 @@
     <entry file="file://$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="289" selection-end="289" vertical-scroll-proportion="0.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/css/Footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -917,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="306" selection-end="306" vertical-scroll-proportion="-12.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/Content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="29" selection-start="1384" selection-end="1384" vertical-scroll-proportion="-13.125">
@@ -931,26 +918,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
+    <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="675" selection-end="675" vertical-scroll-proportion="-9.583333">
+        <state line="48" column="5" selection-start="1449" selection-end="1450" vertical-scroll-proportion="-14.583333">
           <folding>
-            <marker date="1365944985805" expanded="true" signature="312:428" placeholder="..." />
-            <marker date="1365944985805" expanded="true" signature="409:428" placeholder="..." />
-            <marker date="1365944985805" expanded="true" signature="486:569" placeholder="..." />
-            <marker date="1365944985805" expanded="true" signature="681:752" placeholder="..." />
-            <marker date="1365944985805" expanded="true" signature="896:932" placeholder="..." />
-            <marker date="1365944985805" expanded="true" signature="907:932" placeholder="..." />
+            <element signature="e#39#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
+    <entry file="file://$PROJECT_DIR$/Templates/Light/css/Footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="5" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.8173913">
+        <state line="2" column="1" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="-10.583333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="48" selection-start="735" selection-end="735" vertical-scroll-proportion="-10.833333">
           <folding>
-            <element signature="e#39#72#0" expanded="true" />
+            <marker date="1365946625905" expanded="true" signature="312:428" placeholder="..." />
+            <marker date="1365946625905" expanded="true" signature="409:428" placeholder="..." />
+            <marker date="1365946625905" expanded="true" signature="486:569" placeholder="..." />
+            <marker date="1365946625905" expanded="true" signature="681:752" placeholder="..." />
+            <marker date="1365946625905" expanded="true" signature="897:932" placeholder="..." />
+            <marker date="1365946625905" expanded="true" signature="907:932" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="-1.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="110" selection-end="110" vertical-scroll-proportion="0.10830325">
+          <folding />
         </state>
       </provider>
     </entry>

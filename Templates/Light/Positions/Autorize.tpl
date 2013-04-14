@@ -1,5 +1,5 @@
 {always}
    <div id="autorize" class="autorize">
         {content}
-       bllsfgsdfgsdfgsdfgsd
+       Будущая форма авторизации
     </div>
