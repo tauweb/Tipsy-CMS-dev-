@@ -54,7 +54,7 @@ class Factory
 		// Подключает библиотеку выполняющие запросы к БД.
 		Loader::autoload('\Libraries\Database\Query');
 		// Подключает класс компонента отвечающего за формирование и вывод контента на страницу.
-		Loader::autoload('\Libraries\Document\Content');
+		Loader::autoload('\Libraries\Html\Content');
 		// Подключает класс обработчика сессий.
 		Loader::autoload('\Libraries\Session');
 		// Подключает класс диспетчера компонетов.

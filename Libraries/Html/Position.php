@@ -1,7 +1,7 @@
 <?php
-namespace Tipsy\Libraries\Document;
+namespace Tipsy\Libraries\Html;
 
-use Tipsy\Libraries\Document\Content;
+use Tipsy\Libraries\Html\Content;
 use Tipsy\Libraries\Database\Database;
 use Tipsy\Libraries\Database\Query;
 use Tipsy\Config\Config;
@@ -12,9 +12,9 @@ defined('_TEXEC') or die();
 
 /**
  * Class Position - Класс отвечающий за позиции (блоки для разного типа контента) в шаблоне html.
- * @package Tipsy\Libraries\Document
+ * @package Tipsy\Libraries\Html
  */
-abstract class Position extends Document
+abstract class Position extends Html
 {
 	/**
 	 * @var	array Позиции текущего шаблона.
@@ -49,7 +49,11 @@ abstract class Position extends Document
 	}
 
 
-    protected static function run_php($content)
+	/**
+	 * Метод выполняющий код из шаблона позиции.
+	 * @param $content конткнт в котором производится поиск и выполнение кода
+	 */
+	protected static function run_php($content)
     {
         while (stripos($content,'{php}')){
             $start_php = stripos($content,'{php}');
@@ -79,10 +83,11 @@ abstract class Position extends Document
 			echo '<fieldset><legend>'.$posContentType['name'].'</legend>';
 		}
 
-		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Document.
-		$pos_tmpl = file_get_contents(parent::$template .DIRECTORY_SEPARATOR. 'Positions' .DIRECTORY_SEPARATOR. $com . '.tpl');
+		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
+		$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$com.'.tpl');
 
-        // Выполняет инициализацию компонента, если существует его класс.
+        // Выполняет инициализацию компонента, если существует его класс,
+		// для получения контента заданного пользователем поумолчанию.
         if(class_exists($com_ns)){
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
             $content = str_replace(self::$tags,'', $content);

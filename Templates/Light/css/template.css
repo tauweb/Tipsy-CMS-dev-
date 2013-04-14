@@ -2,14 +2,13 @@ section{
     display: block;
 }
 
-conteiner{
+#container{
     border: 3px solid black;
 }
 
 article,aside,header,nav,#autorize {
 	display: block;
 }
-
 
 h1,h2,h3,h4,h5,h6 {
 	text-align: center;

@@ -2,7 +2,7 @@
 namespace Tipsy\Libraries;
 
 use Tipsy\Libraries\Loader;
-use Tipsy\Libraries\Document\Document;
+use Tipsy\Libraries\Html\Html;
 use Tipsy\Libraries\Session;
 use Tipsy\Libraries\Factory;
 use Tipsy\Libraries\Database\Database;
@@ -32,10 +32,10 @@ class Application
 		Session::check();
 
 		// Подключает библиотеку формирующую страницы html
-		Loader::autoload('\Libraries\Document\Document');
+		Loader::autoload('\Libraries\Html\Html');
 		
 		// Создает объект формирующий страницу html
-		$document = new Document();	
+		$Html = new Html();
 	}
 	
 	public function __destruct()

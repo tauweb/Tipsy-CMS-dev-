@@ -1,5 +1,5 @@
 <?php
-namespace Tipsy\Libraries\Document;
+namespace Tipsy\Libraries\Html;
 
 use Tipsy\Config\Config;
 
@@ -40,7 +40,7 @@ abstract class Head{
 	protected static $link = [
 		// Путь к связываемому файлу.
 		"href" => "", // [URL]
-		// Specifies the language of the text in the linked Document
+		// Specifies the language of the text in the linked Html
 		"hreflang" => "", // [language_code]
 		// Определяет устройство, для которого следует применять стилевое оформление.
 		"media" => "", // [media_query]
@@ -87,7 +87,7 @@ abstract class Head{
 	/**
 	 * Метод регистрирующий новую таблицу стилей
 	 *
-	 * @param	string		$name	Имя подключаемой таблицы.
+	 * @param	string	$name	Имя подключаемой таблицы.
 	 */
 	public static function addStylesheet($name)
 	{

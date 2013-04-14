@@ -8,7 +8,7 @@ defined('_TEXEC') or die;
 /**
  * Библиотека выполняющая запросы к БД.
  */
-abstract class Query
+abstract class old_Query
 {
 	public static function query($queryStr)
 	{	

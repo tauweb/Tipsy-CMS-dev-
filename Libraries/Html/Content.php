@@ -1,5 +1,5 @@
 <?php
-namespace Tipsy\Libraries\Document;
+namespace Tipsy\Libraries\Html;
 
 use Tipsy\Libraries\Database\Query;
 

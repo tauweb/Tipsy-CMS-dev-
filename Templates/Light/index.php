@@ -7,6 +7,8 @@ $this->setCharset('utf-8');
 
 // Добавляет таблицы стилей.
 $this->addStylesheet('template.css');
+$this->addStylesheet('Footer.css');
+$this->addStylesheet('Header.css');
 ?>
 
 <!DOCTYPE html>
@@ -45,11 +47,11 @@ $this->addStylesheet('template.css');
 
 <div id="container">
 	<section>
-		<?php $this->Position('nav');?>
+		<?php $this->Position('Nav');?>
 		<?php $this->Position('Article');?>
 	</section>
 </div>
-	<?php $this->position('footer');?>
+	<?php $this->position('Footer');?>
 </body>
 
 </html>

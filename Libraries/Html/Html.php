@@ -1,16 +1,16 @@
 <?php
-namespace Tipsy\Libraries\Document;
+namespace Tipsy\Libraries\Html;
 
 use Tipsy\Config\Config;
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Router;
 use Tipsy\Libraries\RuntimeException;
 use Tipsy\Libraries\Errors;
-use Tipsy\Libraries\Document\Head;
+use Tipsy\Libraries\Html\Head;
 use Tipsy\Libraries\Debug;
-use Tipsy\Libraries\Document\Content;
+use Tipsy\Libraries\Html\Content;
 use Tipsy\Components\User\User;
-use Tipsy\Libraries\Document\Position;
+use Tipsy\Libraries\Html\Position;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -19,7 +19,7 @@ defined('_TEXEC') or die();
  * Класс формирования данных для html страницы. Выступает связным звеном между страницей и модулями.
  *
  */
-class Document
+class Html
 {
 	/**
 	 * @var	string	Текущий шаблон
@@ -34,7 +34,7 @@ class Document
 	public function __construct()
 	{
 		// Подключает класс формирующий <HEAD> документа.
-		Loader::autoload('\Libraries\Document\Head');
+		Loader::autoload('\Libraries\Html\Head');
 		//Подключает библиотеку маршрутизатора
 		Loader::autoload('\Libraries\Router');
 		///Передает управлениемаршрутизатору адресной строки
@@ -131,7 +131,7 @@ class Document
 
 	protected function position($positionName)
 	{
-		Loader::autoload('\Libraries\Document\Position');
+		Loader::autoload('\Libraries\Html\Position');
 		Position::get($positionName);
 
 	}
