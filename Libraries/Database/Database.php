@@ -22,7 +22,7 @@ abstract class Database
 	
 	/**
 	 * Метод устанавливающий подключение к БД.
-	 * @param		array	$DBOptions	массив содержащий параметры подключения к базе данных.
+	 * @param array $DBOptions массив содержащий параметры подключения к базе данных.
 	 */
 	public static function connect($dbOptions)
 	{
