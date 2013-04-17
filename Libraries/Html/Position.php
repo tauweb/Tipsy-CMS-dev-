@@ -5,6 +5,7 @@ use Tipsy\Libraries\Html\Content;
 use Tipsy\Libraries\Database\Database;
 use Tipsy\Libraries\Database\Query;
 use Tipsy\Config\Config;
+use Tipsy\Libraries\Debug;
 use Tipsy\Libraries\Loader;
 
 // Проверяет легален ли доступ к файлу
@@ -85,7 +86,12 @@ abstract class Position extends Html
 		}
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
-		$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$com.'.tpl');
+		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$com.'.tpl');
+		if(!$pos_tmpl){
+			#echo 'Ух ты, никак не найти  ';
+			Debug::AddMessage('dfgdgsgfsdf',__CLASS__,'fdf');
+			#return;
+		}
 
         // Выполняет инициализацию компонента, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.

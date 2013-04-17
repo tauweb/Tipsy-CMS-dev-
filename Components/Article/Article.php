@@ -17,19 +17,18 @@ abstract class Article {
 
 	public static function init()
 	{
-		return self::getDefaultData();
+		return self::getDefault();
 	}
 
 	/**
 	 * Получает дефолтовые данные для позиции шаблона.
 	 */
-	public static function getDefaultData()
+	public static function getDefault()
 	{
-		$res = Query::select("SELECT articles.* FROM articles
+		$query = Query::select("SELECT articles.* FROM articles
  					LEFT JOIN positions ON articles.id=positions.com_id
 					WHERE positions.com = 'Article';");
-		#echo $res['fulltext'];
-		return $res['fulltext'];
+		return $query['fulltext'];
 	}
 
 	public static function get($param, $id)

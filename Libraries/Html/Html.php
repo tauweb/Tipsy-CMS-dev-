@@ -41,6 +41,7 @@ class Html
 		$this->getURL();
 		// Определяет и подключает шаблон
 		$this->getTemplate();
+		$this->getDebugMsg();
 	}
 
 	/**

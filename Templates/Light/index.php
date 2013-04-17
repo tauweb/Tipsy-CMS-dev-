@@ -47,7 +47,7 @@ $this->addStylesheet('Header.css');
 
 <div id="container">
 	<section>
-		<?php $this->Position('Nav');?>
+		<?php $this->Position('Menu');?>
 		<?php $this->Position('Article');?>
 	</section>
 </div>
