@@ -21,7 +21,6 @@ $directory = scandir(__DIR__);
 		#utils {
 			position: absolute; /* Абсолютное позиционирование */
 			left: 0; /* Положение элемента от правого края */
-			top: 20px; /* Положение от верхнего края */
 			width: 225px; /* Ширина блока */
 			padding: 5px; /* Поля вокруг текста */
 			border: 1px solid #eeeeee;
