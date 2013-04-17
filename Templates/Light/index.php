@@ -1,8 +1,8 @@
 <?php
-// Проверяет легален ли доступ к файлу
+// Проверяет легален ли доступ к файлу.
 defined('_TEXEC') or die();
 
-//Устанавливает кодировку страницы
+//Устанавливает кодировку страницы.
 $this->setCharset('utf-8');
 
 // Добавляет таблицы стилей.
@@ -17,8 +17,7 @@ $this->addStylesheet('Header.css');
 <head>
 	<?php
 	// Получает содержимое контейнера <head>.
-	$this->getHead();
-	?>
+	$this->getHead();?>
 </head>
 
 <body>
@@ -42,9 +41,7 @@ $this->addStylesheet('Header.css');
 	$this->getErrors();
 	?>
 </div>
-
 	<?php $this->position('menu_horisontal');?>
-
 <div id="container">
 	<section>
 		<?php $this->Position('Menu');?>

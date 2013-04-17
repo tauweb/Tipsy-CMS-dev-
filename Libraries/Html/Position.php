@@ -89,7 +89,7 @@ abstract class Position extends Html
 		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$com.'.tpl');
 		if(!$pos_tmpl){
 			#echo 'Ух ты, никак не найти  ';
-			Debug::AddMessage('dfgdgsgfsdf',__CLASS__,'fdf');
+			Debug::AddMessage('test debug из Position',__CLASS__,'fdf');
 			#return;
 		}
 
