@@ -21,13 +21,19 @@ $directory = scandir(__DIR__);
 		#utils {
 			position: absolute; /* Абсолютное позиционирование */
 			left: 0; /* Положение элемента от правого края */
-			width: 225px; /* Ширина блока */
+			min-width: 130px;
 			padding: 5px; /* Поля вокруг текста */
 			border: 1px solid #eeeeee;
+			border-radius: 5px;
+			background-color: white;
 		}
+		.bod{
+			background: #F2F1F0;
+		}
+
 	</style>
 </head>
-<body>
+<body class="bod">
 <fieldset id="utils"><legend>Утилиты</legend>
 	<a href='phpmyadmin'>PhpMyAdmin</a><p>
 	<hr color=#eeeeee size="1px">
