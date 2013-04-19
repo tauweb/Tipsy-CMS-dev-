@@ -30,7 +30,7 @@ $directory = scandir(__DIR__);
 		.bod{
 			background: #F2F1F0;
 		}
-
+		
 	</style>
 </head>
 <body class="bod">

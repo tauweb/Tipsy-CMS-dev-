@@ -22,6 +22,7 @@ abstract class Menu {
 				LEFT JOIN menus ON menu_items.menu_id=menus.id
 				WHERE menu_items.menu_id=1;
 		');
-		echo $query['name'];
+
+		#return $query['name'];
 	}
 }
