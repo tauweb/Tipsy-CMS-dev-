@@ -24,10 +24,10 @@ abstract class Position extends Html
 
 	#protected static $ns_com ='';
 
-    /**
-     * @var array Теги применяемые в шаблоне.
-     */
-    protected static $tags = array('{content}','{always}');
+	/**
+	 * @var array Теги применяемые в шаблоне.
+	 */
+	protected static $tags = array('{content}','{always}');
 
 	/**
 	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента).
@@ -55,15 +55,15 @@ abstract class Position extends Html
 	 * @param $content конткнт в котором производится поиск и выполнение кода
 	 */
 	protected static function run_php($content)
-    {
-        while (stripos($content,'{php}')){
-            $start_php = stripos($content,'{php}');
-            $end_php = stripos($content,'{/php}');
-            $lenght = $end_php-$start_php+6;
-            $php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
-            $content = substr_replace($content,$php_code,$start_php,$lenght);
-        }
-         eval('?>'.$content);
+	{
+		while (stripos($content,'{php}')){
+			$start_php = stripos($content,'{php}');
+			$end_php = stripos($content,'{/php}');
+			$lenght = $end_php-$start_php+6;
+			$php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
+			$content = substr_replace($content,$php_code,$start_php,$lenght);
+		}
+		eval('?>'.$content);
     }
 
 	/**
@@ -93,21 +93,21 @@ abstract class Position extends Html
 			#return;
 		}
 
-        // Выполняет инициализацию компонента, если существует его класс,
+		// Выполняет инициализацию компонента, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.
-        if(class_exists($com_ns)){
+		if(class_exists($com_ns)){
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
-            $content = str_replace(self::$tags,'', $content);
-            self::run_php($content);
+			$content = str_replace(self::$tags,'', $content);
+			self::run_php($content);
 
-        }elseif(substr($pos_tmpl,0,8)=='{always}'){
-            $pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
-            self::run_php($pos_tmpl);
-        }
+		}elseif(substr($pos_tmpl,0,8)=='{always}'){
+			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
+			self::run_php($pos_tmpl);
+		}
 
-        // Здесь завершается вывод отладки шаблона.
-        if($posContentType and  Config::$tmplDebug) {
-           echo '</fieldset>';
-        }
+		// Здесь завершается вывод отладки шаблона.
+		if($posContentType and  Config::$tmplDebug) {
+			echo '</fieldset>';
+		}
 	}
 }

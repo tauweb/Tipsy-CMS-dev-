@@ -1,5 +1,5 @@
 <nav>
-    {content}
+	{content}
     <a href="?component=user">Войти</a>
     <a href="http://php.net">PHP</a>
     <a href="http://w3.org">html5</a>

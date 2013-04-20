@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Апр 17 2013 г., 15:01
+-- Время создания: Апр 20 2013 г., 19:05
 -- Версия сервера: 5.5.29
 -- Версия PHP: 5.4.14-1~precise+1
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `fulltext` longtext NOT NULL COMMENT 'содержание статьи',
   `created` date NOT NULL COMMENT 'дата создания',
   `created_by` char(50) NOT NULL COMMENT 'кем создана',
-  PRIMARY KEY (`id`)
+  UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Таблица статей' AUTO_INCREMENT=3 ;
 
 --
@@ -50,8 +50,8 @@ INSERT INTO `articles` (`id`, `title`, `fulltext`, `created`, `created_by`) VALU
 --
 
 CREATE TABLE IF NOT EXISTS `components` (
-  `name` varchar(30) NOT NULL COMMENT 'Имя компонента системы',
-  `title` varchar(50) NOT NULL COMMENT 'Заголовок компонента',
+  `name` varchar(30) CHARACTER SET utf8 NOT NULL COMMENT 'Имя компонента системы',
+  `title` varchar(50) CHARACTER SET utf8 NOT NULL COMMENT 'Заголовок компонента',
   `position_id` int(10) NOT NULL,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Компоненты системы';
@@ -73,9 +73,9 @@ INSERT INTO `components` (`name`, `title`, `position_id`) VALUES
 
 CREATE TABLE IF NOT EXISTS `menus` (
   `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'ID меню',
-  `name` char(50) NOT NULL COMMENT 'Системное имя',
+  `name` char(50) CHARACTER SET utf8 NOT NULL COMMENT 'Системное имя',
   `title` varchar(50) CHARACTER SET utf8 NOT NULL COMMENT 'Заголовок меню (отображаемый на странице)',
-  `position` char(30) NOT NULL COMMENT 'Имя позиции к которой привязано меню',
+  `position` char(30) CHARACTER SET utf8 NOT NULL COMMENT 'Имя позиции к которой привязано меню',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Меню системы' AUTO_INCREMENT=3 ;
 

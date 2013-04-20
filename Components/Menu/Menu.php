@@ -13,7 +13,7 @@ abstract class Menu {
 
 	public static function init()
 	{
-		self::getDefault();
+		return self::getDefault();
 	}
 
 	protected static function getDefault()
@@ -23,6 +23,6 @@ abstract class Menu {
 				WHERE menu_items.menu_id=1;
 		');
 
-		#return $query['name'];
+		return $query['name'];
 	}
 }
