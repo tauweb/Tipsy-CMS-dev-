@@ -25,8 +25,6 @@ abstract class Query
 			$result = Database::$dbh->query($queryStr);
 
 			$result->setFetchMode(\PDO::FETCH_ASSOC);
-// пересмотреть использование исключений
-#throw new PdoException("Ошибка Транзакции при запросе: <b>$queryStr</b>");
 	
 			Database::$dbh->commit();
 
@@ -51,13 +49,9 @@ abstract class Query
 			
 			$result = Database::$dbh->query($queryStr);
 
-// пересмотреть использование исключений.
-#throw new PdoException("Ошибка Транзакции при запросе: <b>$queryStr</b>");
 			$result->setFetchMode(\PDO::FETCH_ASSOC);
 			
 			Database::$dbh->commit();
-		
-			#return $result->fetch();
 			
 		} catch(PdoException $e) {
 			Database::$dbh->rollBack();
