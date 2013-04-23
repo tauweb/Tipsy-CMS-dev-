@@ -32,10 +32,17 @@ abstract class Query
 #echo count($res);
 
 #echo $queryStr.'='.count($result->fetchAll()).'<p>';
-#if($r=count($result->fetchAll())<2){
-#	return $result->fetch();
-#}
-			return $result->fetchAll();
+if(count($r=$result->fetchAll())==1){
+	return $r[0];
+	#return $result->fetch();
+}else if(count($r)==0){
+	var_dump($r);
+	return $r;
+	#return $result->fetch();
+}
+return $r[0];
+
+		#return $result->fetchAll();
 			
 		} catch(PdoException $e) {
 			Database::$dbh->rollBack();
