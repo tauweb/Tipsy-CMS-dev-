@@ -18,17 +18,24 @@ abstract class Query
 			echo ('<b>' . __CLASS__.'</b>' .' Нет подключения к БД');
 			return false;
 		}
-			
+
 		try {
 			Database::$dbh->beginTransaction();
 			
 			$result = Database::$dbh->query($queryStr);
 
 			$result->setFetchMode(\PDO::FETCH_ASSOC);
-	
-			Database::$dbh->commit();
 
-			return $result->fetch();
+			Database::$dbh->commit();
+#$res = $result->fetchAll();
+#var_dump($res);
+#echo count($res);
+
+#echo $queryStr.'='.count($result->fetchAll()).'<p>';
+#if($r=count($result->fetchAll())<2){
+#	return $result->fetch();
+#}
+			return $result->fetchAll();
 			
 		} catch(PdoException $e) {
 			Database::$dbh->rollBack();

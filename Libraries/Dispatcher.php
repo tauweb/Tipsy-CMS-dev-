@@ -56,6 +56,7 @@ abstract class Dispatcher {
 		foreach(self::$components as $com){
 			if(!Query::select("SELECT * FROM components WHERE name = \"$com\"")){
 				Query::insert("INSERT INTO components (name) value (\"$com\") ");
+				echo 'Да я вставил ';
 			}
 		}
 	}

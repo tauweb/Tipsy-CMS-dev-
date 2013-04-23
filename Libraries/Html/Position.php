@@ -40,7 +40,7 @@ abstract class Position extends Html
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
 			// Проверяет наличие данных о позиции в базе данных...
-			if(!Query::select("SELECT name FROM positions WHERE name = \"$positionName\";")){
+			if(count(Query::select("SELECT name FROM positions WHERE name = \"$positionName\";"))==0){
 				// В случае отсутствия информации - регистрирует позицию в БД.
 				Query::insert("INSERT INTO positions (name) VALUES (\"$positionName\");");
 			}
