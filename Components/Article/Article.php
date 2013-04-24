@@ -28,7 +28,19 @@ abstract class Article {
 		$query = Query::select("SELECT articles.* FROM articles
  					LEFT JOIN positions ON articles.id=positions.com_id
 					WHERE positions.com = 'Article';");
-		return $query['fulltext'];
+
+		#return $query['fulltext'];
+
+		$article_data =
+			'<div id="article_header">'.
+				$query['title'].
+			'</div>'.
+			'<div id="article_body">'.
+				$query['fulltext'];
+			'</div>';
+		return $article_data;
+
+
 	}
 
 	public static function get($param, $id)

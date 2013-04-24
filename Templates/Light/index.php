@@ -21,34 +21,36 @@ $this->addStylesheet('Header.css');
 </head>
 
 <body>
-<?$this->position('Control_panel');?>
+<div id="container" style="width:1024px; border: 1px solid #eeeeee; margin:auto;">
+	<?$this->position('Control_panel');?>
 
-<div id="debug" class="text-success">
-	<?php
-	// Выводит сообщения об отладке системы.
-	$this->getDebugMsg();
-	?>
-</div>
+	<div id="debug" class="text-success">
+		<?php
+		// Выводит сообщения об отладке системы.
+		$this->getDebugMsg();
+		?>
+	</div>
 
-<?php $this->position('Autorize');?>
-<?php $this->position('Header'); ?>
+	<?php $this->position('Autorize');?>
+	<?php $this->position('Header'); ?>
 
-<div id="errors" class="text-error">
-	<?php
-	// Задает имя и получает содержимое позиции.
-	$this->position('Errors');
-	// Выводит сообщения об ошибках.
-	$this->getErrors();
-	?>
-</div>
-	<?php $this->position('menu_horisontal');?>
-<div id="container">
-	<section>
+	<div id="errors" class="text-error">
+		<?php
+		// Задает имя и получает содержимое позиции.
+		$this->position('Errors');
+		// Выводит сообщения об ошибках.
+		$this->getErrors();
+		?>
+	</div>
+		<?php $this->position('menu_horisontal');?>
+
 		<?php $this->Position('Menu');?>
-		<?php $this->Position('Article');?>
-	</section>
+		<section>
+			<?php $this->Position('Article');?>
+		</section>
+
+		<?php $this->position('Footer');?>
 </div>
-	<?php $this->position('Footer');?>
 </body>
 
 </html>

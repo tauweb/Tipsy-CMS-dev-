@@ -74,12 +74,10 @@ abstract class Position extends Html
 			return;
 
 		// Формирует название компонента, который привязан к позиции шаблона.
-		$com =  ucfirst($posContentType['com']);
+		$com_ns = ucfirst($posContentType['com']);
 
 		// Формирует имя пространста имен компонента.
-		$com_ns = "\\Tipsy\\Components\\$com\\$com";
-		// Экономлю память :)
-		unset($com);
+		$com_ns = "\\Tipsy\\Components\\$com_ns\\$com_ns";
 
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
@@ -87,7 +85,7 @@ abstract class Position extends Html
 		}
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
-		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$position.'.tpl');
+		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.ucfirst($position).'.tpl');
 		if(!$pos_tmpl){
 			echo "Ух ты, никак не найти $position.tpl ";
 			#Debug::AddMessage('test debug из Position',__CLASS__,'fdf');
@@ -96,8 +94,12 @@ abstract class Position extends Html
 		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.
 		if(class_exists($com_ns)){
+			#$com_data = $com_ns::init();
+
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+			// Убирает теги из шаблона.
 			$content = str_replace(self::$tags,'', $content);
+			// Ищет и выполняет код php в шаблоне, заключается в теги.
 			self::run_php($content);
 
 		}elseif(substr($pos_tmpl,0,8)=='{always}'){

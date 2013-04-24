@@ -32,10 +32,10 @@ abstract class Query
 			if(count($result=$result->fetchAll())==1){
 				return $result[0];
 			}else if(count($result)==0){
-				return $result;
+				#return $result;
 			}
 
-			return $result[0];
+			return $result;
 
 		} catch(PdoException $e) {
 			Database::$dbh->rollBack();
