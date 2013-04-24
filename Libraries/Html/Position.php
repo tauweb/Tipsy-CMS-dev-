@@ -18,11 +18,9 @@ defined('_TEXEC') or die();
 abstract class Position extends Html
 {
 	/**
-	 * @var	array Позиции текущего шаблона.
+	 * @var array Позиции текущего шаблона.
 	 */
 	protected static $positions = array();
-
-	#protected static $ns_com ='';
 
 	/**
 	 * @var array Теги применяемые в шаблоне.
@@ -40,7 +38,7 @@ abstract class Position extends Html
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $positionName;
 			// Проверяет наличие данных о позиции в базе данных...
-			if(count(Query::select("SELECT name FROM positions WHERE name = \"$positionName\";"))==0){
+			if(!Query::select("SELECT name FROM positions WHERE name = \"$positionName\";")){
 				// В случае отсутствия информации - регистрирует позицию в БД.
 				Query::insert("INSERT INTO positions (name) VALUES (\"$positionName\");");
 			}
@@ -49,13 +47,13 @@ abstract class Position extends Html
 		self::parse($positionName);
 	}
 
-
 	/**
 	 * Метод выполняющий код из шаблона позиции.
 	 * @param $content конткнт в котором производится поиск и выполнение кода
 	 */
 	protected static function run_php($content)
 	{
+		// Ищет в шаблоне позиции тег кода PHP и исполняет код заключенный между открывающим и закрывающим тегом.
 		while (stripos($content,'{php}')){
 			$start_php = stripos($content,'{php}');
 			$end_php = stripos($content,'{/php}');
@@ -64,7 +62,7 @@ abstract class Position extends Html
 			$content = substr_replace($content,$php_code,$start_php,$lenght);
 		}
 		eval('?>'.$content);
-    }
+	}
 
 	/**
 	 * Метод получающий данные для компонента привязанного к позиции.
@@ -72,28 +70,30 @@ abstract class Position extends Html
 	protected static function parse($position)
 	{
 		// Определяет тип контента текущей позиции, заданный пользователем.
-		if(!$posContentType = Query::select("SELECT * FROM positions WHERE name = \"$position\";"))
+		if(!$posContentType = Query::select("SELECT com FROM positions WHERE name = \"$position\";"))
 			return;
 
 		// Формирует название компонента, который привязан к позиции шаблона.
-		$com =  ucfirst($posContentType['name']);
+		$com =  ucfirst($posContentType['com']);
+
 		// Формирует имя пространста имен компонента.
 		$com_ns = "\\Tipsy\\Components\\$com\\$com";
+		// Экономлю память :)
+		unset($com);
 
 		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		if($posContentType and  Config::$tmplDebug) {
-			echo '<fieldset><legend>'.$posContentType['name'].'</legend>';
+			echo '<fieldset><legend>'.$position.'</legend>';
 		}
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
-		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$com.'.tpl');
+		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.$position.'.tpl');
 		if(!$pos_tmpl){
-			#echo 'Ух ты, никак не найти  ';
-			Debug::AddMessage('test debug из Position',__CLASS__,'fdf');
-			#return;
+			echo "Ух ты, никак не найти $position.tpl ";
+			#Debug::AddMessage('test debug из Position',__CLASS__,'fdf');
 		}
 
-		// Выполняет инициализацию компонента, если существует его класс,
+		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.
 		if(class_exists($com_ns)){
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
