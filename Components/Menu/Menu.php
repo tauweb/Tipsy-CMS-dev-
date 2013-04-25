@@ -15,8 +15,10 @@ use Tipsy\Libraries\Database\Query;
  */
 abstract class Menu {
 
+	protected static $menus = '';
+
 	/**
-	 *
+	 * Метод инициализации.
 	 */
 	public static function init()
 	{
@@ -28,24 +30,20 @@ abstract class Menu {
 	 */
 	protected static function getMenu()
 	{
-		$menus = Query::select('SELECT *  FROM menus
-				WHERE menus.published=1;
-		');
+		$menus = Query::select('SELECT *  FROM menus WHERE menus.published=1;');
 
-		foreach ($menus as $menu){
-
-		}
-
-		$menu_item = '';
-		foreach ($menus as $element){
-			if(!is_array($element)){
-
-			}else{
-				$menu_item .='<li><a href="'. $element['link'].'">'.$element['title'].'</a></li>';
+		for($i=1; $i<count($menus); $i++){
+			foreach($menus as $menu){
+				self::$menus .= '
+					<div id="menu_title" style="border: 1px solid black;">'.
+					$menu['title'].
+					'</div>'.
+					'<div id="menu_body" style="border: 1px solid black;">'.
+					self::getItems($menu['id']).
+					'</div>';
 			}
-
 		}
-		return '<ul>'.$menu_item.'</ul>';
+		return self::$menus;
 	}
 
 	/**
@@ -59,14 +57,24 @@ abstract class Menu {
 				WHERE menu_items.menu_id=$menuId;
 		");
 		$menu_item = '';
-		foreach ($items as $item){
-			if(!is_array($item)){
+		// Если один пункт меню
+		if(isset($items['id'])){
+			$menu_item .='<li><a href="'. $items['link'].'">'.$items['title'].'</a></li>';
+			return '<ul>'.$menu_item.'</ul>';
+		}
 
-			}else{
-				$menu_item .='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
+		foreach ($items as $item){
+			if(is_array($item)){
+				foreach($item as $it){
+					echo $it;
+					 $menu_item ='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
+				}
+				return '<ul>'.$menu_item.'</ul>';
 			}
+			echo $menu_item .='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
 
 		}
+
 		return '<ul>'.$menu_item.'</ul>';
 
 	}
@@ -76,6 +84,6 @@ abstract class Menu {
 	 */
 	protected static function getDefault()
 	{
-		self::getMenu();
+		return self::getMenu();
 	}
 }

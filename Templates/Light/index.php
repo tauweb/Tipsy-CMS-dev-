@@ -42,14 +42,14 @@ $this->addStylesheet('Header.css');
 		$this->getErrors();
 		?>
 	</div>
-		<?php $this->position('menu_horisontal');?>
+	<?php $this->position('menu_horisontal');?>
 
-		<?php $this->Position('Menu');?>
-		<section>
-			<?php $this->Position('Article');?>
-		</section>
+	<?php $this->Position('Menu');?>
+	<section>
+		<?php $this->Position('Article');?>
+	</section>
 
-		<?php $this->position('Footer');?>
+	<?php $this->position('Footer');?>
 </div>
 </body>
 

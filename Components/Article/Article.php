@@ -34,10 +34,10 @@ abstract class Article {
 		$article_data =
 			'<div id="article_header">'.
 				$query['title'].
-			'</div>'.
-			'<div id="article_body">'.
+				'</div>'.
+				'<div id="article_body">'.
 				$query['fulltext'];
-			'</div>';
+		'</div>';
 		return $article_data;
 
 

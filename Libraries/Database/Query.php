@@ -31,8 +31,10 @@ abstract class Query
 			// Если выбрана одна запись - $result->fetch(), если несколько - $result->fetchAll();
 			if(count($result=$result->fetchAll())==1){
 				return $result[0];
-			}else if(count($result)==0){
-				#return $result;
+				// убрать
+				#}else if(count($result)==0){
+				#echo 'query - попал туда';
+				#	return $result;
 			}
 
 			return $result;
