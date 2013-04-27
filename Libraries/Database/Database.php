@@ -50,7 +50,7 @@ abstract class Database
 				die('<b>Опаньки, не смог подключиться к БД. Причина:</b> '.$e->getMessage());
 			}
 
-			echo "Ошибка базы данных!: " . $e->getMessage() . "<br/>";
+			die("Опаньки, ошибка базы данных!: " . $e->getMessage() . "<br/>");
 
 			try{
 				// todo: переписать Эту часть!

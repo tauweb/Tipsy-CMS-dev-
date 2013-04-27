@@ -5,3 +5,7 @@ Sunday 14th of April 2013 07:23:42 PM	Ошибка базы данных: SQLSTA
 Sunday 14th of April 2013 07:23:55 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
 Sunday 14th of April 2013 07:29:06 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
 Sunday 14th of April 2013 07:29:38 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+Saturday 27th of April 2013 03:16:33 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
+Saturday 27th of April 2013 03:42:52 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
+Saturday 27th of April 2013 03:43:02 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
+Saturday 27th of April 2013 04:40:16 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'

@@ -29,13 +29,11 @@ abstract class Article {
  					LEFT JOIN positions ON articles.id=positions.com_id
 					WHERE positions.com = 'Article';");
 
-		#return $query['fulltext'];
-
 		$article_data =
-			'<div id="article_header">'.
+			'<div id="article_header" class="block_header">'.
 				$query['title'].
 				'</div>'.
-				'<div id="article_body">'.
+				'<div id="article_body" class="block_body">'.
 				$query['fulltext'];
 		'</div>';
 		return $article_data;

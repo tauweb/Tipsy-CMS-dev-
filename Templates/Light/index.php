@@ -21,7 +21,7 @@ $this->addStylesheet('Header.css');
 </head>
 
 <body>
-<div id="container" style="width:1024px; border: 1px solid #eeeeee; margin:auto;">
+<div id="container">
 	<?$this->position('Control_panel');?>
 
 	<div id="debug" class="text-success">

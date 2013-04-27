@@ -1,15 +1,36 @@
-
-article,aside,header,nav,section,#autorize {
-    display: block;
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	background-color: #ffffff;
 }
 
-#article_header{
-	border: 1px solid #eeeeee;
+#container{
+	width:980px;
+	margin: auto;
+	border: 1px solid gray;
+	border-style: solid;
+	border-color: inheight;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+article, aside, header, nav, section, #autorize {
+	display: block;
+}
+
+#menu_header, #article_header{
+	text-align: center;
+	border: 1px solid gray;
+	background-color: #eee;
 	border-bottom: 0px;
 	border-radius: 5px 5px 0px 0px;
 }
-#article_body{
-	border: 1px solid #eeeeee;
+
+#menu_body, #article_body{
+	border: 1px solid gray;
+	margin-bottom:1px;
 }
 
 #control_panel{
@@ -17,14 +38,14 @@ article,aside,header,nav,section,#autorize {
 	background-color: black;
 	color: #26c2ff;
 	padding: 3px;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px;
 }
 
 nav {
 	float: left;
 	width: 15%;
 	min-width: 100px;
-	border: 1px solid #eeeeee;
+	border: 1px;
 	padding: 1px;
 	margin: 1px;
 }
@@ -38,10 +59,12 @@ section{
 }
 
 footer{
-	border-top: 1px solid #eeeeee;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
 	clear: both;
 	text-align: right;
 	padding-right: 10px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* webkit */
 }
 
 header {
@@ -54,14 +77,6 @@ ul,li {
 	margin: 2px;
 }
 
-body {
-	margin: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 20px;
-	color: #333333;
-	background-color: #ffffff;
-}
 /* Ссылки */
 a {
 	color: #0088cc;
@@ -75,19 +90,22 @@ a:hover {
 
 #menu_horisontal {
 	text-align: center;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid gray;
 }
 
 #autorize{
 	float: right;
-	border: 1px solid #eeeeee;
+	border: 1px solid gray;
 	padding: 3px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 1px;
 }
 
 
 #errors{
 	display: block;
-	border-top: 1px solid #eeeeee;
+	border-top: 1px solid gray;
 }
 
 .muted			{color: #999999;}

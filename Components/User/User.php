@@ -30,8 +30,8 @@ abstract class User
 	{
 		// Проверяет нет ли авторизованных пользователей
 		if(!isset($_SESSION['user'])){
-			echo "<a href=\"?component=userlogin\">Вход </a>";
-			echo "<a href=\"?component=userreg\"> Регистрация</a>";
+			return "<a href=\"?component=userlogin\">Вход </a>" .
+					"<a href=\"?component=userreg\"> Регистрация</a>";
 			self::login();
 		}else{
 			Loader::autoload('\Components\User\UserLogout');

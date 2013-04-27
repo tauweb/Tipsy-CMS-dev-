@@ -35,10 +35,10 @@ abstract class Menu {
 		for($i=1; $i<count($menus); $i++){
 			foreach($menus as $menu){
 				self::$menus .= '
-					<div id="menu_title" style="border: 1px solid black;">'.
+					<div id="menu_header">'.
 					$menu['title'].
 					'</div>'.
-					'<div id="menu_body" style="border: 1px solid black;">'.
+					'<div id="menu_body">'.
 					self::getItems($menu['id']).
 					'</div>';
 			}
@@ -56,6 +56,7 @@ abstract class Menu {
 				LEFT JOIN menus ON menu_items.menu_id=menus.id
 				WHERE menu_items.menu_id=$menuId;
 		");
+
 		$menu_item = '';
 		// Если один пункт меню
 		if(isset($items['id'])){
@@ -63,16 +64,9 @@ abstract class Menu {
 			return '<ul>'.$menu_item.'</ul>';
 		}
 
+		// Если более одного.
 		foreach ($items as $item){
-			if(is_array($item)){
-				foreach($item as $it){
-					echo $it;
-					 $menu_item ='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
-				}
-				return '<ul>'.$menu_item.'</ul>';
-			}
-			echo $menu_item .='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
-
+			$menu_item .='<li><a href="'. $item['link'].'">'.$item['title'].'</a></li>';
 		}
 
 		return '<ul>'.$menu_item.'</ul>';

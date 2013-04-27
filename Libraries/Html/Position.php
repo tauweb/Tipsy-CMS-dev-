@@ -54,14 +54,14 @@ abstract class Position extends Html
 	protected static function run_php($content)
 	{
 		// Ищет в шаблоне позиции тег кода PHP и исполняет код заключенный между открывающим и закрывающим тегом.
-		while (stripos($content,'{php}')){
-			$start_php = stripos($content,'{php}');
-			$end_php = stripos($content,'{/php}');
-			$lenght = $end_php-$start_php+6;
-			$php_code = '<?'.substr($content,$start_php+5,$lenght-11).'?>';
-			$content = substr_replace($content,$php_code,$start_php,$lenght);
+		while (stripos($content, '{php}')){
+			$start_php = stripos($content, '{php}');
+			$end_php = stripos($content, '{/php}');
+			$lenght = $end_php-$start_php + 6;
+			$php_code = '<?' . substr($content, $start_php+5, $lenght - 11) . '?>';
+			$content = substr_replace($content, $php_code, $start_php, $lenght);
 		}
-		eval('?>'.$content);
+		eval('?>' . $content);
 	}
 
 	/**
