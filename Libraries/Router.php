@@ -9,26 +9,43 @@ defined('_TEXEC') or die();
  */
 abstract class Router
 {
+
 	/**
-	 * Метод определяющий и перенаправляющий управление компоненту системы. todo: Переделать!
+	 * @var array Возможные параметры URL строки.
+	 */
+	protected static $urlParam = array(
+								"com" => "",
+								"param" =>"",
+	);
+
+	/**
+	 * Метод определяющий и перенаправляющий управление компоненту системы.
 	 *
 	 * @return bool
 	 */
 	public static function getURL()
 	{
-		// Проверяет наличие переменных в 
-		if(empty($_GET['component'])){
+		// Проверяет наличие переменных в URL.
+		if(empty($_GET))
 			return false;
-		}else{
-			$com = $_GET['component'];
-			
-			Loader::autoload($com);
-			if( method_exists($com,'init')){
-				$com::init();
-			}else{
-				Debug::AddMessage("Страница $com не найдена", __CLASS__);
-			}
 
+		if(!isset($_GET['com']))
+			return false;
+
+		self::$urlParam = &$_GET;
+
+		// Формирует название компонента, который привязан к позиции шаблона.
+		$com = ucfirst(self::$urlParam['com']);
+		// Формирует имя пространста имен компонента.
+		$com = "\\Tipsy\\Components\\$com\\$com";
+
+		$com::init(self::$urlParam['param']);
+
+		Loader::autoload($com);
+		if(method_exists($com, 'init')){
+			$com::init();
+		}else{
+			Debug::AddMessage("Страница $com не найдена", __CLASS__);
 		}
 	}
 }

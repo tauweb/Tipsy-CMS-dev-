@@ -23,7 +23,6 @@ abstract class Dispatcher {
 		self::comRegister();
 	}
 
-
 	/**
 	 * @var array Список зарегистрированных компонентов в системе.
 	 */
@@ -36,6 +35,7 @@ abstract class Dispatcher {
 	{
 		// Список исключенний из списка компонентов.
 		$exclude_list = array(".", "..");
+
 		// Создает список компонентов системы, лежащих в директории компонентов.
 		$com_dir = array_diff(scandir('Components'), $exclude_list);
 
