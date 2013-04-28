@@ -30,10 +30,10 @@ abstract class Article {
 					WHERE positions.com = 'Article';");
 
 		$article_data =
-			'<div id="article_header" class="block_header">'.
+			'<div id="article_header_" class="_header">'.
 				$query['title'].
 				'</div>'.
-				'<div id="article_body" class="block_body">'.
+				'<div id="article_body_" class="_body">'.
 				$query['fulltext'];
 		'</div>';
 		return $article_data;

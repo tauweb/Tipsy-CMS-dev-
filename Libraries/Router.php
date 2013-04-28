@@ -14,8 +14,8 @@ abstract class Router
 	 * @var array Возможные параметры URL строки.
 	 */
 	protected static $urlParam = array(
-								"com" => "",
-								"param" =>"",
+		"com" => "",
+		"param" =>""
 	);
 
 	/**
@@ -41,11 +41,6 @@ abstract class Router
 
 		$com::init(self::$urlParam['param']);
 
-		Loader::autoload($com);
-		if(method_exists($com, 'init')){
-			$com::init();
-		}else{
-			Debug::AddMessage("Страница $com не найдена", __CLASS__);
-		}
+		//Todo: Дописать передачу значиния в Position
 	}
 }

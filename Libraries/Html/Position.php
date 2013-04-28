@@ -30,26 +30,78 @@ abstract class Position extends Html
 	/**
 	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента).
 	 */
-	public static function get($positionName)
+	public static function get($position)
 	{
-		$positionName = strtolower($positionName);
+		//Todo: В дальнейшем, когда будут реализоаны соответствующие настройки, переписать чать когда которая в IF.
 		// Если позиция не зарегистрирована (например новая) в списке, тогда:
-		if(!in_array($positionName, self::$positions)){
+		if(!in_array($position = strtolower($position), self::$positions)){
 			// Заполняет массив-список позиций шаблона.
-			self::$positions[] = $positionName;
+			self::$positions[] = $position;
 			// Проверяет наличие данных о позиции в базе данных...
-			if(!Query::select("SELECT name FROM positions WHERE name = \"$positionName\";")){
+			if(!Query::select("SELECT name FROM positions WHERE name = \"$position\";")){
 				// В случае отсутствия информации - регистрирует позицию в БД.
-				Query::insert("INSERT INTO positions (name) VALUES (\"$positionName\");");
+				Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
 			}
 		}
-		// Получает контент позиции.
-		self::parse($positionName);
+		// Определяет тип контента текущей позиции, заданный пользователем.
+		if(!$posContentType = Query::select("SELECT com FROM positions WHERE name = \"$position\";")){
+			return;
+		}
+
+		// Получает контент позиции заданный пользователем поумолчанию
+		self::parse($position, $posContentType['com']);
+	}
+
+	/**
+	 * Метод получающий данные для компонента привязанного к позиции.
+	 */
+	protected static function parse($position, $posContentType)
+	{
+		// Формирует название компонента, который привязан к позиции шаблона.
+		$com_ns = ucfirst($posContentType);
+
+		// Формирует имя пространста имен компонента.
+		$com_ns  = "\\Tipsy\\Components\\$com_ns\\$com_ns";
+
+		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках. Todo: Переписать отдельным методом.
+		if($posContentType and Config::$tmplDebug) {
+			echo '<fieldset><legend>'.$position.'</legend>';
+		}
+
+		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
+		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.
+										ucfirst($position).'.tpl');
+
+		if(!$pos_tmpl){
+			// Todo: Здесь тоже нужно будет поколдоват, пока модуль отладки не дописан, оставлю так как есть.
+			echo "Ух ты, никак не найти $position.tpl ";
+			Debug::AddMessage("Ух ты, никак не найти $position.tpl",__CLASS__);
+		}
+
+		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
+		// для получения контента заданного пользователем поумолчанию.
+		if(class_exists($com_ns)){
+			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+			// Убирает теги из шаблона.
+			$content = str_replace(self::$tags,'', $content);
+			// Ищет и выполняет код php в шаблоне, заключается в теги.
+			self::run_php($content);
+
+		}elseif(substr($pos_tmpl, 0, 8) == '{always}'){
+			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
+
+			self::run_php($pos_tmpl);
+		}
+
+		// Здесь завершается вывод отладки шаблона.
+		if($posContentType and  Config::$tmplDebug) {
+			echo '</fieldset>';
+		}
 	}
 
 	/**
 	 * Метод выполняющий код из шаблона позиции.
-	 * @param $content конткнт в котором производится поиск и выполнение кода
+	 * @param $content конткнт в котором производится поиск и выполнение кода.
 	 */
 	protected static function run_php($content)
 	{
@@ -64,52 +116,4 @@ abstract class Position extends Html
 		eval('?>' . $content);
 	}
 
-	/**
-	 * Метод получающий данные для компонента привязанного к позиции.
-	 */
-	protected static function parse($position)
-	{
-		// Определяет тип контента текущей позиции, заданный пользователем.
-		if(!$posContentType = Query::select("SELECT com FROM positions WHERE name = \"$position\";"))
-			return;
-
-		// Формирует название компонента, который привязан к позиции шаблона.
-		$com_ns = ucfirst($posContentType['com']);
-
-		// Формирует имя пространста имен компонента.
-		$com_ns = "\\Tipsy\\Components\\$com_ns\\$com_ns";
-
-		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
-		if($posContentType and  Config::$tmplDebug) {
-			echo '<fieldset><legend>'.$position.'</legend>';
-		}
-
-		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
-		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.ucfirst($position).'.tpl');
-		if(!$pos_tmpl){
-			echo "Ух ты, никак не найти $position.tpl ";
-			#Debug::AddMessage('test debug из Position',__CLASS__,'fdf');
-		}
-
-		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
-		// для получения контента заданного пользователем поумолчанию.
-		if(class_exists($com_ns)){
-			#$com_data = $com_ns::init();
-
-			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
-			// Убирает теги из шаблона.
-			$content = str_replace(self::$tags,'', $content);
-			// Ищет и выполняет код php в шаблоне, заключается в теги.
-			self::run_php($content);
-
-		}elseif(substr($pos_tmpl,0,8)=='{always}'){
-			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
-			self::run_php($pos_tmpl);
-		}
-
-		// Здесь завершается вывод отладки шаблона.
-		if($posContentType and  Config::$tmplDebug) {
-			echo '</fieldset>';
-		}
-	}
 }

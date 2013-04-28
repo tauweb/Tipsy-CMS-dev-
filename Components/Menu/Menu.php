@@ -35,10 +35,10 @@ abstract class Menu {
 		for($i=1; $i<count($menus); $i++){
 			foreach($menus as $menu){
 				self::$menus .= '
-					<div id="menu_header">'.
+					<div id="menu_header_$i" class="_header">'.
 					$menu['title'].
 					'</div>'.
-					'<div id="menu_body">'.
+					'<div id="menu_body_$i" class="_body">'.
 					self::getItems($menu['id']).
 					'</div>';
 			}

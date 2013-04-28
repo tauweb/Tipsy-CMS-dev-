@@ -21,7 +21,7 @@ article, aside, header, nav, section, #autorize {
 	display: block;
 }
 
-#menu_header, #article_header{
+._header{
 	text-align: center;
 	border: 1px solid gray;
 	background-color: #eee;
@@ -29,17 +29,18 @@ article, aside, header, nav, section, #autorize {
 	border-radius: 5px 5px 0px 0px;
 }
 
-#menu_body, #article_body{
+._body{
 	border: 1px solid gray;
 	margin-bottom:1px;
 }
 
 #control_panel{
-	width: 100%;
 	background-color: black;
 	color: #26c2ff;
 	padding: 3px;
+	padding-left: 10px;
 	border-bottom: 1px;
+	border-radius: 10px 10px 0 0;
 }
 
 nav {
@@ -67,7 +68,7 @@ footer{
 	text-align: right;
 	padding-right: 10px;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6),
-				color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* webkit */
+	color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* webkit */
 }
 
 header {
@@ -90,7 +91,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 #menu_horisontal {
 	text-align: center;
 	border-bottom: 1px solid gray;
@@ -105,7 +105,6 @@ a:hover {
 	margin: 1px;
 }
 
-
 #errors{
 	display: block;
 	border-top: 1px solid gray;
@@ -116,7 +115,6 @@ a:hover {
 .text-error		{color: #b94a48; padding: 0px; margin: 0px;}
 .text-info 		{color: #3a87ad;}
 .text-success	{color: #468847;}
-
 
 .site_name {
 	text-align: center;
