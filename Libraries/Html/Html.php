@@ -132,8 +132,9 @@ class Html
 
 	protected function position($positionName)
 	{
-		Loader::autoload('\Libraries\Html\Position');
-		Position::get($positionName);
+		self::$templatePositions[] = $positionName;
 
+		Loader::autoload('\Libraries\Html\Position');
+		Position::getDefault($positionName);
 	}
 }

@@ -63,7 +63,6 @@ abstract class User
 		$table = Query::query($query);
 		Session::start($table['username']);
 
-
 		header("Location: ./");
 		echo 'Вы вошли как: ' . $_SESSION['user'];
 		return true;

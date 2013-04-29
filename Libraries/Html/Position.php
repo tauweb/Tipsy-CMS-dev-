@@ -28,17 +28,20 @@ abstract class Position extends Html
 	protected static $tags = array('{content}','{always}');
 
 	/**
-	 * Метод определяющий компонент, привязанный к позиции (тип выводимого контента).
+	 * Метод определяющий компонент, привязанный к позиции по дефолту (тип выводимого контента).
 	 */
-	public static function get($position)
+	public static function getDefault($position)
 	{
 		//Todo: В дальнейшем, когда будут реализоаны соответствующие настройки, переписать чать когда которая в IF.
 		// Если позиция не зарегистрирована (например новая) в списке, тогда:
 		if(!in_array($position = strtolower($position), self::$positions)){
+
 			// Заполняет массив-список позиций шаблона.
 			self::$positions[] = $position;
+
 			// Проверяет наличие данных о позиции в базе данных...
 			if(!Query::select("SELECT name FROM positions WHERE name = \"$position\";")){
+
 				// В случае отсутствия информации - регистрирует позицию в БД.
 				Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
 			}
@@ -50,6 +53,11 @@ abstract class Position extends Html
 
 		// Получает контент позиции заданный пользователем поумолчанию
 		self::parse($position, $posContentType['com']);
+	}
+
+
+	public static function getData(){
+
 	}
 
 	/**
@@ -75,19 +83,24 @@ abstract class Position extends Html
 		if(!$pos_tmpl){
 			// Todo: Здесь тоже нужно будет поколдоват, пока модуль отладки не дописан, оставлю так как есть.
 			echo "Ух ты, никак не найти $position.tpl ";
+
 			Debug::AddMessage("Ух ты, никак не найти $position.tpl",__CLASS__);
 		}
 
 		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.
 		if(class_exists($com_ns)){
+
 			$content = str_replace('{content}',  $com_ns::init(), $pos_tmpl);
+
 			// Убирает теги из шаблона.
 			$content = str_replace(self::$tags,'', $content);
+
 			// Ищет и выполняет код php в шаблоне, заключается в теги.
 			self::run_php($content);
 
 		}elseif(substr($pos_tmpl, 0, 8) == '{always}'){
+
 			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
 
 			self::run_php($pos_tmpl);
@@ -115,5 +128,4 @@ abstract class Position extends Html
 		}
 		eval('?>' . $content);
 	}
-
 }
