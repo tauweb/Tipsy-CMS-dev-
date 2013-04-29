@@ -60,31 +60,37 @@ abstract class Position extends Html
 
 	}
 
-	/**
-	 * Метод получающий данные для компонента привязанного к позиции.
-	 */
-	protected static function parse($position, $posContentType)
-	{
+	public  static function getNameSpace($posContentType){
 		// Формирует название компонента, который привязан к позиции шаблона.
 		$com_ns = ucfirst($posContentType);
 
 		// Формирует имя пространста имен компонента.
 		$com_ns  = "\\Tipsy\\Components\\$com_ns\\$com_ns";
 
-		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках. Todo: Переписать отдельным методом.
-		if($posContentType and Config::$tmplDebug) {
-			echo '<fieldset><legend>'.$position.'</legend>';
-		}
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе Html.
 		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.
-										ucfirst($position).'.tpl');
+			ucfirst($position).'.tpl');
 
 		if(!$pos_tmpl){
 			// Todo: Здесь тоже нужно будет поколдоват, пока модуль отладки не дописан, оставлю так как есть.
 			echo "Ух ты, никак не найти $position.tpl ";
 
 			Debug::AddMessage("Ух ты, никак не найти $position.tpl",__CLASS__);
+			return;
+		}
+		return $com_ns;
+	}
+	/**
+	 * Метод получающий данные для компонента привязанного к позиции.
+	 */
+	protected static function parse($position, $posContentType)
+	{
+		$com_ns = self::getNameSpace($posContentType);
+
+		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках. Todo: Переписать отдельным методом.
+		if($posContentType and Config::$tmplDebug) {
+			echo '<fieldset><legend>'.$position.'</legend>';
 		}
 
 		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
