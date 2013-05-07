@@ -15,7 +15,8 @@ abstract class Router
 	 */
 	protected static $urlParam = array(
 		"com" => "",
-		"param" =>""
+		"param"=>"",
+		"id" =>""
 	);
 
 	/**
@@ -39,8 +40,16 @@ abstract class Router
 		// Формирует имя пространста имен компонента.
 		$com = "\\Tipsy\\Components\\$com\\$com";
 
-		$com::init(self::$urlParam['param']);
+		unset(self::$urlParam['com']);
 
+		return $com_data = call_user_func_array("$com::init", self::$urlParam);
 		//Todo: Дописать передачу значиния в Position
+
+	}
+
+
+	protected static function parse()
+	{
+
 	}
 }

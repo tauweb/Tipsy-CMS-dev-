@@ -15,9 +15,13 @@ use Tipsy\Libraries\Database\Query;
  */
 abstract class Article {
 
-	public static function init()
+	public static function init($id)
 	{
-		return self::getDefault();
+		if(empty($id)){
+			return self::getDefault();
+		}
+
+		return self::getData($id);
 	}
 
 	/**
@@ -37,12 +41,20 @@ abstract class Article {
 				$query['fulltext'];
 		'</div>';
 		return $article_data;
-
-
 	}
 
-	public static function get($param, $id)
+	public static function getData($id)
 	{
+		$query = Query::select("SELECT * FROM articles
+ 					WHERE id=$id;");
 
+		$article_data =
+			'<div id="article_header_" class="_header">'.
+				$query['title'].
+				'</div>'.
+				'<div id="article_body_" class="_body">'.
+				$query['fulltext'];
+		'</div>';
+		return $article_data;
 	}
 }

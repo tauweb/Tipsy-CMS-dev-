@@ -35,10 +35,13 @@ class Html
 	{
 		// Подключает класс формирующий <HEAD> документа.
 		Loader::autoload('\Libraries\Html\Head');
+
 		//Подключает библиотеку маршрутизатора
 		Loader::autoload('\Libraries\Router');
+
 		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
+
 		// Определяет и подключает шаблон
 		$this->getTemplate();
 		$this->getDebugMsg();
@@ -135,6 +138,6 @@ class Html
 		self::$templatePositions[] = $positionName;
 
 		Loader::autoload('\Libraries\Html\Position');
-		Position::getDefault($positionName);
+		Position::getComponent($positionName);
 	}
 }
