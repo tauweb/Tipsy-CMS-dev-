@@ -26,7 +26,7 @@ class Html
 	 */
 	public static $template = '';
 
-	public static $templatePositions = array();
+	protected static $positions = array();
 
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
@@ -44,6 +44,10 @@ class Html
 
 		// Определяет и подключает шаблон
 		$this->getTemplate();
+
+		Loader::autoload('\Libraries\Html\Position');
+		Position::getComponent();
+
 		$this->getDebugMsg();
 	}
 
@@ -135,9 +139,7 @@ class Html
 
 	protected function position($positionName)
 	{
-		self::$templatePositions[] = $positionName;
+		self::$positions[$positionName] = '' ;
 
-		Loader::autoload('\Libraries\Html\Position');
-		Position::getComponent($positionName);
 	}
 }

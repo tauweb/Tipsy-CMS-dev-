@@ -19,9 +19,9 @@ abstract class Position extends Html
 {
 
 	/**
-	 * @var array Позиции текущего шаблона.
+	 * @var array Позиции текущего шаблона. Пока что используется parent.
 	 */
-	protected static $positions = array();
+	#private static $positions = '';
 
 
 	/**
@@ -33,24 +33,17 @@ abstract class Position extends Html
 	/**
 	 * Метод определяющий компонент, привязанный к позиции по дефолту (тип выводимого контента).
 	 */
-	public static function getComponent($position)
+	public static function getComponent($position='')
 	{
-		// Если позиция не зарегистрирована (например новая) в списке, тогда:
-		if(!in_array($position = strtolower($position), self::$positions)){
+		// Проверяет наличие данных о позиции в базе данных...
+		if(!Query::select("SELECT name FROM positions WHERE name = \"$position\";")){
 
-			// Заполняет массив-список позиций шаблона.
-			self::$positions[] = $position;
-
-			// Проверяет наличие данных о позиции в базе данных...
-			if(!Query::select("SELECT name FROM positions WHERE name = \"$position\";")){
-
-				// В случае отсутствия информации - регистрирует позицию в БД.
-				Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
-			}
+			// В случае отсутствия информации - регистрирует позицию в БД.
+			Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
 		}
 
 		$posCom = Query::select("SELECT com FROM positions WHERE name = \"$position\";");
-
+echo $posCom['com'];
 		// Определяет тип контента текущей позиции, заданный пользователем.
 		if(empty($posСom['com'])){
 			#echo $posCom['com'];
@@ -84,7 +77,7 @@ abstract class Position extends Html
 	 */
 	protected static function parse($position, $posCom='', $com_data)
 	{
-		// Выодит название позиции на страницу, если разрешена отладка шаблона в настройках.
+		// Выводит название позиции на страницу, если разрешена отладка шаблона в настройках.
 		//Todo: Переписать отдельным методом.
 		#if($posCom and Config::$tmplDebug) {echo '<fieldset><legend>'.$position.'</legend>';}
 
@@ -122,7 +115,6 @@ abstract class Position extends Html
 		// Здесь завершается вывод отладки шаблона.
 		#if($posCom and  Config::$tmplDebug) {echo '</fieldset>';}
 	}
-
 
 
 	/**
