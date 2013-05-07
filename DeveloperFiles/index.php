@@ -30,14 +30,14 @@ $directory = scandir(__DIR__);
 		.bod{
 			background: #F2F1F0;
 		}
-		
+
 	</style>
 </head>
 <body class="bod">
 <fieldset id="utils"><legend>Утилиты</legend>
 	<a href='phpmyadmin'>PhpMyAdmin</a><p>
 	<hr color=#eeeeee size="1px">
-	<a href='localhost:10000'>WebMin</a><p>
+	<a href='https://<?php echo $_SERVER['SERVER_NAME'];?>:10000'>WebMin</a><p>
 </fieldset>
 <?php
 echo '<b><H1 align="center">Проекты:</H1></b><p>';

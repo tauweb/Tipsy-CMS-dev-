@@ -72,7 +72,8 @@ abstract class Position extends Html
 		$com_ns  = "\\Tipsy\\Components\\$com_ns\\$com_ns";
 
 		class_exists($com_ns) ? $com_data = $com_ns::init($id) : $com_data = '';
-		#$com_data = $com_ns::init($id);
+
+		self::$positions[$position] = $com_data;
 
 		self::parse($position, $posCom, $com_data);
 	}
@@ -139,5 +140,6 @@ abstract class Position extends Html
 			$content = substr_replace($content, $php_code, $start_php, $lenght);
 		}
 		eval('?>' . $content);
+
 	}
 }
