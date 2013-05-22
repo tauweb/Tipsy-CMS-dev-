@@ -33,25 +33,22 @@ abstract class Position extends Html
 	/**
 	 * Метод определяющий компонент, привязанный к позиции по дефолту (тип выводимого контента).
 	 */
-	public static function getComponent($position='')
+	public static function getComponent()
 	{
-		// Проверяет наличие данных о позиции в базе данных...
-		if(!Query::select("SELECT name FROM positions WHERE name = \"$position\";")){
+		foreach (static::$positions as $position=>$data)
+		{
+			// Проверяет наличие данных о позиции в базе данных...
+			if(!empty($position) and !Query::select("SELECT name FROM positions WHERE name = \"$position\";"))
+			{
+				// В случае отсутствия информации - регистрирует позицию в БД.
+				Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
+			}
 
-			// В случае отсутствия информации - регистрирует позицию в БД.
-			Query::insert("INSERT INTO positions (name) VALUES (\"$position\");");
+			$posCom = Query::select("SELECT * FROM positions WHERE name = \"$position\";");
+
+			// Получает контент позиции.
+			self::getData($position, isset($posCom['com']) ? $posCom['com'] : '');
 		}
-
-		$posCom = Query::select("SELECT com FROM positions WHERE name = \"$position\";");
-echo $posCom['com'];
-		// Определяет тип контента текущей позиции, заданный пользователем.
-		if(empty($posСom['com'])){
-			#echo $posCom['com'];
-			#self::parse($position);
-		}
-
-		// Получает контент позиции.
-		self::getData($position, $posCom['com']);
 	}
 
 
@@ -83,7 +80,7 @@ echo $posCom['com'];
 
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе (Html).
 		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.
-			ucfirst($position).'.tpl');
+		ucfirst($position).'.tpl');
 
 		if(!$pos_tmpl){
 			// Todo: Здесь тоже нужно будет поколдоват, пока модуль отладки не дописан, оставлю так как есть.
@@ -96,7 +93,7 @@ echo $posCom['com'];
 		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
 		// для получения контента заданного пользователем поумолчанию.
 		if(!empty($com_data)){
-
+			// Подставляет контент позиции в ее шаблон.
 			$content = str_replace('{content}', $com_data, $pos_tmpl);
 
 			// Убирает теги из шаблона.
@@ -131,7 +128,7 @@ echo $posCom['com'];
 			$php_code = '<?' . substr($content, $start_php+5, $lenght - 11) . '?>';
 			$content = substr_replace($content, $php_code, $start_php, $lenght);
 		}
-		eval('?>' . $content);
 
+		eval('?>' . $content);
 	}
 }

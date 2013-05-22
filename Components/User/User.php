@@ -29,8 +29,8 @@ abstract class User
 
 			// Если нет - возвращает форму выбора действий.
 			return "<a href=\"?com=user&param=login\">Вход </a>" .
-				"<a href=\"?com=user&param=test\"> Регистрация</a>".
-				"<a href=\"?comt=user&param=test\"> test</a>";
+			"<a href=\"?com=user&param=test\"> Регистрация</a>".
+			"<a href=\"?comt=user&param=test\"> test</a>";
 		}else{
 			Loader::autoload('\Components\User\UserLogout');
 			return "Привет  ". $_SESSION['user'] . "<a href=\"?component=\\Components\\User\\UserLogout\">Выйти</a>";

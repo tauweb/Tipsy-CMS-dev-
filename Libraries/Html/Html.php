@@ -19,12 +19,14 @@ defined('_TEXEC') or die();
  * Класс формирования данных для html страницы. Выступает связным звеном между страницей и модулями.
  *
  */
-class Html
+class Html extends HtmlContainer
 {
 	/**
 	 * @var	string	Текущий шаблон
 	 */
 	public static $template = '';
+
+	protected static $head = array();
 
 	protected static $positions = array();
 
@@ -140,6 +142,5 @@ class Html
 	protected function position($positionName)
 	{
 		self::$positions[$positionName] = '' ;
-
 	}
 }
