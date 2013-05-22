@@ -3,7 +3,7 @@ namespace Tipsy\Libraries\Html;
 
 use Tipsy\Config\Config;
 
-abstract class Head{
+abstract class Head extends HtmlModel{
 
 	// Заголовок документа (html5)
 	// http://www.w3schools.com/html5/tag_title.asp
@@ -112,7 +112,7 @@ abstract class Head{
 	{
 		if (!empty(self::$stylesheets)) {
 			foreach ((array)self::$stylesheets as $stylesheet) {
-				echo '<link rel = "stylesheet" href="' . $stylesheet . ' ">';
+				self::$head =  '<link rel = "stylesheet" href="' . $stylesheet . ' ">';
 			}
 		}
 	}
@@ -122,10 +122,11 @@ abstract class Head{
 		foreach(get_class_vars(__CLASS__) as $tag){
 			if( is_array($tag) and !empty($tag) ){
 				foreach($tag as $subTag){
-					if(!empty($subTag)) echo $subTag . "\n";
+					if(!empty($subTag)) self::$head[] = $subTag; //echo $subTag . "\n";
 				}
 			}elseif(!empty($tag)){
-				echo $tag ."\n";
+				self::$head[]=$tag;
+				#echo $tag ."\n";
 			}
 		}
 	}

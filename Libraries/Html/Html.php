@@ -3,11 +3,11 @@ namespace Tipsy\Libraries\Html;
 
 use Tipsy\Config\Config;
 use Tipsy\Libraries\Loader;
-use Tipsy\Libraries\Router;
+
 use Tipsy\Libraries\RuntimeException;
-use Tipsy\Libraries\Errors;
+
 use Tipsy\Libraries\Html\Head;
-use Tipsy\Libraries\Debug;
+
 use Tipsy\Libraries\Html\Content;
 use Tipsy\Components\User\User;
 use Tipsy\Libraries\Html\Position;
@@ -19,22 +19,14 @@ defined('_TEXEC') or die();
  * Класс формирования данных для html страницы. Выступает связным звеном между страницей и модулями.
  *
  */
-class Html extends HtmlContainer
+class Html extends HtmlModel
 {
-	/**
-	 * @var	string	Текущий шаблон
-	 */
-	public static $template = '';
-
-	protected static $head = array();
-
-	protected static $positions = array();
-
 	/**
 	 * Конструктор. Используется для инициализации начальных состояний объекта.
 	 */
 	public function __construct()
 	{
+
 		// Подключает класс формирующий <HEAD> документа.
 		Loader::autoload('\Libraries\Html\Head');
 
@@ -47,38 +39,15 @@ class Html extends HtmlContainer
 		// Определяет и подключает шаблон
 		$this->getTemplate();
 
+		foreach(static::$head as $i=>$tag){
+			echo $tag;}
+
 		Loader::autoload('\Libraries\Html\Position');
 		Position::getComponent();
 
 		$this->getDebugMsg();
 	}
 
-	/**
-	 * Метод устанавливающий кодировку страниц
-	 * @param	string	имя кодировки для установки
-	 */
-	protected function setCharset($charset)
-	{
-		Head::setCharset($charset);
-	}
-
-	/**
-	 * Метод регистрирующий новую таблицу стилей
-	 *
-	 * @param	string	$name	Имя подключаемой таблицы.
-	 */
-	protected function addStylesheet($name)
-	{
-		Head::addStylesheet($name);
-	}
-
-	/**
-	 * Метод формирующий содержимое тега <HEAD> и выводящий его на страницу. Формирование происходит в классе THead
-	 */
-	protected function getHead()
-	{
-		Head::getHead();
-	}
 
 	/**
 	 * Метод определяющий используемый шаблон html страниц.
@@ -103,44 +72,5 @@ class Html extends HtmlContainer
 			// Выводит ошибку на страницу.
 			Errors::getErrors();
 		}
-	}
-
-	/**
-	 * Метод получающий ошибки системы для html страницы.
-	 */
-	protected function getErrors()
-	{
-		Errors::getErrors();
-	}
-
-	/**
-	 * Метод получающий отладочную информацию системы для html страницы.
-	 */
-	protected function getDebugMsg()
-	{
-		Debug::getDebugMsg();
-	}
-
-	/**
-	 * Метод получающий содержимое страницы html (контент).
-	 * @param	string	$part	Параметр указывающий какую часть контента нужно получить.
-	 * Варианты $part пока что такие: title, fulltext
-	 */
-	protected function getContent($part, $id = 1)
-	{
-		Content::getContent($part, $id);
-	}
-
-	/**
-	 * Метод получающий переменные из адресной строки.
-	 */
-	protected function getURL()
-	{
-		Router::getURL();
-	}
-
-	protected function position($positionName)
-	{
-		self::$positions[$positionName] = '' ;
 	}
 }

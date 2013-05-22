@@ -32,6 +32,7 @@ class Application
 		Session::check();
 
 		// Подключает библиотеку формирующую страницы html
+		Loader::autoload('\Libraries\Html\HtmlModel');
 		Loader::autoload('\Libraries\Html\Html');
 		
 		// Создает объект формирующий страницу html
