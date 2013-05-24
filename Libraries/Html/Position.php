@@ -15,7 +15,7 @@ defined('_TEXEC') or die();
  * Class Position - Класс отвечающий за позиции (блоки для разного типа контента) в шаблоне html.
  * @package Tipsy\Libraries\Html
  */
-abstract class Position extends HtmlModel
+abstract class Position extends Model
 {
 
 	/**

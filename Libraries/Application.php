@@ -1,6 +1,7 @@
 <?php
 namespace Tipsy\Libraries;
 
+use Tipsy\Libraries\Html\Controller;
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Html\Html;
 use Tipsy\Libraries\Session;
@@ -32,11 +33,11 @@ class Application
 		Session::check();
 
 		// Подключает библиотеку формирующую страницы html
-		Loader::autoload('\Libraries\Html\HtmlModel');
-		Loader::autoload('\Libraries\Html\Html');
+		Loader::autoload('\Libraries\Html\Model');
+		Loader::autoload('\Libraries\Html\Controller');
 		
 		// Создает объект формирующий страницу html
-		$Html = new Html();
+		$Html = new Controller();
 	}
 	
 	public function __destruct()
