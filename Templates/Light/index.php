@@ -3,22 +3,17 @@
 defined('_TEXEC') or die();
 
 //Устанавливает кодировку страницы.
-$this->setCharset('utf-8');
+$this->head('charset', 'utf-8');
 
 // Добавляет таблицы стилей.
-$this->addStylesheet('template.css');
-$this->addStylesheet('Footer.css');
-$this->addStylesheet('Header.css');
+$this->head('stylesheet','template.css');
 ?>
 
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<?php
-	// Получает содержимое контейнера <head>.
-	$this->getHead();?>
-</head>
+<?php
+// Получает содержимое контейнера <head>.
+$this->getHead();?>
 
 <body>
 <div id="container">

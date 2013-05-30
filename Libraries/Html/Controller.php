@@ -6,6 +6,7 @@ use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Html\Head;
 use Tipsy\Components\User\User;
 use Tipsy\Libraries\Html\Position;
+use Tipsy\Libraries\Html\View;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -21,24 +22,18 @@ class Controller extends Model
 	 */
 	public function __construct()
 	{
-		// Подключает класс формирующий <HEAD> документа.
-		Loader::autoload('\Libraries\Html\Head');
-
-		//Подключает библиотеку маршрутизатора
-		Loader::autoload('\Libraries\Router');
-
 		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
 
 		// Определяет и подключает шаблон
-		$this->getTemplate();
+		#$this->getTemplate();
 
-		Loader::autoload('\Libraries\Html\Position');
-		Position::getComponent();
+		#Position::getComponent();
 
 		$this->getDebugMsg();
 
-		$this::getHead();
+		#$this::getHead();
+		$View = new View();
 	}
 
 }

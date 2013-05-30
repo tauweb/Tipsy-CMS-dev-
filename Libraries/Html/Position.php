@@ -17,17 +17,10 @@ defined('_TEXEC') or die();
  */
 abstract class Position extends Model
 {
-
-	/**
-	 * @var array Позиции текущего шаблона. Пока что используется parent.
-	 */
-	#private static $positions = '';
-
-
 	/**
 	 * @var array Теги применяемые в шаблоне.
 	 */
-	protected static $tags = array('{content}', '{always}');
+	private static $tags = array('{content}', '{always}');
 
 
 	/**
@@ -63,7 +56,7 @@ abstract class Position extends Model
 
 		class_exists($com_ns) ? $com_data = $com_ns::init($id) : $com_data = '';
 
-		self::$positions[$position] = $com_data;
+		parent::$positions[$position] = $com_data;
 
 		self::parse($position, $posCom, $com_data);
 	}
@@ -74,10 +67,6 @@ abstract class Position extends Model
 	 */
 	protected static function parse($position, $posCom='', $com_data)
 	{
-		// Выводит название позиции на страницу, если разрешена отладка шаблона в настройках.
-		//Todo: Переписать отдельным методом.
-		#if($posCom and Config::$tmplDebug) {echo '<fieldset><legend>'.$position.'</legend>';}
-
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе (Html).
 		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.
 		ucfirst($position).'.tpl');
@@ -100,25 +89,22 @@ abstract class Position extends Model
 			$content = str_replace(self::$tags,'', $content);
 
 			// Ищет и выполняет код php в шаблоне, заключается в теги.
-			self::run_php($content);
+			self::run_php($position, $content);
 
 		}elseif(substr($pos_tmpl, 0, 8) == '{always}'){
 
 			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
 
-			self::run_php($pos_tmpl);
+			self::run_php($position, $pos_tmpl);
 		}
-
-		// Здесь завершается вывод отладки шаблона.
-		#if($posCom and  Config::$tmplDebug) {echo '</fieldset>';}
 	}
 
 
 	/**
 	 * Метод выполняющий код из шаблона позиции.
-	 * @param $content конткнт в котором производится поиск и выполнение кода.
+	 * @param $content контент, в котором производится поиск и выполнение кода.
 	 */
-	protected static function run_php($content)
+	protected static function run_php($position, $content)
 	{
 		// Ищет в шаблоне позиции тег кода PHP и исполняет код заключенный между открывающим и закрывающим тегом.
 		while (stripos($content, '{php}')){
@@ -129,6 +115,11 @@ abstract class Position extends Model
 			$content = substr_replace($content, $php_code, $start_php, $lenght);
 		}
 
+		ob_start();
 		eval('?>' . $content);
+		static::$positions[$position] = ob_get_contents();
+		ob_end_clean();
+
 	}
+
 }

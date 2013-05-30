@@ -13,12 +13,25 @@ use Tipsy\Libraries\Router;
 use Tipsy\Libraries\Errors;
 use Tipsy\Libraries\Debug;
 use Tipsy\Config\Config;
+use Tipsy\Libraries\Html\Head;
+use Tipsy\Libraries\Loader;
+use Tipsy\Libraries\Html\Position;
 
 class Model
 {
 	protected static $template = '';
 	protected static $head = array();
 	protected static $positions = array();
+
+	protected static function head($method, $param)
+	{
+		Head::$method($param);
+	}
+
+	protected static function getTitle()
+	{
+		static::$head['title'] = "<title>".Config::$siteName."</title>";
+	}
 
 	/**
 	 * Метод определяющий используемый шаблон html страниц.
@@ -30,7 +43,7 @@ class Model
 
 		try{
 			if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
-				self::$template = $template;
+				static::$template = $template;
 			} else {
 				throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
 			}
@@ -38,34 +51,6 @@ class Model
 		} catch (RuntimeException $e){
 			// Выводит ошибку на страницу.
 			Errors::getErrors();
-		}
-	}
-
-	/**
-	 * Метод устанавливающий кодировку страниц
-	 * @param	string	имя кодировки для установки
-	 */
-	public static function setCharset($charset)
-	{
-		static::$head['charset'] = '<meta charset="' . $charset . '" />';
-	}
-
-	public static function addStylesheet($name)
-	{
-		static::$head['stylesheets'][$name] =
-			'<link rel = "stylesheet" href="' . 'Templates/' . Config::$template . '/css/' . $name . ' ">';
-	}
-
-	protected static function getHead()
-	{
-		foreach(static::$head as $tag){
-			if(is_array($tag) and !empty($tag) ){
-				foreach($tag as $subTag){
-					if(!empty($subTag)) echo $subTag . "\n";
-				}
-			}elseif(!empty($tag)){
-				echo $tag ."\n";
-			}
 		}
 	}
 
@@ -96,6 +81,6 @@ class Model
 	protected function position($positionName)
 	{
 		self::$positions[$positionName] = '' ;
+		#Position::getComponent();
 	}
-
 }

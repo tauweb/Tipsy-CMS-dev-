@@ -22,7 +22,7 @@ class Application
 	 * Метод запускающий формирование страцы
 	 */
 	public function __construct()
-	{	
+	{
 		// Подключает системный модуль.
 		Loader::autoload('\Libraries\Factory');
 
@@ -32,14 +32,18 @@ class Application
 		// Проверяет и запускает сессию в случае, если нет активной.
 		Session::check();
 
-		// Подключает библиотеку формирующую страницы html
+		// Подключает библиотекии MVC.
 		Loader::autoload('\Libraries\Html\Model');
 		Loader::autoload('\Libraries\Html\Controller');
-		
+		Loader::autoload('\Libraries\Html\View');
+		Loader::autoload('\Libraries\Html\Position');
+		Loader::autoload('\Libraries\Html\Head');
+		Loader::autoload('\Libraries\Router');
+
 		// Создает объект формирующий страницу html
 		$Html = new Controller();
 	}
-	
+
 	public function __destruct()
 	{
 		Database::$dbh = null;
