@@ -22,7 +22,7 @@ class Application
 	 * Метод запускающий формирование страцы
 	 */
 	public function __construct()
-	{
+	{	
 		// Подключает системный модуль.
 		Loader::autoload('\Libraries\Factory');
 
@@ -43,7 +43,7 @@ class Application
 		// Создает объект формирующий страницу html
 		$Html = new Controller();
 	}
-
+	
 	public function __destruct()
 	{
 		Database::$dbh = null;

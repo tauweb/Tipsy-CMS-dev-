@@ -22,12 +22,12 @@ class Model
 	protected static $template = '';
 	protected static $head = array();
 	protected static $positions = array();
-
+	
 	protected static function head($method, $param)
 	{
 		Head::$method($param);
 	}
-
+	
 	protected static function getTitle()
 	{
 		static::$head['title'] = "<title>".Config::$siteName."</title>";
@@ -78,9 +78,11 @@ class Model
 		Debug::getDebugMsg();
 	}
 
-	protected function position($positionName)
+	protected function positions($positions)
 	{
-		self::$positions[$positionName] = '' ;
-		#Position::getComponent();
+		foreach(explode(',', $positions) as $position)
+			self::$positions[strtolower($position)] = '';
+		
+		Position::getComponent();
 	}
 }

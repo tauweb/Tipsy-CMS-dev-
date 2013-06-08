@@ -7,24 +7,22 @@ $this->head('charset', 'utf-8');
 
 // Добавляет таблицы стилей.
 $this->head('stylesheet','template.css');
+
+
+$this->positions('Control_panel,Debug,Autorize,Header,Errors,menu_horisontal,Menu,Article,Footer');
 ?>
 
 <!DOCTYPE html>
 <html lang="ru">
-<?php
-// Получает содержимое контейнера <head>.
-$this->getHead();?>
+	<?php
+	// Получает содержимое контейнера <head>.
+	$this->getHead();?>
 
 <body>
 <div id="container">
 	<?$this->position('Control_panel');?>
 
-	<div id="debug" class="text-success">
-		<?php
-		// Выводит сообщения об отладке системы.
-		$this->getDebugMsg();
-		?>
-	</div>
+	<?php $this->position('Debug') ?>
 
 	<?php $this->position('Autorize');?>
 	<?php $this->position('Header'); ?>

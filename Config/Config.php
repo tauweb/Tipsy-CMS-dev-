@@ -6,13 +6,14 @@ defined('_TEXEC') or die;
 // Параметры конфигурации системы
 abstract class Config
 {
+	public static $siteName = 'Tipsy CMS';
 	// Параметры подключения к базе данных
 	public static $dbType = 'mysql';
 
 	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
-	public static $db_user = 'whiskeyman_tipsy';
-	public static $db_password = '';
-	public static $db_dbname = 'whiskeyman_tipsy';
+	public static $db_user = 'tipsy';
+	public static $db_password = 'password';
+	public static $db_dbname = 'tipsy';
 	public static $db_port = '';
 	public static $db_socket = '';
 
@@ -25,7 +26,7 @@ abstract class Config
 	// Отображение отладочной информации о шаблоне (пока реализовано только 6азвание пощиций).
 	// 1 - да, 0 - нет.
 	// Смотреть \Tispy\Libraries\Position::getPosContent()
-	public static $tmplDebug = 0;
+	#public static $tmplDebug = 0;
 	
 	// Настройки временной зоны
 	public static $timezone = 'Europe/Moscow';

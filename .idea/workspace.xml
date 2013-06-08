@@ -2,19 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Html/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/API.doc" afterPath="$PROJECT_DIR$/Docs/API.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/CSS.doc" afterPath="$PROJECT_DIR$/Docs/CSS.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/standarts.doc" afterPath="$PROJECT_DIR$/Docs/standarts.doc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Article/Article.php" afterPath="$PROJECT_DIR$/Components/Article/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Content.php" afterPath="$PROJECT_DIR$/Libraries/Html/Content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Controller.php" afterPath="$PROJECT_DIR$/Libraries/Html/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Database.php" afterPath="$PROJECT_DIR$/Libraries/Database/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Debug.php" afterPath="$PROJECT_DIR$/Libraries/Debug.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Dispatcher.php" afterPath="$PROJECT_DIR$/Libraries/Dispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Errors.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Errors.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Exception.php" afterPath="$PROJECT_DIR$/Libraries/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/Footer.css" afterPath="$PROJECT_DIR$/Templates/Light/css/Footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework.php" afterPath="$PROJECT_DIR$/Framework.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Head.php" afterPath="$PROJECT_DIR$/Libraries/Html/Head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Loader.php" afterPath="$PROJECT_DIR$/Libraries/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Logger.php" afterPath="$PROJECT_DIR$/Libraries/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logs/Logs.txt" afterPath="$PROJECT_DIR$/Logs/Logs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Menu/Menu.php" afterPath="$PROJECT_DIR$/Components/Menu/Menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Menu.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Menu.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Model.php" afterPath="$PROJECT_DIR$/Libraries/Html/Model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/Position.php" afterPath="$PROJECT_DIR$/Libraries/Html/Position.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/Query.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Router.php" afterPath="$PROJECT_DIR$/Libraries/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Session.php" afterPath="$PROJECT_DIR$/Libraries/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/User.php" afterPath="$PROJECT_DIR$/Components/User/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogin.php" afterPath="$PROJECT_DIR$/Components/User/UserLogin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogout.php" afterPath="$PROJECT_DIR$/Components/User/UserLogout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Html/View.php" afterPath="$PROJECT_DIR$/Libraries/Html/View.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_Checksystem.php" afterPath="$PROJECT_DIR$/Libraries/_Checksystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/_defines.php" afterPath="$PROJECT_DIR$/Includes/_defines.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_loader.php" afterPath="$PROJECT_DIR$/Libraries/_loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" afterPath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/index.php" afterPath="$PROJECT_DIR$/DeveloperFiles/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linux_get_source.sh" afterPath="$PROJECT_DIR$/linux_get_source.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/nav.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/nav.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/often.info" afterPath="$PROJECT_DIR$/often.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/old_Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/php_set.php" afterPath="$PROJECT_DIR$/Config/php_set.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/template.css" afterPath="$PROJECT_DIR$/Templates/Light/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" afterPath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369920489207" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1370705001202" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369395303309" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367066526377" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469939736" ignored="false" />
@@ -114,10 +165,8 @@
       <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="7" selection-start="497" selection-end="497" vertical-scroll-proportion="-7.125">
-              <folding>
-                <element signature="e#40#67#0" expanded="true" />
-              </folding>
+            <state line="10" column="38" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.75">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +174,7 @@
       <file leaf-file-name="Head.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="105" selection-end="105" vertical-scroll-proportion="-4.375">
+            <state line="8" column="7" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,18 +183,25 @@
       <file leaf-file-name="Application.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="33" selection-start="639" selection-end="639" vertical-scroll-proportion="-6.7916665">
-              <folding>
-                <element signature="e#34#70#0" expanded="true" />
-              </folding>
+            <state line="30" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.2027559">
+            <state line="13" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Config/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="42" selection-start="445" selection-end="445" vertical-scroll-proportion="0.2173913">
               <folding />
             </state>
           </provider>
@@ -154,11 +210,8 @@
       <file leaf-file-name="Model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="5" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-5.1666665">
-              <folding>
-                <element signature="e#6#165#0" expanded="true" />
-                <element signature="e#200#227#0" expanded="true" />
-              </folding>
+            <state line="62" column="5" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,10 +219,8 @@
       <file leaf-file-name="Position.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="7" selection-start="3151" selection-end="3151" vertical-scroll-proportion="-8.916667">
-              <folding>
-                <element signature="e#39#72#0" expanded="true" />
-              </folding>
+            <state line="104" column="7" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +228,7 @@
       <file leaf-file-name="View.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Html/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="135" selection-end="135" vertical-scroll-proportion="-5.0">
+            <state line="7" column="5" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,14 +251,13 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Libraries/Router.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Libraries/Html/Position.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Components/User/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Libraries/Html/Position.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Libraries/Router.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" />
         <option value="$PROJECT_DIR$/Templates/Light/css/template.css" />
         <option value="$PROJECT_DIR$/Components/Article/Article.php" />
         <option value="$PROJECT_DIR$/DeveloperFiles/index.php" />
@@ -223,6 +273,7 @@
         <option value="$PROJECT_DIR$/Libraries/Html/Head.php" />
         <option value="$PROJECT_DIR$/Libraries/Application.php" />
         <option value="$PROJECT_DIR$/Templates/Light/index.php" />
+        <option value="$PROJECT_DIR$/Config/Config.php" />
       </list>
     </option>
   </component>
@@ -233,10 +284,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="381" />
-    <option name="y" value="36" />
-    <option name="width" value="977" />
-    <option name="height" value="727" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -292,237 +343,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Positions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeveloperFiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Article" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,14 +357,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="99" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$USER_HOME$/html5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1004" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="106" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="98" />
@@ -562,8 +383,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="Tipsy" serverId="1d76ec3a-38ec-46fd-8e67-9520ce12da25">
     <servers>
@@ -583,9 +404,6 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -593,7 +411,10 @@
       </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/Tipsy-CMS">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/Projects/Tipsy-CMS">
       <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
@@ -944,15 +765,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="36" width="977" height="727" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2768" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19772728" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2719697" sideWeight="0.4433657" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14166667" sideWeight="0.95469254" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28955868" sideWeight="0.688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19469696" sideWeight="0.688" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.7189394" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.5376" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.2810606" order="7" side_tool="true" content_ui="tabs" />
@@ -1046,11 +867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Templates/Light/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="616" selection-end="616" vertical-scroll-proportion="0.7996661" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Article/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="1" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.9478261" />
@@ -1068,9 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/User/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="1277" selection-end="1281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="53" column="20" selection-start="1277" selection-end="1281" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework.php">
@@ -1089,69 +903,65 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/head_arrya.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.8252427">
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="497" selection-end="497" vertical-scroll-proportion="-7.125">
-          <folding>
-            <element signature="e#40#67#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="78" column="0" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.8252427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="7" selection-start="3151" selection-end="3151" vertical-scroll-proportion="-8.916667">
-          <folding>
-            <element signature="e#39#72#0" expanded="true" />
-          </folding>
+        <state line="104" column="7" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="135" selection-end="135" vertical-scroll-proportion="-5.0">
+        <state line="7" column="5" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="5" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-5.1666665">
-          <folding>
-            <element signature="e#6#165#0" expanded="true" />
-            <element signature="e#200#227#0" expanded="true" />
-          </folding>
+        <state line="62" column="5" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Html/Head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="105" selection-end="105" vertical-scroll-proportion="-4.375">
+        <state line="8" column="7" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="639" selection-end="639" vertical-scroll-proportion="-6.7916665">
-          <folding>
-            <element signature="e#34#70#0" expanded="true" />
-          </folding>
+        <state line="30" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="508" selection-end="508" vertical-scroll-proportion="0.2027559">
+        <state line="13" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Html/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="42" selection-start="445" selection-end="445" vertical-scroll-proportion="0.2173913">
           <folding />
         </state>
       </provider>

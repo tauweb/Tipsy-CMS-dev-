@@ -5,4 +5,5 @@
     <a href="http://w3.org">html5</a>
     <a href="https://github.com/WhiskeyMan-Tau/Tipsy.git">Исходники</a>
     <a href="./logs/log.txt">Посмотреть логи</a>
+{php}echo 'this is test';{/php}
 </nav>

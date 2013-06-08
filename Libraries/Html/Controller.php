@@ -25,14 +25,8 @@ class Controller extends Model
 		///Передает управлениемаршрутизатору адресной строки
 		$this->getURL();
 
-		// Определяет и подключает шаблон
-		#$this->getTemplate();
-
-		#Position::getComponent();
-
 		$this->getDebugMsg();
 
-		#$this::getHead();
 		$View = new View();
 	}
 

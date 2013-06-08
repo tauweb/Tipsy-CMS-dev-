@@ -47,9 +47,4 @@ abstract class Router
 
 	}
 
-
-	protected static function parse()
-	{
-
-	}
 }

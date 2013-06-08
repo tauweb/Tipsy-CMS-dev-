@@ -99,7 +99,6 @@ abstract class Position extends Model
 		}
 	}
 
-
 	/**
 	 * Метод выполняющий код из шаблона позиции.
 	 * @param $content контент, в котором производится поиск и выполнение кода.
@@ -114,12 +113,11 @@ abstract class Position extends Model
 			$php_code = '<?' . substr($content, $start_php+5, $lenght - 11) . '?>';
 			$content = substr_replace($content, $php_code, $start_php, $lenght);
 		}
-
+		
 		ob_start();
 		eval('?>' . $content);
 		static::$positions[$position] = ob_get_contents();
 		ob_end_clean();
-
 	}
-
+	
 }

@@ -13,12 +13,12 @@ abstract class Head extends Model{
 	{
 		static::$head['charset'] = '<meta charset="' . $charset . '" />';
 	}
-
-
+	
+	
 	protected static function stylesheet($name)
 	{
 		static::$head['stylesheets'][$name] =
 			'<link rel = "stylesheet" href="' . 'Templates/' . Config::$template . '/css/' . $name . ' ">';
 	}
-
+	
 }

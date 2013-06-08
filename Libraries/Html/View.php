@@ -8,9 +8,8 @@ class View extends Model{
 	public function __construct()
 	{
 		self::getTemplate();
-		self::getPositions();
 	}
-
+	
 	protected static function getHead()
 	{
 		echo '<head>';
@@ -25,11 +24,14 @@ class View extends Model{
 		}
 		echo '</head>';
 	}
-
+	
 	protected function getPositions()
 	{
 		Position::getComponent();
-		foreach(static::$positions as $p=>$pd)
-			echo $pd;
+	}
+	
+	protected function position($name)
+	{
+		echo static::$positions[strtolower($name)];
 	}
 }
