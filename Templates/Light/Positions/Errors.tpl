@@ -1,3 +1,3 @@
 <div id="errors">
-    sdfsdfsa
+    <?php echo $data;?>
 </div>

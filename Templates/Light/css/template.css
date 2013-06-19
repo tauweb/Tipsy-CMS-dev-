@@ -3,11 +3,13 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
-	color: #333333;
-	background-color: #ffffff;
+	background-image: -webkit-radial-gradient(circle,#165387,#142849);
+	background-image: -moz-radial-gradient(circle,#165387,#142849);
+	background-image: -o-radial-gradient(circle,#165387,#142849);
 }
 
 #container{
+	background-color: #ffffff;
 	width:980px;
 	margin: auto;
 	border: 1px solid gray;
@@ -117,6 +119,4 @@ a:hover {
 .text-info 		{color: #3a87ad;}
 .text-success	{color: #468847;}
 
-.site_name {
-	text-align: center;
-}
+.site_name {text-align: center;}

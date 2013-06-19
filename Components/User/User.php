@@ -28,20 +28,23 @@ abstract class User
 		if(!isset($_SESSION['user'])){
 
 			// Если нет - возвращает форму выбора действий.
-			return "<a href=\"?com=user&param=login\">Вход </a>" .
-			"<a href=\"?com=user&param=test\"> Регистрация</a>".
-			"<a href=\"?comt=user&param=test\"> test</a>";
+			return "<a href=\"?com=user&method=login\">Вход </a>" .
+			"<a href=\"?com=user&method=test\"> Регистрация</a>".
+			"<a href=\"?comt=user&method=test\"> Забыли?</a>";
 		}else{
 			Loader::autoload('\Components\User\UserLogout');
 			return "Привет  ". $_SESSION['user'] . "<a href=\"?component=\\Components\\User\\UserLogout\">Выйти</a>";
 		}
 	}
 
-
 	protected static function getTemplate($tmpl = 'tmpl_default.php')
 	{
-		return $tmpl = require_once __DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . $tmpl;
-
+		ob_start();
+		require_once __DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . $tmpl;
+		$tmpl = ob_get_contents();
+		ob_end_clean();
+		echo $tmpl;
+		return $tmpl;
 	}
 
 

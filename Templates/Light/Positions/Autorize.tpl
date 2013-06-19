@@ -1,3 +1,3 @@
 <div id="autorize" class="autorize">
-{content}
+<?php echo $data;?>
 </div>

@@ -9,13 +9,12 @@ defined('_TEXEC') or die();
  */
 abstract class Router
 {
-
 	/**
 	 * @var array Возможные параметры URL строки.
 	 */
 	protected static $urlParam = array(
 		"com" => "",
-		"param"=>"",
+		"method"=>"",
 		"id" =>""
 	);
 
@@ -42,9 +41,8 @@ abstract class Router
 
 		unset(self::$urlParam['com']);
 
-		return $com_data = call_user_func_array("$com::init", self::$urlParam);
+		$com_data = call_user_func_array("$com::init", self::$urlParam);
 		//Todo: Дописать передачу значиния в Position
-
 	}
 
 }

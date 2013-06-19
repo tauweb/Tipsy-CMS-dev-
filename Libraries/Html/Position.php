@@ -13,16 +13,10 @@ defined('_TEXEC') or die();
 
 /**
  * Class Position - Класс отвечающий за позиции (блоки для разного типа контента) в шаблоне html.
- * @package Tipsy\Libraries\Html
+ *
  */
 abstract class Position extends Model
 {
-	/**
-	 * @var array Теги применяемые в шаблоне.
-	 */
-	private static $tags = array('{content}', '{always}');
-
-
 	/**
 	 * Метод определяющий компонент, привязанный к позиции по дефолту (тип выводимого контента).
 	 */
@@ -44,8 +38,6 @@ abstract class Position extends Model
 		}
 	}
 
-
-
 	protected static function getData($position, $posCom='', $id='')
 	{
 		// Формирует название компонента, который привязан к позиции шаблона.
@@ -54,70 +46,28 @@ abstract class Position extends Model
 		// Формирует имя пространста имен компонента.
 		$com_ns  = "\\Tipsy\\Components\\$com_ns\\$com_ns";
 
-		class_exists($com_ns) ? $com_data = $com_ns::init($id) : $com_data = '';
+		class_exists($com_ns) ? $data = $com_ns::init($id) : $data = '';
 
-		parent::$positions[$position] = $com_data;
-
-		self::parse($position, $posCom, $com_data);
+		self::getPosTemplate($position, $data);
 	}
-
 
 	/**
 	 * Метод получающий данные для компонента привязанного к позиции.
 	 */
-	protected static function parse($position, $posCom='', $com_data)
+	private static function getPosTemplate($position, $data)
 	{
 		// Подключает шаблон текущей позиции в шаблон страницы, указанный в родительском классе (Html).
-		@$pos_tmpl = file_get_contents(parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.
-		ucfirst($position).'.tpl');
+		$pos_tmpl = parent::$template.DIRECTORY_SEPARATOR.'Positions'.DIRECTORY_SEPARATOR.ucfirst($position).'.tpl';
 
-		if(!$pos_tmpl){
-			// Todo: Здесь тоже нужно будет поколдоват, пока модуль отладки не дописан, оставлю так как есть.
+		if(!file_exists($pos_tmpl)){
+			// Todo: Здесь тоже нужно будет поколдовать, пока модуль отладки не дописан, оставлю так как есть.
 			echo "Ух ты, никак не найти $position.tpl ";
-
 			Debug::AddMessage("Ух ты, никак не найти $position.tpl", __CLASS__);
 			return;
 		}
-
-		// Выполняет инициализацию компонента привязанного к позиции, если существует его класс,
-		// для получения контента заданного пользователем поумолчанию.
-		if(!empty($com_data)){
-			// Подставляет контент позиции в ее шаблон.
-			$content = str_replace('{content}', $com_data, $pos_tmpl);
-
-			// Убирает теги из шаблона.
-			$content = str_replace(self::$tags,'', $content);
-
-			// Ищет и выполняет код php в шаблоне, заключается в теги.
-			self::run_php($position, $content);
-
-		}elseif(substr($pos_tmpl, 0, 8) == '{always}'){
-
-			$pos_tmpl = str_replace(self::$tags,'', $pos_tmpl);
-
-			self::run_php($position, $pos_tmpl);
-		}
-	}
-
-	/**
-	 * Метод выполняющий код из шаблона позиции.
-	 * @param $content контент, в котором производится поиск и выполнение кода.
-	 */
-	protected static function run_php($position, $content)
-	{
-		// Ищет в шаблоне позиции тег кода PHP и исполняет код заключенный между открывающим и закрывающим тегом.
-		while (stripos($content, '{php}')){
-			$start_php = stripos($content, '{php}');
-			$end_php = stripos($content, '{/php}');
-			$lenght = $end_php-$start_php + 6;
-			$php_code = '<?' . substr($content, $start_php+5, $lenght - 11) . '?>';
-			$content = substr_replace($content, $php_code, $start_php, $lenght);
-		}
-		
 		ob_start();
-		eval('?>' . $content);
+		require_once($pos_tmpl);
 		static::$positions[$position] = ob_get_contents();
 		ob_end_clean();
 	}
-	
 }

@@ -1,3 +1,3 @@
 <nav>
-	{content}
+	<?php echo $data;?>
 </nav>

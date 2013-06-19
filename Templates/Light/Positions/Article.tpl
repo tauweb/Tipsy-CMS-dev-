@@ -1,3 +1,3 @@
 <article>
-	{content}
+	<?php echo $data;?>
 </article>
