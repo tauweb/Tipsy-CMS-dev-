@@ -11,8 +11,8 @@ abstract class Config
 	public static $dbType = 'mysql';
 
 	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
-	public static $db_user = 'root';
-	public static $db_password = '_modaS';
+	public static $db_user = 'tipsy';
+	public static $db_password = 'tipsy';
 	public static $db_dbname = 'tipsy';
 	public static $db_port = '';
 	public static $db_socket = '';
@@ -35,5 +35,5 @@ abstract class Config
 	public static $template = 'Light';
 	
 	// Время жизни куку
-	public static $sessionLifetime = 15;
+	public static $sessionLifetime = 2;
 }

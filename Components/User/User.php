@@ -3,6 +3,8 @@ namespace Tipsy\Components\User;
 
 use Tipsy\Libraries\Loader;
 use Tipsy\Components\User\UserLogin;
+use Tipsy\Libraries\Database\Query;
+use Tipsy\Libraries\Session;
 
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die();
@@ -14,6 +16,8 @@ defined('_TEXEC') or die();
  */
 abstract class User
 {
+	static $template = '';
+
 	/**
 	 * Метод инициализации. Проверяет состояние пользователей.
 	 *
@@ -28,9 +32,7 @@ abstract class User
 		if(!isset($_SESSION['user'])){
 
 			// Если нет - возвращает форму выбора действий.
-			return "<a href=\"?com=user&method=login\">Вход </a>" .
-			"<a href=\"?com=user&method=test\"> Регистрация</a>".
-			"<a href=\"?comt=user&method=test\"> Забыли?</a>";
+			return file_get_contents(__DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . 'tmpl_choise.php');
 		}else{
 			Loader::autoload('\Components\User\UserLogout');
 			return "Привет  ". $_SESSION['user'] . "<a href=\"?component=\\Components\\User\\UserLogout\">Выйти</a>";
@@ -43,21 +45,19 @@ abstract class User
 		require_once __DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . $tmpl;
 		$tmpl = ob_get_contents();
 		ob_end_clean();
-		echo $tmpl;
-		return $tmpl;
+		self:$template = $tmpl;
 	}
-
 
 	/**
 	 * Метод выполняющий авторизацию пользователя (перенаправляет на класс авторизации)
 	 */
 	public static function login()
 	{
-		// Подключает шаблон формы авторизации пользоватея.
-		$tmpl = self::getTemplate();
-
-		if(empty($_POST['name'])){
-			return 'Для авторизации необходимо ввести имя пользователя.';
+		if(!self::$template){
+			// Подключает шаблон формы авторизации пользоватея.
+			$tmpl = self::getTemplate();
+			if(!isset($_POST['name']))
+				return 'Введите имя пользователя';
 		}
 
 		//Создает которткие имена переменных формы.
@@ -67,10 +67,10 @@ abstract class User
 		// Строка запроса к БД, выбирающая данные о пользователе.
 		$query = "SELECT `username`, `password` FROM `users` WHERE username = \"" . $user . "\";";
 
-		$table = Query::query($query);
+		$table = Query::select($query);
 		Session::start($table['username']);
 
 		header("Location: ./");
-		return 'Вы вошли как: ' . $_SESSION['user'];
+		#return 'Вы вошли как: ' . $_SESSION['user'];
 	}
 }

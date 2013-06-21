@@ -10,7 +10,7 @@ defined('_TEXEC') or die();
  */
 ?>
 <div form_login>
-	<form action="./" method="post"  class="login_form">
+	<form action="?com=user&method=login" method="post"  class="login_form">
 		Имя:	<input type="text" name="name" />
 		Пароль:	<input type="text" name="password" />
 		<button type="submit">Войти</button>
