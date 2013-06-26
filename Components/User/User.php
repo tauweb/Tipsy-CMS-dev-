@@ -46,12 +46,13 @@ abstract class User
 		$tmpl = ob_get_contents();
 		ob_end_clean();
 		self:$template = $tmpl;
+
 	}
 
 	/**
 	 * Метод выполняющий авторизацию пользователя (перенаправляет на класс авторизации)
 	 */
-	public static function login()
+	protected static function login()
 	{
 		if(!self::$template){
 			// Подключает шаблон формы авторизации пользоватея.

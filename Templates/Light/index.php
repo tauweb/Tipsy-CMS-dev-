@@ -8,7 +8,6 @@ $this->head('charset', 'utf-8');
 // Добавляет таблицы стилей.
 $this->head('stylesheet','template.css');
 
-
 $this->positions('Control_panel,Debug,Autorize,Header,Errors,menu_horisontal,Menu,Article,Footer');
 ?>
 
