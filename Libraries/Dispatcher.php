@@ -15,12 +15,13 @@ use Tipsy\Libraries\Database\Query;
  * Class Dispatcher - Диспетчер компонентов системы. Отвечает за инициализацию и регистрацию компонента в сестеме.
  * @package Tipsy\Libraries
  */
-abstract class Dispatcher {
+class Dispatcher {
 
-	public static function init()
+	public function __construct()
 	{
-		self::autoComInit();
+		#self::autoComInit();
 		self::comRegister();
+		self::loadCoreLibraries();
 	}
 
 	/**
@@ -28,6 +29,25 @@ abstract class Dispatcher {
 	 */
 	protected static $components = array();
 
+
+	protected function loadCoreLibraries()
+	{
+		// Подключает компонент логирования.
+		Loader::autoload('\Libraries\Logger');
+		// Подключает обработчик исключений.
+		Loader::autoload('\Libraries\Exception');
+		// Подключает модуль отладки системы.
+		Loader::autoload('\Libraries\Debug');
+		// Загружает класс работы с БД
+		Loader::autoload('\Libraries\Database\Database');
+		// Подключает отладчик системы
+		Loader::autoload('\Libraries\Debug');
+		// Подключает класс обработчика сессий.
+		Loader::autoload('\Libraries\Session');
+		// Подключает класс диспетчера компонетов.
+		Loader::autoload('\Libraries\Dispatcher');
+	}
+	
 	/**
 	 * Метод отвечающий за автоматическую инициализацию компонентов в системе.
 	 */

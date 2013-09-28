@@ -23,6 +23,7 @@ abstract class Loader
 		
 		if(file_exists($fileName)){
 			require_once $fileName;
+			#echo $fileName."</br>";
 			return true;
 		}else{
 			print("Загрузчик: не могу найти файл: <b>$fileName</b><p>");

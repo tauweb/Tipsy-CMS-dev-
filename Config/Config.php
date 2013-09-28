@@ -37,3 +37,4 @@ abstract class Config
 	// Время жизни куку
 	public static $sessionLifetime = 2;
 }
+

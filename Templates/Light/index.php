@@ -3,10 +3,12 @@
 defined('_TEXEC') or die();
 
 //Устанавливает кодировку страницы.
-$this->head('charset', 'utf-8');
+#$this->head('charset', 'utf-8');
 
+var_dump($this->head);
+$this->head->setStylesheet('template.css');
 // Добавляет таблицы стилей.
-$this->head('stylesheet','template.css');
+#$this->head('stylesheet','template.css');
 
 $this->positions('Control_panel,Debug,Autorize,Header,Errors,menu_horisontal,Menu,Article,Footer');
 ?>

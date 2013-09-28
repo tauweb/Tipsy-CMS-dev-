@@ -2,14 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DeveloperFiles/create_DB.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DeveloperFiles/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/Content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/Head.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/Position.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/View.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Libraries/Html/head_arrya.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/often.info" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/API.doc" afterPath="$PROJECT_DIR$/Docs/API.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/CSS.doc" afterPath="$PROJECT_DIR$/Docs/CSS.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_gray.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" afterPath="$PROJECT_DIR$/Templates/Light/icons/icon_green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-java-5.1.22-bin.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/standarts.doc" afterPath="$PROJECT_DIR$/Docs/standarts.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Article/Article.php" afterPath="$PROJECT_DIR$/Components/Article/Article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Article.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Autorize.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Control_panel.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Database.php" afterPath="$PROJECT_DIR$/Libraries/Database/Database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Debug.php" afterPath="$PROJECT_DIR$/Libraries/Debug.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Debug.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Dispatcher.php" afterPath="$PROJECT_DIR$/Libraries/Dispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Errors.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Errors.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Exception.php" afterPath="$PROJECT_DIR$/Libraries/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/Footer.css" afterPath="$PROJECT_DIR$/Templates/Light/css/Footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework.php" afterPath="$PROJECT_DIR$/Framework.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Header.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Loader.php" afterPath="$PROJECT_DIR$/Libraries/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Logger.php" afterPath="$PROJECT_DIR$/Libraries/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logs/Logs.txt" afterPath="$PROJECT_DIR$/Logs/Logs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Menu/Menu.php" afterPath="$PROJECT_DIR$/Components/Menu/Menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Menu.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Menu.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/Menu_horisontal.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/Query.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Router.php" afterPath="$PROJECT_DIR$/Libraries/Router.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Session.php" afterPath="$PROJECT_DIR$/Libraries/Session.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/User.php" afterPath="$PROJECT_DIR$/Components/User/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogin.php" afterPath="$PROJECT_DIR$/Components/User/UserLogin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/UserLogout.php" afterPath="$PROJECT_DIR$/Components/User/UserLogout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_Checksystem.php" afterPath="$PROJECT_DIR$/Libraries/_Checksystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/_defines.php" afterPath="$PROJECT_DIR$/Includes/_defines.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/_loader.php" afterPath="$PROJECT_DIR$/Libraries/_loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linux_get_source.sh" afterPath="$PROJECT_DIR$/linux_get_source.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" afterPath="$PROJECT_DIR$/DeveloperFiles/DBDriver(IDE)/mysql-connector-license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/Positions/nav.tpl" afterPath="$PROJECT_DIR$/Templates/Light/Positions/nav.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Database/old_Query.php" afterPath="$PROJECT_DIR$/Libraries/Database/old_Query.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/php_set.php" afterPath="$PROJECT_DIR$/Config/php_set.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/css/template.css" afterPath="$PROJECT_DIR$/Templates/Light/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php" afterPath="$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" afterPath="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1372230694863" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1380374630004" ignored="false" />
     <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1372172641570" ignored="false" />
     <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367066526377" ignored="false" />
     <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469939736" ignored="false" />
@@ -109,7 +168,7 @@
       <file leaf-file-name="Factory.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="27" selection-start="3830" selection-end="3830" vertical-scroll-proportion="-12.166667">
+            <state line="35" column="27" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +177,7 @@
       <file leaf-file-name="Application.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="-15.625">
+            <state line="27" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,8 +186,10 @@
       <file leaf-file-name="Framework.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="359" selection-end="359" vertical-scroll-proportion="0.3652174">
-              <folding />
+            <state line="9" column="48" selection-start="201" selection-end="201" vertical-scroll-proportion="0.23396881">
+              <folding>
+                <element signature="e#91#118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,13 +212,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Components/User/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Libraries/Html/Position.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Libraries/Router.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Libraries/Html/HtmlModel.php" />
         <option value="$PROJECT_DIR$/Libraries/Html/Html.php" />
         <option value="$PROJECT_DIR$/Libraries/Html/View.php" />
         <option value="$PROJECT_DIR$/Libraries/Html/Model.php" />
@@ -173,6 +232,7 @@
         <option value="$PROJECT_DIR$/Components/User/User.php" />
         <option value="$PROJECT_DIR$/Libraries/Dispatcher.php" />
         <option value="$PROJECT_DIR$/Templates/Light/index.php" />
+        <option value="$PROJECT_DIR$/Framework.php" />
       </list>
     </option>
   </component>
@@ -248,7 +308,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,6 +356,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,14 +364,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="99" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1004" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1003" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="106" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="98" />
@@ -330,8 +390,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="tipsy" serverId="53312c9c-7781-4b2c-89f7-5dde22668d59">
     <servers>
@@ -358,14 +418,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="53312c9c-7781-4b2c-89f7-5dde22668d59" server_name="tipsy">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="53312c9c-7781-4b2c-89f7-5dde22668d59" server_name="tipsy">
       <method />
     </configuration>
     <configuration default="false" name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/Projects/Tipsy-CMS">
@@ -732,20 +792,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3456" sideWeight="0.49532712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2768" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19772728" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2719697" sideWeight="0.4433657" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14166667" sideWeight="0.6544" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22272727" sideWeight="0.6544" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6544" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.7189394" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.5376" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.2810606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3456" sideWeight="0.49532712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -843,11 +903,6 @@
         <state line="2" column="10" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.25" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/Position.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="550" selection-end="1156" vertical-scroll-proportion="-6.375" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="71" selection-start="858" selection-end="909" vertical-scroll-proportion="-16.916666" />
@@ -855,85 +910,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="172" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="172" selection-end="406" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="61" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="61" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/User/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="48" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Dispatcher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="3" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.29602888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="307" selection-end="307" vertical-scroll-proportion="0.027075812">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="325" selection-end="325" vertical-scroll-proportion="0.3478261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Html/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="239" selection-end="239" vertical-scroll-proportion="0.1826087">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.29602888" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.104347825">
-          <folding />
-        </state>
+        <state line="4" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.104347825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="27" selection-start="3830" selection-end="3830" vertical-scroll-proportion="-12.166667">
+        <state line="35" column="27" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="641" selection-end="641" vertical-scroll-proportion="-15.625">
+        <state line="27" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="359" selection-end="359" vertical-scroll-proportion="0.3652174">
-          <folding />
+        <state line="9" column="48" selection-start="201" selection-end="201" vertical-scroll-proportion="0.23396881">
+          <folding>
+            <element signature="e#91#118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

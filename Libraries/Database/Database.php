@@ -13,7 +13,7 @@ defined('_TEXEC') or die();
  * Подключение к базе данных
  * @package Tipsy_smc.DataBase
  */
-abstract class Database
+class Database
 {
 	/**
 	 * @var	string	DataBaseHandler содержит в себе .
@@ -24,16 +24,16 @@ abstract class Database
 	 * Метод устанавливающий подключение к БД.
 	 * @param array $DBOptions массив содержащий параметры подключения к базе данных.
 	 */
-	public static function connect($dbOptions)
+	public function __construct($dbOptions)
 	{
 		// Определяет тип БД указанной в настройках системы ( для испольования в DBO )
 		$dbDriver = strtolower(Config::$dbType);
 
 		// Формирует строку DNS, имя источника данных или DSN, содержащее информацию, необходимую для подключения к базе данных.
-		$dns = $dbDriver . ':'. 'dbname=' . $dbOptions['dbname'] . ';' . 'host=' . $dbOptions['host'];
+		$dsn = $dbDriver . ':'. 'dbname=' . $dbOptions['dbname'] . ';' . 'host=' . $dbOptions['host'];
 
 		try {
-			self::$dbh = new \PDO($dns, $dbOptions['username'], $dbOptions['password']);
+			self::$dbh = new \PDO($dsn, $dbOptions['username'], $dbOptions['password']);
 			// Переводим в режим отображаения всех ошибок и предупреждений (Для отлаживания)
 			self::$dbh->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 			// Устанавливает кодировку данных БД.
