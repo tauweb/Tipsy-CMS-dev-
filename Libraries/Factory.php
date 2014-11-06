@@ -16,7 +16,7 @@ abstract class Factory
 	protected static $cfg = null;
 	protected static $db = null;
 	protected static $doc = null;
-	
+
 	public static function getConfig()
 	{
 		if(!self::$cfg){
@@ -26,7 +26,7 @@ abstract class Factory
 		}
 		return self::$cfg;
 	}
-	
+
 	public static function getDocument()
 	{
 		if(!self::$doc){
@@ -37,7 +37,7 @@ abstract class Factory
 		}
 		return self::$doc;
 	}
-	
+
 	public static function getDb()
 	{
 		if(!self::$db){
@@ -46,5 +46,4 @@ abstract class Factory
 			return self::$db;
 		}
 	}
-
 }

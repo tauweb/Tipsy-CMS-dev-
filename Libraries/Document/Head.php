@@ -4,7 +4,21 @@ namespace Tipsy\Libraries\Document;
 use Tipsy\Config\Config;
 use Tipsy\Libraries\Factory;
 
-class Head {
+class Head{
+
+	protected $title = 'This is default page title';
+
+	protected $charset = 'utf-8';
+
+	// protected $metaTags = array();
+
+	// public function __set($tagName, $value){
+
+	// }
+
+	// public function __get($tagName){
+
+	// }
 
 	/**
 	 * Метод устанавливающий кодировку страниц
@@ -14,20 +28,21 @@ class Head {
 	{
 		static::$head['charset'] = '<meta charset="' . $charset . '" />';
 	}
-		
-	public function addStylesheet($name)
+
+	public function setStylesheet($stylesheetName)
 	{
-		static::$head['stylesheets'][$name] =
-			'<link rel = "stylesheet" href="' . 'Templates/' . Config::$template . '/css/' . $name . ' ">';
+		$this->head['stylesheets'][$stylesheetName] =
+			'<link rel = "stylesheet" href="' . 'Templates/' . Config::$template . '/css/' . $stylesheetName . ' ">';
 	}
-	
+
 	public function getTitle()
 	{
-		return static::$head['title'] = "<title>".Factory::getConfig()->getTitle()."</title>";
+		return $this->$head['title'] = "<title>".Factory::getConfig()->getTitle()."</title>";
 	}
-	
+
 	public function getHead()
 	{
-	
+		// реализация рендеринга контейнера head.
+		echo 'Отладка метода getHead';
 	}
 }

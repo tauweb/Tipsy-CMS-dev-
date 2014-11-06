@@ -2,7 +2,7 @@
 namespace Tipsy;
 
 // Проверяет легален ли доступ к файлу.
-defined('_TEXEC') or die;
+defined('_TEXEC') or die('No direct access');
 
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Application;

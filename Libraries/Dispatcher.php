@@ -12,7 +12,7 @@ use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Database\Query;
 
 /**
- * Class Dispatcher - Диспетчер компонентов системы. Отвечает за инициализацию и регистрацию компонента в сестеме.
+ * Class Dispatcher - Диспетчер компонентов системы. Отвечает за инициализацию и регистрацию компонента в системе.
  * @package Tipsy\Libraries
  */
 class Dispatcher {
@@ -56,7 +56,7 @@ class Dispatcher {
 		// Список исключенний из списка компонентов.
 		$exclude_list = array(".", "..");
 
-		// Создает список компонентов системы, лежащих в директории компонентов.
+		// Создаёт список компонентов системы, лежащих в директории компонентов.
 		$com_dir = array_diff(scandir('Components'), $exclude_list);
 
 		foreach($com_dir as $com){

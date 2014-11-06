@@ -8,33 +8,29 @@ use Tipsy\Libraries\Factory;
 defined('_TEXEC') or die;
 
 /**
- * Базовый класс платформы Tipsy CMS
- * По возможности здесь будет реализовываться API
+ * Базовый класс платформы Tipsy CMS.
+ * По возможности здесь будет реализовываться API.
  *
  */
 class Application
 {
-
 	/**
-	 * Метод запускающий формирование страны.
+	 *
 	 */
 	public function __construct()
-	{	
-		// Подключает системный модуль.
+	{
+		// Подключает Абстрактную фабрику.
 		Loader::autoload('\Libraries\Factory');
 		// Получает настройки конфигурации системы.
 		Factory::getConfig();
+
 		Loader::autoload('\Libraries\Dispatcher');
 		#Loader::autoload('\Libraries\Document\Model');
 		$Dispatcher = new Dispatcher();
-		
+
 		$html = Factory::getDocument();
 	}
-	
-		/**
-	 * Метод загружающий системные библиотеки.
-	 *
-	 */
+
 
 	public function __destruct()
 	{

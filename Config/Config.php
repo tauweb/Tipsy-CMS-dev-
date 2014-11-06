@@ -10,7 +10,7 @@ abstract class Config
 	// Параметры подключения к базе данных
 	public static $dbType = 'mysql';
 
-	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать айпи а не localhost
+	public static $db_host = '127.0.0.1';	// Note: Для локального хоста использовать IP а не localhost
 	public static $db_user = 'tipsy';
 	public static $db_password = 'tipsy';
 	public static $db_dbname = 'tipsy';
@@ -27,13 +27,13 @@ abstract class Config
 	// 1 - да, 0 - нет.
 	// Смотреть \Tispy\Libraries\Position::getPosContent()
 	#public static $tmplDebug = 0;
-	
+
 	// Настройки временной зоны
 	public static $timezone = 'Europe/Moscow';
 
 	// Внешний вид (шаблон)
-	public static $template = 'Light';
-	
+	public static $template = 'Empty';
+
 	// Время жизни куку
 	public static $sessionLifetime = 2;
 }

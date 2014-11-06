@@ -2,90 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="Все только начинается...">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Configurator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DeveloperFiles/DB.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/Document.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/Head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/InterfaceController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/Position.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Libraries/Document/head_arrya.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Безымянный документ" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Templates/Empty/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp_struct" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/linux_get_source.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Application.php" afterPath="$PROJECT_DIR$/Libraries/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/Config.php" afterPath="$PROJECT_DIR$/Config/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Configurator.php" afterPath="$PROJECT_DIR$/Libraries/Configurator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Dispatcher.php" afterPath="$PROJECT_DIR$/Libraries/Dispatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Document.php" afterPath="$PROJECT_DIR$/Libraries/Document/Document.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework.php" afterPath="$PROJECT_DIR$/Framework.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Document/Head.php" afterPath="$PROJECT_DIR$/Libraries/Document/Head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logs/Logs.txt" afterPath="$PROJECT_DIR$/Logs/Logs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Light/index.php" afterPath="$PROJECT_DIR$/Templates/Light/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/php_set.php" afterPath="$PROJECT_DIR$/Config/php_set.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".edea/*/ ./.git/*/ ./nbproject/*/ ./.gitignore/" />
-    <file path="/Dummy.txt" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1380374830599" ignored="false" />
-    <file path="/index.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1372172641570" ignored="false" />
-    <file path="/Database.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367066526377" ignored="false" />
-    <file path="/a.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469939736" ignored="false" />
-    <file path="/a.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083907094" ignored="false" />
-    <file path="/create_DB.sql" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1364260520620" ignored="false" />
-    <file path="/Position.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369232373339" ignored="false" />
-    <file path="/a.html" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469950737" ignored="false" />
-    <file path="/a.less" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083890915" ignored="false" />
-    <file path="/a.js" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365084003209" ignored="false" />
-    <file path="/a.twig" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469956721" ignored="false" />
-    <file path="/a.xml" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1371637058944" ignored="false" />
-    <file path="/a.coffee" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365083986888" ignored="false" />
-    <file path="/Framework.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151276160" ignored="false" />
-    <file path="/Articles.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365151734483" ignored="false" />
-    <file path="/template.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1371636901096" ignored="false" />
-    <file path="/control_panel.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365691524959" ignored="false" />
-    <file path="/Document.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365763173780" ignored="false" />
-    <file path="/Article.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367237326245" ignored="false" />
-    <file path="/fragment.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365766015112" ignored="false" />
-    <file path="/Article.html" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365766885137" ignored="false" />
-    <file path="/Nav.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365769012830" ignored="false" />
-    <file path="/Autorize.html" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365769893284" ignored="false" />
-    <file path="/Control_panel.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367069470400" ignored="false" />
-    <file path="/Conteiner.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365770998129" ignored="false" />
-    <file path="/Footer.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365931366540" ignored="false" />
-    <file path="/Article.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366806117696" ignored="false" />
-    <file path="/a.dummy" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369400521863" ignored="false" />
-    <file path="$PROJECT_DIR$/../cms/prestashop/footer.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365927910559" ignored="false" />
-    <file path="$PROJECT_DIR$/../cms/prestashop/themes/default/footer.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365928089863" ignored="false" />
-    <file path="/footer.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365928028492" ignored="false" />
-    <file path="$PROJECT_DIR$/../cms/prestashop/themes/default/css/grid_prestashop.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365928300065" ignored="false" />
-    <file path="/grid_prestashop.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365928278607" ignored="false" />
-    <file path="/Nav.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366195153127" ignored="false" />
-    <file path="/Menu_horisontal.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367237046777" ignored="false" />
-    <file path="/Html.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369400532938" ignored="false" />
-    <file path="/Head.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369396067921" ignored="false" />
-    <file path="/Footer.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365941815419" ignored="false" />
-    <file path="/old_Query.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946322981" ignored="false" />
-    <file path="/Autorize.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365946976670" ignored="false" />
-    <file path="/Config.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1365952418202" ignored="false" />
-    <file path="/Query.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366730501191" ignored="false" />
-    <file path="/Menu.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366903602025" ignored="false" />
-    <file path="/Loader.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366193106360" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/catalog.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003979" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/html5/xhtml5.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003979" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003979" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xhtml1-strict.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003979" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/XMLSchema.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003979" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xinclude.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xslt-1_0.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/relaxng.rng" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xslt-2_0.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xsl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xml.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xml" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/xslt-schema.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366270003980" ignored="false" />
-    <file path="/Menu.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366470279888" ignored="false" />
-    <file path="/Errors.tpl" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366378223301" ignored="false" />
-    <file path="/a.css" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469945116" ignored="false" />
-    <file path="/a.sass" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469952905" ignored="false" />
-    <file path="/a.scss" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366469954854" ignored="false" />
-    <file path="/Dispatcher.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1366729396096" ignored="false" />
-    <file path="/User.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1371995802062" ignored="false" />
-    <file path="/Router.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367076769074" ignored="false" />
-    <file path="/test.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367218713076" ignored="false" />
-    <file path="/Test.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1367219100259" ignored="false" />
-    <file path="/HtmlModel.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369395953284" ignored="false" />
-    <file path="/Application.php" changelist="ba7c6384-2c98-4781-ae68-09686e096860" time="1369400563771" ignored="false" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,30 +50,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Factory.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="27" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="795">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="645">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Framework.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Framework.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Framework.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="180" selection-end="180" vertical-scroll-proportion="0.2347826">
+            <state vertical-scroll-proportion="0.384" vertical-offset="0" max-vertical-offset="625">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
-                <element signature="e#91#118#0" expanded="true" />
+                <element signature="e#111#138#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +99,8 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Components/User/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Libraries/Router.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Components/User/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -184,16 +125,15 @@
     </option>
   </component>
   <component name="PhpServers">
-    <option name="servers">
+    <servers>
       <server host="localhost" name="localhost" />
-    </option>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="y" value="24" />
+    <option name="width" value="1366" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,7 +183,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -270,80 +210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Light" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DeveloperFiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tipsy-CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,17 +252,6 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig" serverName="tipsy" serverId="53312c9c-7781-4b2c-89f7-5dde22668d59">
-    <servers>
-      <server id="53312c9c-7781-4b2c-89f7-5dde22668d59">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
   <component name="RunManager" selected="PHP Web Application.localhost">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -411,11 +266,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="53312c9c-7781-4b2c-89f7-5dde22668d59" server_name="tipsy">
@@ -454,421 +312,547 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="" />
       <created>1353596181164</created>
+      <option name="number" value="Default" />
       <updated>1353596181164</updated>
     </task>
     <task id="LOCAL-00001" summary="Глобальные изменения в структуре и взаимодействии компонентов">
       <created>1353598490008</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
       <updated>1353598490008</updated>
     </task>
     <task id="LOCAL-00002" summary="Для программирования в метро">
       <created>1353598839799</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
       <updated>1353598839799</updated>
     </task>
     <task id="LOCAL-00003" summary="Начата разработка модуля формирования контента">
       <created>1353612723473</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
       <updated>1353612723473</updated>
     </task>
     <task id="LOCAL-00004" summary="Глобальные изменения в структуре и взаимодействии компонентов">
       <created>1353614386299</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
       <updated>1353614386299</updated>
     </task>
     <task id="LOCAL-00005" summary="Глобальные изменения в структуре и взаимодействии компонентов">
       <created>1353617614324</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
       <updated>1353617614324</updated>
     </task>
     <task id="LOCAL-00006" summary="Глобальные изменения в структуре и взаимодействии компонентов">
       <created>1353618145251</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
       <updated>1353618145251</updated>
     </task>
     <task id="LOCAL-00007" summary="Горизонтальная черта в отладочной инфе вынесена за пределы сообщения">
       <created>1353618472725</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
       <updated>1353618472725</updated>
     </task>
     <task id="LOCAL-00008" summary="Подготовка к глобальным изменениям кода">
       <created>1353792413612</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
       <updated>1353792413613</updated>
     </task>
     <task id="LOCAL-00009" summary="Реорганизация кода">
       <created>1353828324679</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
       <updated>1353828324679</updated>
     </task>
     <task id="LOCAL-00010" summary="Работа над формированием контента">
       <created>1353828398410</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
       <updated>1353828398410</updated>
     </task>
     <task id="LOCAL-00011" summary="так как я веду разработку один, комитов пока не будет">
       <created>1353959246531</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
       <updated>1353959246531</updated>
     </task>
     <task id="LOCAL-00012" summary="так как я веду разработку один, комитов пока не будет">
       <created>1354181660191</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
       <updated>1354181660191</updated>
     </task>
     <task id="LOCAL-00013" summary="так как я веду разработку один, комитов пока не будет">
       <created>1354288021557</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
       <updated>1354288021557</updated>
     </task>
     <task id="LOCAL-00014" summary="так как я веду разработку один, комитов пока не будет">
       <created>1355915986255</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
       <updated>1355915986255</updated>
     </task>
     <task id="LOCAL-00015" summary="так как я веду разработку один, комитов пока не будет">
       <created>1357467278247</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
       <updated>1357467278247</updated>
     </task>
     <task id="LOCAL-00016" summary="так как я веду разработку один, комитов пока не будет">
       <created>1357473277704</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
       <updated>1357473277704</updated>
     </task>
     <task id="LOCAL-00017" summary="так как я веду разработку один, комитов пока не будет">
       <created>1357739575343</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
       <updated>1357739575344</updated>
     </task>
     <task id="LOCAL-00018" summary="так как я веду разработку один, комитов пока не будет">
       <created>1358078716513</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
       <updated>1358078716513</updated>
     </task>
     <task id="LOCAL-00019" summary="так как я веду разработку один, комитов пока не будет">
       <created>1358083727341</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
       <updated>1358083727341</updated>
     </task>
     <task id="LOCAL-00020" summary="Переход на использование пространств имен">
       <created>1358856015885</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
       <updated>1358856015886</updated>
     </task>
     <task id="LOCAL-00021" summary="Переход на использование пространств имен">
       <created>1358868749600</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
       <updated>1358868749602</updated>
     </task>
     <task id="LOCAL-00022" summary="Переход на использование пространств имен">
       <created>1358939077018</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
       <updated>1358939077019</updated>
     </task>
     <task id="LOCAL-00023" summary="Переход на использование пространств имен">
       <created>1358952014752</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
       <updated>1358952014752</updated>
     </task>
     <task id="LOCAL-00024" summary="Переход на использование пространств имен">
       <created>1358955082415</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
       <updated>1358955082415</updated>
     </task>
     <task id="LOCAL-00025" summary="Переход на использование пространств имен">
       <created>1359014928406</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
       <updated>1359014928406</updated>
     </task>
     <task id="LOCAL-00026" summary="Переход на использование пространств имен">
       <created>1359042148895</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
       <updated>1359042148895</updated>
     </task>
     <task id="LOCAL-00027" summary="Доработка кода">
       <created>1362238409070</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
       <updated>1362238409070</updated>
     </task>
     <task id="LOCAL-00028" summary="Доработка кода">
       <created>1364333775399</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
       <updated>1364333775399</updated>
     </task>
     <task id="LOCAL-00029" summary="Все только начинается...">
       <created>1365081834734</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
       <updated>1365081834734</updated>
     </task>
     <task id="LOCAL-00030" summary="Все только начинается...">
       <created>1365081939308</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
       <updated>1365081939308</updated>
     </task>
     <task id="LOCAL-00031" summary="Все только начинается...">
       <created>1365081992162</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
       <updated>1365081992162</updated>
     </task>
     <task id="LOCAL-00032" summary="Все только начинается...">
       <created>1365082022799</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
       <updated>1365082022799</updated>
     </task>
     <task id="LOCAL-00033" summary="Все только начинается...">
       <created>1365085055343</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
       <updated>1365085055343</updated>
     </task>
     <task id="LOCAL-00034" summary="Все только начинается...">
       <created>1365151131598</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
       <updated>1365151131599</updated>
     </task>
     <task id="LOCAL-00035" summary="Все только начинается...">
       <created>1365152787516</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
       <updated>1365152787516</updated>
     </task>
     <task id="LOCAL-00036" summary="Все только начинается...">
       <created>1365277292145</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
       <updated>1365277292145</updated>
     </task>
     <task id="LOCAL-00037" summary="Все только начинается...">
       <created>1365277356374</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
       <updated>1365277356374</updated>
     </task>
     <task id="LOCAL-00038" summary="Все только начинается...">
       <created>1365687547604</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
       <updated>1365687547604</updated>
     </task>
     <task id="LOCAL-00039" summary="Все только начинается...">
       <created>1365691566170</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
       <updated>1365691566170</updated>
     </task>
     <task id="LOCAL-00040" summary="Все только начинается...">
       <created>1365692588630</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
       <updated>1365692588630</updated>
     </task>
     <task id="LOCAL-00041" summary="Все только начинается...">
       <created>1365693681941</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
       <updated>1365693681942</updated>
     </task>
     <task id="LOCAL-00042" summary="Все только начинается...">
       <created>1365771243719</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
       <updated>1365771243719</updated>
     </task>
     <task id="LOCAL-00043" summary="Все только начинается...">
       <created>1365771355736</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
       <updated>1365771355736</updated>
     </task>
     <task id="LOCAL-00044" summary="Все только начинается...">
       <created>1365867144180</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
       <updated>1365867144180</updated>
     </task>
     <task id="LOCAL-00045" summary="Все только начинается...">
       <created>1365931735944</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
       <updated>1365931735944</updated>
     </task>
     <task id="LOCAL-00046" summary="Все только начинается...">
       <created>1365940447849</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
       <updated>1365940447849</updated>
     </task>
     <task id="LOCAL-00047" summary="Все только начинается...">
       <created>1365946501533</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
       <updated>1365946501533</updated>
     </task>
     <task id="LOCAL-00048" summary="Все только начинается...">
       <created>1365947823871</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
       <updated>1365947823872</updated>
     </task>
     <task id="LOCAL-00049" summary="Все только начинается...">
       <created>1365950060195</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
       <updated>1365950060195</updated>
     </task>
     <task id="LOCAL-00050" summary="Все только начинается...">
       <created>1365950683638</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
       <updated>1365950683639</updated>
     </task>
     <task id="LOCAL-00051" summary="Все только начинается...">
       <created>1365953596105</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
       <updated>1365953596105</updated>
     </task>
     <task id="LOCAL-00052" summary="Все только начинается...">
       <created>1365953841496</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
       <updated>1365953841497</updated>
     </task>
     <task id="LOCAL-00053" summary="Все только начинается...">
       <created>1365954068939</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
       <updated>1365954068940</updated>
     </task>
     <task id="LOCAL-00054" summary="Все только начинается...">
       <created>1366106187142</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
       <updated>1366106187142</updated>
     </task>
     <task id="LOCAL-00055" summary="Все только начинается...">
       <created>1366195985128</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
       <updated>1366195985128</updated>
     </task>
     <task id="LOCAL-00056" summary="Все только начинается...">
       <created>1366196577447</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
       <updated>1366196577447</updated>
     </task>
     <task id="LOCAL-00057" summary="Все только начинается...">
       <created>1366289487279</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
       <updated>1366289487279</updated>
     </task>
     <task id="LOCAL-00058" summary="Все только начинается...">
       <created>1366378393914</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
       <updated>1366378393914</updated>
     </task>
     <task id="LOCAL-00059" summary="Все только начинается...">
       <created>1366470448874</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
       <updated>1366470448874</updated>
     </task>
     <task id="LOCAL-00060" summary="Все только начинается...">
       <created>1366558328702</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
       <updated>1366558328703</updated>
     </task>
     <task id="LOCAL-00061" summary="Все только начинается...">
       <created>1366729779343</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
       <updated>1366729779343</updated>
     </task>
     <task id="LOCAL-00062" summary="Все только начинается...">
       <created>1366730706126</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
       <updated>1366730706126</updated>
     </task>
     <task id="LOCAL-00063" summary="Все только начинается...">
       <created>1366796778830</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
       <updated>1366796778831</updated>
     </task>
     <task id="LOCAL-00064" summary="Все только начинается...">
       <created>1366817125331</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
       <updated>1366817125332</updated>
     </task>
     <task id="LOCAL-00065" summary="Все только начинается...">
       <created>1366903467992</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
       <updated>1366903467993</updated>
     </task>
     <task id="LOCAL-00066" summary="Все только начинается...">
       <created>1367067650835</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
       <updated>1367067650835</updated>
     </task>
     <task id="LOCAL-00067" summary="Все только начинается...">
       <created>1367077039295</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
       <updated>1367077039295</updated>
     </task>
     <task id="LOCAL-00068" summary="Все только начинается...">
       <created>1367161052438</created>
+      <option name="number" value="00068" />
+      <option name="project" value="LOCAL" />
       <updated>1367161052438</updated>
     </task>
     <task id="LOCAL-00069" summary="Все только начинается...">
       <created>1367162483940</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
       <updated>1367162483940</updated>
     </task>
     <task id="LOCAL-00070" summary="Все только начинается...">
       <created>1367241543090</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
       <updated>1367241543090</updated>
     </task>
     <task id="LOCAL-00071" summary="Все только начинается...">
       <created>1367249412893</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
       <updated>1367249412893</updated>
     </task>
     <task id="LOCAL-00072" summary="Все только начинается...">
       <created>1367916297595</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
       <updated>1367916297595</updated>
     </task>
     <task id="LOCAL-00073" summary="Все только начинается...">
       <created>1367920000732</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
       <updated>1367920000732</updated>
     </task>
     <task id="LOCAL-00074" summary="Все только начинается...">
       <created>1367930374800</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
       <updated>1367930374800</updated>
     </task>
     <task id="LOCAL-00075" summary="Все только начинается...">
       <created>1369230618924</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
       <updated>1369230618925</updated>
     </task>
     <task id="LOCAL-00076" summary="Все только начинается...">
       <created>1369236712004</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
       <updated>1369236712005</updated>
     </task>
     <task id="LOCAL-00077" summary="Все только начинается...">
       <created>1369404426286</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
       <updated>1369404426286</updated>
     </task>
     <task id="LOCAL-00078" summary="Все только начинается...">
       <created>1369404465707</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
       <updated>1369404465708</updated>
     </task>
     <task id="LOCAL-00079" summary="Все только начинается...">
       <created>1370705132126</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
       <updated>1370705132126</updated>
     </task>
     <task id="LOCAL-00080" summary="Все только начинается...">
       <created>1371637110886</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
       <updated>1371637110886</updated>
     </task>
     <task id="LOCAL-00081" summary="Все только начинается...">
       <created>1371826357944</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
       <updated>1371826357945</updated>
     </task>
     <task id="LOCAL-00082" summary="Все только начинается...">
       <created>1380374783606</created>
+      <option name="number" value="00082" />
+      <option name="project" value="LOCAL" />
       <updated>1380374783606</updated>
     </task>
     <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2768" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19772728" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2719697" sideWeight="0.4433657" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14166667" sideWeight="0.6544" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6544" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.7189394" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14128843" sideWeight="0.6544" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22620791" sideWeight="0.6544" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.5376" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.2810606" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3456" sideWeight="0.49532712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.7189394" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32702237" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Все только начинается..." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Для программирования в метро" />
     <MESSAGE value="Начата разработка модуля формирования контента" />
     <MESSAGE value="Глобальные изменения в структуре и взаимодействии компонентов" />
@@ -880,6 +864,7 @@
     <MESSAGE value="Переход на использование пространств имен" />
     <MESSAGE value="Доработка кода" />
     <MESSAGE value="Все только начинается..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Все только начинается..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -888,82 +873,120 @@
       </breakpoints-dialog>
       <option name="time" value="45" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Config/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="-8.75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="71" selection-start="858" selection-end="909" vertical-scroll-proportion="-16.916666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="172" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="61" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/User/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/Dispatcher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.29602888">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.104347825" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="27" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="810">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="705">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Framework.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="180" selection-end="180" vertical-scroll-proportion="0.2347826">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#91#118#0" expanded="true" />
+            <element signature="e#111#138#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="0">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/Positions/Article.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="0">
+          <caret line="2" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.916666" vertical-offset="0" max-vertical-offset="0">
+          <caret line="43" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="19" column="61" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/User/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="48" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Dispatcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="16" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/Light/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29602888" vertical-offset="0" max-vertical-offset="0">
+          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.104347825" vertical-offset="0" max-vertical-offset="0">
+          <caret line="4" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="810">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="645">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.384" vertical-offset="0" max-vertical-offset="625">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#111#138#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,12 +12,12 @@ class Configurator
 		self::getSessionLifetime();
 		self::getTimeZone();
 	}
-	
+
 		/**
 	 * Метод подключения файлов конфигурации.
 	 *
 	 * @return	boolean	true, если конфигурация загружена и запись лога с сообщением о том что не найден файл
-	 *												конфигурации и прекращение выполнения сценария
+	 *			конфигурации и прекращение выполнения сценария
 	 */
 	protected function getConfig()
 	{
@@ -31,7 +31,7 @@ class Configurator
 			die('Не найден файл конфигурации <b>Config.php</b>');
 		}
 	}
-	
+
 		/**
 	 * Метод формирования опций сервера с подключаемой БД в виде массива.
 	 *
@@ -50,7 +50,6 @@ class Configurator
 
 		return $DBOptions;
 	}
-
 
 	/**
 	 * Метод установки уровня отчётов об ошибках из файла конфигурации системы.
@@ -101,7 +100,7 @@ class Configurator
 	{
 		return Config::$siteName;
 	}
-	
+
 	public function getTemplate()
 	{
 		return Config::$template;

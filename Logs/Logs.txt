@@ -1,11 +1,4 @@
-Sunday 14th of April 2013 07:16:36 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:17:36 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:18:27 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:23:42 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:23:55 PM	Ошибка базы данных: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:29:06 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Sunday 14th of April 2013 07:29:38 PM	Ошибка БД: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
-Saturday 27th of April 2013 03:16:33 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
-Saturday 27th of April 2013 03:42:52 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
-Saturday 27th of April 2013 03:43:02 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
-Saturday 27th of April 2013 04:40:16 PM	Ошибка БД: SQLSTATE[42000] [1049] Unknown database 'whiskeyman_tipsy'
+Monday 21st of July 2014 05:36:16 PM	Не найден index.php выбранного шаблона
+Monday 21st of July 2014 07:18:55 PM	Не найден index.php выбранного шаблона
+Tuesday 22nd of July 2014 10:45:37 AM	Не найден index.php выбранного шаблона
+Tuesday 22nd of July 2014 12:59:22 PM	Не найден index.php выбранного шаблона

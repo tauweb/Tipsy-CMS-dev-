@@ -26,10 +26,10 @@ class Document
 	public function __construct()
 	{
 		Loader::autoload('\Libraries\Document\Head');
-		self::$head = new Head();
+		$this->head = new \Tipsy\Libraries\Document\Head();
 		self::getTemplate();
 	}
-	
+
 	/**
 	 * Метод определяющий используемый шаблон html страниц.
 	 */
@@ -44,20 +44,24 @@ class Document
 			if (file_exists($tmpl_index = $template . '/' . 'index.php')) {
 				$this->$template = $template;
 			} else {
-				throw new RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
+				throw new \Tipsy\Libraries\RuntimeException('Не найден <b>index.php</b> выбранного шаблона');
 			}
 			require_once $tmpl_index;
-		} catch (RuntimeException $e){
+		} catch (\Tipsy\Libraries\RuntimeException $e){
 			// Выводит ошибку на страницу.
-			Errors::getErrors();
+			\Tipsy\Libraries\Errors::getErrors();
 		}
 	}
-	
+
 	protected function positions($positions)
 	{
 		foreach(explode(',', $positions) as $position)
-			self::$positions[strtolower($position)] = '';
-		
+			$this->positions[strtolower($position)] = '';
+
 		Position::getComponent();
+	}
+
+	protected function getHead(){
+		$this->head->getHead();
 	}
 }
