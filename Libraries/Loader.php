@@ -5,11 +5,21 @@ defined('_TEXEC') or die;
 
 abstract class Loader
 {
-	public static function autoload($className)
-	{
+	/*
+	* @var sting Имя клааса откуда был вызван загрузчик используется для отладки
+	*/
+	public static $calledFrom ='';
+	public static $line;
+
+	public static function autoload($className, $calledFrom = '',$line =''){
 		if(class_exists($className)){
 			return true;
 		}
+
+		if($calledFrom)
+			self::$calledFrom = $calledFrom;
+		if($line)
+			self::$line=$line;
 
 		$className = ltrim($className, '\\');
 		$fileName  = '';
@@ -23,10 +33,13 @@ abstract class Loader
 		
 		if(file_exists($fileName)){
 			require_once $fileName;
-			#echo $fileName."</br>";
+			# todo отображать имя загружаемого файла (для отладки) echo $fileName."</br>";
 			return true;
 		}else{
-			print("Загрузчик: не могу найти файл: <b>$fileName</b><p>");
+			#if(self::$calledFrom)
+
+			echo "Загрузчик: не могу найти файл: <b>$fileName</b>, меня вызвал <b>"
+				. self::$calledFrom ."</b>, со строки <b>" . self::$line. "</b></b><p>";
 			return false;
 		}
 	}

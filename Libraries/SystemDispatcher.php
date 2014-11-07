@@ -1,9 +1,6 @@
 <?php
 /**
  * Библеотека диспетчерра компонентов системы.
- * CalledFrom: Tipsy\Libraries\Factory.
- * User: whiskeyman.
- * Date: 06.04.13
  */
 
 namespace Tipsy\Libraries;
@@ -13,9 +10,8 @@ use Tipsy\Libraries\Database\Query;
 
 /**
  * Class Dispatcher - Диспетчер компонентов системы. Отвечает за инициализацию и регистрацию компонента в системе.
- * @package Tipsy\Libraries
  */
-class Dispatcher {
+class SystemDispatcher {
 
 	public function __construct()
 	{

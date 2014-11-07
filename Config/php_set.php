@@ -3,7 +3,7 @@
 defined('_TEXEC') or die;
 
 /**
- * Настройка PHP.
+ * Настройки PHP.
  */
 
 // Установки php.ini

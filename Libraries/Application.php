@@ -8,7 +8,7 @@ use Tipsy\Libraries\Factory;
 defined('_TEXEC') or die;
 
 /**
- * Базовый класс платформы Tipsy CMS.
+ * Базовый класс платформы.
  * По возможности здесь будет реализовываться API.
  *
  */
@@ -23,10 +23,10 @@ class Application
 		Loader::autoload('\Libraries\Factory');
 		// Получает настройки конфигурации системы.
 		Factory::getConfig();
-
-		Loader::autoload('\Libraries\Dispatcher');
+		//
+		Loader::autoload('\Libraries\SystemDispatcher',__METHOD__,__LINE__);
 		#Loader::autoload('\Libraries\Document\Model');
-		$Dispatcher = new Dispatcher();
+		$Dispatcher = new SystemDispatcher();
 
 		$html = Factory::getDocument();
 	}
