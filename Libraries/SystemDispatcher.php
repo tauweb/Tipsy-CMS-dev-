@@ -41,7 +41,7 @@ class SystemDispatcher {
 		// Подключает класс обработчика сессий.
 		Loader::autoload('\Libraries\Session');
 		// Подключает класс диспетчера компонетов.
-		Loader::autoload('\Libraries\Dispatcher');
+		#Loader::autoload('\Libraries\Dispatcher');
 	}
 	
 	/**

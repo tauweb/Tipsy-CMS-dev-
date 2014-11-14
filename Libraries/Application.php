@@ -31,7 +31,6 @@ class Application
 		$html = Factory::getDocument();
 	}
 
-
 	public function __destruct()
 	{
 
