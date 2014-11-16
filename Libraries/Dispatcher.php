@@ -11,7 +11,7 @@ use Tipsy\Libraries\Database\Query;
 /**
  * Class Dispatcher - Диспетчер компонентов системы. Отвечает за инициализацию и регистрацию компонента в системе.
  */
-class SystemDispatcher {
+class Dispatcher {
 
 	public function __construct()
 	{

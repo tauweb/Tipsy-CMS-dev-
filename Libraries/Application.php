@@ -23,10 +23,10 @@ class Application
 		Loader::autoload('\Libraries\Factory');
 		// Получает настройки конфигурации системы.
 		Factory::getConfig();
-		//
-		Loader::autoload('\Libraries\SystemDispatcher',__METHOD__,__LINE__);
-		#Loader::autoload('\Libraries\Document\Model');
-		$Dispatcher = new SystemDispatcher();
+		// Подключает класс диспетчера компонентов системы
+		Loader::autoload('\Libraries\Dispatcher');
+	    #Loader::autoload('\Libraries\Document\Model');
+		$Dispatcher = new Dispatcher();
 
 		$html = Factory::getDocument();
 	}
