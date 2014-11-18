@@ -22,7 +22,7 @@ class Configurator
 	protected function getConfig()
 	{
 		// Подключает класс настроек системы.
-		if(Loader::autoload('\Config\Config')) {
+		if(Loader::loadClass('\Config\Config')) {
 			return true;
 		}else{
 			// Пишет сообщение в лог о не найденном файле конфигурации.

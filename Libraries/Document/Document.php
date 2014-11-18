@@ -25,7 +25,7 @@ class Document
 	 */
 	public function __construct()
 	{
-		Loader::autoload('\Libraries\Document\Head');
+		Loader::loadClass('\Libraries\Document\Head');
 		$this->head = new \Tipsy\Libraries\Document\Head();
 		self::getTemplate();
 	}

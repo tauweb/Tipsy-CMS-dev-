@@ -20,7 +20,7 @@ abstract class Factory
 	public static function getConfig()
 	{
 		if(!self::$cfg){
-			Loader::autoload('\Libraries\Configurator');
+			Loader::loadClass('\Libraries\Configurator');
 			self::$cfg = new \Tipsy\Libraries\Configurator();
 			return self::$cfg;
 		}
@@ -30,8 +30,8 @@ abstract class Factory
 	public static function getDocument()
 	{
 		if(!self::$doc){
-			Loader::autoload('\Libraries\Document\Model');
-			Loader::autoload('\Libraries\Document\Document');
+			Loader::loadClass('\Libraries\Document\Model');
+			Loader::loadClass('\Libraries\Document\Document');
 			self::$doc = new \Tipsy\Libraries\Document\Document();
 			return self::$doc;
 		}
@@ -41,7 +41,7 @@ abstract class Factory
 	public static function getDb()
 	{
 		if(!self::$db){
-			Loader::autoload('\Libraries\Database\Database');
+			Loader::loadClass('\Libraries\Database\Database');
 			self::$db = new \Tipsy\Libraries\Database\Database(self::$cfg->getDbOptions());
 			return self::$db;
 		}

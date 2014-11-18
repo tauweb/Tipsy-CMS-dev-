@@ -11,7 +11,7 @@ use Tipsy\Libraries\Application;
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'Libraries' . DIRECTORY_SEPARATOR . 'Loader.php';
 
 // Подключает ядро системы
-Loader::autoload('\Libraries\Application');
+Loader::loadClass('\Libraries\Application');
 
 // Создает объект приложения
 $app = new Application();

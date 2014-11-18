@@ -29,19 +29,19 @@ class Dispatcher {
 	protected function loadCoreLibraries()
 	{
 		// Подключает компонент логирования.
-		Loader::autoload('\Libraries\Logger');
+		Loader::loadClass('\Libraries\Logger');
 		// Подключает обработчик исключений.
-		Loader::autoload('\Libraries\Exception');
+		Loader::loadClass('\Libraries\Exception');
 		// Подключает модуль отладки системы.
-		Loader::autoload('\Libraries\Debug');
+		Loader::loadClass('\Libraries\Debug');
 		// Загружает класс работы с БД
-		Loader::autoload('\Libraries\Database\Database');
+		Loader::loadClass('\Libraries\Database\Database');
 		// Подключает отладчик системы
-		Loader::autoload('\Libraries\Debug');
+		Loader::loadClass('\Libraries\Debug');
 		// Подключает класс обработчика сессий.
-		Loader::autoload('\Libraries\Session');
+		Loader::loadClass('\Libraries\Session');
 		// Подключает класс диспетчера компонетов.
-		#Loader::autoload('\Libraries\Dispatcher');
+		#Loader::loadClass('\Libraries\Dispatcher');
 	}
 	
 	/**
@@ -57,7 +57,7 @@ class Dispatcher {
 
 		foreach($com_dir as $com){
 			// Загружает класс компонента.
-			Loader::autoload('\Components\\'.$com.'\\'.$com);
+			Loader::loadClass('\Components\\'.$com.'\\'.$com);
 			// Регистрирует компонент в списке известных.
 			self::$components[] = $com;
 		}

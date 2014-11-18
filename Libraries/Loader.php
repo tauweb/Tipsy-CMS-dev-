@@ -11,7 +11,7 @@ abstract class Loader
 	public static $calledFrom ='';
 	public static $line;
 
-	public static function autoload($className, $calledFrom = '',$line =''){
+	public static function loadClass($className, $calledFrom = '',$line =''){
 		if(class_exists($className)){
 			return true;
 		}

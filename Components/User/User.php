@@ -34,7 +34,7 @@ abstract class User
 			// Если нет - возвращает форму выбора действий.
 			return file_get_contents(__DIR__ . DIRECTORY_SEPARATOR .'tmpl'. DIRECTORY_SEPARATOR . 'tmpl_choise.php');
 		}else{
-			Loader::autoload('\Components\User\UserLogout');
+			Loader::loadClass('\Components\User\UserLogout');
 			return "Привет  ". $_SESSION['user'] . "<a href=\"?component=\\Components\\User\\UserLogout\">Выйти</a>";
 		}
 	}

@@ -20,12 +20,12 @@ class Application
 	public function __construct()
 	{
 		// Подключает Абстрактную фабрику.
-		Loader::autoload('\Libraries\Factory');
+		Loader::loadClass('\Libraries\Factory');
 		// Получает настройки конфигурации системы.
 		Factory::getConfig();
 		// Подключает класс диспетчера компонентов системы
-		Loader::autoload('\Libraries\Dispatcher');
-	    #Loader::autoload('\Libraries\Document\Model');
+		Loader::loadClass('\Libraries\Dispatcher');
+		#Loader::loadClass('\Libraries\Document\Model');
 		$Dispatcher = new Dispatcher();
 
 		$html = Factory::getDocument();
