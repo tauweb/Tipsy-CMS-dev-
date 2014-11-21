@@ -10,12 +10,11 @@ defined('_TEXEC') or die;
 /**
  * Базовый класс платформы.
  * По возможности здесь будет реализовываться API.
- *
  */
 class Application
 {
 	/**
-	 *
+	 * Конструктор
 	 */
 	public function __construct()
 	{

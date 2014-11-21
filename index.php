@@ -13,6 +13,9 @@ use Tipsy\Config\Config;
  */
 define('_TEXEC', 1);
 
+echo '<meta charset="utf-8">'; // Для отладки вывода сообщений на русском
+
+
 // Подключаем настройки php
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'php_set.php';
 
