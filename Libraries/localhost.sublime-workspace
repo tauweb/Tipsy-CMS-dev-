@@ -1,0 +1,649 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"link	link - stylesheet"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/html/Projects/Tipsy-CMS/index.php",
+			"settings":
+			{
+				"buffer_size": 692,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Logger.php",
+			"settings":
+			{
+				"buffer_size": 1372,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/Projects/Tipsy-CMS/Framework.php",
+			"settings":
+			{
+				"buffer_size": 461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Loader.php",
+			"settings":
+			{
+				"buffer_size": 1512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n    // Plugin settings\n\n    // Turn the debug output on/off\n    \"show_debug\": false,\n\n    // Which file types (file extensions), do you want the plugin to\n    // execute for\n    \"extensions_to_execute\": [\"php\"],\n\n    // Do we need to blacklist any sub extensions from extensions_to_execute\n    // An example would be [\"twig.php\"]\n    \"extensions_to_blacklist\": [],\n\n    // Execute the sniffer on file save\n    \"phpcs_execute_on_save\": true,\n\n    // Show the error list after save.\n    \"phpcs_show_errors_on_save\": true,\n\n    // Show the errors in the gutter\n    \"phpcs_show_gutter_marks\": true,\n\n    // Show outline for errors\n    \"phpcs_outline_for_errors\": true,\n\n    // Show the errors in the status bar\n    \"phpcs_show_errors_in_status\": true,\n\n    // Show the errors in the quick panel so you can then goto line\n    \"phpcs_show_quick_panel\": true,\n\n    // The path to the php executable.\n    // Needed for windows, or anyone who doesn't/can't make phars\n    // executable. Avoid setting this if at all possible\n    \"phpcs_php_prefix_path\": \"\",\n\n    // Options include:\n    // - Sniffer\n    // - Fixer\n    // - Mess Detector\n    //\n    // This will prepend the application with the path to php\n    // Needed for windows, or anyone who doesn't/can't make phars\n    // executable. Avoid setting this if at all possible\n    \"phpcs_commands_to_php_prefix\": [],\n\n    // What color to stylise the icon\n    // https://www.sublimetext.com/docs/3/api_reference.html#sublime.View\n    // add_regsions\n    \"phpcs_icon_scope_color\": \"comment\",\n\n\n    // PHP_CodeSniffer settings\n\n    // Do you want to run the phpcs checker?\n    \"phpcs_sniffer_run\": true,\n\n    // Execute the sniffer on file save\n    \"phpcs_command_on_save\": true,\n\n    // It seems python/sublime cannot always find the phpcs application\n    // If empty, then use PATH version of phpcs, else use the set value\n    \"phpcs_executable_path\": \"\",\n\n    // Additional arguments you can specify into the application\n    //\n    // Example:\n    // {\n    //     \"--standard\": \"PEAR\",\n    //     \"-n\"\n    // }\n    \"phpcs_additional_args\": {\n        \"--standard\": \"PSR2\",\n        \"-n\": \"\"\n    },\n\n\n\n    // PHP-CS-Fixer settings\n\n    // Fix the issues on save\n    \"php_cs_fixer_on_save\": false,\n\n    // Show the quick panel\n    \"php_cs_fixer_show_quick_panel\": false,\n\n    // Path to where you have the php-cs-fixer installed\n    \"php_cs_fixer_executable_path\": \"\",\n\n    // Additional arguments you can specify into the application\n    \"php_cs_fixer_additional_args\": {\n\n    },\n\n\n\n    // PHP Linter settings\n\n    // Are we going to run php -l over the file?\n    \"phpcs_linter_run\": true,\n\n    // Execute the linter on file save\n    \"phpcs_linter_command_on_save\": true,\n\n    // It seems python/sublime cannot always find the php application\n    // If empty, then use PATH version of php, else use the set value\n    \"phpcs_php_path\": \"\",\n\n    // What is the regex for the linter? Has to provide a named match for 'message' and 'line'\n    \"phpcs_linter_regex\": \"(?P<message>.*) on line (?P<line>\\\\d+)\",\n\n\n\n    // PHP Mess Detector settings\n\n    // Execute phpmd\n    \"phpmd_run\": false,\n\n    // Execute the phpmd on file save\n    \"phpmd_command_on_save\": true,\n\n    // It seems python/sublime cannot always find the phpmd application\n    // If empty, then use PATH version of phpmd, else use the set value\n    \"phpmd_executable_path\": \"\",\n\n    // Additional arguments you can specify into the application\n    //\n    // Example:\n    // {\n    //     \"codesize,unusedcode\"\n    // }\n    \"phpmd_additional_args\": {\n        \"codesize,unusedcode,naming\": \"\"\n    },\n\n\n    // PHP Scheck settings\n\n    // Execute scheck\n    \"scheck_run\": false,\n\n    // Execute the scheck on file save\n    \"scheck_command_on_save\": false,\n\n    // It seems python/sublime cannot always find the scheck application\n    // If empty, then use PATH version of scheck, else use the set value\n    \"scheck_executable_path\": \"\",\n\n    // Additional arguments you can specify into the application\n    //\n    //Example:\n    //{\n    //  \"-php_stdlib\" : \"/path/to/pfff\",\n    //  \"-strict\" : \"\"\n    //}\n    \"scheck_additional_args\": {\n        \"-strict\" : \"\"\n    }\n}\n",
+			"file": "/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 4167,
+				"line_ending": "Unix",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 40,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"stand",
+				"PHP Code Sniffer: Switch coding standard"
+			],
+			[
+				"to space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"to tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"to spac",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sniff",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 746.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/Projects",
+		"/var/www/html/Projects/Tipsy-CMS",
+		"/var/www/html/Projects/Tipsy-CMS/Docs"
+	],
+	"file_history":
+	[
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/Phpcs/Default (Linux).sublime-keymap",
+		"/var/www/html/Frameworks/ZendFramework/library/Zend/Authentication/AuthenticationServiceInterface.php",
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+		"/home/whiskeyman/html/CMS/Joomla/index.php",
+		"/var/www/html/Projects/Tipsy-CMS/index.php",
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/User/Xdebug.sublime-settings",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Application.php",
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/var/www/html/Projects/Tipsy-CMS/Framework.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Factory.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Debug.php",
+		"/home/whiskeyman/Рабочий стол/Безымянный sh_scriph",
+		"/var/www/html/Projects/Tipsy-CMS/tmp_struct",
+		"/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/whiskeyman/Рабочий стол/Sublime",
+		"/var/www/html/Projects/Host-CMS/templates/bt_tmpl/index.tpl",
+		"/var/www/html/Projects/Host-CMS/templates/bt_tmpl/index.html",
+		"/home/whiskeyman/wifi_MT7630E-master/rt2x00/rt2800lib.mod.o",
+		"/home/whiskeyman/MT7630E_Wi-Fi_BT_Source_V3.14_20140625_v2/rt2x00/rt2800lib.o",
+		"/lib/modules/3.16.0-24-generic/kernel/net/mac80211/mac80211.ko",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Configurator.php",
+		"/var/www/html/index.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Database/Database.php",
+		"/var/www/html/Projects/Tipsy-CMS/Templates/Bootstraper/index.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Dispatcher.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Document/Document.php",
+		"/var/www/html/Projects/Tipsy-CMS/Templates/Light/index.php",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Document/Head.php",
+		"/home/whiskeyman/Загрузки/kali-linux-1.0.9a-amd64.torrent",
+		"/var/www/html/Projects/Host-CMS/templates/bt_tmpl/css/bootstrap.css",
+		"/var/www/html/Projects/Host-CMS/templates/bt_tmpl/js/bootstrap.js",
+		"/var/www/html/Projects/Tipsy-CMS/Templates/Bootstraper/Bootstrap/css/bootstrap.css",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/SystemDispatcher.php",
+		"/var/www/html/Projects/Host-CMS/session.php",
+		"/home/whiskeyman/pw_save.sh",
+		"/var/www/html/Projects/Tipsy-CMS/Libraries/Loader.php",
+		"/home/whiskeyman/Документы/password_db.kdb",
+		"/home/whiskeyman/etc/php5/apache2/php.ini",
+		"/sys/module/hid_multitouch/drivers/hid:hid-multitouch/bind",
+		"/home/whiskeyman/html/phpinfo.php",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/make-use-of-the-new-uapi-framework.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/build/patches/register-VT-switch-requirements.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/allow_sublevel_greater_than_5.patch",
+		"/var/lib/dkms/nvidia-331-updates-uvm/331.89/source/patches/buildfix_kernel_3.12.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.8.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.6.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.14.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.13.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.11.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.10.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/buildfix_kernel_3.0.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/replace-VM_RESERVED-with-VM_DONTEXPAND-and-VM_DONTDU.patch",
+		"/var/lib/dkms/nvidia-331-updates/331.89/source/patches/register-VT-switch-requirements.patch",
+		"/var/lib/systemd/deb-systemd-helper-enabled/dbus-org.freedesktop.nm-dispatcher.service",
+		"/var/lib/systemd/deb-systemd-helper-enabled/NetworkManager-dispatcher.service.dsh-also",
+		"/var/lib/dpkg/info/speech-dispatcher-audio-plugins:amd64.md5sums",
+		"/var/lib/dpkg/info/speech-dispatcher-audio-plugins:amd64.list",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.symbols",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.shlibs",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.postrm",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.postinst",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.md5sums",
+		"/var/lib/dpkg/info/liburl-dispatcher1:amd64.list",
+		"/var/lib/dpkg/info/speech-dispatcher.prerm",
+		"/var/lib/dpkg/info/speech-dispatcher.postrm",
+		"/var/lib/dpkg/info/speech-dispatcher.postinst",
+		"/var/lib/dpkg/info/speech-dispatcher.md5sums",
+		"/var/lib/dpkg/info/speech-dispatcher.list",
+		"/var/lib/dpkg/info/speech-dispatcher.conffiles",
+		"/var/lib/dpkg/alternatives/display",
+		"/var/lib/dpkg/info/debconf-i18n.list",
+		"/var/log/dmesg",
+		"/var/lib/dpkg/alternatives/appletviewer",
+		"/var/log/apport.log",
+		"/var/lib/dpkg/info/account-plugin-aim.list",
+		"/var/lib/dpkg/arch",
+		"/var/lib/binfmts/cli",
+		"/var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-4",
+		"/var/lib/upower/history-charge-Logitech__Inc_-M185_M225-0320E001.dat",
+		"/var/www/html/Projects/Host-CMS/index.php",
+		"/var/lib/apt-xapian-index/index",
+		"/var/lib/update-notifier/user.d/steam-install-notify",
+		"/var/log/installer/initial-status.gz",
+		"/var/lib/dpkg/info/libgnutls-openssl27:amd64.list",
+		"/var/lib/dpkg/info/libreoffice-ogltrans.list",
+		"/var/log/lastlog",
+		"/etc/modprobe.d/blacklist.conf",
+		"/etc/network/interfaces",
+		"/home/whiskeyman/Документы/sublime_packege",
+		"/home/whiskeyman/ubuntu_packs",
+		"/home/whiskeyman/www/html/Projects/Tipsy-CMS/Libraries/Application.php",
+		"/home/whiskeyman/www/html/Projects/Tipsy-CMS/index.php",
+		"/run/user/1000/gvfs/sftp:host=whiskeyman.ru/home/w/whiskeyman/Orders/anime/public_html/system/library/image.php",
+		"/run/user/1000/gvfs/sftp:host=whiskeyman.ru/home/w/whiskeyman/Orders/anime/public_html/index.php",
+		"/home/whiskeyman/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/whiskeyman/Загрузки/robokassa_joomla_3_ver3/components/com_jshopping/payments/pm_robokassa/pm_robokassa.php",
+		"/home/whiskeyman/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/var/www/html/Projects/Tipsy-CMS/",
+			"/var/www/html/Projects/Tipsy-CMS",
+			"",
+			"/var/www/html/Projects/Tipsy-CMS",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tab",
+			"static",
+			"var",
+			"*/\n",
+			"Debug\n",
+			"autoload\n",
+			"{\n",
+			"autoload\n	}\n",
+			"		$html = Factory::getDocument();\n	}\n",
+			"[,,l",
+			"pad",
+			"Dispatcher",
+			"<?"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"loadClass"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/html/Projects/Tipsy-CMS/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Logger.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								507,
+								507
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/www/html/Projects/Tipsy-CMS/Framework.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								332
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Loader.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								630,
+								630
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"rulers":
+							[
+								100
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true,
+							"wrap_width": 100
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2883,
+								2883
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1674.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/whiskeyman/Clouds/Dropbox/Configs/config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 118.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"project": "localhost.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Projects/Tipsy-CMS/index.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"sys",
+				"Projects/Tipsy-CMS/Libraries/SystemDispatcher.php"
+			],
+			[
+				"loader",
+				"Projects/Tipsy-CMS/Libraries/Loader.php"
+			],
+			[
+				"applic",
+				"Projects/Tipsy-CMS/Libraries/Application.php"
+			],
+			[
+				"index.p",
+				"Projects/Tipsy-CMS/index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"37":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"38":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
