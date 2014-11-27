@@ -10,7 +10,6 @@ abstract class Loader
     * @var sting Имя клааса откуда был вызван загрузчик используется для отладки
     */
     protected static $_calledFrom = '';
-
     protected static $_line = '';
 
     public static function loadClass($className, $_calledFrom = '', $_line = '')
