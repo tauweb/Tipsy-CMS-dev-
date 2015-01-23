@@ -1,18 +1,17 @@
 <?php
 namespace Tipsy;
 
+/**
+ * This is a main file of the Tipsy-CMS.
+ * Using the main public Licency Open Source Apache v 2
+ * @Author: Tkachenko Aleksey
+ * @e-mail: whiskeyman.tau@gmail.com
+ */
+
 // Устанавливает что это главный файл.
 define('_TEXEC', 1);
 
 use Tipsy\Config\Config;
-
-/**
- * @package     Tipsy CMS
- * @version     0.0.1
- * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- * @author      Tkachenko Aleksey, e-mail: whiskeyman.tau@gmail.com
- */
 
 echo '<meta charset="utf-8">'; // Для отладки вывода сообщений на русском
 

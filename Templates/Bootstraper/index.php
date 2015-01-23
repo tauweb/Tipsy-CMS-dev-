@@ -12,8 +12,9 @@ defined('_TEXEC') or die('No Direct Access');
 	<link rel="stylesheet" href="<?=$_SERVER["DOCUMENT_ROOT"]?>/Bootstrap/css/bootstrap.css"
 </head>
 <body>
-<h1>Hello world</h1>
-
+<h1>Minimal system... It's Work</h1>
+<?php echo 'the template variable:'. $this->template;
+var_dump($this->template);?>
 </body>
 
 </html>

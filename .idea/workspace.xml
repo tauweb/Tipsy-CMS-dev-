@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c6384-2c98-4781-ae68-09686e096860" name="Default" comment="Все только начинается...">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Factory.php" afterPath="$PROJECT_DIR$/Libraries/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Loader.php" afterPath="$PROJECT_DIR$/Libraries/Loader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/Router.php" afterPath="$PROJECT_DIR$/Libraries/Router.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nbproject/project.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testmap.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Config/_Config.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Bootstraper/index.php" afterPath="$PROJECT_DIR$/Templates/Bootstraper/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/Empty/index.php" afterPath="$PROJECT_DIR$/Templates/Empty/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Libraries/localhost.sublime-workspace" afterPath="$PROJECT_DIR$/Libraries/localhost.sublime-workspace" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tipsy_cms.iws" />
@@ -75,8 +82,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="504">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,11 +99,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loader.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Loader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Libraries/Loader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50959235" vertical-offset="133" max-vertical-offset="990">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state vertical-scroll-proportion="-8.074074" vertical-offset="160" max-vertical-offset="990">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Config/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,34 +157,14 @@
     <setting file="file://$PROJECT_DIR$/Libraries/Router.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Libraries/Html/Html.php" />
-        <option value="$PROJECT_DIR$/Libraries/Html/View.php" />
-        <option value="$PROJECT_DIR$/Libraries/Html/Model.php" />
-        <option value="$PROJECT_DIR$/Libraries/Html/Head.php" />
-        <option value="$PROJECT_DIR$/Libraries/Router.php" />
-        <option value="$PROJECT_DIR$/Libraries/Html/Position.php" />
-        <option value="$PROJECT_DIR$/Templates/Light/css/template.css" />
-        <option value="$PROJECT_DIR$/Components/User/tmpl/tmpl_default.php" />
-        <option value="$PROJECT_DIR$/Components/User/tmpl/tmpl_choise.php" />
-        <option value="$PROJECT_DIR$/Libraries/Html/Controller.php" />
-        <option value="$PROJECT_DIR$/Libraries/Dispatcher.php" />
-        <option value="$PROJECT_DIR$/Templates/Light/index.php" />
-        <option value="$PROJECT_DIR$/Libraries/Exception.php" />
-        <option value="$PROJECT_DIR$/Config/php_set.php" />
-        <option value="$PROJECT_DIR$/Libraries/SystemDispatcher.php" />
-        <option value="$PROJECT_DIR$/Libraries/Application.php" />
-        <option value="$PROJECT_DIR$/Libraries/Factory.php" />
-        <option value="$PROJECT_DIR$/Components/User/User.php" />
-        <option value="$PROJECT_DIR$/Config/Config.php" />
-        <option value="$PROJECT_DIR$/Templates/Bootstraper/index.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Libraries/Debug.php" />
-        <option value="$PROJECT_DIR$/Framework.php" />
         <option value="$PROJECT_DIR$/Libraries/Loader.php" />
       </list>
     </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="PhpServers">
     <servers>
@@ -181,8 +178,8 @@
   </component>
   <component name="PhpXdebugProxy" ide_key="PHP_STORM" host="localhost" port="9000" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="199" />
-    <option name="y" value="24" />
+    <option name="x" value="186" />
+    <option name="y" value="14" />
     <option name="width" value="1556" />
     <option name="height" value="1035" />
   </component>
@@ -217,9 +214,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,6 +294,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,7 +365,7 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -396,240 +393,6 @@
       <created>1353596181164</created>
       <option name="number" value="Default" />
       <updated>1353596181164</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Глобальные изменения в структуре и взаимодействии компонентов">
-      <created>1353598490008</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1353598490008</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Для программирования в метро">
-      <created>1353598839799</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1353598839799</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Начата разработка модуля формирования контента">
-      <created>1353612723473</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1353612723473</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Глобальные изменения в структуре и взаимодействии компонентов">
-      <created>1353614386299</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1353614386299</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Глобальные изменения в структуре и взаимодействии компонентов">
-      <created>1353617614324</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1353617614324</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Глобальные изменения в структуре и взаимодействии компонентов">
-      <created>1353618145251</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1353618145251</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Горизонтальная черта в отладочной инфе вынесена за пределы сообщения">
-      <created>1353618472725</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1353618472725</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Подготовка к глобальным изменениям кода">
-      <created>1353792413612</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1353792413613</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Реорганизация кода">
-      <created>1353828324679</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1353828324679</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Работа над формированием контента">
-      <created>1353828398410</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1353828398410</updated>
-    </task>
-    <task id="LOCAL-00011" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1353959246531</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1353959246531</updated>
-    </task>
-    <task id="LOCAL-00012" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1354181660191</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1354181660191</updated>
-    </task>
-    <task id="LOCAL-00013" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1354288021557</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1354288021557</updated>
-    </task>
-    <task id="LOCAL-00014" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1355915986255</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1355915986255</updated>
-    </task>
-    <task id="LOCAL-00015" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1357467278247</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1357467278247</updated>
-    </task>
-    <task id="LOCAL-00016" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1357473277704</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1357473277704</updated>
-    </task>
-    <task id="LOCAL-00017" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1357739575343</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1357739575344</updated>
-    </task>
-    <task id="LOCAL-00018" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1358078716513</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1358078716513</updated>
-    </task>
-    <task id="LOCAL-00019" summary="так как я веду разработку один, комитов пока не будет">
-      <created>1358083727341</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1358083727341</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Переход на использование пространств имен">
-      <created>1358856015885</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1358856015886</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Переход на использование пространств имен">
-      <created>1358868749600</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1358868749602</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Переход на использование пространств имен">
-      <created>1358939077018</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1358939077019</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Переход на использование пространств имен">
-      <created>1358952014752</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1358952014752</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Переход на использование пространств имен">
-      <created>1358955082415</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1358955082415</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Переход на использование пространств имен">
-      <created>1359014928406</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1359014928406</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Переход на использование пространств имен">
-      <created>1359042148895</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1359042148895</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Доработка кода">
-      <created>1362238409070</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1362238409070</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Доработка кода">
-      <created>1364333775399</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1364333775399</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Все только начинается...">
-      <created>1365081834734</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1365081834734</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Все только начинается...">
-      <created>1365081939308</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1365081939308</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Все только начинается...">
-      <created>1365081992162</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1365081992162</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Все только начинается...">
-      <created>1365082022799</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1365082022799</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Все только начинается...">
-      <created>1365085055343</created>
-      <option name="number" value="00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1365085055343</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Все только начинается...">
-      <created>1365151131598</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1365151131599</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Все только начинается...">
-      <created>1365152787516</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1365152787516</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Все только начинается...">
-      <created>1365277292145</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1365277292145</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Все только начинается...">
-      <created>1365277356374</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1365277356374</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Все только начинается...">
-      <created>1365687547604</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1365687547604</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Все только начинается...">
-      <created>1365691566170</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1365691566170</updated>
     </task>
     <task id="LOCAL-00040" summary="Все только начинается...">
       <created>1365692588630</created>
@@ -929,17 +692,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="199" y="24" width="1556" height="1035" extended-state="0" />
+    <frame x="186" y="14" width="1556" height="1035" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2768" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21814093" sideWeight="0.95476574" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21879195" sideWeight="0.4040404" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22550336" sideWeight="0.4050926" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17946824" sideWeight="0.6544" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21879195" sideWeight="0.59483725" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22550336" sideWeight="0.5949074" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.5376" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4112" sideWeight="0.2810606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312" sideWeight="0.4969605" order="7" side_tool="false" content_ui="tabs" />
@@ -1313,13 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Config/_Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0" vertical-offset="0" max-vertical-offset="846">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Application.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26150122" vertical-offset="0" max-vertical-offset="826">
@@ -1329,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="504">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1355,12 +1111,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/Loader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50959235" vertical-offset="133" max-vertical-offset="990">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state vertical-scroll-proportion="-8.074074" vertical-offset="160" max-vertical-offset="990">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
