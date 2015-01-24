@@ -22,6 +22,11 @@ abstract class Session
 		}
 	}
 
+	/**
+	 * [[Description]]
+	 * @param  [[Type]] $sessionName [[Description]]
+	 * @return boolean  [[Description]]
+	 */
 	public static function start($sessionName)
 	{
 		// Если было получено имея сессии и если еще не используется, то запускает новую сессию

@@ -1,17 +1,25 @@
 <?php
 namespace Tipsy\Libraries;
-
+    use Tipsy\Libraries\Exception\RuntimeException;
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
+/**
+ * Класс загрузчик. Выполняет загрузку компонентов системы 
+ * 
+ * @package Tipsy\Libraries
+ * @subpackage Loader
+ * 
+ */
 abstract class Loader
 {
-    /*
-    * @var sting Имя клааса откуда был вызван загрузчик используется для отладки
-    */
-    protected static $_calledFrom = '';
-    protected static $_line = '';
-
+    /**
+     * Метод для загрузки библиотеки класса
+     * @param string $className Имя класса
+     * @return boolean. True - если загрузка класса удалась
+     *                  false - если не смог загрузить класс,
+     *                  в случае неудачи выводи выводит сообщение об ошибке.
+     */
     public static function loadClass($className, $_calledFrom = '', $_line = '')
     {
         if (class_exists($className)) {
@@ -35,16 +43,19 @@ abstract class Loader
         }
         $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
 
+        // if (file_exists($fileName)) {
+        //     require_once $fileName;
+        //     return true;
+        // } else {
+        //     echo "Загрузчик: не могу найти файл: <b>$fileName</b>";
+        //     return false;
+        // }
         if (file_exists($fileName)) {
             require_once $fileName;
-            // todo отображать имя загружаемого// файла (для отладки) echo $fileName."</br>";
             return true;
         } else {
-            // if(self::$_calledFrom)
-
-            echo "Загрузчик: не могу найти файл: <b>$fileName</b>, меня вызвал <b>"
-                . self::$_calledFrom ."</b>, со строки <b>" . self::$_line. "</b><p>";
-            return false;
+            throw new RuntimeException("Загрузчик: не могу найти файл: <b>$fileName</b>", 1);
+            //return false;
         }
     }
 }

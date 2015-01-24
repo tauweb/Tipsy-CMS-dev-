@@ -19,7 +19,7 @@ class Database
 	 * @var	string	DataBaseHandler содержит в себе .
 	 */
 	public static $dbh = '';
-	
+
 	/**
 	 * Метод устанавливающий подключение к БД.
 	 * @param array $DBOptions массив содержащий параметры подключения к базе данных.

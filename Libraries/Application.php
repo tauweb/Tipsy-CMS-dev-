@@ -8,30 +8,29 @@ use Tipsy\Libraries\Factory;
 defined('_TEXEC') or die;
 
 /**
- * Базовый класс платформы.
- * По возможности здесь будет реализовываться API.
+ * Class Application главный объект системы.
+ * @package Tipsy\Libraries
+ * @subpackage Application
  */
 class Application
 {
-	/**
-	 * Конструктор
-	 */
-	public function __construct()
-	{
-		// Подключает Абстрактную фабрику.
-		Loader::loadClass('\Libraries\Factory');
-		// Получает настройки конфигурации системы.
-		Factory::getConfig();
-		// Подключает класс диспетчера компонентов системы
-		Loader::loadClass('\Libraries\Dispatcher');
-		#Loader::loadClass('\Libraries\Document\Model');
-		$Dispatcher = new Dispatcher();
 
-		$html = Factory::getDocument();
-	}
+    public function __construct()
+    {
+        // Подключает Абстрактную фабрику.
+        Loader::loadClass('\Libraries\Factorys');
+        // Получает настройки конфигурации системы.
+        Factory::getConfig();
+        // Подключает класс диспетчера компонентов системы
+        Loader::loadClass('\Libraries\Dispatcher');
+        #Loader::loadClass('\Libraries\Document\Model');
+        $dispatcher = new Dispatcher();
 
-	public function __destruct()
-	{
+        $html = Factory::getDocument();
+    }
 
-	}
+    public function __destruct()
+    {
+
+    }
 }

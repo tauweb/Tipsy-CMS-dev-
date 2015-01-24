@@ -17,6 +17,10 @@ abstract class Factory
     protected static $db = null;
     protected static $doc = null;
 
+    /**
+     * [[Description]]
+     * @return [[Type]] [[Description]]
+     */
     public static function getConfig()
     {
         if(!self::$cfg){
