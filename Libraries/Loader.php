@@ -1,6 +1,7 @@
 <?php
 namespace Tipsy\Libraries;
     use Tipsy\Libraries\Exception\RuntimeException;
+
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -50,12 +51,14 @@ abstract class Loader
         //     echo "Загрузчик: не могу найти файл: <b>$fileName</b>";
         //     return false;
         // }
+        try{
         if (file_exists($fileName)) {
             require_once $fileName;
             return true;
         } else {
             throw new RuntimeException("Загрузчик: не могу найти файл: <b>$fileName</b>", 1);
-            //return false;
+            return false;
         }
+    }catch(RuntimeException $e){}
     }
 }

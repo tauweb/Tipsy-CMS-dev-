@@ -18,12 +18,14 @@ class Application
     public function __construct()
     {
         // Подключает Абстрактную фабрику.
-        Loader::loadClass('\Libraries\Factorys');
+       Loader::loadClass('\Libraries\Factory');
+       
         // Получает настройки конфигурации системы.
         Factory::getConfig();
+
         // Подключает класс диспетчера компонентов системы
         Loader::loadClass('\Libraries\Dispatcher');
-        #Loader::loadClass('\Libraries\Document\Model');
+
         $dispatcher = new Dispatcher();
 
         $html = Factory::getDocument();

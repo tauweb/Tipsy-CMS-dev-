@@ -4,7 +4,6 @@ namespace Tipsy\Libraries;
 use Tipsy\Libraries\Loader;
 use Tipsy\Libraries\Database\Database;
 
-
 // Проверяет легален ли доступ к файлу
 defined('_TEXEC') or die;
 
@@ -13,17 +12,25 @@ defined('_TEXEC') or die;
  */
 abstract class Factory
 {
+    /**
+     * @var datatype description
+     */
     protected static $cfg = null;
+
+    /**
+     * @var null
+     */
     protected static $db = null;
+
     protected static $doc = null;
 
     /**
-     * [[Description]]
-     * @return [[Type]] [[Description]]
+     * Метод загружающий файл конфига системы.
+     * @return boolean возвращает объект конфига
      */
     public static function getConfig()
     {
-        if(!self::$cfg){
+        if (!self::$cfg) {
             Loader::loadClass('\Libraries\Configurator');
             self::$cfg = new \Tipsy\Libraries\Configurator();
             return self::$cfg;
@@ -33,7 +40,7 @@ abstract class Factory
 
     public static function getDocument()
     {
-        if(!self::$doc){
+        if (!self::$doc) {
             Loader::loadClass('\Libraries\Document\Model');
             Loader::loadClass('\Libraries\Document\Document');
             self::$doc = new \Tipsy\Libraries\Document\Document();
@@ -44,7 +51,7 @@ abstract class Factory
 
     public static function getDb()
     {
-        if(!self::$db){
+        if (!self::$db) {
             Loader::loadClass('\Libraries\Database\Database');
             self::$db = new \Tipsy\Libraries\Database\Database(self::$cfg->getDbOptions());
             return self::$db;
